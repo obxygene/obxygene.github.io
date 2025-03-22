@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
+    <title>Hello World-建站纪念</title>
     <url>/2025/03/21/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very
-first post. Check <a href="https://hexo.io/docs/">documentation</a> for
-more info. If you get any problems when using Hexo, you can find the
-answer in <a
-href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or
-you can ask me on <a
-href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p>在此记录一下建立博客最初的一些杂乱的思绪和初步的看法。
+这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a
+href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
+<p>建立这个博客的最重要的目的是提升自己的写作能力。在一次又一次改文章的过程中再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。考虑到之前也被评价过语文能力不足，所以借此机会，慢慢的学习写一些文章，分享一些技术杂谈。</p>
+<p>第二个目的算是排解一下情绪。读博毫无疑问是一场持久战，无论是身心还是现实都是，既要保证四五年里个体的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。</p>
+<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作以及运营网站。</p>
+<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。如果能供各位看官一乐那就再好不过了。</p>
+<hr />
+<h2 id="一些常见的markdown命令记录">一些常见的markdown命令记录</h2>
+<p>这里主要参考了<a
+href="https://hyxxsfwy.github.io/2016/01/15/Hexo-Markdown-%E7%AE%80%E6%98%8E%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/">hyxxsfwy</a>的博客，记录在这里是为了避免每次使用都要查询。</p>
+<h3 id="内容目录">内容目录</h3>
+<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
+<h3 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h3>
+<p><code>*斜体* 与 **粗体**</code></p>
+<h3 id="分割线">分割线</h3>
+<p>在单独的一行使用 <code>***</code> 或者 <code>---</code> 表示分割线
+***</p>
+<h3 id="超链接">超链接</h3>
+<p>插入文字超链接的格式如下 ：</p>
+<p><code>[链接文字](链接地址 "链接标题")</code></p>
+<p>插入图片超链接的格式如下：</p>
+<p><code>![图片说明](图片链接 "图片标题")</code></p>
+<p>引用视频则直接插入iframe代码：</p>
+<p><code>&lt;script src="/js/youtube-autoresizer.js"&gt;&lt;/script&gt;</code>
+<code>&lt;iframe width="640" height="360" src="https://www.youtube.com/embed/HfElOZSEqn4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></p>
+<h3 id="注释">注释</h3>
+<p>用 <code>\</code>表示注释</p>
+<h3 id="引用">引用</h3>
+<p>使用<code>&gt;</code>表示文字引用</p>
+<p><code>&gt; 这是一段文字引用</code></p>
+<blockquote>
+<p>这是一段文字引用</p>
+</blockquote>
+<h3 id="latex">Latex</h3>
+<p>数学公式的默认定界符是<code>$ $</code>或<code>$$ $$</code>
+使用环境可以使用 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span
+class="math inline">\(\begin{equation}
+f(x) = x^2
+\end{equation}\)</span></p>
+<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明
+<!-- ## Quick Start
+
+### Create a new post
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></p>
 <p>More info: <a
 href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="run-server">Run server</h3>
@@ -25,32 +61,11 @@ href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a
-href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
+--&gt;</p>
 ]]></content>
       <tags>
         <tag>chat</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>十年</title>
-    <url>/2025/03/22/%E5%8D%81%E5%B9%B4/</url>
-    <content><![CDATA[<img src="/2025/03/22/%E5%8D%81%E5%B9%B4/image.jpg" class="" title="This is an example image">
-]]></content>
-  </entry>
-  <entry>
-    <title>建立站点</title>
-    <url>/2025/03/21/%E5%BB%BA%E7%AB%8B%E7%AB%99%E7%82%B9/</url>
-    <content><![CDATA[<p>记于2025年3月22日 <span class="math display">\[\begin{equation}
-\label{eq2}
-\begin{aligned}
-a &amp;= b + c \\
-  &amp;= d + e + f + g \\
-  &amp;= h + i
-\end{aligned}
-\end{equation}\]</span></p>
-]]></content>
-      <tags>
-        <tag>techs</tag>
       </tags>
   </entry>
 </search>
