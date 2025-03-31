@@ -233,7 +233,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-03-31 01:48:23" itemprop="dateModified" datetime="2025-03-31T01:48:23+08:00">2025-03-31</time>
+      <time title="修改时间：2025-04-01 01:22:01" itemprop="dateModified" datetime="2025-04-01T01:22:01+08:00">2025-04-01</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -252,14 +252,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.9k</span>
+      <span>3.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
+      <span>6 分钟</span>
     </span>
 </div>
 
@@ -301,28 +301,54 @@ F=-G\frac{Mm}{r^2}
 <p>对应的，这个球体对其外部厚为<span class="math inline">\(dr\)</span>的球壳(可以验证，这个球壳的质量是<span class="math inline">\(4\pi r^2
 \rho(r)dr\)</span>)所产生的引力对应为<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="注意，这里我们利用了引力的一个性质，即**一个球体对位于其外部的物体所施加的引力，等效于位于该球体球心的具有相同质量的质点对该物体所施加的引力**。这个性质使得我们考虑内部球体对球壳所施加的引力时，不需要考虑内部球体的任一点对球壳施加的压力，直接将距离替换为球心到球壳的距离即可。">[2]</span></a></sup>
 <span class="math display">\[
-\begin{equation}
-\label{Gravity}
+\begin{equation}\tag{1}
 F_{\text{引力}}=-G\frac{\mathcal{M}(r)\times 4\pi r^2
 \rho(r)dr}{r^2}=-4\pi G\rho(r)\mathcal{r}dr
 \end{equation}
 \]</span>
 这里的负号代表引力总是指向球心的方向。接下来考虑压力导致的浮力(正如物体在水中所受到的浮力是由于物体底部接收到的压强要大于物体顶部收到的压强，这对于恒星也是成立的!)。假设在半径<span class="math inline">\(r\)</span>处的压强为<span class="math inline">\(p(r)\)</span>，由于球壳内侧的压强要大于球壳外侧的压强，我们可以计算出它的压强差导致的浮力为
 <span class="math display">\[
-\begin{equation}
-\label{eqbuoyant}
+\begin{equation}\tag{2}
 F_{\text{浮力}}=4\pi r^2\left[p(r)-p(r+dr) \right]=-4\pi r^2 p&#39;(r)dr
 \end{equation}
 \]</span>
 由于恒星是稳定的，故对恒星内任意这样的球壳，其受到的引力都应当与受到的浮力相当，所以我们可以联立这两个方程，经过简单的化简，可以得到
 <span class="math display">\[
-\begin{equation}
-\label{hydrostatic}
+\begin{equation}\tag{3}\label{hydrostatic}
 \boxed{\frac{dp(r)}{dr}=-\frac{G\mathcal{M}(r)\rho(r)}{r^2}}
 \end{equation}
 \]</span>
 该公式给出了星体内部任一半径处的压力与质量的关系，这就是<strong>恒星的流体静力学平衡下的基本方程(Fundamental
 equation of hydrostatic equilibrium for stars)</strong>。</p>
+<h1 id="恒星的引力势能">恒星的引力势能</h1>
+<p>在讨论恒星的能量前，我们需要回想一下如何定义能量。回想高中的物理知识，一个静止的物体的物体的动能可以通过对其施加外力造成位移来增加，也即通过做功来增加物体的能量
+<span class="math display">\[
+\begin{equation}\tag{4}
+W=\int \vec{F}\cdot d\vec{x}
+\end{equation}
+\]</span></p>
+<p>现在对于恒星而言，我们要考虑的从动能变成了引力势能，也即需要考察来自无穷远处的物质因引力而聚集在一起时，引力所做的功。由于恒星可以认为是个球，我们采取与上面相同的讨论，即通过讨论包裹在球体外的薄球壳，从无穷远到球体表面所累积的引力势能，来求得整个恒星所具有的引力势能，如下图所示(仅展示了一个球壳上的一个微元，即图中的红点)
+<img src="/2025/03/26/Stars/Star_fallonto.gif" width="50%" height="50%"></p>
+<p>可以验证，半径为<span class="math inline">\(r\)</span>的质量为<span class="math inline">\(\mathcal{M}(r)\)</span>的星体产生会产生的引力为<span class="math inline">\({\color{blue}G\mathcal{M}(r)/r^2}\)</span>，而其将无穷远处的物质吸引到球表面，形成一层质量为<span class="math inline">\({\color{brown}4\pi
+r^2\rho(r)dr}\)</span>的球壳所做的功为 <span class="math display">\[
+\begin{equation}\tag{5}
+\int_{r}^{\infty}{\color{blue}G\mathcal{M}(r)/r^2}\times{\color{brown}4\pi
+r^2\rho(r)dr} \times{\color{red}\frac{1}{r&#39;^2}dr&#39;}=4\pi G
+r\mathcal{M}(r)\rho(r)dr
+\end{equation}
+\]</span> 注意区分开标红的被积分半径<span class="math inline">\(r&#39;\)</span>与表示球壳所在的半径<span class="math inline">\(r\)</span>!前者是因为，在将球壳从无穷远移动到球面上时，球壳所受到的引力也会随距离变化(万有引力告诉我们，这个力平方反比于二者的距离)，我们需要对其作积分；而后者代表我们所关注的球壳的半径。</p>
+<p>现在已经求得了半径为<span class="math inline">\(r\)</span>的球体吸引球壳所需要的功，我们再对整个半径作积分直至整个恒星的半径即可得到恒星的引力势能
+<span class="math display">\[
+\begin{equation}\tag{6}
+-\Omega=4\pi G\int_0^{\color{red}{R}} r\mathcal{M}(r)\rho(r)dr
+\end{equation}
+\]</span> 这里<span class="math inline">\({\color{red}{R}}\)</span>为恒星的半径，一般而言这个半径定义为恒星的压强为0的地方，即<span class="math inline">\(p(R)=0\)</span>(类比地球的大气层内的一个大气压，而在大气层之外则接近为0).公式左侧即为恒星的引力势能<span class="math inline">\(\Omega\)</span>，注意前面的负号，因为引力总是相互吸引的，而在引力做功的时候，被吸引的球壳本应该将获得的引力势能转化为动能，而我们在计算球壳从无穷远到星体表面时默认了这个球壳会<strong>不带有动能</strong>地直接落在球面上形成了稳定的恒星<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="实际上这关系到恒星的形成过程。恒星整体上而言是星际间物质由于引力而相互吸引，这个时候引力势能转化为的动能非常大，从而导致星际物质之间会发生碰撞与摩擦，在这个过程中动能会转化为热与辐射离开这个体系，从而减少了动能。并且即便有这样的一个过程，在形成恒星后这些动能也并未完全被消耗掉。">[3]</span></a></sup>，而作为代价，我们得到的引力势能应当为负。</p>
+<p>现在是时候回顾公式<span class="math inline">\(\eqref{hydrostatic}\)</span>了。利用该公式，我们可以将上式重新写为
+<span class="math display">\[
+\begin{equation}\tag{7}
+\Omega=4\pi \int_0^R\frac{dp(r)}{dr}r^3dr=-3\int_0^R p(r)4\pi r^2 dr
+\end{equation}
+\]</span> 注意为得到这个等式，需要利用分部积分以及<span class="math inline">\(p(R)=0\)</span>来消掉分部积分带来的<span class="math inline">\(r^3p(r)|^R_0\)</span>因子。</p>
 <h1 id="恒星的能量">恒星的能量</h1>
 <p>(待施工)</p>
 <div id="footnotes">
@@ -336,6 +362,10 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
 </li>
 <li id="fn:2">
 <span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">注意，这里我们利用了引力的一个性质，即<strong>一个球体对位于其外部的物体所施加的引力，等效于位于该球体球心的具有相同质量的质点对该物体所施加的引力</strong>。这个性质使得我们考虑内部球体对球壳所施加的引力时，不需要考虑内部球体的任一点对球壳施加的压力，直接将距离替换为球心到球壳的距离即可。<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">实际上这关系到恒星的形成过程。恒星整体上而言是星际间物质由于引力而相互吸引，这个时候引力势能转化为的动能非常大，从而导致星际物质之间会发生碰撞与摩擦，在这个过程中动能会转化为热与辐射离开这个体系，从而减少了动能。并且即便有这样的一个过程，在形成恒星后这些动能也并未完全被消耗掉。<a href="#fnref:3" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -665,14 +695,14 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">7k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">9 分钟</span>
+    <span title="站点阅读时长">11 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
