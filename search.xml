@@ -20,93 +20,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World-建站纪念</title>
-    <url>/2025/03/21/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一些建站的纪念">一些建站的纪念</h1>
-<p>在此记录一下建立博客最初的一些思绪和看法。由于是渐进式的文章，因此本文会不定期更新。</p>
-<p>这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
-<p>建立这个博客的最重要的目的是提升自己的<strong>写作能力</strong>。最近在一次又一次改文章的过程，再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。之所以有个"再"字，是考虑到之前也被L老师痛批过语文能力很差劲。所以借此机会，慢慢的写一些文章，分享一些技术杂谈。
-实际上，在写这篇纪念的时候，脑子里也总是想一些有的没的。一直在考虑写一些什么东西，却没有很好的梳理起来，成为有条理性和故事性的文章。可是，如果不从第一个字，第一篇文章下手，任何的改进都是空谈。所以，即便这篇，或者开始的一些，甚至以后的文章都写的非常糟糕，也不能就此放弃。(当然，迫于现实生活的紧张节奏导致的没有时间写是另一回事。)</p>
-<p>第二个目的算是排解一下情绪。人生毫无疑问是一场持久战，无论是身心还是现实都是。而在最近的生活中，既要保证四五年里个体的身心的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。当然我也想过学习画画，但是看上去并没有作画的天分，也没有相应的毅力，所以只能就此作罢。</p>
-<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作网站。</p>
-<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。(当然，如果有人能看到并感觉有点意思，那就再好不过了)。</p>
-<hr>
-<h1 id="一些常用markdown命令">一些常用Markdown命令</h1>
-<p>这里主要参考了<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>，记录在这里是为了避免每次使用都要查询。</p>
-<h2 id="内容目录">内容目录</h2>
-<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
-<h2 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h2>
-<p><code>*斜体* 与 **粗体**</code></p>
-<h2 id="分割线">分割线</h2>
-<p>在单独的一行使用 <code>***</code> 或者 <code>---</code>
-表示分割线</p>
-<p><code>***</code></p>
-<hr>
-<p><code>---</code></p>
-<hr>
-<h2 id="排序">排序</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一件事</span><br><span class="line">    * 第一个方面</span><br><span class="line">    * 第二个方面</span><br><span class="line">2. 第二件事</span><br><span class="line">    - 第一个方面</span><br><span class="line">    - 第二个方面</span><br></pre></td></tr></table></figure>
-<ol type="1">
-<li>第一件事
-<ul>
-<li>第一个方面</li>
-<li>第二个方面</li>
-</ul></li>
-<li>第二件事
-<ul>
-<li>第一个方面</li>
-<li>第二个方面</li>
-</ul></li>
-</ol>
-<h2 id="超链接">超链接</h2>
-<p>插入文字超链接的格式如下 ：</p>
-<p><code>[链接文字](链接地址 "链接标题")</code></p>
-<p>插入图片超链接的格式如下：</p>
-<p><code>![图片说明](图片链接 "图片标题")</code></p>
-<h2 id="注释">注释</h2>
-<p>用 <code>\</code>表示注释</p>
-<h2 id="引用">引用</h2>
-<p>使用<code>&gt;</code>表示文字引用</p>
-<p><code>&gt; 这是一段文字引用</code></p>
-<blockquote>
-<p>这是一段文字引用</p>
-</blockquote>
-<h2 id="latex">Latex</h2>
-<p>数学公式的默认环境是<code>$ $</code>或<code>$$ $$</code>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span class="math inline">\(\begin{equation}
-f(x) = x^2
-\end{equation}\)</span></p>
-<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明</p>
-<hr>
-<!-- ## Quick Start
-
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
---&gt;</p>
--->]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>恒星的爆炸(未完)</title>
     <url>/2025/03/26/Stars/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="前言">前言</h1>
@@ -216,8 +129,95 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
         <category>写作</category>
       </categories>
       <tags>
-        <tag>技术</tag>
         <tag>物理</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World-建站纪念</title>
+    <url>/2025/03/21/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一些建站的纪念">一些建站的纪念</h1>
+<p>在此记录一下建立博客最初的一些思绪和看法。由于是渐进式的文章，因此本文会不定期更新。</p>
+<p>这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
+<p>建立这个博客的最重要的目的是提升自己的<strong>写作能力</strong>。最近在一次又一次改文章的过程，再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。之所以有个"再"字，是考虑到之前也被L老师痛批过语文能力很差劲。所以借此机会，慢慢的写一些文章，分享一些技术杂谈。
+实际上，在写这篇纪念的时候，脑子里也总是想一些有的没的。一直在考虑写一些什么东西，却没有很好的梳理起来，成为有条理性和故事性的文章。可是，如果不从第一个字，第一篇文章下手，任何的改进都是空谈。所以，即便这篇，或者开始的一些，甚至以后的文章都写的非常糟糕，也不能就此放弃。(当然，迫于现实生活的紧张节奏导致的没有时间写是另一回事。)</p>
+<p>第二个目的算是排解一下情绪。人生毫无疑问是一场持久战，无论是身心还是现实都是。而在最近的生活中，既要保证四五年里个体的身心的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。当然我也想过学习画画，但是看上去并没有作画的天分，也没有相应的毅力，所以只能就此作罢。</p>
+<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作网站。</p>
+<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。(当然，如果有人能看到并感觉有点意思，那就再好不过了)。</p>
+<hr>
+<h1 id="一些常用markdown命令">一些常用Markdown命令</h1>
+<p>这里主要参考了<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>，记录在这里是为了避免每次使用都要查询。</p>
+<h2 id="内容目录">内容目录</h2>
+<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
+<h2 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h2>
+<p><code>*斜体* 与 **粗体**</code></p>
+<h2 id="分割线">分割线</h2>
+<p>在单独的一行使用 <code>***</code> 或者 <code>---</code>
+表示分割线</p>
+<p><code>***</code></p>
+<hr>
+<p><code>---</code></p>
+<hr>
+<h2 id="排序">排序</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一件事</span><br><span class="line">    * 第一个方面</span><br><span class="line">    * 第二个方面</span><br><span class="line">2. 第二件事</span><br><span class="line">    - 第一个方面</span><br><span class="line">    - 第二个方面</span><br></pre></td></tr></table></figure>
+<ol type="1">
+<li>第一件事
+<ul>
+<li>第一个方面</li>
+<li>第二个方面</li>
+</ul></li>
+<li>第二件事
+<ul>
+<li>第一个方面</li>
+<li>第二个方面</li>
+</ul></li>
+</ol>
+<h2 id="超链接">超链接</h2>
+<p>插入文字超链接的格式如下 ：</p>
+<p><code>[链接文字](链接地址 "链接标题")</code></p>
+<p>插入图片超链接的格式如下：</p>
+<p><code>![图片说明](图片链接 "图片标题")</code></p>
+<h2 id="注释">注释</h2>
+<p>用 <code>\</code>表示注释</p>
+<h2 id="引用">引用</h2>
+<p>使用<code>&gt;</code>表示文字引用</p>
+<p><code>&gt; 这是一段文字引用</code></p>
+<blockquote>
+<p>这是一段文字引用</p>
+</blockquote>
+<h2 id="latex">Latex</h2>
+<p>数学公式的默认环境是<code>$ $</code>或<code>$$ $$</code>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span class="math inline">\(\begin{equation}
+f(x) = x^2
+\end{equation}\)</span></p>
+<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明</p>
+<hr>
+<!-- ## Quick Start
+
+### Create a new post
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
+--&gt;</p>
+-->]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
