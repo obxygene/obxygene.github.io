@@ -215,7 +215,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/26/Stars/" class="post-title-link" itemprop="url">恒星的爆炸(未完)</a>
+          <a href="/2025/03/26/Stars/" class="post-title-link" itemprop="url">恒星的核反应是如何启动的(未完)</a>
         </h2>
 
         <div class="post-meta-container">
@@ -233,7 +233,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-04-02 02:06:29" itemprop="dateModified" datetime="2025-04-02T02:06:29+08:00">2025-04-02</time>
+      <time title="修改时间：2025-04-04 01:40:58" itemprop="dateModified" datetime="2025-04-04T01:40:58+08:00">2025-04-04</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -266,14 +266,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>3.4k</span>
+      <span>5.6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>6 分钟</span>
+      <span>9 分钟</span>
     </span>
 </div>
 
@@ -296,7 +296,7 @@ without recourse to computers, and yet are relevant to the real
 world....</p>
 </blockquote>
 <p>本书的第一节-<em>Hydrostatic
-Equilibrium</em>(流体静力学平衡)仅只需要基础的微积分知识和万有引力定律，再加上一些热力学概念，便给出了<strong>恒星爆炸</strong>的判据。</p>
+Equilibrium</em>(流体静力学平衡)仅只需要基础的微积分知识和万有引力定律，再加上一些热力学概念，便给出了许多精彩的结论。我希望在这里推销一下，这一节是如何通过极为简单的计算来给出为什么恒星内部温度高到可以启动核反应。</p>
 <h1 id="恒星的引力平衡">恒星的引力平衡</h1>
 <p>宇宙中的恒星<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常所说的星体([Stars](https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F))都代指恒星，而非像地球这样的岩石行星([Rocky planet](https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F))，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。
 ">[1]</span></a></sup>通常都是稳定的发光体，所以可以假定星体是一团由引力凝聚在一起的<strong>稳定</strong>的物质。由于万有引力只依赖于物质之间的距离，可以近似认为恒星是球形的，也即具有球对称结构。因此，采取球坐标系分析是较为方便的。
@@ -307,7 +307,8 @@ F=-G\frac{Mm}{r^2}
 \]</span>
 既然引力是<strong>万有</strong>的，那么自然在恒星内部之间也是存在引力的。星体内部的物质为了平衡这样的引力维持稳定的结构，必然产生一定的压力。我们的出发点便是基于这样的一个平衡-一个稳定存在的恒星，其内部之间的引力应当与物质因过于紧密而产生的压力相等。</p>
 <p><img alt="PlotofStar" src="/2025/03/26/Stars/StarPlot.jpg" width="50%" height="50%">
-如上图所示，我们假设星体的密度是半径的函数<span class="math inline">\(\rho(r)\)</span>，那么半径为<span class="math inline">\(r\)</span>的恒星内部球体的质量就是 <span class="math display">\[
+如上图所示，我们假设星体的密度是半径的函数<span class="math inline">\(\rho(r)\)</span>，那么半径为<span class="math inline">\(r\)</span>的恒星内部球体的质量就是</p>
+<p><span class="math display">\[
 \begin{equation}
 \mathcal{M}(r)=\int_0^r 4\pi r&#39;^2\rho(r&#39;)dr&#39;.
 \end{equation}
@@ -315,20 +316,21 @@ F=-G\frac{Mm}{r^2}
 <p>对应的，这个球体对其外部厚为<span class="math inline">\(dr\)</span>的球壳(可以验证，这个球壳的质量是<span class="math inline">\(4\pi r^2
 \rho(r)dr\)</span>)所产生的引力对应为<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="注意，这里我们利用了引力的一个性质，即**一个球体对位于其外部的物体所施加的引力，等效于位于该球体球心的具有相同质量的质点对该物体所施加的引力**。这个性质使得我们考虑内部球体对球壳所施加的引力时，不需要考虑内部球体的任一点对球壳施加的压力，直接将距离替换为球心到球壳的距离即可。">[2]</span></a></sup>
 <span class="math display">\[
-\begin{equation}\tag{1}
+\begin{equation}
 F_{\text{引力}}=-G\frac{\mathcal{M}(r)\times 4\pi r^2
 \rho(r)dr}{r^2}=-4\pi G\rho(r)\mathcal{r}dr
 \end{equation}
 \]</span>
 这里的负号代表引力总是指向球心的方向。接下来考虑压力导致的浮力(正如物体在水中所受到的浮力是由于物体底部接收到的压强要大于物体顶部收到的压强，这对于恒星也是成立的!)。假设在半径<span class="math inline">\(r\)</span>处的压强为<span class="math inline">\(p(r)\)</span>，由于球壳内侧的压强要大于球壳外侧的压强，我们可以计算出它的压强差导致的浮力为
 <span class="math display">\[
-\begin{equation}\tag{2}
+\begin{equation}
 F_{\text{浮力}}=4\pi r^2\left[p(r)-p(r+dr) \right]=-4\pi r^2 p&#39;(r)dr
 \end{equation}
 \]</span>
 由于恒星是稳定的，故对恒星内任意这样的球壳，其受到的引力都应当与受到的浮力相当，所以我们可以联立这两个方程，经过简单的化简，可以得到
 <span class="math display">\[
-\begin{equation}\tag{3}\label{hydrostatic}
+\begin{equation}
+\label{eq:hydrostatic}
 \boxed{\frac{dp(r)}{dr}=-\frac{G\mathcal{M}(r)\rho(r)}{r^2}}
 \end{equation}
 \]</span>
@@ -337,7 +339,7 @@ equation of hydrostatic equilibrium for stars)</strong>。</p>
 <h1 id="恒星的引力势能">恒星的引力势能</h1>
 <p>在讨论恒星的能量前，我们需要回想一下如何定义能量。回想高中的物理知识，一个静止的物体的物体的动能可以通过对其施加外力造成位移来增加，也即通过做功来增加物体的能量
 <span class="math display">\[
-\begin{equation}\tag{4}
+\begin{equation}
 W=\int \vec{F}\cdot d\vec{x}
 \end{equation}
 \]</span></p>
@@ -345,7 +347,7 @@ W=\int \vec{F}\cdot d\vec{x}
 <img alt="PlotofStarFallen" src="/2025/03/26/Stars/Star_fallonto.gif" width="50%" height="50%"></p>
 <p>可以验证，半径为<span class="math inline">\(r\)</span>的质量为<span class="math inline">\(\mathcal{M}(r)\)</span>的星体产生会产生的引力为<span class="math inline">\({\color{blue}G\mathcal{M}(r)/r^2}\)</span>，而其将无穷远处的物质吸引到球表面，形成一层质量为<span class="math inline">\({\color{brown}4\pi
 r^2\rho(r)dr}\)</span>的球壳所做的功为 <span class="math display">\[
-\begin{equation}\tag{5}
+\begin{equation}
 \int_{r}^{\infty}{\color{blue}G\mathcal{M}(r)/r^2}\times{\color{brown}4\pi
 r^2\rho(r)dr} \times{\color{red}\frac{1}{r&#39;^2}dr&#39;}=4\pi G
 r\mathcal{M}(r)\rho(r)dr
@@ -353,18 +355,78 @@ r\mathcal{M}(r)\rho(r)dr
 \]</span> 注意区分开标红的被积分半径<span class="math inline">\(r&#39;\)</span>与表示球壳所在的半径<span class="math inline">\(r\)</span>!前者是因为，在将球壳从无穷远移动到球面上时，球壳所受到的引力也会随距离变化(万有引力告诉我们，这个力平方反比于二者的距离)，我们需要对其作积分；而后者代表我们所关注的球壳的半径。</p>
 <p>现在已经求得了半径为<span class="math inline">\(r\)</span>的球体吸引球壳所需要的功，我们再对整个半径作积分直至整个恒星的半径即可得到恒星的引力势能
 <span class="math display">\[
-\begin{equation}\tag{6}
+\begin{equation}
 -\Omega=4\pi G\int_0^{\color{red}{R}} r\mathcal{M}(r)\rho(r)dr
 \end{equation}
 \]</span> 这里<span class="math inline">\({\color{red}{R}}\)</span>为恒星的半径，一般而言这个半径定义为恒星的压强为0的地方，即<span class="math inline">\(p(R)=0\)</span>(类比地球的大气层内的一个大气压，而在大气层之外则接近为0).公式左侧即为恒星的引力势能<span class="math inline">\(\Omega\)</span>，注意前面的负号，因为引力总是相互吸引的，而在引力做功的时候，被吸引的球壳本应该将获得的引力势能转化为动能，而我们在计算球壳从无穷远到星体表面时默认了这个球壳会<strong>不带有动能</strong>地直接落在球面上形成了稳定的恒星<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="实际上这关系到恒星的形成过程。恒星整体上而言是星际间物质由于引力而相互吸引，这个时候引力势能转化为的动能非常大，从而导致星际物质之间会发生碰撞与摩擦，在这个过程中动能会转化为热与辐射离开这个体系，从而减少了动能。并且即便有这样的一个过程，在形成恒星后这些动能也并未完全被消耗掉。">[3]</span></a></sup>，而作为代价，我们得到的引力势能应当为负。</p>
-<p>现在是时候回顾公式<span class="math inline">\(\eqref{hydrostatic}\)</span>了。利用该公式，我们可以将上式重新写为
+<p>现在是时候回顾公式<span class="math inline">\(\eqref{eq:hydrostatic}\)</span>了。利用该公式，我们可以将上式重新写为
 <span class="math display">\[
-\begin{equation}\tag{7}
+\begin{equation}
 \Omega=4\pi \int_0^R\frac{dp(r)}{dr}r^3dr=-3\int_0^R p(r)4\pi r^2 dr
 \end{equation}
 \]</span> 注意为得到这个等式，需要利用分部积分以及<span class="math inline">\(p(R)=0\)</span>来消掉分部积分带来的<span class="math inline">\(r^3p(r)|^R_0\)</span>因子。</p>
 <h1 id="恒星的能量">恒星的能量</h1>
-<p>(待施工)</p>
+<p>现在已知了恒星的引力势能，实际上恒星内部还有热能<span class="math inline">\(\Upsilon\)</span><sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这个符号是希腊字母Upsilon，与原文保持一致">[4]</span></a></sup>（又经常叫做内能）.其形式可以写为单位体积能量密度的积分</p>
+<p><span class="math display">\[
+\begin{equation}\label{innerenergy}
+\Upsilon=\int_0^R\mathcal{E}(r)4\pi r^2dr
+\end{equation}
+\]</span> 其中<span class="math inline">\(\mathcal{E}\)</span>是不包括恒星的质能<span class="math inline">\((E=mc^2)\)</span>或引力能的内能密度。接下来我们可以将恒星的非相对论的能量写下</p>
+<p><span class="math display">\[
+\begin{equation}\label{energy}
+E=\Upsilon+\Omega=\int_0^R\left[\mathcal{E}(r)-3p(r)\right]4\pi r^2 dr
+\end{equation}
+\]</span> 从被积部分可以看到，若<span class="math inline">\(\mathcal{E}(r)-3p(r)&lt;0\)</span>，此时恒星的引力势能大于内能，从而可以使整体能量为负，也即恒星吸引在一起。</p>
+<h2 id="多方球假设">多方球假设</h2>
+<p>为了更进一步地讨论恒星的能量，在这里稍微离题一下，我们需要给出一些热力学知识来建立恒星的压强与能量的关系。</p>
+<p>通常而言我们可以假设内能与压强的关系为 <span class="math display">\[
+\begin{equation}\label{polytrope}
+\mathcal{E}(r)=\frac{p}{\Gamma-1}
+\end{equation}
+\]</span> 这个关系叫做<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%96%B9%E7%90%83">多方球假设</a>，其中额外的参数<span class="math inline">\(\Gamma\)</span>叫做绝热指数。为了更进一步地说明这个关系，我们可以拿高中的理想气体举例子。高中接触过的理想气体状态方程
+<span class="math display">\[
+\begin{equation}
+    pV=Nk_{B}T
+\end{equation}
+\]</span> 其中<span class="math inline">\(p\)</span>为压强，<span class="math inline">\(V\)</span>为气体体积,<span class="math inline">\(k_B\)</span>是玻尔兹曼常数，<span class="math inline">\(N\)</span>为气体的原子数，<span class="math inline">\(T\)</span>为温度。如果我们用单位体积数密度<span class="math inline">\(n=N/V\)</span>，则上式可以写为 <span class="math display">\[
+\begin{equation}\label{eq:idealgas}
+    p=nk_{B}T
+\end{equation}
+\]</span> 在热力学上可以证明，此时我们可以计算出理想气体的能量密度为
+<span class="math display">\[
+\begin{equation}
+    \mathcal{E}={\color{red}\frac{3}{2}}nk_{B}T
+\end{equation}
+\]</span> 注意前面的系数!实际上利用<span class="math inline">\(\eqref{eq:idealgas}\)</span>可以得到<span class="math display">\[
+\begin{equation}
+    \mathcal{E}=\frac{3}{2}p=\frac{p}{5/3-1}
+\end{equation}
+\]</span> 所以对于理想气体而言，我们有 <span class="math inline">\(\Gamma=5/3\)</span>
+.除了理想气体之外，对于辐射而言(不再是由普通的有质量原子构成的气体，而是由无质量的光子构成的气体)有
+<span class="math inline">\(\mathcal{E}=3p\)</span> 从而 <span class="math inline">\(\Gamma=4/3\)</span>.</p>
+<h2 id="恒星的爆炸">恒星的爆炸</h2>
+<p>在建立了内能函数与压强的关系后，我们终于可以来讨论恒星的爆炸了！利用<span class="math inline">\(\eqref{polytrope}\)</span>,<span class="math inline">\(\eqref{innerenergy}\)</span>和<span class="math inline">\(\eqref{energy}\)</span>，我们可以建立一个简单的代数关系
+<span class="math display">\[
+\begin{equation}
+    \begin{split}
+        E&amp;=\Upsilon+\Omega=\int_0^R\left[\mathcal{E}(r)-3(\Gamma-1)\mathcal{E}(r)\right]4\pi
+r^2 dr\\
+        &amp;=(4-3\Gamma){\color{brown}\int_0^R\mathcal{E}(r)4\pi r^2
+dr}=(4-3\Gamma)\times{\color{brown}C}\\
+        \Upsilon&amp;={\color{brown}\int_0^R\mathcal{E}(r)4\pi r^2
+dr}={\color{brown}C}\\
+        \Omega&amp;=E-\Upsilon=3(1-\Gamma){\color{brown}C}
+    \end{split}
+\end{equation}
+\]</span>
+这意味着，恒星的总能量，引力势能以及内能满足如下的简单的代数关系 <span class="math display">\[
+\begin{equation}
+    \boxed{\Upsilon=-\frac{E}{3\Gamma-4},\quad\Omega=\frac{(\Gamma-1)E}{\Gamma-4/3}}
+\end{equation}
+\]</span> 当总能量<span class="math inline">\(E\)</span>为正值时恒星将发生爆炸，因此要维持稳定需满足<span class="math inline">\(E &lt;
+0\)</span>。可是由于引力势能总是小于零，即<span class="math inline">\(\Omega&lt;0\)</span>，从上式的第二个方程可以看出，我们必须要有<span class="math inline">\(\frac{\Gamma-1}{\Gamma-4/3}&gt;0\)</span>,这给出
+<span class="math inline">\(\Gamma&lt;1\)</span> 或 <span class="math inline">\(\Gamma&gt;4/3\)</span>
+.根据上面的热力学讨论，<span class="math inline">\(\Gamma\)</span>通常都是大于1的，从而我们必然有<span class="math inline">\(\Gamma&gt;4/3\)</span>.实际上，对于压强主要由高度相对论性粒子主导的天体（例如质量接近理论上限的大质量普通恒星、白矮星和中子星），其<span class="math inline">\(\Gamma\)</span>值仅略高于4/3，说明这类天体的稳定性实际上已经很差了。</p>
 <div id="footnotes">
 <hr>
 <div id="footnotelist">
@@ -380,6 +442,10 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
 </li>
 <li id="fn:3">
 <span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">实际上这关系到恒星的形成过程。恒星整体上而言是星际间物质由于引力而相互吸引，这个时候引力势能转化为的动能非常大，从而导致星际物质之间会发生碰撞与摩擦，在这个过程中动能会转化为热与辐射离开这个体系，从而减少了动能。并且即便有这样的一个过程，在形成恒星后这些动能也并未完全被消耗掉。<a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:4">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这个符号是希腊字母Upsilon，与原文保持一致<a href="#fnref:4" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -737,14 +803,14 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">7k</span>
+    <span title="站点总字数">9k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">11 分钟</span>
+    <span title="站点阅读时长">15 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -835,7 +901,7 @@ setInterval("createtime()",250);
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
