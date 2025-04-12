@@ -149,7 +149,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -215,7 +215,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/26/Stars/" class="post-title-link" itemprop="url">恒星的核反应是如何启动的(未完)</a>
+          <a href="/2025/03/26/Stars/" class="post-title-link" itemprop="url">恒星的流体静力学平衡</a>
         </h2>
 
         <div class="post-meta-container">
@@ -233,7 +233,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-04-04 01:40:58" itemprop="dateModified" datetime="2025-04-04T01:40:58+08:00">2025-04-04</time>
+      <time title="修改时间：2025-04-13 01:35:56" itemprop="dateModified" datetime="2025-04-13T01:35:56+08:00">2025-04-13</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -266,14 +266,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>5.6k</span>
+      <span>6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>9 分钟</span>
+      <span>10 分钟</span>
     </span>
 </div>
 
@@ -296,9 +296,9 @@ without recourse to computers, and yet are relevant to the real
 world....</p>
 </blockquote>
 <p>本书的第一节-<em>Hydrostatic
-Equilibrium</em>(流体静力学平衡)仅只需要基础的微积分知识和万有引力定律，再加上一些热力学概念，便给出了许多精彩的结论。我希望在这里推销一下，这一节是如何通过极为简单的计算来给出为什么恒星内部温度高到可以启动核反应。</p>
-<h1 id="恒星的引力平衡">恒星的引力平衡</h1>
-<p>宇宙中的恒星<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常所说的星体([Stars](https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F))都代指恒星，而非像地球这样的岩石行星([Rocky planet](https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F))，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。
+Equilibrium</em>(流体静力学平衡)仅只需要基础的微积分知识和万有引力定律，再加上一些热力学概念，便给出了许多精彩的结论。
+# 恒星的引力平衡
+宇宙中的恒星<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常所说的星体([Stars](https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F))都代指恒星，而非像地球这样的岩石行星([Rocky planet](https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F))，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。
 ">[1]</span></a></sup>通常都是稳定的发光体，所以可以假定星体是一团由引力凝聚在一起的<strong>稳定</strong>的物质。由于万有引力只依赖于物质之间的距离，可以近似认为恒星是球形的，也即具有球对称结构。因此，采取球坐标系分析是较为方便的。
 回想万有引力定律 <span class="math display">\[
 \begin{equation}
@@ -420,13 +420,14 @@ dr}={\color{brown}C}\\
 \end{equation}
 \]</span>
 这意味着，恒星的总能量，引力势能以及内能满足如下的简单的代数关系 <span class="math display">\[
-\begin{equation}
+\begin{equation}\label{eq:Explode}
     \boxed{\Upsilon=-\frac{E}{3\Gamma-4},\quad\Omega=\frac{(\Gamma-1)E}{\Gamma-4/3}}
 \end{equation}
 \]</span> 当总能量<span class="math inline">\(E\)</span>为正值时恒星将发生爆炸，因此要维持稳定需满足<span class="math inline">\(E &lt;
 0\)</span>。可是由于引力势能总是小于零，即<span class="math inline">\(\Omega&lt;0\)</span>，从上式的第二个方程可以看出，我们必须要有<span class="math inline">\(\frac{\Gamma-1}{\Gamma-4/3}&gt;0\)</span>,这给出
 <span class="math inline">\(\Gamma&lt;1\)</span> 或 <span class="math inline">\(\Gamma&gt;4/3\)</span>
 .根据上面的热力学讨论，<span class="math inline">\(\Gamma\)</span>通常都是大于1的，从而我们必然有<span class="math inline">\(\Gamma&gt;4/3\)</span>.实际上，对于压强主要由高度相对论性粒子主导的天体（例如质量接近理论上限的大质量普通恒星、白矮星和中子星），其<span class="math inline">\(\Gamma\)</span>值仅略高于4/3，说明这类天体的稳定性实际上已经很差了。</p>
+<p>方程<span class="math inline">\(\eqref{eq:Explode}\)</span>在恒星早期演化过程中起着决定性作用。一团低温弥散气体云内部的引力能和内能极低，其总能量<span class="math inline">\(E\)</span>值很小。只要该气体云未处于绝对零度，就会持续辐射出以红外波段为主的光线。若其总能量转为负值，气体云便无法继续扩散。根据方程<span class="math inline">\(\eqref{eq:Explode}\)</span>，只要绝热指数<span class="math inline">\(\Gamma&gt;4/3\)</span>，气体云在损失能量的过程中，尽管总能量<span class="math inline">\(E\)</span>持续减小（负值越来越大），但其内能<span class="math inline">\(\Upsilon\)</span>却会不断增大，也即恒星此时表现出负比热特性：<strong>恒星能量损失越多，温度反而越高</strong>。随着温度上升，恒星能量辐射的速度又进一步加快，这一过程形成正反馈循环。最终当恒星核心温度高到足以克服原子核间的库仑斥力时，核聚变反应启动并持续增强，直至核能产出与辐射损失达到平衡，恒星便进入稳定阶段（至少在其核心核燃料耗尽前会保持稳定）。看似矛盾的是，核反应的发生反而中止了恒星的持续升温过程。</p>
 <div id="footnotes">
 <hr>
 <div id="footnotelist">
@@ -452,130 +453,6 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
 </div>
 </div>
 
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://obxygene.github.io/2025/03/24/%E5%8D%81%E5%B9%B4-%E4%B8%80-/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="obxygene">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="obxygene">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | obxygene">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/24/%E5%8D%81%E5%B9%B4-%E4%B8%80-/" class="post-title-link" itemprop="url">十年(一)-经历</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2025-03-24 00:25:35" itemprop="dateCreated datePublished" datetime="2025-03-24T00:25:35+08:00">2025-03-24</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-03-25 01:07:37" itemprop="dateModified" datetime="2025-03-25T01:07:37+08:00">2025-03-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%86%99%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">写作</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="far fa-comment"></i>
-    </span>
-    <span class="post-meta-item-text">Waline：</span>
-  
-    <a title="waline" href="/2025/03/24/%E5%8D%81%E5%B9%B4-%E4%B8%80-/#waline" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" data-path="/2025/03/24/%E5%8D%81%E5%B9%B4-%E4%B8%80-/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2.1k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在考虑第一篇博文时，首先就是思考过去的十年里有什么是值得写的。</p>
-<p>十年前的三月份，正是在高考几个月复习的时间，可惜的是我对高考前几个月我做了什么实在是没有什么印象了，唯独一件记得的事是晚上是必然在玩艾尔之光(一个网络游戏)的。因为高考结束后，我就利用艾尔之光的活动肝到了一件装备，挂在一个账号交易平台上卖了80块钱，借此买了一只百乐78g(一只钢笔,当时大约60块)和百利金4001的墨水。(墨水是额外从扣下来的生活费里补贴的)。</p>
-<p>等到高考结束-出分-志愿填报结束后，我被调剂到了一个名字巨长的专业里，遂开始了我在学校的漫长而又已然消逝的七年大学生活(有个纪录片叫人生七年，我很喜欢)，在这七年的前四年里时间里，除了睡觉以外的大部分时间都是在学一些物理，而在后三年则是一半用在了摸鱼上，一半用在了做实验和看文献上。等到第六年后半的时候(也是研二下)便开始找工作，最后算是找了一个相当不错的工作(后面的工作内容和待遇甚至远超当时的我所想)，随后便是毕业，结束了这七年的学生生涯。</p>
-<p>从学生转变到打工人，自然是要培训的。现在的我依然无从得知其他公司是否会有类似的培训环节-我入职的公司将所有应届生分配进公司生产车间去正儿八经地“打螺丝”-去体验生产。而我好巧不巧的，负责的是真正的打螺丝-利用电动螺钻，扣下一颗螺丝，然后顺时针把螺丝透过板子钉入中框，来固定板子以供后续模组安装。而在入职前，我又出于身份转变的一些迷茫而看了徐禾的政治经济学，这一番打螺丝的经历实在是让我深刻感受到了自己的无产阶级属性，也直接导致了我的思想态度的大转弯，在此之前，我从未想过我会有一天会如此地关心阶级身份。</p>
-<p>我无从评价这种培训是好是坏，但毫无疑问的是，这样的经历使我从肉体上感受到了劳动的过程，以及一类生产的过程，尽管这样的过程是令人不适的。好在打螺丝的时间不长，很快我就被正式分到了深圳岗位上，和我一块到深圳的还有另外两个老哥。我们仨都被分配了一个导师来进行岗位培训指导工作，带我的前辈人很好，基本上有什么技术上的问题都会帮我解决。</p>
-<p>进公司后我主要的工作就是干一些测试杂活。我从事的是射频工程师，这一个行业主要是负责信号从芯片发出到天线的这段功能区，而我就负责测量信号在进入天线前的频谱响应。因为信号从芯片发出到天线中间是需要经行一定距离的，而高频信号又极其容易受到影响，所以需要通过器件去调节信号经行的路径，来确保信号在进入天线前不会发生畸变。需要承认的是，这相比于技术性工作而言，更像是手艺活，因为测试最重要的是保证测试器件本身不会影响信号，然而恰好高频信号-极其容易受到影响，这就要求搭建测试平台时需要谨慎。我做的测试主要是从pcb(印刷电路板)的一个焊点导出的信号，这要求一个及格的焊功，毕竟现代集成电路的发展已经达到非常小的尺寸，器件已经够小了，而连接器件的焊点就更小了。值得庆幸的是，及格水平依然是可以通过足量的训练来达到的，尽管这对我超过千度近视的眼睛的要求略显苛刻。幸运的是，带我的前辈帮了我许多。</p>
-<p>经过半年一段时间的测试后，也到了第九年，我被转岗到了另一个组里(中间伴随着疫情开放，那段时间很难熬)。相比之前的工作，在这个组的工作强度要低一些。由于负责的事情不同，这个组的人员结构要少于之前的组。好在同事都非常热心，我这样的不太会交流的人也能得到及时的帮助。在这个组里我的工作内容变成了仿真加测试，好在我也算是学过一些电动力学，尽管有一些困难，但公司里已经有成熟的培训方案，所以整体上来看还算是比较平滑地掌握了基础的仿真方法，随后便是各个项目的历练。</p>
-<p>由于大环境不好，公司战略问题以及诸多因素，第九年并不平坦，人员流动十分剧烈。尽管严峻的寒风还没有吹拂到我们组，但我想大概率是早晚的事。我在思考未来的时候又贼心不死地，捡起了做物理的想法-不再是读物理。我将工作后已剧烈地改善了的经济状况和未来做了一下比较后，认为这是一个可行的路，于是开始准备起了读博士的计划。很幸运的是，我抽象的专业轨迹似乎吸引了现在导师的兴趣，既然导师这一关过了，剩下的就只有准备工作了。</p>
-<p>第九年年底，我向照顾我的主管提交了辞职请求。主管并没有特别地卡我就同意了，或许是因为我去领了这个裁员指标的原因。但无论如何，新组的主管在我工作的这一年里都给予了极大的帮助。随后给组里其他同事进行了一些仿真培训后，我在这一年的最后一天离开了工作了一年半的公司。</p>
-<p>随后便是新的学生的一年。这一年并没有太多的事情发生。或许是由于工作积累带来的经济压力的锐减，我不再特别地焦虑的经济状况(当然，紧急情况需要大量用钱的时候还是不可避免的)。也或许是作为新的人生阶段的开始的一年，要评价这一年还显得为时过早了一点。</p>
-<p>无论如何，在这里的就是一个过去十年的简单浓缩。从高三复习到现在的十年的整个经历几乎都是围绕着学校展开的，悠悠地在公司上转了一圈又回到了学校。写完这篇文章再回看，发现值得写的东西还是很多的。从建站的第一目的来看，训练素材是足够的，就看之后有多少时间和闲心来写了lol。</p>
 
       
     </div>
@@ -803,14 +680,14 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">7k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">15 分钟</span>
+    <span title="站点阅读时长">12 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

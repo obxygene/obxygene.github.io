@@ -22,7 +22,7 @@
 
     <meta name="description" content="前言 作为第一篇非叙事的文章，总是要有一些精彩的内容的。思来想去，还是认为只有Steven Weinberg (物理学家，诺贝尔奖获得者)的著作Lectures on Astrophysics(天体物理学讲座)的第一节足够精彩。 这本书全册共226页，当然是塞不下天体物理的主要内容的。相反，作者意在给出一些在无需计算机帮助下，依然能展现出一些与真实世界相关的天体物理相关的简单计算。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="恒星的核反应是如何启动的(未完)">
+<meta property="og:title" content="恒星的流体静力学平衡">
 <meta property="og:url" content="https://obxygene.github.io/2025/03/26/Stars/index.html">
 <meta property="og:site_name" content="obxygene">
 <meta property="og:description" content="前言 作为第一篇非叙事的文章，总是要有一些精彩的内容的。思来想去，还是认为只有Steven Weinberg (物理学家，诺贝尔奖获得者)的著作Lectures on Astrophysics(天体物理学讲座)的第一节足够精彩。 这本书全册共226页，当然是塞不下天体物理的主要内容的。相反，作者意在给出一些在无需计算机帮助下，依然能展现出一些与真实世界相关的天体物理相关的简单计算。">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://obxygene.github.io/2025/03/26/Stars/StarPlot.jpg">
 <meta property="og:image" content="https://obxygene.github.io/2025/03/26/Stars/Star_fallonto.gif">
 <meta property="article:published_time" content="2025-03-25T16:23:01.711Z">
-<meta property="article:modified_time" content="2025-04-03T17:40:58.712Z">
+<meta property="article:modified_time" content="2025-04-12T17:35:56.560Z">
 <meta property="article:author" content="obxygene">
 <meta property="article:tag" content="物理">
 <meta property="article:tag" content="技术">
@@ -41,10 +41,10 @@
 <link rel="canonical" href="https://obxygene.github.io/2025/03/26/Stars/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://obxygene.github.io/2025/03/26/Stars/","path":"2025/03/26/Stars/","title":"恒星的核反应是如何启动的(未完)"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://obxygene.github.io/2025/03/26/Stars/","path":"2025/03/26/Stars/","title":"恒星的流体静力学平衡"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>恒星的核反应是如何启动的(未完) | obxygene</title>
+<title>恒星的流体静力学平衡 | obxygene</title>
   
 
 
@@ -144,7 +144,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%81%92%E6%98%9F%E7%9A%84%E5%BC%95%E5%8A%9B%E5%B9%B3%E8%A1%A1"><span class="nav-number">2.</span> <span class="nav-text">恒星的引力平衡</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%81%92%E6%98%9F%E7%9A%84%E5%BC%95%E5%8A%9B%E5%8A%BF%E8%83%BD"><span class="nav-number">3.</span> <span class="nav-text">恒星的引力势能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%81%92%E6%98%9F%E7%9A%84%E8%83%BD%E9%87%8F"><span class="nav-number">4.</span> <span class="nav-text">恒星的能量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E6%96%B9%E7%90%83%E5%81%87%E8%AE%BE"><span class="nav-number">4.1.</span> <span class="nav-text">多方球假设</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%81%92%E6%98%9F%E7%9A%84%E7%88%86%E7%82%B8"><span class="nav-number">4.2.</span> <span class="nav-text">恒星的爆炸</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%81%92%E6%98%9F%E7%9A%84%E5%BC%95%E5%8A%9B%E5%8A%BF%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">恒星的引力势能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%81%92%E6%98%9F%E7%9A%84%E8%83%BD%E9%87%8F"><span class="nav-number">3.</span> <span class="nav-text">恒星的能量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E6%96%B9%E7%90%83%E5%81%87%E8%AE%BE"><span class="nav-number">3.1.</span> <span class="nav-text">多方球假设</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%81%92%E6%98%9F%E7%9A%84%E7%88%86%E7%82%B8"><span class="nav-number">3.2.</span> <span class="nav-text">恒星的爆炸</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -159,7 +159,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -221,12 +221,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="恒星的核反应是如何启动的(未完) | obxygene">
+      <meta itemprop="name" content="恒星的流体静力学平衡 | obxygene">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          恒星的核反应是如何启动的(未完)
+          恒星的流体静力学平衡
         </h1>
 
         <div class="post-meta-container">
@@ -244,7 +244,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-04-04 01:40:58" itemprop="dateModified" datetime="2025-04-04T01:40:58+08:00">2025-04-04</time>
+      <time title="修改时间：2025-04-13 01:35:56" itemprop="dateModified" datetime="2025-04-13T01:35:56+08:00">2025-04-13</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -284,14 +284,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>5.6k</span>
+      <span>6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>9 分钟</span>
+      <span>10 分钟</span>
     </span>
 </div>
 
@@ -313,9 +313,9 @@ without recourse to computers, and yet are relevant to the real
 world....</p>
 </blockquote>
 <p>本书的第一节-<em>Hydrostatic
-Equilibrium</em>(流体静力学平衡)仅只需要基础的微积分知识和万有引力定律，再加上一些热力学概念，便给出了许多精彩的结论。我希望在这里推销一下，这一节是如何通过极为简单的计算来给出为什么恒星内部温度高到可以启动核反应。</p>
-<h1 id="恒星的引力平衡">恒星的引力平衡</h1>
-<p>宇宙中的恒星<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常所说的星体([Stars](https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F))都代指恒星，而非像地球这样的岩石行星([Rocky planet](https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F))，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。
+Equilibrium</em>(流体静力学平衡)仅只需要基础的微积分知识和万有引力定律，再加上一些热力学概念，便给出了许多精彩的结论。
+# 恒星的引力平衡
+宇宙中的恒星<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常所说的星体([Stars](https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F))都代指恒星，而非像地球这样的岩石行星([Rocky planet](https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F))，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。
 ">[1]</span></a></sup>通常都是稳定的发光体，所以可以假定星体是一团由引力凝聚在一起的<strong>稳定</strong>的物质。由于万有引力只依赖于物质之间的距离，可以近似认为恒星是球形的，也即具有球对称结构。因此，采取球坐标系分析是较为方便的。
 回想万有引力定律 <span class="math display">\[
 \begin{equation}
@@ -437,13 +437,14 @@ dr}={\color{brown}C}\\
 \end{equation}
 \]</span>
 这意味着，恒星的总能量，引力势能以及内能满足如下的简单的代数关系 <span class="math display">\[
-\begin{equation}
+\begin{equation}\label{eq:Explode}
     \boxed{\Upsilon=-\frac{E}{3\Gamma-4},\quad\Omega=\frac{(\Gamma-1)E}{\Gamma-4/3}}
 \end{equation}
 \]</span> 当总能量<span class="math inline">\(E\)</span>为正值时恒星将发生爆炸，因此要维持稳定需满足<span class="math inline">\(E &lt;
 0\)</span>。可是由于引力势能总是小于零，即<span class="math inline">\(\Omega&lt;0\)</span>，从上式的第二个方程可以看出，我们必须要有<span class="math inline">\(\frac{\Gamma-1}{\Gamma-4/3}&gt;0\)</span>,这给出
 <span class="math inline">\(\Gamma&lt;1\)</span> 或 <span class="math inline">\(\Gamma&gt;4/3\)</span>
 .根据上面的热力学讨论，<span class="math inline">\(\Gamma\)</span>通常都是大于1的，从而我们必然有<span class="math inline">\(\Gamma&gt;4/3\)</span>.实际上，对于压强主要由高度相对论性粒子主导的天体（例如质量接近理论上限的大质量普通恒星、白矮星和中子星），其<span class="math inline">\(\Gamma\)</span>值仅略高于4/3，说明这类天体的稳定性实际上已经很差了。</p>
+<p>方程<span class="math inline">\(\eqref{eq:Explode}\)</span>在恒星早期演化过程中起着决定性作用。一团低温弥散气体云内部的引力能和内能极低，其总能量<span class="math inline">\(E\)</span>值很小。只要该气体云未处于绝对零度，就会持续辐射出以红外波段为主的光线。若其总能量转为负值，气体云便无法继续扩散。根据方程<span class="math inline">\(\eqref{eq:Explode}\)</span>，只要绝热指数<span class="math inline">\(\Gamma&gt;4/3\)</span>，气体云在损失能量的过程中，尽管总能量<span class="math inline">\(E\)</span>持续减小（负值越来越大），但其内能<span class="math inline">\(\Upsilon\)</span>却会不断增大，也即恒星此时表现出负比热特性：<strong>恒星能量损失越多，温度反而越高</strong>。随着温度上升，恒星能量辐射的速度又进一步加快，这一过程形成正反馈循环。最终当恒星核心温度高到足以克服原子核间的库仑斥力时，核聚变反应启动并持续增强，直至核能产出与辐射损失达到平衡，恒星便进入稳定阶段（至少在其核心核燃料耗尽前会保持稳定）。看似矛盾的是，核反应的发生反而中止了恒星的持续升温过程。</p>
 <div id="footnotes">
 <hr>
 <div id="footnotelist">
@@ -486,7 +487,7 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://obxygene.github.io/2025/03/26/Stars/" title="恒星的核反应是如何启动的(未完)">https://obxygene.github.io/2025/03/26/Stars/</a>
+      <a href="https://obxygene.github.io/2025/03/26/Stars/" title="恒星的流体静力学平衡">https://obxygene.github.io/2025/03/26/Stars/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -503,8 +504,8 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/03/24/%E5%8D%81%E5%B9%B4-%E4%B8%80-/" rel="prev" title="十年(一)-经历">
-                  <i class="fa fa-angle-left"></i> 十年(一)-经历
+                <a href="/2025/03/21/hello-world/" rel="prev" title="Hello World-建站纪念">
+                  <i class="fa fa-angle-left"></i> Hello World-建站纪念
                 </a>
             </div>
             <div class="post-nav-item">
@@ -540,14 +541,14 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">7k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">15 分钟</span>
+    <span title="站点阅读时长">12 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
