@@ -1,52 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>有用的资料(长期更新)</title>
-    <url>/2025/04/30/%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%96%99/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>有一些看过的有意思的资料，因为没办法塞进笔记里，放文件夹又容易忘掉，于是在这里做个记录</p>
-<p><strong><a href="https://courses.physics.illinois.edu/phys598PTD/fa2013/">Physics
-in Two Dimensions.(二维物理)</a></strong></p>
-<p>由A.J. Leggett给出的二维体系物理的lecture
-note，包含局域化，Ginzburg-Landau，BKT相变，QHE，拓扑绝缘体，Kitaev模型等</p>
-<p><strong><a href="https://zhuanlan.zhihu.com/p/110249075">DMRG笔记-iDMRG</a></strong></p>
-<p>由知乎用户<a href="https://www.zhihu.com/people/ling-lin-68-93">零零</a>撰写的DMRG参考代码</p>
-<p><strong><a href="https://www.guanjihuan.com/">关济寰的个人网站</a></strong></p>
-]]></content>
-      <categories>
-        <category>资料</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>做事</title>
-    <url>/2025/04/27/%E5%81%9A%E4%BA%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近做事情总觉得不很顺畅，一方面是科研上本就是从事前人未知的路，一方面也算是自己不擅长于沟通，进而往往自己缺少什么事情都没办法表达出来，所以只能说是有些彷徨。只是人生要做些事情总是有这些情况的。主要还是因为今天发现之前有趣的数值模拟的结果之一可以用很简单的讨论去解释，一个曾经看上去可以发文的idea就没了，还是有些想叹气的。</p>
-<p>今天刷知乎的时候看见一篇谈论哈耶克的文章，久闻<strong>哈耶克的大手</strong>之名，于是便找了一些关于哈耶克的译作来看，随即发现了一有趣的文章，即哈耶克1945年发表在《美国经济评论（The
-American Economic Review）》上的《知识在社会中的运用（The Use of
-Knowledge in Society）》，是他最重要的短文之一。这篇文章在知乎上有搬运<a href="https://zhuanlan.zhihu.com/p/642253586">哈耶克：知识在社会中的运用（无删减版）</a>，这里就不做多赘述。引起我注意的是最后几段，</p>
+    <title>超导复习</title>
+    <url>/2025/05/04/%E8%B6%85%E5%AF%BC%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为复习超导的一些基本概念和计算，参考自<a href="https://www.cambridge.org/core/books/dwave-superconductivity/25FAA6DC672ACB1D79A008BCD78F8C63">D-wave
+Superconductivity</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="D-Wave Superconductivity. Cambridge University Press; 2022.
+">[1]</span></a></sup></p>
+<h1 id="超导的基本概念">超导的基本概念</h1>
+<p>超导现象<a href="https://en.wikipedia.org/wiki/Superconductivity">（Superconductivity）</a>是具有<strong>零直流电阻</strong>与<strong>完全抗磁性</strong>的电磁材料。零电阻意味着超导体是理想导体，且利用超导传输线进行电能输运时没有能量损耗。此外，超导体还表现出完全抗磁性（迈斯纳效应），即超导体会将内部的磁通线排出体外。零电阻与迈斯纳效应是两个无法用传统单电子理论理解的特征性质。</p>
+<p>区分超导体和理想导体的关键点在于冷却过程。在降温后，对于理想导体而言，磁场仍然会滞留在系统内；而对于超导体而言，磁场会被排除在外。因此，对于理想导体，冷却前有场与零场存在差别；而对于超导体，无论其外场和历史如何，磁场在体态中都会变为零。</p>
+<h2 id="二流体模型与london方程">二流体模型与London方程</h2>
+<p>二流体模型核心假设为超导体内存在两种电子</p>
+<ul>
+<li>正常电子（Normal electrons）</li>
+<li>超导电子（Superconducting electrons）</li>
+</ul>
+<p>利用这两种电子，可以解释零电阻现象，但是还不能解释迈斯纳效应，故还需要London方程，即在库伦规范下<span class="math inline">\(\nabla\cdot\mathbf{A}=0\)</span>
+<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这里符号加粗表明该量是一个向量">[2]</span></a></sup>,超导电流密度可以写为
+<span class="math display">\[
+\begin{equation}
+    \mathbf{J}_s=-\frac{n_se^2}{m}\mathbf{A}
+\end{equation}
+\]</span> 需要强调的是，<strong>该方程不能从 Maxwell
+方程中导出，且应当被视为超导体作为一类特殊的电磁介质所满足的独立的电磁方程</strong>，London
+方程只有在超导体的微观理论建立后才能被严格推导。</p>
 <blockquote>
-<p>所以，即使我们能证明，所有的事实如果为一个人所了解（就像我们假设他们被观测力强的经济学家掌握那样），会由他独自决定解决方法，问题也丝毫未得到解决。相反，我们必须表明，<strong>如何通过只掌握部分知识的个人的相互作用来解决这个问题</strong>。如果以为<strong>所有的知识都应由一个人所获得</strong>——同样假设这些知识都归我们这样的经济学家，<strong>那就是假设不存在问题，无视现实世界中重要而意义重大的一切事物</strong>。
-像Schumpeter教授这样一个经济学家的立场，会由此而跌入由“数据”一词的含糊意义给粗心者造成的陷阱，这不能仅被解释为一个简单的失误。这表明，这种方法有某种根本性的错误，这种方法习惯性地忽视我们所必须应付的一个重要现象的本质部分——<strong>人类的知识具有不可避免的不完美性，因而需要一个不断沟通和获得知识的过程</strong>。任何实际上以<strong>人们的知识与客观事实是一致的这一假设为出发点</strong>的方法，<strong>诸如许多有联立方程式的数理经济学的方法，都完全忘掉了我们所要解释的主要任务</strong>。我决不否认，在我们的体系中，均衡分析起着有益的作用。但是现在到了这样一个紧要关头，一些著名学者误以为它所叙述的情形与解决实际问题直接有关。是我们记住这一点的时候了——<strong>均衡分析与社会过程根本无关，而仅能作为研究主要问题前的有益的准备</strong>。</p>
+<p>一个历史上的启发性<em>推导</em>: 假设电子在超导体中无摩擦地前进,<span class="math display">\[ m \dot{\mathbf{v}} = -e \mathbf{E} \]</span>
+其中 <span class="math inline">\(\mathbf{v}_s\)</span>
+是超导电子速度，<span class="math inline">\(\mathbf{E}\)</span>
+是电场。超电流 <span class="math inline">\(\mathbf{J}_s = -e n_{s}
+\mathbf{v}_{s}\)</span> 则为： <span class="math display">\[
+\frac{\partial \mathbf{J}_{s}}{\partial t} = \frac{e^{2} n_{s}}{m}
+\mathbf{E} \]</span> 这是第一 London 方程。利用 Maxwell 方程： <span class="math display">\[ \nabla \times \mathbf{E} = -\frac{\partial
+\mathbf{B}}{\partial t}, \]</span> 可立即得到： <span class="math display">\[ \frac{\partial}{\partial t} \left( \nabla \times
+\mathbf{J}_{s} + \frac{e^{2} n_{s}}{m} \mathbf{B} \right) = 0 \]</span>
+该方程描述了理想导体的行为。但为了描述迈斯纳效应，积分常数必须选为零，从而：
+<span class="math display">\[ \nabla \times \mathbf{J}_{s} + \frac{e^{2}
+n_{s}}{m} \mathbf{B} = 0 \]</span> 这是<strong>第二 London
+方程</strong>。结合 Ampere 定律： <span class="math display">\[ \nabla
+\times \mathbf{B} = \mu_{0} \mathbf{J}_{s}, \]</span> 可得到磁场满足
+Helmholtz 方程： <span class="math display">\[ \nabla^{2} \mathbf{B} =
+\frac{\mu_{0} n_{s} e^{2}}{m} \mathbf{B} \]</span>
+假设一半无限超导体，其表面垂直于 <span class="math inline">\(x\)</span>
+方向，其解为： <span class="math display">\[ B(x) = B(x_{0}) e^{-(x -
+x_{0}) / \lambda}, \]</span> 其中： <span class="math display">\[
+\lambda = \sqrt{\frac{m}{\mu_{0} n_{s} e^{2}}} \]</span>
+是描述外磁场在超导-真空界面处的 London 穿透深度。当 <span class="math inline">\(x - x_{0} \gg \lambda\)</span>
+时，磁场衰减到零，这给出了迈斯纳效应的现象学描述。</p>
 </blockquote>
-<p>这段话可以做许多种阐释，但我认为这里最重要的事情是<strong>如何通过不完备的知识储备去做一件事情</strong>。首先一件显而易见的事情是，<strong>没有人具备所有的知识</strong>，进而准备足够充分地去做一件事情是一件理论上不可能地事情。其次，客观的工作量，存在上限的效率，以及时间三者所共同构成的约束，使得个人能力再强也无法单独完成一件复杂的事情。所以在面对一个事情时，考虑<strong>如何利用不太靠谱的基础部件(人)，去完成一个靠谱的任务</strong>是一件更加现实且具有可行性的研究课题。
-同样的概念可以类比钱学森与宋健的《工程控制论》第三版4.11一书所提到的</p>
-<blockquote>
-<p>某种特定的系统结构能不能保证系统的所有状态坐标都受到控制作用的制约，在一个复杂的系统中这并不是显而易见的特征。
-在多维系统中常有一部分坐标是不能控制的；还有一部分只能通过别的坐标间接地受到控制。
-弄清<strong>给定系统的能控性不仅具有实际意义，在理论分析中它尤其是一个重要概念</strong>。...
-从能控性和能观测性观点来看
-，一个线性系统总可以分解成四个部分，即<strong>能控、能观测部分，能控、不能观测部分，能观测、不能控部分，不能控、不能观测部分</strong>。</p>
-</blockquote>
-<p>这样一来，从控制论的角度而言，又可以将事情从可控制与可观测两个角度划分为四个部分，在做事的时候，对于不靠谱的基础部分，利用这个角度来看可以尽量的将个人的劳动力进行恰当的划分，比如能观测但不可控的部分就尽量保持其在视界内用于修正未来的路线，无需花太多精力在控制不可控的事情上。</p>
-<p>(虽然从这个角度而言，科研看上去既不可以观测，也不可控，哈哈)</p>
+<h2 id="库伯对">库伯对</h2>
+<p>1956 年，Cooper
+考虑了两电子过程，说明如果存在一个有效的吸引相互作用，无论其多弱，在存在费米海的背景下，费米面将不再稳定，费米面上的电子会相互配对形成束缚态，从而降低基态能量。配对电子的束缚态称为<strong>库伯对</strong>。Cooper
+找到两电子形成束缚态的束缚能为：</p>
+<p><span class="math display">\[
+\begin{equation}\label{eq:binding}
+        \Delta E = 2 \Delta = -2 \hbar \omega_{D} e^{-2 / N_{F} g}
+\end{equation} \]</span></p>
+<p>其中 <span class="math inline">\(N_{F}\)</span>
+是费米面的态密度，<span class="math inline">\(g\)</span>
+是耦合强度，<span class="math inline">\(\omega_{D}\)</span>
+是决定诱导吸引作用机制或源头的特征能量。当吸引相互作用由电声相互作用诱导时，<span class="math inline">\(\omega_{D}\)</span>
+为声子频率，即德拜频率。这一结果表明，费米面在具有微小吸引相互作用下是不稳定的。</p>
+<p>式<span class="math inline">\(\eqref{eq:binding}\)</span>表明束缚能对相互作用强度
+<span class="math inline">\(g\)</span>
+的依赖是奇异的，这也说明超导的微观理论不能通过基于正常导电态的微扰计算得到，这是超导机制的主要困难。</p>
+<p>为了理解 Cooper
+配对能，可以求解零温下向费米海加入两个电子的问题。为减少不相容原理导致的排斥相互作用，假设两电子形成自旋单态，使空间波函数对称，且最低能态应具有零动量，因此两电子具有相反动量，波函数可写为：</p>
+<p><span class="math display">\[ |\Psi\rangle = \sum_{\mathbf{k}}
+\alpha(\mathbf{k}) c_{\mathbf{k}\uparrow}^{\dagger}
+c_{-\mathbf{k}\downarrow}^{\dagger} |0\rangle \]</span></p>
+<p>其中 <span class="math inline">\(|0\rangle\)</span>
+是刚性费米海真空。</p>
+<p>两电子相互作用由以下哈密顿量控制：</p>
+<p><span class="math display">\[ H = \sum_{\mathbf{k}}
+(\epsilon_{\mathbf{k}} - \mu) c_{\mathbf{k}\sigma}^{\dagger}
+c_{\mathbf{k}\sigma} - \sum_{\mathbf{k}, \mathbf{k}&#39;} V_{\mathbf{k}
+\mathbf{k}&#39;} c_{\mathbf{k}\uparrow}^{\dagger}
+c_{-\mathbf{k}\downarrow}^{\dagger} c_{-\mathbf{k}&#39;\downarrow}
+c_{\mathbf{k}&#39;\uparrow} \]</span></p>
+<p>其中 <span class="math inline">\(\epsilon_{\mathbf{k}}\)</span>
+是电子色散能量，<span class="math inline">\(\mu\)</span> 是化学势，<span class="math inline">\(V\)</span> 是库伯对的散射势。为简单起见，假设
+<span class="math inline">\(V\)</span> 不依赖于动量：</p>
+<p><span class="math display">\[ V_{\mathbf{k}, \mathbf{k}&#39;} =
+\frac{g}{V}, \]</span></p>
+<p>其中 <span class="math inline">\(V\)</span>
+是系统体积。从薛定谔方程：</p>
+<p><span class="math display">\[ H |\Psi\rangle = E |\Psi\rangle,
+\]</span></p>
+<p>可求得系数 <span class="math inline">\(\alpha(\mathbf{k})\)</span>
+满足：</p>
+<p><span class="math display">\[ 2 \xi_{\mathbf{k}} \alpha(\mathbf{k}) -
+\frac{g}{V} \sum_{\mathbf{k}&#39;} \alpha(\mathbf{k}&#39;) = (E - E_{0})
+\alpha(\mathbf{k}), \]</span></p>
+<p>其中 <span class="math inline">\(E_{0}\)</span>
+是填充费米海的能量，<span class="math inline">\(\xi_{\mathbf{k}} =
+\epsilon_{\mathbf{k}} - \mu\)</span>。上式可重写为：</p>
+<p><span class="math display">\[ \alpha(\mathbf{k}) = \frac{g}{2
+\xi_{\mathbf{k}} - \Delta E} \frac{1}{V} \sum_{\mathbf{k}&#39;}
+\alpha(\mathbf{k}&#39;), \]</span></p>
+<p>其中 <span class="math inline">\(\Delta E = E - E_{0}\)</span>
+是系统的能隙。对两边所有 <span class="math inline">\(\mathbf{k}\)</span>
+求和后，<span class="math inline">\(\alpha\)</span>
+的因子可消去，得到能隙方程：</p>
+<p><span class="math display">\[ \frac{1}{g} = \frac{1}{V}
+\sum_{\mathbf{k}} \frac{1}{2 \xi_{\mathbf{k}} - \Delta E} = N_{F}
+\int_{0}^{\hbar \omega_{D}} d\xi \frac{1}{2 \xi - \Delta E}.
+\]</span></p>
+<p>求解该方程可得：</p>
+<p><span class="math display">\[ \frac{1}{g} = \frac{N_{F}}{2} \ln
+\frac{2 \hbar \omega_{D} - \Delta E}{-\Delta E} \approx \frac{N_{F}}{2}
+\ln \frac{2 \hbar \omega_{D}}{|\Delta E|}, \]</span></p>
+<p>从而得出式<span class="math inline">\(\eqref{eq:binding}\)</span>。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">D-Wave
+Superconductivity. Cambridge University Press;
+2022.<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这里符号加粗表明该量是一个向量<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
 ]]></content>
       <categories>
         <category>写作</category>
       </categories>
       <tags>
-        <tag>琐碎</tag>
+        <tag>物理</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -134,6 +222,55 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
       <tags>
         <tag>技术</tag>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>做事</title>
+    <url>/2025/04/27/%E5%81%9A%E4%BA%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近做事情总觉得不很顺畅，一方面是科研上本就是从事前人未知的路，一方面也算是自己不擅长于沟通，进而往往自己缺少什么事情都没办法表达出来，所以只能说是有些彷徨。只是人生要做些事情总是有这些情况的。主要还是因为今天发现之前有趣的数值模拟的结果之一可以用很简单的讨论去解释，一个曾经看上去可以发文的idea就没了，还是有些想叹气的。</p>
+<p>今天刷知乎的时候看见一篇谈论哈耶克的文章，久闻<strong>哈耶克的大手</strong>之名，于是便找了一些关于哈耶克的译作来看，随即发现了一有趣的文章，即哈耶克1945年发表在《美国经济评论（The
+American Economic Review）》上的《知识在社会中的运用（The Use of
+Knowledge in Society）》，是他最重要的短文之一。这篇文章在知乎上有搬运<a href="https://zhuanlan.zhihu.com/p/642253586">哈耶克：知识在社会中的运用（无删减版）</a>，这里就不做多赘述。引起我注意的是最后几段，</p>
+<blockquote>
+<p>所以，即使我们能证明，所有的事实如果为一个人所了解（就像我们假设他们被观测力强的经济学家掌握那样），会由他独自决定解决方法，问题也丝毫未得到解决。相反，我们必须表明，<strong>如何通过只掌握部分知识的个人的相互作用来解决这个问题</strong>。如果以为<strong>所有的知识都应由一个人所获得</strong>——同样假设这些知识都归我们这样的经济学家，<strong>那就是假设不存在问题，无视现实世界中重要而意义重大的一切事物</strong>。
+像Schumpeter教授这样一个经济学家的立场，会由此而跌入由“数据”一词的含糊意义给粗心者造成的陷阱，这不能仅被解释为一个简单的失误。这表明，这种方法有某种根本性的错误，这种方法习惯性地忽视我们所必须应付的一个重要现象的本质部分——<strong>人类的知识具有不可避免的不完美性，因而需要一个不断沟通和获得知识的过程</strong>。任何实际上以<strong>人们的知识与客观事实是一致的这一假设为出发点</strong>的方法，<strong>诸如许多有联立方程式的数理经济学的方法，都完全忘掉了我们所要解释的主要任务</strong>。我决不否认，在我们的体系中，均衡分析起着有益的作用。但是现在到了这样一个紧要关头，一些著名学者误以为它所叙述的情形与解决实际问题直接有关。是我们记住这一点的时候了——<strong>均衡分析与社会过程根本无关，而仅能作为研究主要问题前的有益的准备</strong>。</p>
+</blockquote>
+<p>这段话可以做许多种阐释，但我认为这里最重要的事情是<strong>如何通过不完备的知识储备去做一件事情</strong>。首先一件显而易见的事情是，<strong>没有人具备所有的知识</strong>，进而准备足够充分地去做一件事情是一件理论上不可能地事情。其次，客观的工作量，存在上限的效率，以及时间三者所共同构成的约束，使得个人能力再强也无法单独完成一件复杂的事情。所以在面对一个事情时，考虑<strong>如何利用不太靠谱的基础部件(人)，去完成一个靠谱的任务</strong>是一件更加现实且具有可行性的研究课题。
+同样的概念可以类比钱学森与宋健的《工程控制论》第三版4.11一书所提到的</p>
+<blockquote>
+<p>某种特定的系统结构能不能保证系统的所有状态坐标都受到控制作用的制约，在一个复杂的系统中这并不是显而易见的特征。
+在多维系统中常有一部分坐标是不能控制的；还有一部分只能通过别的坐标间接地受到控制。
+弄清<strong>给定系统的能控性不仅具有实际意义，在理论分析中它尤其是一个重要概念</strong>。...
+从能控性和能观测性观点来看
+，一个线性系统总可以分解成四个部分，即<strong>能控、能观测部分，能控、不能观测部分，能观测、不能控部分，不能控、不能观测部分</strong>。</p>
+</blockquote>
+<p>这样一来，从控制论的角度而言，又可以将事情从可控制与可观测两个角度划分为四个部分，在做事的时候，对于不靠谱的基础部分，利用这个角度来看可以尽量的将个人的劳动力进行恰当的划分，比如能观测但不可控的部分就尽量保持其在视界内用于修正未来的路线，无需花太多精力在控制不可控的事情上。</p>
+<p>(虽然从这个角度而言，科研看上去既不可以观测，也不可控，哈哈)</p>
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>琐碎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>有用的资料(长期更新)</title>
+    <url>/2025/04/30/%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%96%99/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>有一些看过的有意思的资料，因为没办法塞进笔记里，放文件夹又容易忘掉，于是在这里做个记录</p>
+<p><strong><a href="https://courses.physics.illinois.edu/phys598PTD/fa2013/">Physics
+in Two Dimensions.(二维物理)</a></strong></p>
+<p>由A.J. Leggett给出的二维体系物理的lecture
+note，包含局域化，Ginzburg-Landau，BKT相变，QHE，拓扑绝缘体，Kitaev模型等</p>
+<p><strong><a href="https://zhuanlan.zhihu.com/p/110249075">DMRG笔记-iDMRG</a></strong></p>
+<p>由知乎用户<a href="https://www.zhihu.com/people/ling-lin-68-93">零零</a>撰写的DMRG参考代码</p>
+<p><strong><a href="https://www.guanjihuan.com/">关济寰的个人网站</a></strong></p>
+]]></content>
+      <categories>
+        <category>资料</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -313,8 +450,8 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
         <category>写作</category>
       </categories>
       <tags>
-        <tag>技术</tag>
         <tag>物理</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
 </search>

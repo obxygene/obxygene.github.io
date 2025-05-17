@@ -149,7 +149,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -188,6 +188,244 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://obxygene.github.io/2025/05/04/%E8%B6%85%E5%AF%BC%E5%A4%8D%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="obxygene">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="obxygene">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | obxygene">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/05/04/%E8%B6%85%E5%AF%BC%E5%A4%8D%E4%B9%A0/" class="post-title-link" itemprop="url">超导复习</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-05-04 01:20:09" itemprop="dateCreated datePublished" datetime="2025-05-04T01:20:09+08:00">2025-05-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-05-17 23:21:44" itemprop="dateModified" datetime="2025-05-17T23:21:44+08:00">2025-05-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%86%99%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">写作</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2025/05/04/%E8%B6%85%E5%AF%BC%E5%A4%8D%E4%B9%A0/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/2025/05/04/%E8%B6%85%E5%AF%BC%E5%A4%8D%E4%B9%A0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.5k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为复习超导的一些基本概念和计算，参考自<a target="_blank" rel="noopener" href="https://www.cambridge.org/core/books/dwave-superconductivity/25FAA6DC672ACB1D79A008BCD78F8C63">D-wave
+Superconductivity</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="D-Wave Superconductivity. Cambridge University Press; 2022.
+">[1]</span></a></sup></p>
+<h1 id="超导的基本概念">超导的基本概念</h1>
+<p>超导现象<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Superconductivity">（Superconductivity）</a>是具有<strong>零直流电阻</strong>与<strong>完全抗磁性</strong>的电磁材料。零电阻意味着超导体是理想导体，且利用超导传输线进行电能输运时没有能量损耗。此外，超导体还表现出完全抗磁性（迈斯纳效应），即超导体会将内部的磁通线排出体外。零电阻与迈斯纳效应是两个无法用传统单电子理论理解的特征性质。</p>
+<p>区分超导体和理想导体的关键点在于冷却过程。在降温后，对于理想导体而言，磁场仍然会滞留在系统内；而对于超导体而言，磁场会被排除在外。因此，对于理想导体，冷却前有场与零场存在差别；而对于超导体，无论其外场和历史如何，磁场在体态中都会变为零。</p>
+<h2 id="二流体模型与london方程">二流体模型与London方程</h2>
+<p>二流体模型核心假设为超导体内存在两种电子</p>
+<ul>
+<li>正常电子（Normal electrons）</li>
+<li>超导电子（Superconducting electrons）</li>
+</ul>
+<p>利用这两种电子，可以解释零电阻现象，但是还不能解释迈斯纳效应，故还需要London方程，即在库伦规范下<span class="math inline">\(\nabla\cdot\mathbf{A}=0\)</span>
+<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这里符号加粗表明该量是一个向量">[2]</span></a></sup>,超导电流密度可以写为
+<span class="math display">\[
+\begin{equation}
+    \mathbf{J}_s=-\frac{n_se^2}{m}\mathbf{A}
+\end{equation}
+\]</span> 需要强调的是，<strong>该方程不能从 Maxwell
+方程中导出，且应当被视为超导体作为一类特殊的电磁介质所满足的独立的电磁方程</strong>，London
+方程只有在超导体的微观理论建立后才能被严格推导。</p>
+<blockquote>
+<p>一个历史上的启发性<em>推导</em>: 假设电子在超导体中无摩擦地前进,<span class="math display">\[ m \dot{\mathbf{v}} = -e \mathbf{E} \]</span>
+其中 <span class="math inline">\(\mathbf{v}_s\)</span>
+是超导电子速度，<span class="math inline">\(\mathbf{E}\)</span>
+是电场。超电流 <span class="math inline">\(\mathbf{J}_s = -e n_{s}
+\mathbf{v}_{s}\)</span> 则为： <span class="math display">\[
+\frac{\partial \mathbf{J}_{s}}{\partial t} = \frac{e^{2} n_{s}}{m}
+\mathbf{E} \]</span> 这是第一 London 方程。利用 Maxwell 方程： <span class="math display">\[ \nabla \times \mathbf{E} = -\frac{\partial
+\mathbf{B}}{\partial t}, \]</span> 可立即得到： <span class="math display">\[ \frac{\partial}{\partial t} \left( \nabla \times
+\mathbf{J}_{s} + \frac{e^{2} n_{s}}{m} \mathbf{B} \right) = 0 \]</span>
+该方程描述了理想导体的行为。但为了描述迈斯纳效应，积分常数必须选为零，从而：
+<span class="math display">\[ \nabla \times \mathbf{J}_{s} + \frac{e^{2}
+n_{s}}{m} \mathbf{B} = 0 \]</span> 这是<strong>第二 London
+方程</strong>。结合 Ampere 定律： <span class="math display">\[ \nabla
+\times \mathbf{B} = \mu_{0} \mathbf{J}_{s}, \]</span> 可得到磁场满足
+Helmholtz 方程： <span class="math display">\[ \nabla^{2} \mathbf{B} =
+\frac{\mu_{0} n_{s} e^{2}}{m} \mathbf{B} \]</span>
+假设一半无限超导体，其表面垂直于 <span class="math inline">\(x\)</span>
+方向，其解为： <span class="math display">\[ B(x) = B(x_{0}) e^{-(x -
+x_{0}) / \lambda}, \]</span> 其中： <span class="math display">\[
+\lambda = \sqrt{\frac{m}{\mu_{0} n_{s} e^{2}}} \]</span>
+是描述外磁场在超导-真空界面处的 London 穿透深度。当 <span class="math inline">\(x - x_{0} \gg \lambda\)</span>
+时，磁场衰减到零，这给出了迈斯纳效应的现象学描述。</p>
+</blockquote>
+<h2 id="库伯对">库伯对</h2>
+<p>1956 年，Cooper
+考虑了两电子过程，说明如果存在一个有效的吸引相互作用，无论其多弱，在存在费米海的背景下，费米面将不再稳定，费米面上的电子会相互配对形成束缚态，从而降低基态能量。配对电子的束缚态称为<strong>库伯对</strong>。Cooper
+找到两电子形成束缚态的束缚能为：</p>
+<p><span class="math display">\[
+\begin{equation}\label{eq:binding}
+        \Delta E = 2 \Delta = -2 \hbar \omega_{D} e^{-2 / N_{F} g}
+\end{equation} \]</span></p>
+<p>其中 <span class="math inline">\(N_{F}\)</span>
+是费米面的态密度，<span class="math inline">\(g\)</span>
+是耦合强度，<span class="math inline">\(\omega_{D}\)</span>
+是决定诱导吸引作用机制或源头的特征能量。当吸引相互作用由电声相互作用诱导时，<span class="math inline">\(\omega_{D}\)</span>
+为声子频率，即德拜频率。这一结果表明，费米面在具有微小吸引相互作用下是不稳定的。</p>
+<p>式<span class="math inline">\(\eqref{eq:binding}\)</span>表明束缚能对相互作用强度
+<span class="math inline">\(g\)</span>
+的依赖是奇异的，这也说明超导的微观理论不能通过基于正常导电态的微扰计算得到，这是超导机制的主要困难。</p>
+<p>为了理解 Cooper
+配对能，可以求解零温下向费米海加入两个电子的问题。为减少不相容原理导致的排斥相互作用，假设两电子形成自旋单态，使空间波函数对称，且最低能态应具有零动量，因此两电子具有相反动量，波函数可写为：</p>
+<p><span class="math display">\[ |\Psi\rangle = \sum_{\mathbf{k}}
+\alpha(\mathbf{k}) c_{\mathbf{k}\uparrow}^{\dagger}
+c_{-\mathbf{k}\downarrow}^{\dagger} |0\rangle \]</span></p>
+<p>其中 <span class="math inline">\(|0\rangle\)</span>
+是刚性费米海真空。</p>
+<p>两电子相互作用由以下哈密顿量控制：</p>
+<p><span class="math display">\[ H = \sum_{\mathbf{k}}
+(\epsilon_{\mathbf{k}} - \mu) c_{\mathbf{k}\sigma}^{\dagger}
+c_{\mathbf{k}\sigma} - \sum_{\mathbf{k}, \mathbf{k}&#39;} V_{\mathbf{k}
+\mathbf{k}&#39;} c_{\mathbf{k}\uparrow}^{\dagger}
+c_{-\mathbf{k}\downarrow}^{\dagger} c_{-\mathbf{k}&#39;\downarrow}
+c_{\mathbf{k}&#39;\uparrow} \]</span></p>
+<p>其中 <span class="math inline">\(\epsilon_{\mathbf{k}}\)</span>
+是电子色散能量，<span class="math inline">\(\mu\)</span> 是化学势，<span class="math inline">\(V\)</span> 是库伯对的散射势。为简单起见，假设
+<span class="math inline">\(V\)</span> 不依赖于动量：</p>
+<p><span class="math display">\[ V_{\mathbf{k}, \mathbf{k}&#39;} =
+\frac{g}{V}, \]</span></p>
+<p>其中 <span class="math inline">\(V\)</span>
+是系统体积。从薛定谔方程：</p>
+<p><span class="math display">\[ H |\Psi\rangle = E |\Psi\rangle,
+\]</span></p>
+<p>可求得系数 <span class="math inline">\(\alpha(\mathbf{k})\)</span>
+满足：</p>
+<p><span class="math display">\[ 2 \xi_{\mathbf{k}} \alpha(\mathbf{k}) -
+\frac{g}{V} \sum_{\mathbf{k}&#39;} \alpha(\mathbf{k}&#39;) = (E - E_{0})
+\alpha(\mathbf{k}), \]</span></p>
+<p>其中 <span class="math inline">\(E_{0}\)</span>
+是填充费米海的能量，<span class="math inline">\(\xi_{\mathbf{k}} =
+\epsilon_{\mathbf{k}} - \mu\)</span>。上式可重写为：</p>
+<p><span class="math display">\[ \alpha(\mathbf{k}) = \frac{g}{2
+\xi_{\mathbf{k}} - \Delta E} \frac{1}{V} \sum_{\mathbf{k}&#39;}
+\alpha(\mathbf{k}&#39;), \]</span></p>
+<p>其中 <span class="math inline">\(\Delta E = E - E_{0}\)</span>
+是系统的能隙。对两边所有 <span class="math inline">\(\mathbf{k}\)</span>
+求和后，<span class="math inline">\(\alpha\)</span>
+的因子可消去，得到能隙方程：</p>
+<p><span class="math display">\[ \frac{1}{g} = \frac{1}{V}
+\sum_{\mathbf{k}} \frac{1}{2 \xi_{\mathbf{k}} - \Delta E} = N_{F}
+\int_{0}^{\hbar \omega_{D}} d\xi \frac{1}{2 \xi - \Delta E}.
+\]</span></p>
+<p>求解该方程可得：</p>
+<p><span class="math display">\[ \frac{1}{g} = \frac{N_{F}}{2} \ln
+\frac{2 \hbar \omega_{D} - \Delta E}{-\Delta E} \approx \frac{N_{F}}{2}
+\ln \frac{2 \hbar \omega_{D}}{|\Delta E|}, \]</span></p>
+<p>从而得出式<span class="math inline">\(\eqref{eq:binding}\)</span>。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">D-Wave
+Superconductivity. Cambridge University Press;
+2022.<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这里符号加粗表明该量是一个向量<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -921,14 +1159,14 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">12k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">15 分钟</span>
+    <span title="站点阅读时长">21 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
