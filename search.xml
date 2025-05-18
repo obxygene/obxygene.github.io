@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>做事</title>
+    <url>/2025/04/27/%E5%81%9A%E4%BA%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近做事情总觉得不很顺畅，一方面是科研上本就是从事前人未知的路，一方面也算是自己不擅长于沟通，进而往往自己缺少什么事情都没办法表达出来，所以只能说是有些彷徨。只是人生要做些事情总是有这些情况的。主要还是因为今天发现之前有趣的数值模拟的结果之一可以用很简单的讨论去解释，一个曾经看上去可以发文的idea就没了，还是有些想叹气的。</p>
+<p>今天刷知乎的时候看见一篇谈论哈耶克的文章，久闻<strong>哈耶克的大手</strong>之名，于是便找了一些关于哈耶克的译作来看，随即发现了一有趣的文章，即哈耶克1945年发表在《美国经济评论（The
+American Economic Review）》上的《知识在社会中的运用（The Use of
+Knowledge in Society）》，是他最重要的短文之一。这篇文章在知乎上有搬运<a href="https://zhuanlan.zhihu.com/p/642253586">哈耶克：知识在社会中的运用（无删减版）</a>，这里就不做多赘述。引起我注意的是最后几段，</p>
+<blockquote>
+<p>所以，即使我们能证明，所有的事实如果为一个人所了解（就像我们假设他们被观测力强的经济学家掌握那样），会由他独自决定解决方法，问题也丝毫未得到解决。相反，我们必须表明，<strong>如何通过只掌握部分知识的个人的相互作用来解决这个问题</strong>。如果以为<strong>所有的知识都应由一个人所获得</strong>——同样假设这些知识都归我们这样的经济学家，<strong>那就是假设不存在问题，无视现实世界中重要而意义重大的一切事物</strong>。
+像Schumpeter教授这样一个经济学家的立场，会由此而跌入由“数据”一词的含糊意义给粗心者造成的陷阱，这不能仅被解释为一个简单的失误。这表明，这种方法有某种根本性的错误，这种方法习惯性地忽视我们所必须应付的一个重要现象的本质部分——<strong>人类的知识具有不可避免的不完美性，因而需要一个不断沟通和获得知识的过程</strong>。任何实际上以<strong>人们的知识与客观事实是一致的这一假设为出发点</strong>的方法，<strong>诸如许多有联立方程式的数理经济学的方法，都完全忘掉了我们所要解释的主要任务</strong>。我决不否认，在我们的体系中，均衡分析起着有益的作用。但是现在到了这样一个紧要关头，一些著名学者误以为它所叙述的情形与解决实际问题直接有关。是我们记住这一点的时候了——<strong>均衡分析与社会过程根本无关，而仅能作为研究主要问题前的有益的准备</strong>。</p>
+</blockquote>
+<p>这段话可以做许多种阐释，但我认为这里最重要的事情是<strong>如何通过不完备的知识储备去做一件事情</strong>。首先一件显而易见的事情是，<strong>没有人具备所有的知识</strong>，进而准备足够充分地去做一件事情是一件理论上不可能地事情。其次，客观的工作量，存在上限的效率，以及时间三者所共同构成的约束，使得个人能力再强也无法单独完成一件复杂的事情。所以在面对一个事情时，考虑<strong>如何利用不太靠谱的基础部件(人)，去完成一个靠谱的任务</strong>是一件更加现实且具有可行性的研究课题。
+同样的概念可以类比钱学森与宋健的《工程控制论》第三版4.11一书所提到的</p>
+<blockquote>
+<p>某种特定的系统结构能不能保证系统的所有状态坐标都受到控制作用的制约，在一个复杂的系统中这并不是显而易见的特征。
+在多维系统中常有一部分坐标是不能控制的；还有一部分只能通过别的坐标间接地受到控制。
+弄清<strong>给定系统的能控性不仅具有实际意义，在理论分析中它尤其是一个重要概念</strong>。...
+从能控性和能观测性观点来看
+，一个线性系统总可以分解成四个部分，即<strong>能控、能观测部分，能控、不能观测部分，能观测、不能控部分，不能控、不能观测部分</strong>。</p>
+</blockquote>
+<p>这样一来，从控制论的角度而言，又可以将事情从可控制与可观测两个角度划分为四个部分，在做事的时候，对于不靠谱的基础部分，利用这个角度来看可以尽量的将个人的劳动力进行恰当的划分，比如能观测但不可控的部分就尽量保持其在视界内用于修正未来的路线，无需花太多精力在控制不可控的事情上。</p>
+<p>(虽然从这个角度而言，科研看上去既不可以观测，也不可控，哈哈)</p>
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>琐碎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>有用的资料(长期更新)</title>
+    <url>/2025/04/30/%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%96%99/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>有一些看过的有意思的资料，因为没办法塞进笔记里，放文件夹又容易忘掉，于是在这里做个记录</p>
+<p><strong><a href="https://courses.physics.illinois.edu/phys598PTD/fa2013/">Physics
+in Two Dimensions.(二维物理)</a></strong></p>
+<p>由A.J. Leggett给出的二维体系物理的lecture
+note，包含局域化，Ginzburg-Landau，BKT相变，QHE，拓扑绝缘体，Kitaev模型等</p>
+<p><strong><a href="https://zhuanlan.zhihu.com/p/110249075">DMRG笔记-iDMRG</a></strong></p>
+<p>由知乎用户<a href="https://www.zhihu.com/people/ling-lin-68-93">零零</a>撰写的DMRG参考代码</p>
+<p><strong><a href="https://www.guanjihuan.com/">关济寰的个人网站</a></strong></p>
+]]></content>
+      <categories>
+        <category>资料</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>超导复习</title>
     <url>/2025/05/04/%E8%B6%85%E5%AF%BC%E5%A4%8D%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为复习超导的一些基本概念和计算，参考自<a href="https://www.cambridge.org/core/books/dwave-superconductivity/25FAA6DC672ACB1D79A008BCD78F8C63">D-wave
@@ -133,144 +182,22 @@ Superconductivity. Cambridge University Press;
         <category>写作</category>
       </categories>
       <tags>
+        <tag>技术</tag>
         <tag>物理</tag>
-        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
-    <title>Hello World-建站纪念</title>
-    <url>/2025/03/21/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一些建站的纪念">一些建站的纪念</h1>
-<p>在此记录一下建立博客最初的一些思绪和看法。由于是渐进式的文章，因此本文会不定期更新。</p>
-<p>这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
-<p>建立这个博客的最重要的目的是提升自己的<strong>写作能力</strong>。最近在一次又一次改文章的过程，再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。之所以有个"再"字，是考虑到之前也被L老师痛批过语文能力很差劲。所以借此机会，慢慢的写一些文章，分享一些技术杂谈。
-实际上，在写这篇纪念的时候，脑子里也总是想一些有的没的。一直在考虑写一些什么东西，却没有很好的梳理起来，成为有条理性和故事性的文章。可是，如果不从第一个字，第一篇文章下手，任何的改进都是空谈。所以，即便这篇，或者开始的一些，甚至以后的文章都写的非常糟糕，也不能就此放弃。(当然，迫于现实生活的紧张节奏导致的没有时间写是另一回事。)</p>
-<p>第二个目的算是排解一下情绪。人生毫无疑问是一场持久战，无论是身心还是现实都是。而在最近的生活中，既要保证四五年里个体的身心的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。当然我也想过学习画画，但是看上去并没有作画的天分，也没有相应的毅力，所以只能就此作罢。</p>
-<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作网站。</p>
-<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。(当然，如果有人能看到并感觉有点意思，那就再好不过了)。</p>
-<hr>
-<h1 id="一些常用markdown命令">一些常用Markdown命令</h1>
-<p>这里主要参考了<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>，记录在这里是为了避免每次使用都要查询。</p>
-<h2 id="内容目录">内容目录</h2>
-<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
-<h2 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h2>
-<p><code>*斜体* 与 **粗体**</code></p>
-<h2 id="分割线">分割线</h2>
-<p>在单独的一行使用 <code>***</code> 或者 <code>---</code>
-表示分割线</p>
-<p><code>***</code></p>
-<hr>
-<p><code>---</code></p>
-<hr>
-<h2 id="排序">排序</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一件事</span><br><span class="line">    * 第一个方面</span><br><span class="line">    * 第二个方面</span><br><span class="line">2. 第二件事</span><br><span class="line">    - 第一个方面</span><br><span class="line">    - 第二个方面</span><br></pre></td></tr></table></figure>
-<ol type="1">
-<li>第一件事
-<ul>
-<li>第一个方面</li>
-<li>第二个方面</li>
-</ul></li>
-<li>第二件事
-<ul>
-<li>第一个方面</li>
-<li>第二个方面</li>
-</ul></li>
-</ol>
-<h2 id="超链接">超链接</h2>
-<p>插入文字超链接的格式如下 ：</p>
-<p><code>[链接文字](链接地址 "链接标题")</code></p>
-<p>插入图片超链接的格式如下：</p>
-<p><code>![图片说明](图片链接 "图片标题")</code></p>
-<h2 id="注释">注释</h2>
-<p>用 <code>\</code>表示注释</p>
-<h2 id="引用">引用</h2>
-<p>使用<code>&gt;</code>表示文字引用</p>
-<p><code>&gt; 这是一段文字引用</code></p>
-<blockquote>
-<p>这是一段文字引用</p>
-</blockquote>
-<h2 id="latex">Latex</h2>
-<p>数学公式的默认环境是<code>$ $</code>或<code>$$ $$</code>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span class="math inline">\(\begin{equation}
-f(x) = x^2
-\end{equation}\)</span></p>
-<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明</p>
-<hr>
-<!-- ## Quick Start
-
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
---&gt;</p>
--->]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>做事</title>
-    <url>/2025/04/27/%E5%81%9A%E4%BA%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近做事情总觉得不很顺畅，一方面是科研上本就是从事前人未知的路，一方面也算是自己不擅长于沟通，进而往往自己缺少什么事情都没办法表达出来，所以只能说是有些彷徨。只是人生要做些事情总是有这些情况的。主要还是因为今天发现之前有趣的数值模拟的结果之一可以用很简单的讨论去解释，一个曾经看上去可以发文的idea就没了，还是有些想叹气的。</p>
-<p>今天刷知乎的时候看见一篇谈论哈耶克的文章，久闻<strong>哈耶克的大手</strong>之名，于是便找了一些关于哈耶克的译作来看，随即发现了一有趣的文章，即哈耶克1945年发表在《美国经济评论（The
-American Economic Review）》上的《知识在社会中的运用（The Use of
-Knowledge in Society）》，是他最重要的短文之一。这篇文章在知乎上有搬运<a href="https://zhuanlan.zhihu.com/p/642253586">哈耶克：知识在社会中的运用（无删减版）</a>，这里就不做多赘述。引起我注意的是最后几段，</p>
-<blockquote>
-<p>所以，即使我们能证明，所有的事实如果为一个人所了解（就像我们假设他们被观测力强的经济学家掌握那样），会由他独自决定解决方法，问题也丝毫未得到解决。相反，我们必须表明，<strong>如何通过只掌握部分知识的个人的相互作用来解决这个问题</strong>。如果以为<strong>所有的知识都应由一个人所获得</strong>——同样假设这些知识都归我们这样的经济学家，<strong>那就是假设不存在问题，无视现实世界中重要而意义重大的一切事物</strong>。
-像Schumpeter教授这样一个经济学家的立场，会由此而跌入由“数据”一词的含糊意义给粗心者造成的陷阱，这不能仅被解释为一个简单的失误。这表明，这种方法有某种根本性的错误，这种方法习惯性地忽视我们所必须应付的一个重要现象的本质部分——<strong>人类的知识具有不可避免的不完美性，因而需要一个不断沟通和获得知识的过程</strong>。任何实际上以<strong>人们的知识与客观事实是一致的这一假设为出发点</strong>的方法，<strong>诸如许多有联立方程式的数理经济学的方法，都完全忘掉了我们所要解释的主要任务</strong>。我决不否认，在我们的体系中，均衡分析起着有益的作用。但是现在到了这样一个紧要关头，一些著名学者误以为它所叙述的情形与解决实际问题直接有关。是我们记住这一点的时候了——<strong>均衡分析与社会过程根本无关，而仅能作为研究主要问题前的有益的准备</strong>。</p>
-</blockquote>
-<p>这段话可以做许多种阐释，但我认为这里最重要的事情是<strong>如何通过不完备的知识储备去做一件事情</strong>。首先一件显而易见的事情是，<strong>没有人具备所有的知识</strong>，进而准备足够充分地去做一件事情是一件理论上不可能地事情。其次，客观的工作量，存在上限的效率，以及时间三者所共同构成的约束，使得个人能力再强也无法单独完成一件复杂的事情。所以在面对一个事情时，考虑<strong>如何利用不太靠谱的基础部件(人)，去完成一个靠谱的任务</strong>是一件更加现实且具有可行性的研究课题。
-同样的概念可以类比钱学森与宋健的《工程控制论》第三版4.11一书所提到的</p>
-<blockquote>
-<p>某种特定的系统结构能不能保证系统的所有状态坐标都受到控制作用的制约，在一个复杂的系统中这并不是显而易见的特征。
-在多维系统中常有一部分坐标是不能控制的；还有一部分只能通过别的坐标间接地受到控制。
-弄清<strong>给定系统的能控性不仅具有实际意义，在理论分析中它尤其是一个重要概念</strong>。...
-从能控性和能观测性观点来看
-，一个线性系统总可以分解成四个部分，即<strong>能控、能观测部分，能控、不能观测部分，能观测、不能控部分，不能控、不能观测部分</strong>。</p>
-</blockquote>
-<p>这样一来，从控制论的角度而言，又可以将事情从可控制与可观测两个角度划分为四个部分，在做事的时候，对于不靠谱的基础部分，利用这个角度来看可以尽量的将个人的劳动力进行恰当的划分，比如能观测但不可控的部分就尽量保持其在视界内用于修正未来的路线，无需花太多精力在控制不可控的事情上。</p>
-<p>(虽然从这个角度而言，科研看上去既不可以观测，也不可控，哈哈)</p>
+    <title>量子场论笔记</title>
+    <url>/2025/05/18/%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为2020至2021年LX老师上课的量子场论笔记整理，主要内容是Spin-0部分。仅供一些细节上的参考，内容并未做太多整理，所以稍显混乱</p>
+<div class="pdf-container" data-target="/PDF-Files/QFTsummary.pdf" data-height="500px"></div>
 ]]></content>
       <categories>
         <category>写作</category>
       </categories>
       <tags>
-        <tag>琐碎</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>有用的资料(长期更新)</title>
-    <url>/2025/04/30/%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%96%99/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>有一些看过的有意思的资料，因为没办法塞进笔记里，放文件夹又容易忘掉，于是在这里做个记录</p>
-<p><strong><a href="https://courses.physics.illinois.edu/phys598PTD/fa2013/">Physics
-in Two Dimensions.(二维物理)</a></strong></p>
-<p>由A.J. Leggett给出的二维体系物理的lecture
-note，包含局域化，Ginzburg-Landau，BKT相变，QHE，拓扑绝缘体，Kitaev模型等</p>
-<p><strong><a href="https://zhuanlan.zhihu.com/p/110249075">DMRG笔记-iDMRG</a></strong></p>
-<p>由知乎用户<a href="https://www.zhihu.com/people/ling-lin-68-93">零零</a>撰写的DMRG参考代码</p>
-<p><strong><a href="https://www.guanjihuan.com/">关济寰的个人网站</a></strong></p>
-]]></content>
-      <categories>
-        <category>资料</category>
-      </categories>
-      <tags>
         <tag>技术</tag>
+        <tag>物理</tag>
       </tags>
   </entry>
   <entry>
@@ -450,8 +377,95 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
         <category>写作</category>
       </categories>
       <tags>
-        <tag>物理</tag>
         <tag>技术</tag>
+        <tag>物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World-建站纪念</title>
+    <url>/2025/03/21/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一些建站的纪念">一些建站的纪念</h1>
+<p>在此记录一下建立博客最初的一些思绪和看法。由于是渐进式的文章，因此本文会不定期更新。</p>
+<p>这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
+<p>建立这个博客的最重要的目的是提升自己的<strong>写作能力</strong>。最近在一次又一次改文章的过程，再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。之所以有个"再"字，是考虑到之前也被L老师痛批过语文能力很差劲。所以借此机会，慢慢的写一些文章，分享一些技术杂谈。
+实际上，在写这篇纪念的时候，脑子里也总是想一些有的没的。一直在考虑写一些什么东西，却没有很好的梳理起来，成为有条理性和故事性的文章。可是，如果不从第一个字，第一篇文章下手，任何的改进都是空谈。所以，即便这篇，或者开始的一些，甚至以后的文章都写的非常糟糕，也不能就此放弃。(当然，迫于现实生活的紧张节奏导致的没有时间写是另一回事。)</p>
+<p>第二个目的算是排解一下情绪。人生毫无疑问是一场持久战，无论是身心还是现实都是。而在最近的生活中，既要保证四五年里个体的身心的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。当然我也想过学习画画，但是看上去并没有作画的天分，也没有相应的毅力，所以只能就此作罢。</p>
+<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作网站。</p>
+<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。(当然，如果有人能看到并感觉有点意思，那就再好不过了)。</p>
+<hr>
+<h1 id="一些常用markdown命令">一些常用Markdown命令</h1>
+<p>这里主要参考了<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>，记录在这里是为了避免每次使用都要查询。</p>
+<h2 id="内容目录">内容目录</h2>
+<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
+<h2 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h2>
+<p><code>*斜体* 与 **粗体**</code></p>
+<h2 id="分割线">分割线</h2>
+<p>在单独的一行使用 <code>***</code> 或者 <code>---</code>
+表示分割线</p>
+<p><code>***</code></p>
+<hr>
+<p><code>---</code></p>
+<hr>
+<h2 id="排序">排序</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一件事</span><br><span class="line">    * 第一个方面</span><br><span class="line">    * 第二个方面</span><br><span class="line">2. 第二件事</span><br><span class="line">    - 第一个方面</span><br><span class="line">    - 第二个方面</span><br></pre></td></tr></table></figure>
+<ol type="1">
+<li>第一件事
+<ul>
+<li>第一个方面</li>
+<li>第二个方面</li>
+</ul></li>
+<li>第二件事
+<ul>
+<li>第一个方面</li>
+<li>第二个方面</li>
+</ul></li>
+</ol>
+<h2 id="超链接">超链接</h2>
+<p>插入文字超链接的格式如下 ：</p>
+<p><code>[链接文字](链接地址 "链接标题")</code></p>
+<p>插入图片超链接的格式如下：</p>
+<p><code>![图片说明](图片链接 "图片标题")</code></p>
+<h2 id="注释">注释</h2>
+<p>用 <code>\</code>表示注释</p>
+<h2 id="引用">引用</h2>
+<p>使用<code>&gt;</code>表示文字引用</p>
+<p><code>&gt; 这是一段文字引用</code></p>
+<blockquote>
+<p>这是一段文字引用</p>
+</blockquote>
+<h2 id="latex">Latex</h2>
+<p>数学公式的默认环境是<code>$ $</code>或<code>$$ $$</code>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span class="math inline">\(\begin{equation}
+f(x) = x^2
+\end{equation}\)</span></p>
+<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明</p>
+<hr>
+<!-- ## Quick Start
+
+### Create a new post
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
+--&gt;</p>
+-->]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
