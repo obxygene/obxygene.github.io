@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/saturn.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/saturn.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"obxygene.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本文主要参照J M Zhang以及R X Dong一文精确对角化方法，以Bose-Hubbard模型为例，给出了对应的哈密顿量的构建方法。代码以matlab给出。 Bose-Hubbard模型 Bose-Hubbard模型指的是满足如下哈密顿量的模型： \[\begin{equation} \hat{H}&#x3D;-t\sum_{\langle ij\rangle}(a_{i}^{\dagge">
+<meta property="og:type" content="article">
+<meta property="og:title" content="精确对角化-以Bose Hubbard模型为例">
+<meta property="og:url" content="https://obxygene.github.io/2025/07/20/BoseHubbard/index.html">
+<meta property="og:site_name" content="obxygene">
+<meta property="og:description" content="本文主要参照J M Zhang以及R X Dong一文精确对角化方法，以Bose-Hubbard模型为例，给出了对应的哈密顿量的构建方法。代码以matlab给出。 Bose-Hubbard模型 Bose-Hubbard模型指的是满足如下哈密顿量的模型： \[\begin{equation} \hat{H}&#x3D;-t\sum_{\langle ij\rangle}(a_{i}^{\dagge">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://obxygene.github.io/2025/07/20/BoseHubbard/BoseHubbard.png">
+<meta property="article:published_time" content="2025-07-19T17:34:27.000Z">
+<meta property="article:modified_time" content="2025-07-19T18:44:40.656Z">
+<meta property="article:author" content="obxygene">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="物理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://obxygene.github.io/2025/07/20/BoseHubbard/BoseHubbard.png">
+
+
+<link rel="canonical" href="https://obxygene.github.io/2025/07/20/BoseHubbard/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://obxygene.github.io/2025/07/20/BoseHubbard/","path":"2025/07/20/BoseHubbard/","title":"精确对角化-以Bose Hubbard模型为例"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>精确对角化-以Bose Hubbard模型为例 | obxygene</title>
+  
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="https://commentsystem-git-main-obxygenes-projects.vercel.app">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">obxygene</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">以自己的意志，抵达结局吧</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section">首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#bose-hubbard%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">Bose-Hubbard模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%9A%84%E6%9E%84%E5%BB%BA"><span class="nav-number">1.1.</span> <span class="nav-text">基的构建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E7%9A%84%E6%9E%84%E5%BB%BA"><span class="nav-number">1.2.</span> <span class="nav-text">哈密顿量的构建</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="obxygene"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">obxygene</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/obxygene" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;obxygene" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:obxygene@gmail.com" title="E-Mail → mailto:obxygene@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://obxygene.github.io/2025/07/20/BoseHubbard/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="obxygene">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="obxygene">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="精确对角化-以Bose Hubbard模型为例 | obxygene">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          精确对角化-以Bose Hubbard模型为例
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-07-20 01:34:27 / 修改时间：02:44:40" itemprop="dateCreated datePublished" datetime="2025-07-20T01:34:27+08:00">2025-07-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%86%99%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">写作</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2025/07/20/BoseHubbard/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/2025/07/20/BoseHubbard/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>5.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>9 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文主要参照J M Zhang以及R X
+Dong一文精确对角化方法，以Bose-Hubbard模型为例，给出了对应的哈密顿量的构建方法。代码以matlab给出。</p>
+<h1 id="bose-hubbard模型">Bose-Hubbard模型</h1>
+<p>Bose-Hubbard模型指的是满足如下哈密顿量的模型：</p>
+<p><span class="math display">\[\begin{equation}
+\hat{H}=-t\sum_{\langle
+ij\rangle}(a_{i}^{\dagger}a_{j}+a_{j}^{\dagger}a_{i})+\frac{U}{2}\sum_{i=1}^{M}\hat{n}_{i}(\hat{n}_{i}-1)
+\end{equation}\]</span></p>
+<p>其中<span class="math inline">\(a_{i}(a_{i}^{\dagger})\)</span>是湮灭(生成)一个在格点<span class="math inline">\(i\)</span>上粒子的<strong>玻色算符</strong>，而数算符<span class="math inline">\(\hat{n}_{i}=a_{i}^{\dagger}a_{i}\)</span>则计数在格点<span class="math inline">\(i\)</span>上的粒子。由于该模型是玻色模型，每个格点上可以有多于两个粒子的共存。我们考虑有限个<strong>一维</strong>格点，假设总共有<span class="math inline">\(M\)</span>个格点，若总原子数为<span class="math inline">\(N\)</span>个，则总的Hilbert空间可以通过隔板法可以求得：</p>
+<p><span class="math display">\[\begin{equation}
+D=\frac{(N+M-1)!}{N!(M-1)!}
+\end{equation}\]</span></p>
+<p>可以发现该空间维数以指数增长。尽管可以通过对称性削减基的数量，在这里我们只考虑一个基础的数值方法，故在这里不作对称性分析。</p>
+<p>本文的主要内容参考自相关文献<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="J M Zhang and R X Dong. Exact diagonalization: The Bose–Hubbard model as an example.
+European Journal of Physics, 31(3):591–602, May 2010.">[1]</span></a></sup>，给出了如何构建用于精确对角化的Bose-Hubbard模型的算法。为简便起见，这里采取<strong>周期性边界条件</strong>。</p>
+<h2 id="基的构建">基的构建</h2>
+<p>由于我们需要考虑<span class="math inline">\(N\)</span>个粒子分布在<span class="math inline">\(M\)</span>个格点上的所有可能，尽管用循环的方式可以生成基，但其速度是相对慢的。事实上，对于Fock态，我们可以定义一个<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%AD%97%E5%85%B8%E5%BA%8F">字典序</a>(Lexicographic
+order)去排列所有的基。</p>
+<p>给定两个Fock基向量<span class="math inline">\(|n_{1},n_{2},\cdots,n_{M}\rangle\)</span>与<span class="math inline">\(|\bar{n}_{1},\bar{n}_{2},\cdots,\bar{n}_{M}\rangle\)</span>，那么一定存在一个给定的编号<span class="math inline">\(1\le k\le M-1\)</span>使得对于<span class="math inline">\(1\le i\le M-1\)</span>有 <span class="math inline">\(n_{i}=\bar{n}_{i}\)</span>，而<span class="math inline">\(n_{k}\neq \bar{n}_{k}\)</span>。我们定义，若<span class="math inline">\(n_{k}\ge\bar{n}_{k}\)</span>(<span class="math inline">\(n_{k}\le\bar{n}_{k}\)</span>)，则称向量<span class="math inline">\(|n_{1},n_{2},\cdots,n_{M}\rangle\)</span>优于(superior)(劣于inferior)向量<span class="math inline">\(|\bar{n}_{1},\bar{n}_{2},\cdots,\bar{n}_{M}\rangle\)</span>。可以证明，这样的序关系可以在基向量之间定义一个全序关系。此时明显有<span class="math inline">\(|N,0,\cdots,0\rangle\)</span>优于其他所有基向量，而<span class="math inline">\(|0,0,\cdots,N\rangle\)</span>劣于其他所有基向量。</p>
+<p>借由这样构造的全序关系，我们可以从<span class="math inline">\(|N,0,\cdots,0\rangle\)</span>以降序的方式生成其他所有占据数的基。给定一基向量<span class="math inline">\(|n_{1},n_{2},\cdots,n_{M}\rangle\)</span>满足<span class="math inline">\(n_{m}&lt;N\)</span>，则我们生成劣于该向量的规则如下：</p>
+<p>设<span class="math inline">\(n_{k}\neq0\)</span>，且对所有的<span class="math inline">\(k+1\le i\le M-1\)</span>都有<span class="math inline">\(n_{i}=0\)</span>时，下一个基向量<span class="math inline">\(|\bar{n}_{1},\bar{n}_{2},\cdots,\bar{n}_{M}\rangle\)</span>应当满足：</p>
+<ul>
+<li>当<span class="math inline">\(1\le i\le k-1\)</span>时，有<span class="math inline">\(\bar{n}_{i}=n_{i}\)</span></li>
+<li><span class="math inline">\(\bar{n}_{k}=n_{k}-1\)</span></li>
+<li><span class="math inline">\(\bar{n}_{k+1}=N-\sum_{i=1}^{k}\bar{n}_{i}\)</span>，且对于<span class="math inline">\(i\ge k+2\)</span>有<span class="math inline">\(\bar{n}_{i}=0\)</span></li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% Initialize the basis through cell</span></span><br><span class="line">Basis = <span class="built_in">repmat</span>(&#123;<span class="built_in">zeros</span>(<span class="number">1</span>, N_Sites)&#125;, Dimension, <span class="number">1</span>);</span><br><span class="line"><span class="comment">% Set the first basis as (N, 0, 0...)</span></span><br><span class="line">Basis&#123;<span class="number">1</span>&#125;(<span class="number">1</span>) = N_atoms;</span><br><span class="line"><span class="comment">% Basis Generation</span></span><br><span class="line"><span class="keyword">for</span> ii = <span class="number">2</span>: Dimension</span><br><span class="line">    <span class="comment">% find the index of k</span></span><br><span class="line">    Count = <span class="built_in">find</span>(Basis&#123;ii<span class="number">-1</span>&#125;(<span class="number">1</span>:<span class="keyword">end</span><span class="number">-1</span>)~=<span class="number">0</span>, <span class="number">1</span>, <span class="string">&#x27;last&#x27;</span>);</span><br><span class="line">    temp = Basis&#123;ii<span class="number">-1</span>&#125;;</span><br><span class="line">    <span class="keyword">if</span> Count &lt;= N_Sites - <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> temp(Count) ~= <span class="number">0</span> &amp;&amp; ~any(temp(Count+<span class="number">1</span>:<span class="keyword">end</span><span class="number">-1</span>))</span><br><span class="line">            Basis&#123;ii&#125;(<span class="number">1</span>:Count<span class="number">-1</span>) = Basis&#123;ii<span class="number">-1</span>&#125;(<span class="number">1</span>:Count<span class="number">-1</span>);</span><br><span class="line">            Basis&#123;ii&#125;(Count) = Basis&#123;ii<span class="number">-1</span>&#125;(Count) - <span class="number">1</span>;</span><br><span class="line">        Basis&#123;ii&#125;(Count + <span class="number">1</span>) = N_atoms - sum(Basis&#123;ii&#125;(<span class="number">1</span>:Count));</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">Basis = cell2mat(Basis);</span><br></pre></td></tr></table></figure>
+<p>通过这样的计算，我们可以得到所有的基，得到的<code>Basis</code>将是一个<span class="math inline">\(D\times
+M\)</span>的矩阵，每一行代表一个基，而一个基的每个分量则代表这个格点上的占据数。</p>
+<h2 id="哈密顿量的构建">哈密顿量的构建</h2>
+<p>建立好基之后，便可以开始构建哈密顿量的分量：</p>
+<p><span class="math display">\[\begin{equation}
+H_{uv}=\langle u|H|v\rangle
+\end{equation}\]</span></p>
+<p>一般情况下我们需要的哈密顿量是稀疏矩阵，我们只需要找到对应的非零元。Bose-Hubbard哈密顿量分为两个部分，一个部分为动能跃迁项<span class="math inline">\(H_{\text{kin}}\)</span>，另一个部分相互作用项<span class="math inline">\(H_{\text{int}}\)</span>。因为在占据数表象下相互作用项是对角的，所以主要问题在于如何构建跃迁项。</p>
+<p>一个直接的想法是将所有基向量都循环一遍——这个方法当然是可行的，但是当希尔伯特空间维数达到百万时，要遍历整个哈密顿量的矩阵所需要的时间是极久的。考虑到我们要写的动能项的哈密顿量形如<span class="math inline">\(a_{i}^{\dagger}a_{j}\)</span>，由于这样的跃迁总是近邻跃迁(例如一维情况下，考虑<span class="math inline">\(M&gt;3\)</span>个格点，则格点2上有从<span class="math inline">\(2\to 3\)</span>和<span class="math inline">\(2\to1\)</span>两种跃迁)，对于<span class="math inline">\(M\)</span>个格点而言，最多只有<span class="math inline">\(2M\)</span>个跃迁项，于是一个更简单的方法是，首先将基排好序，然后给定一个对应于哈密顿量第<span class="math inline">\(v\)</span>列的基向量<span class="math inline">\(|v\rangle\)</span>，找到动能项哈密顿量作用在基上后的两个跃迁后的基，再乘上跃迁系数，就得到了对应的非零项，而这两个基对应的序列则给出了哈密顿量非零元的行指标。例如考虑一个5格点3个粒子的情形，给定基<span class="math inline">\(|0,3,0,0,0\rangle\)</span>，该向量的两种跃迁为<span class="math inline">\(|1,2,0,0,0\rangle\)</span>或<span class="math inline">\(|0,2,1,0,0\rangle\)</span>，则对应的哈密顿量第<span class="math inline">\(v\)</span>列的非零行就是这两个基的位置。然后再遍历所有列，就可以写出动能部分哈密顿量。通过上面的方法，问题被转化成了如何找到经过哈密顿量作用后的非零向量所处的序列，这对应到哈密顿量的行列指标。</p>
+<p>在对应非零基向量时，相比于挨个挨个地对应值，我们可以利用一种哈希技术(Hashing
+technique)来更快地找到对应地向量。简单来说，哈希算法给每个基向量都定义一个标签(Tag)，从而要比较两个向量是否相同时，只需要比较他们的标签是否一致即可。</p>
+<p>由于我们在生成基向量的时候已经定义了字典序，我们在这里可以进一步的利用字典序来定义一个标签函数。一个可选方案是：</p>
+<p><span class="math display">\[\begin{equation}
+T(|v\rangle)=\sum_{i=1}^{M}\sqrt{p_{i}}v_{i}
+\end{equation}\]</span></p>
+<p>其中<span class="math inline">\(p_{i}\)</span>可以是第<span class="math inline">\(i\)</span>个质数。由于matlab的<code>prime</code>函数生成质数的速度不快，可以参考文章<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="J M Zhang and R X Dong. Exact diagonalization: The Bose–Hubbard model as an example.
+European Journal of Physics, 31(3):591–602, May 2010.">[1]</span></a></sup>中直接可以使用<span class="math inline">\(p_{i}=100i+3\)</span>。</p>
+<p>在给基编好号之后，为了更快地查找，还可以通过tag值对基向量进行排序，这样可以利用二分法进行查找，从而对于<span class="math inline">\(D\)</span>个基向量，要找到对应的向量只需要<span class="math inline">\(\log_{2}D\)</span>次寻找。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Tags = Basis * <span class="built_in">sqrt</span>(<span class="number">100</span> * (<span class="number">1</span>: N_Sites) + <span class="number">3</span>)&#x27;;</span><br><span class="line"><span class="comment">% Sort the Tag function</span></span><br><span class="line">[Tags, ind] = <span class="built_in">sort</span>(Tags);</span><br></pre></td></tr></table></figure>
+<p>这样一来，最后就只需要找到对应的非零元的行列以及对应的值，就可以利用<code>sparse</code>命令建立动能部分哈密顿量。对应的matlab代码为：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ii = <span class="number">1</span>: Dimension</span><br><span class="line">    ind_nonzero = <span class="built_in">find</span>(Basis(ii,:));</span><br><span class="line">    <span class="keyword">for</span> jj = <span class="number">1</span>: <span class="built_in">length</span>(ind_nonzero)</span><br><span class="line">        <span class="comment">% Nearest hopping</span></span><br><span class="line">        <span class="comment">% Left hopping matrix element</span></span><br><span class="line">        temp = Basis(ii,:);</span><br><span class="line">        temp(ind_nonzero(jj)) = temp(ind_nonzero(jj)) - <span class="number">1</span>;</span><br><span class="line">        temp_site = ind_nonzero(jj) - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> temp_site == <span class="number">0</span></span><br><span class="line">            temp_site = N_Sites;</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        temp(temp_site) = temp(temp_site) + <span class="number">1</span>;</span><br><span class="line">        temp_Tag = temp * Tag_function(N_Sites)&#x27;;</span><br><span class="line">        col(Count) = ii;</span><br><span class="line">        row(Count) = ind(<span class="built_in">abs</span>(Tags - temp_Tag) &lt; Accuracy);</span><br><span class="line">        val(Count) = <span class="built_in">sqrt</span>(Basis(ii,ind_nonzero(jj)) * (Basis(ii, temp_site)+<span class="number">1</span>));</span><br><span class="line">        Count = Count + <span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">% Right hopping matrix element</span></span><br><span class="line">        temp = Basis(ii,:);</span><br><span class="line">        temp(ind_nonzero(jj)) = temp(ind_nonzero(jj)) - <span class="number">1</span>;</span><br><span class="line">        temp_site = ind_nonzero(jj) + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> temp_site == N_Sites + <span class="number">1</span></span><br><span class="line">            temp_site = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        temp(temp_site) = temp(temp_site) + <span class="number">1</span>;</span><br><span class="line">        temp_Tag = temp * Tag_function(N_Sites)&#x27;;</span><br><span class="line">        col(Count) = ii;</span><br><span class="line">        row(Count) = ind(<span class="built_in">abs</span>(Tags - temp_Tag) &lt; Accuracy);</span><br><span class="line">        val(Count) = <span class="built_in">sqrt</span>(Basis(ii,ind_nonzero(jj)) * (Basis(ii, temp_site)+<span class="number">1</span>));</span><br><span class="line">        Count = Count + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">H_kinetic = sparse(row, col, val);</span><br></pre></td></tr></table></figure>
+<p>这里采取的方法是，给定一个基向量<span class="math inline">\(|v\rangle\)</span>记为列指标，仅对于其占据数非零的格子进行遍历，然后分别考虑向右跃迁和向左跃迁的情况，并找到对应的向量指标记为行指标，同时将其跃迁带来的值进行记录，最后利用<code>sparse</code>命令生成即可。</p>
+<p>注意在多粒子体系中有：</p>
+<p><span class="math display">\[\begin{equation}
+a_{i}^{\dagger}a_{j}|v\rangle=\sqrt{(v_{i}+1)v_{j}}|\cdots,v_{i}+1,\cdots
+v_{j}-1,\cdots\rangle
+\end{equation}\]</span></p>
+<p>会带来额外的粒子系数。</p>
+<p>最后则是对角的相互作用部分，可以轻易地用一行指令写下：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">H_interaction = spdiags(sum(Basis .* (Basis - (Basis&gt;<span class="number">0</span>)),<span class="number">2</span>), <span class="number">0</span>, Dimension, Dimension);</span><br></pre></td></tr></table></figure>
+<p>合在一起，便得到了Bose-Hubbard模型的哈密顿量：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">H = -t * H_kinetic + U/<span class="number">2</span> * H_interaction;</span><br><span class="line">spy(H)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="/2025/07/20/BoseHubbard/BoseHubbard.png" alt="alt text"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>左图为M=10且N=10的格点图，右图为对应的哈密顿量的稀疏矩阵</em></td>
+</tr>
+</tbody>
+</table>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">J
+M Zhang and R X Dong. Exact diagonalization: The Bose–Hubbard model as
+an example. European Journal of Physics, 31(3):591–602, May
+2010.<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>obxygene
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://obxygene.github.io/2025/07/20/BoseHubbard/" title="精确对角化-以Bose Hubbard模型为例">https://obxygene.github.io/2025/07/20/BoseHubbard/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag"># 技术</a>
+              <a href="/tags/%E7%89%A9%E7%90%86/" rel="tag"># 物理</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/07/14/KPM/" rel="prev" title="Kernel Polynomial Method简介">
+                  <i class="fa fa-angle-left"></i> Kernel Polynomial Method简介
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">obxygene</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">45k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">1:15</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+-->
+
+
+
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("03/21/2025 00:50:53"); //此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "Online "+dnum+" Days ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒.";
+    }
+setInterval("createtime()",250);
+</script>
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.3.0/pdfobject.min.js","integrity":"sha256-JJZNsid68vnh3/zyj0lY9BN5ynxVX/12XgOa1TlaYN0="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"https://commentsystem-git-main-obxygenes-projects.vercel.app","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"placeholder":"请文明评论呀~","avatar":"/images/avatar.gif","meta":["nick","mail"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick"],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","el":"#waline","comment":true,"path":"/2025/07/20/BoseHubbard/"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+</body>
+</html>

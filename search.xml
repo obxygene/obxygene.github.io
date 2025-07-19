@@ -52,143 +52,6 @@ Littlejohn的量子力学lecture</a></strong></p>
       </tags>
   </entry>
   <entry>
-    <title>超导复习</title>
-    <url>/2025/05/04/%E8%B6%85%E5%AF%BC%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为复习超导的一些基本概念和计算，参考自<a href="https://www.cambridge.org/core/books/dwave-superconductivity/25FAA6DC672ACB1D79A008BCD78F8C63">D-wave
-Superconductivity</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="D-Wave Superconductivity. Cambridge University Press; 2022.
-">[1]</span></a></sup></p>
-<h1 id="超导的基本概念">超导的基本概念</h1>
-<p>超导现象<a href="https://en.wikipedia.org/wiki/Superconductivity">（Superconductivity）</a>是具有<strong>零直流电阻</strong>与<strong>完全抗磁性</strong>的电磁材料。零电阻意味着超导体是理想导体，且利用超导传输线进行电能输运时没有能量损耗。此外，超导体还表现出完全抗磁性（迈斯纳效应），即超导体会将内部的磁通线排出体外。零电阻与迈斯纳效应是两个无法用传统单电子理论理解的特征性质。</p>
-<p>区分超导体和理想导体的关键点在于冷却过程。在降温后，对于理想导体而言，磁场仍然会滞留在系统内；而对于超导体而言，磁场会被排除在外。因此，对于理想导体，冷却前有场与零场存在差别；而对于超导体，无论其外场和历史如何，磁场在体态中都会变为零。</p>
-<h2 id="二流体模型与london方程">二流体模型与London方程</h2>
-<p>二流体模型核心假设为超导体内存在两种电子</p>
-<ul>
-<li>正常电子（Normal electrons）</li>
-<li>超导电子（Superconducting electrons）</li>
-</ul>
-<p>利用这两种电子，可以解释零电阻现象，但是还不能解释迈斯纳效应，故还需要London方程，即在库伦规范下<span class="math inline">\(\nabla\cdot\mathbf{A}=0\)</span>
-<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这里符号加粗表明该量是一个向量">[2]</span></a></sup>,超导电流密度可以写为
-<span class="math display">\[
-\begin{equation}
-    \mathbf{J}_s=-\frac{n_se^2}{m}\mathbf{A}
-\end{equation}
-\]</span> 需要强调的是，<strong>该方程不能从 Maxwell
-方程中导出，且应当被视为超导体作为一类特殊的电磁介质所满足的独立的电磁方程</strong>，London
-方程只有在超导体的微观理论建立后才能被严格推导。</p>
-<blockquote>
-<p>一个历史上的启发性<em>推导</em>: 假设电子在超导体中无摩擦地前进,<span class="math display">\[ m \dot{\mathbf{v}} = -e \mathbf{E} \]</span>
-其中 <span class="math inline">\(\mathbf{v}_s\)</span>
-是超导电子速度，<span class="math inline">\(\mathbf{E}\)</span>
-是电场。超电流 <span class="math inline">\(\mathbf{J}_s = -e n_{s}
-\mathbf{v}_{s}\)</span> 则为： <span class="math display">\[
-\frac{\partial \mathbf{J}_{s}}{\partial t} = \frac{e^{2} n_{s}}{m}
-\mathbf{E} \]</span> 这是第一 London 方程。利用 Maxwell 方程： <span class="math display">\[ \nabla \times \mathbf{E} = -\frac{\partial
-\mathbf{B}}{\partial t}, \]</span> 可立即得到： <span class="math display">\[ \frac{\partial}{\partial t} \left( \nabla \times
-\mathbf{J}_{s} + \frac{e^{2} n_{s}}{m} \mathbf{B} \right) = 0 \]</span>
-该方程描述了理想导体的行为。但为了描述迈斯纳效应，积分常数必须选为零，从而：
-<span class="math display">\[ \nabla \times \mathbf{J}_{s} + \frac{e^{2}
-n_{s}}{m} \mathbf{B} = 0 \]</span> 这是<strong>第二 London
-方程</strong>。结合 Ampere 定律： <span class="math display">\[ \nabla
-\times \mathbf{B} = \mu_{0} \mathbf{J}_{s}, \]</span> 可得到磁场满足
-Helmholtz 方程： <span class="math display">\[ \nabla^{2} \mathbf{B} =
-\frac{\mu_{0} n_{s} e^{2}}{m} \mathbf{B} \]</span>
-假设一半无限超导体，其表面垂直于 <span class="math inline">\(x\)</span>
-方向，其解为： <span class="math display">\[ B(x) = B(x_{0}) e^{-(x -
-x_{0}) / \lambda}, \]</span> 其中： <span class="math display">\[
-\lambda = \sqrt{\frac{m}{\mu_{0} n_{s} e^{2}}} \]</span>
-是描述外磁场在超导-真空界面处的 London 穿透深度。当 <span class="math inline">\(x - x_{0} \gg \lambda\)</span>
-时，磁场衰减到零，这给出了迈斯纳效应的现象学描述。</p>
-</blockquote>
-<h2 id="库伯对">库伯对</h2>
-<p>1956 年，Cooper
-考虑了两电子过程，说明如果存在一个有效的吸引相互作用，无论其多弱，在存在费米海的背景下，费米面将不再稳定，费米面上的电子会相互配对形成束缚态，从而降低基态能量。配对电子的束缚态称为<strong>库伯对</strong>。Cooper
-找到两电子形成束缚态的束缚能为：</p>
-<p><span class="math display">\[
-\begin{equation}\label{eq:binding}
-        \Delta E = 2 \Delta = -2 \hbar \omega_{D} e^{-2 / N_{F} g}
-\end{equation} \]</span></p>
-<p>其中 <span class="math inline">\(N_{F}\)</span>
-是费米面的态密度，<span class="math inline">\(g\)</span>
-是耦合强度，<span class="math inline">\(\omega_{D}\)</span>
-是决定诱导吸引作用机制或源头的特征能量。当吸引相互作用由电声相互作用诱导时，<span class="math inline">\(\omega_{D}\)</span>
-为声子频率，即德拜频率。这一结果表明，费米面在具有微小吸引相互作用下是不稳定的。</p>
-<p>式<span class="math inline">\(\eqref{eq:binding}\)</span>表明束缚能对相互作用强度
-<span class="math inline">\(g\)</span>
-的依赖是奇异的，这也说明超导的微观理论不能通过基于正常导电态的微扰计算得到，这是超导机制的主要困难。</p>
-<p>为了理解 Cooper
-配对能，可以求解零温下向费米海加入两个电子的问题。为减少不相容原理导致的排斥相互作用，假设两电子形成自旋单态，使空间波函数对称，且最低能态应具有零动量，因此两电子具有相反动量，波函数可写为：</p>
-<p><span class="math display">\[ |\Psi\rangle = \sum_{\mathbf{k}}
-\alpha(\mathbf{k}) c_{\mathbf{k}\uparrow}^{\dagger}
-c_{-\mathbf{k}\downarrow}^{\dagger} |0\rangle \]</span></p>
-<p>其中 <span class="math inline">\(|0\rangle\)</span>
-是刚性费米海真空。</p>
-<p>两电子相互作用由以下哈密顿量控制：</p>
-<p><span class="math display">\[ H = \sum_{\mathbf{k}}
-(\epsilon_{\mathbf{k}} - \mu) c_{\mathbf{k}\sigma}^{\dagger}
-c_{\mathbf{k}\sigma} - \sum_{\mathbf{k}, \mathbf{k}&#39;} V_{\mathbf{k}
-\mathbf{k}&#39;} c_{\mathbf{k}\uparrow}^{\dagger}
-c_{-\mathbf{k}\downarrow}^{\dagger} c_{-\mathbf{k}&#39;\downarrow}
-c_{\mathbf{k}&#39;\uparrow} \]</span></p>
-<p>其中 <span class="math inline">\(\epsilon_{\mathbf{k}}\)</span>
-是电子色散能量，<span class="math inline">\(\mu\)</span> 是化学势，<span class="math inline">\(V\)</span> 是库伯对的散射势。为简单起见，假设
-<span class="math inline">\(V\)</span> 不依赖于动量：</p>
-<p><span class="math display">\[ V_{\mathbf{k}, \mathbf{k}&#39;} =
-\frac{g}{V}, \]</span></p>
-<p>其中 <span class="math inline">\(V\)</span>
-是系统体积。从薛定谔方程：</p>
-<p><span class="math display">\[ H |\Psi\rangle = E |\Psi\rangle,
-\]</span></p>
-<p>可求得系数 <span class="math inline">\(\alpha(\mathbf{k})\)</span>
-满足：</p>
-<p><span class="math display">\[ 2 \xi_{\mathbf{k}} \alpha(\mathbf{k}) -
-\frac{g}{V} \sum_{\mathbf{k}&#39;} \alpha(\mathbf{k}&#39;) = (E - E_{0})
-\alpha(\mathbf{k}), \]</span></p>
-<p>其中 <span class="math inline">\(E_{0}\)</span>
-是填充费米海的能量，<span class="math inline">\(\xi_{\mathbf{k}} =
-\epsilon_{\mathbf{k}} - \mu\)</span>。上式可重写为：</p>
-<p><span class="math display">\[ \alpha(\mathbf{k}) = \frac{g}{2
-\xi_{\mathbf{k}} - \Delta E} \frac{1}{V} \sum_{\mathbf{k}&#39;}
-\alpha(\mathbf{k}&#39;), \]</span></p>
-<p>其中 <span class="math inline">\(\Delta E = E - E_{0}\)</span>
-是系统的能隙。对两边所有 <span class="math inline">\(\mathbf{k}\)</span>
-求和后，<span class="math inline">\(\alpha\)</span>
-的因子可消去，得到能隙方程：</p>
-<p><span class="math display">\[ \frac{1}{g} = \frac{1}{V}
-\sum_{\mathbf{k}} \frac{1}{2 \xi_{\mathbf{k}} - \Delta E} = N_{F}
-\int_{0}^{\hbar \omega_{D}} d\xi \frac{1}{2 \xi - \Delta E}.
-\]</span></p>
-<p>求解该方程可得：</p>
-<p><span class="math display">\[ \frac{1}{g} = \frac{N_{F}}{2} \ln
-\frac{2 \hbar \omega_{D} - \Delta E}{-\Delta E} \approx \frac{N_{F}}{2}
-\ln \frac{2 \hbar \omega_{D}}{|\Delta E|}, \]</span></p>
-<p>从而得出式<span class="math inline">\(\eqref{eq:binding}\)</span>。</p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">D-Wave
-Superconductivity. Cambridge University Press;
-2022.<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:2">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这里符号加粗表明该量是一个向量<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-
-]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>物理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>量子场论笔记</title>
     <url>/2025/05/18/%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为2020至2021年LX老师上课的量子场论笔记整理，主要内容是Spin-0部分。仅供一些细节上的参考，内容并未做太多整理，所以稍显混乱</p>
@@ -200,92 +63,6 @@ Superconductivity. Cambridge University Press;
       <tags>
         <tag>技术</tag>
         <tag>物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂谈-什么是物理图像？</title>
-    <url>/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="引论">引论</h2>
-<p>通常在学物理/做物理的人之间会有一个专有名词叫<strong>物理图像(Physical
-Picture)</strong>，有时也简称为<strong>物理</strong>。例如交流的时候会说"你这篇文章的物理(图像)是什么"。然而维基百科上并没有关于这个词的明确定义，且在不同的语境下<strong>物理图像</strong>指代对象会有极大的不同。为了能够理清这一词至目前的各种含义，于是便写下了这篇杂谈。</p>
-<h2 id="物理模型">物理模型</h2>
-<p>作为自然学科的基础之一，物理的核心在于研究自然。而要研究自然，目前最有效的方式是根据现实提取出对应的<b><font color="red">物理模型</font></b>进行分析。</p>
-<p>为了得到响应的物理模型，在考虑现实中的各种物理对象时，首先要对该对象进行<strong>抽象</strong>，以此得到最简单而又最能反应所关注的内容的一个物理模型.例如<strong>质点</strong>这一对象是对任意不关注其大小以及形状的物体的抽象，这一抽象对象在研究一个物体的运动，尤其是空间上的平移时时最为有效，因为我们只需要关注质点在空间中的位置即可。然而由于抽象过程中我们抛弃了太多信息，导致其缺点在于质点是一个没有大小的点，我们没有办法研究它的旋转。</p>
-<p>若是要研究旋转，我们需要加入一些关于形状和大小的细节，这个时候将<strong>刚体</strong>的抽象要更加有利于研究。借此我们可以研究对象的旋转。若是要研究刚体在各种受力下的变化，我们就需要加入更多的细节，例如物体可以发生形变，扭曲，断裂，拼接，融合等各种现实中存在的过程。无论如何，在研究自然时，我们总是需要根据研究对象去提取出当前对象最关键的信息，通过抽象来建立一个物理对象的模型，这便是物理模型。</p>
-<h2 id="数学模型">数学模型</h2>
-<p>在建立了物理模型后，我们需要描述其各种关心的性质以及各种性质之间的联系。而目前最好的描述工具是数学，在基于对应的物理模型的基础上，进一步用数学建立的模型可以称为<strong>数学模型</strong>。或许最广为人知的数学模型应当是牛顿的运动学第二定律
-<span class="math display">\[\begin{equation}
-    \mathbf{F}=m\mathbf{a}
-\end{equation}\]</span> 这个公式描述了一个真空中质量为<span class="math inline">\(m\)</span>的物理对象受到的力<span class="math inline">\(\mathbf{F}\)</span>与其因力而产生的加速度<span class="math inline">\(\mathbf{a}\)</span>的关系，这是一个数学函数关系，因此可以认为其是一个描述任一满足特定假设<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。
-">[1]</span></a></sup>下用于描述<strong>物理模型</strong>的<strong>数学模型</strong>。
-这个<strong>数学模型</strong>的特殊性在于，与其他任意<span class="math inline">\(y=f(x)\)</span>相比，当我们将这三个变量(两个是矢量)中任意两个变量换为任意物理对象的对应的已知参数的<em>数据</em><sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="之所以是*数据*而非*数字*，在于单位。
-">[2]</span></a></sup>时，求解得到的第三个未知的变量的数据将必然与在现实中的物理对象通过实验测得的数据<strong>在一定的误差范围内相同</strong>。这一重要区别使得一个<strong>物理模型</strong>所对应的<strong>数学模型</strong>具有了一定程度的<b><font color="red">预测现实</font></b>的功能。</p>
-<h2 id="物理理论">物理理论</h2>
-<p>在阐明了物理模型以及的对应的数学模型后，便可以开始讨论<strong>物理理论</strong>。一个物理理论<strong>是一类物理事件的模型</strong>。由于对现实的一对一建模是不可能的事情，因此人们更希望通过一系列有限的物理模型来提取出一个(或一类)更加本质的模型，当遇到全新的对象时，直接利用这个本质的模型去套用即可分析新的对象，这就是物理理论。它的评判标准是其预测与实证观察的一致性程度。物理理论的质量还取决于它做出新预测的能力，这些预测可以通过新的观察来验证。这一套采用数学模型和物理对象和系统的抽象来合理化、解释和预测自然现象<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 理论物理学](https://en.wikipedia.org/wiki/Theoretical_physics)
-">[3]</span></a></sup>对应为理论物理学。亦即，理论物理学是研究物理理论的学科。</p>
-<p>对于物理理论的描述，通常是利用数学模型来描述一类物理模型的性质以及其之间的关系。一个物理理论通常会包含多个物理模型以及其对应的数学模型。例如牛顿力学便是一个物理理论，其包含了质点、刚体等多个物理模型，以及对应的牛顿定律等数学模型。</p>
-<p>然而，以纯粹物理理论的严格性和信息量而言，要想直接对其进行讨论是非常困难的。因此，通常人们会在讨论物理理论时，使用<b><font color="red">物理图像</font></b>来进行描述。在这之前，需要对图像这个词进行一些意义的拓展</p>
-<h2 id="图像">图像</h2>
-<p>图，或者图像，是一般人每时每刻都需要的一种信息。借用维基百科的介绍<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 图片](https://en.wikipedia.org/wiki/Image)
-">[4]</span></a></sup>， &gt;
-图像或图片是一种视觉表示形式。图像可以是二维的，例如绘图、绘画或照片，也可以是三维的，例如雕刻或雕塑。</p>
-<p>作为含有信息量最丰富的对象，其直观与简洁对于理解事物具有极大的帮助性。例如描述圆的时候，数学上通常用解析几何的方法，来定义满足方程
-<span class="math display">\[\begin{equation}
-    x^2+y^2=r^2
-\end{equation}\]</span> 的点集(x,y)构成的集合，而图像上可以很简单的给出
-<img src="/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/image.png" alt="alt text">
-从这个角度来说，图像作为信息的载体，其特征在于<strong>简洁</strong>与<strong>直观</strong>。
-## 物理图像
-在介绍完了物理模型和图像后，<strong>物理图像</strong>简单来说便是指一类<b><font color="red">简洁直观</font></b>的<strong>物理模型</strong>。需要注意的是，物理图像并不指代物理实在，而是指一个方便理解的抽象对象。因为只有在有了对象之后，才可以谈及对象之间的关系，也即物理关系。而所谓常说的"新物理"，也是指一类新的物理图像以及其对应的之前所未探明的物理关系。</p>
-<h2 id="总结">总结</h2>
-<p>物理图像作为一种简洁直观的物理模型，其主要是在简单的讨论中，避免涉及过多的计算但是却能理清复杂的物理关系的工具。利用物理(图像)，即便是不甚了解一个理论内部的数学关系，也可以理清楚不同物理对象之间的关系，这极大的降低了交流成本。除此之外，物理图像的重要意义在于，通过考察物理图像对应的自然现实，有时甚至可以跳过严格的数学构造和推导，直接抽取出可能的物理关系。例如已知牛顿第二定律是一个二阶微分方程，对于匀速运动而言其解需要首先求解该微分方程，得到解
-<span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\frac{1}{2}a t^2+bt+c
-\end{equation}\]</span> 然后带入初始条件，计算后才能得到 <span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
-\end{equation}\]</span>
-但是，如果直接考虑一个匀速运动的物体，我们应当可以很轻易地直接写下 <span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
-\end{equation}\]</span>
-这种方法甚至在分数量子霍尔效应中诞生过诺贝尔奖，其得主Robert
-Laughlin在没有任何数学推导的情况下，直接写出了分数量子霍尔效应的物理图像，并且成功地解释了实验结果。</p>
-<h2 id="题外话">题外话</h2>
-<p>作为一个个人的观点，实际物理学中的<strong>解释</strong>并非对现实行为的解释，而是基于<b><font color="red">物理图像的对物理模型的解释</font></b>。因为现实世界是极其复杂的，如果一个理论能够解释现实，那么现实就不应该存在无法解释的对象，然而客观上现实中存在无法利用理论解释的现象，这实际上正是物理理论作为物理模型的集合的局限性所在。而所谓的解释，实际上是基于物理模型对该框架下的可能的物理图像的解释<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="本文中部分论述使用copilot润色。">[5]</span></a></sup>。</p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">之所以是<em>数据</em>而非<em>数字</em>，在于单位。<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Theoretical_physics">WikiPedia
-理论物理学</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:4">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Image">WikiPedia
-图片</a><a href="#fnref:4" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:5">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">本文中部分论述使用copilot润色。<a href="#fnref:5" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-
-]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>物理</tag>
-        <tag>杂谈</tag>
       </tags>
   </entry>
   <entry>
@@ -619,6 +396,716 @@ doi:10.1103/RevModPhys.78.275<a href="#fnref:1" rev="footnote">
       </tags>
   </entry>
   <entry>
+    <title>超导复习-简单地抄书</title>
+    <url>/2025/05/04/%E8%B6%85%E5%AF%BC%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为复习超导的一些基本概念和计算，参考自<a href="https://www.cambridge.org/core/books/dwave-superconductivity/25FAA6DC672ACB1D79A008BCD78F8C63">D-wave
+Superconductivity</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="D-Wave Superconductivity. Cambridge University Press; 2022.
+">[1]</span></a></sup></p>
+<h1 id="超导的基本概念">超导的基本概念</h1>
+<p>超导现象<a href="https://en.wikipedia.org/wiki/Superconductivity">（Superconductivity）</a>是具有<strong>零直流电阻</strong>与<strong>完全抗磁性</strong>的电磁材料。零电阻意味着超导体是理想导体，且利用超导传输线进行电能输运时没有能量损耗。此外，超导体还表现出完全抗磁性（迈斯纳效应），即超导体会将内部的磁通线排出体外。零电阻与迈斯纳效应是两个无法用传统单电子理论理解的特征性质。</p>
+<p>区分超导体和理想导体的关键点在于冷却过程。在降温后，对于理想导体而言，磁场仍然会滞留在系统内；而对于超导体而言，磁场会被排除在外。因此，对于理想导体，冷却前有场与零场存在差别；而对于超导体，无论其外场和历史如何，磁场在体态中都会变为零。</p>
+<h2 id="二流体模型与london方程">二流体模型与London方程</h2>
+<p>二流体模型核心假设为超导体内存在两种电子</p>
+<ul>
+<li>正常电子（Normal electrons）</li>
+<li>超导电子（Superconducting electrons）</li>
+</ul>
+<p>利用这两种电子，可以解释零电阻现象，但是还不能解释迈斯纳效应，故还需要London方程，即在库伦规范下<span class="math inline">\(\nabla\cdot\mathbf{A}=0\)</span>
+<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这里符号加粗表明该量是一个向量">[2]</span></a></sup>,超导电流密度可以写为
+<span class="math display">\[\begin{equation}
+    \mathbf{J}_s=-\frac{n_se^2}{m}\mathbf{A}
+\end{equation}\]</span> 需要强调的是，<strong>该方程不能从 Maxwell
+方程中导出，且应当被视为超导体作为一类特殊的电磁介质所满足的独立的电磁方程</strong>，London
+方程只有在超导体的微观理论建立后才能被严格推导。</p>
+<blockquote>
+<p>一个历史上的启发性<em>推导</em>: 假设电子在超导体中无摩擦地前进,
+<span class="math display">\[\begin{equation}
+m \dot{\mathbf{v}} = -e \mathbf{E}
+\end{equation}\]</span> 其中 <span class="math inline">\(\mathbf{v}_s\)</span> 是超导电子速度，<span class="math inline">\(\mathbf{E}\)</span> 是电场。超电流 <span class="math inline">\(\mathbf{J}_s = -e n_{s} \mathbf{v}_{s}\)</span>
+则为： <span class="math display">\[\begin{equation}
+\frac{\partial \mathbf{J}_{s}}{\partial t} = \frac{e^{2} n_{s}}{m}
+\mathbf{E}
+\end{equation}\]</span> 这是第一 London 方程。利用 Maxwell 方程： <span class="math display">\[\begin{equation}
+\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
+\end{equation}\]</span> 可立即得到： <span class="math display">\[\begin{equation}
+\frac{\partial}{\partial t} \left( \nabla \times \mathbf{J}_{s} +
+\frac{e^{2} n_{s}}{m} \mathbf{B} \right) = 0
+\end{equation}\]</span>
+该方程描述了理想导体的行为。但为了描述迈斯纳效应，积分常数必须选为零，从而：
+<span class="math display">\[\begin{equation}
+\nabla \times \mathbf{J}_{s} + \frac{e^{2} n_{s}}{m} \mathbf{B} = 0
+\end{equation}\]</span> 这是<strong>第二 London 方程</strong>。结合
+Ampere 定律： <span class="math display">\[\begin{equation}
+\nabla \times \mathbf{B} = \mu_{0} \mathbf{J}_{s}
+\end{equation}\]</span> 可得到磁场满足 Helmholtz 方程： <span class="math display">\[\begin{equation}
+\nabla^{2} \mathbf{B} = \frac{\mu_{0} n_{s} e^{2}}{m} \mathbf{B}
+\end{equation}\]</span> 假设一半无限超导体，其表面垂直于 <span class="math inline">\(x\)</span> 方向，其解为： <span class="math display">\[\begin{equation}
+B(x) = B(x_{0}) e^{-(x - x_{0}) / \lambda}
+\end{equation}\]</span> 其中： <span class="math display">\[\begin{equation}
+\lambda = \sqrt{\frac{m}{\mu_{0} n_{s} e^{2}}}
+\end{equation}\]</span> 是描述外磁场在超导-真空界面处的 London
+穿透深度。当 <span class="math inline">\(x - x_{0} \gg \lambda\)</span>
+时，磁场衰减到零，这给出了迈斯纳效应的现象学描述。</p>
+</blockquote>
+<h2 id="库伯对">库伯对</h2>
+<p>1956 年，Cooper
+考虑了两电子过程，说明如果存在一个有效的吸引相互作用，无论其多弱，在存在费米海的背景下，费米面将不再稳定，费米面上的电子会相互配对形成束缚态，从而降低基态能量。配对电子的束缚态称为<strong>库伯对</strong>。Cooper
+找到两电子形成束缚态的束缚能为：</p>
+<p><span class="math display">\[\begin{equation}\label{eq:binding}
+        \Delta E = 2 \Delta = -2 \hbar \omega_{D} e^{-2 / N_{F} g}
+\end{equation}\]</span></p>
+<p>其中 <span class="math inline">\(N_{F}\)</span>
+是费米面的态密度，<span class="math inline">\(g\)</span>
+是耦合强度，<span class="math inline">\(\omega_{D}\)</span>
+是决定诱导吸引作用机制或源头的特征能量。当吸引相互作用由电声相互作用诱导时，<span class="math inline">\(\omega_{D}\)</span>
+为声子频率，即德拜频率。这一结果表明，费米面在具有微小吸引相互作用下是不稳定的。</p>
+<p>式<span class="math inline">\(\eqref{eq:binding}\)</span>表明束缚能对相互作用强度
+<span class="math inline">\(g\)</span>
+的依赖是奇异的，这也说明超导的微观理论不能通过基于正常导电态的微扰计算得到，这是超导机制的主要困难。</p>
+<p>为了理解 Cooper
+配对能，可以求解零温下向费米海加入两个电子的问题。为减少不相容原理导致的排斥相互作用，假设两电子形成自旋单态，使空间波函数对称，且最低能态应具有零动量，因此两电子具有相反动量，波函数可写为：</p>
+<p><span class="math display">\[\begin{equation}
+|\Psi\rangle = \sum_{\mathbf{k}} \alpha(\mathbf{k})
+c_{\mathbf{k}\uparrow}^{\dagger} c_{-\mathbf{k}\downarrow}^{\dagger}
+|0\rangle
+\end{equation}\]</span></p>
+<p>其中 <span class="math inline">\(|0\rangle\)</span>
+是刚性费米海真空。</p>
+<p>两电子相互作用由以下哈密顿量控制：</p>
+<p><span class="math display">\[\begin{equation}
+H = \sum_{\mathbf{k}} (\epsilon_{\mathbf{k}} - \mu)
+c_{\mathbf{k}\sigma}^{\dagger} c_{\mathbf{k}\sigma} - \sum_{\mathbf{k},
+\mathbf{k}&#39;} V_{\mathbf{k} \mathbf{k}&#39;}
+c_{\mathbf{k}\uparrow}^{\dagger} c_{-\mathbf{k}\downarrow}^{\dagger}
+c_{-\mathbf{k}&#39;\downarrow} c_{\mathbf{k}&#39;\uparrow}
+\end{equation}\]</span></p>
+<p>其中 <span class="math inline">\(\epsilon_{\mathbf{k}}\)</span>
+是电子色散能量，<span class="math inline">\(\mu\)</span> 是化学势，<span class="math inline">\(V\)</span> 是库伯对的散射势。为简单起见，假设
+<span class="math inline">\(V\)</span> 不依赖于动量：</p>
+<p><span class="math display">\[\begin{equation}
+V_{\mathbf{k}, \mathbf{k}&#39;} = \frac{g}{V}
+\end{equation}\]</span></p>
+<p>其中 <span class="math inline">\(V\)</span>
+是系统体积。从薛定谔方程：</p>
+<p><span class="math display">\[\begin{equation}
+H |\Psi\rangle = E |\Psi\rangle
+\end{equation}\]</span></p>
+<p>可求得系数 <span class="math inline">\(\alpha(\mathbf{k})\)</span>
+满足：</p>
+<p><span class="math display">\[\begin{equation}
+2 \xi_{\mathbf{k}} \alpha(\mathbf{k}) - \frac{g}{V}
+\sum_{\mathbf{k}&#39;} \alpha(\mathbf{k}&#39;) = (E - E_{0})
+\alpha(\mathbf{k})
+\end{equation}\]</span></p>
+<p>其中 <span class="math inline">\(E_{0}\)</span>
+是填充费米海的能量，<span class="math inline">\(\xi_{\mathbf{k}} =
+\epsilon_{\mathbf{k}} - \mu\)</span>。上式可重写为：</p>
+<p><span class="math display">\[\begin{equation}
+\alpha(\mathbf{k}) = \frac{g}{2 \xi_{\mathbf{k}} - \Delta E} \frac{1}{V}
+\sum_{\mathbf{k}&#39;} \alpha(\mathbf{k}&#39;)
+\end{equation}\]</span></p>
+<p>其中 <span class="math inline">\(\Delta E = E - E_{0}\)</span>
+是系统的能隙。对两边所有 <span class="math inline">\(\mathbf{k}\)</span>
+求和后，<span class="math inline">\(\alpha\)</span>
+的因子可消去，得到能隙方程：</p>
+<p><span class="math display">\[\begin{equation}
+\frac{1}{g} = \frac{1}{V} \sum_{\mathbf{k}} \frac{1}{2 \xi_{\mathbf{k}}
+- \Delta E} = N_{F} \int_{0}^{\hbar \omega_{D}} d\xi \frac{1}{2 \xi -
+\Delta E}
+\end{equation}\]</span></p>
+<p>求解该方程可得：</p>
+<p><span class="math display">\[\begin{equation}
+\frac{1}{g} = \frac{N_{F}}{2} \ln \frac{2 \hbar \omega_{D} - \Delta
+E}{-\Delta E} \approx \frac{N_{F}}{2} \ln \frac{2 \hbar
+\omega_{D}}{|\Delta E|}
+\end{equation}\]</span></p>
+<p>从而得出式<span class="math inline">\(\eqref{eq:binding}\)</span>。</p>
+<h2 id="bcs平均场论">BCS平均场论</h2>
+<p>1957年，Bardeen，Cooper和Schrieffer基于库伯配对给出了超导微观理论。在BCS框架中，对于超导凝聚的形成有两个预先条件。其一为通过<strong>吸引相互作用形成的库伯对</strong>，其二为<strong>库伯对之间发展的相位相干性</strong>。库伯对是靠近费米面附近的电子形成的束缚态，因为库伯对保有玻色子的特征，从而可以消除电子的费米统计带来的有效排斥力，并通过相干性凝聚形成超流态，从而是超导的前置条件。到目前为止，库伯对在所有已发现的超导体中都存在，从而提供了BCS理论强力的支撑。</p>
+<p>BCS平均场从考虑式<span class="math inline">\(\eqref{eq:binding}\)</span>的哈密顿量开始，由于该式强调了配对通道而忽略了其他通道的相互作用，因而是对复杂的电子相互作用的化简。尽管该式适用于自旋单态配对，该哈密顿量经过细微的修改后也可拓展到描述自旋三重态的超导中。该哈密顿量描述的库伯对具有零质心动量，因而忽略了有限质心动量的贡献。由于有限质心动量配对的相空间受到费米面几何以及动量守恒的强烈限制，零动量配对在物理上要更加可能。然而，在外加磁场的情况下，费米面上下自旋电子会劈裂，从而有限质心动量的配对是可能的。此外，在载流超导态中库伯对也具有有限配对动量，然而配对能被抑制，且当电流超过临界电流时，配对能变为零。</p>
+<p>现在来考虑BCS平均场的计算，定义 <span class="math display">\[\begin{equation}
+A=\sum_{\mathbf{k}}c_{-\mathbf{k}\downarrow}c_{\mathbf{k}\uparrow}
+\end{equation}\]</span></p>
+<p>可以将BCS约化哈密顿量写为 <span class="math display">\[\begin{equation}
+H=\sum_{\mathbf{k}\sigma}\xi_{\mathbf{k}}c^{\dagger}_{\mathbf{k}\sigma}c_{\mathbf{k}\sigma}-\frac{g}{V}A^{\dagger}A
+\end{equation}\]</span></p>
+<p>取相互作用项的平均场近似 <span class="math display">\[
+\begin{align}
+-A^{\dagger}A &amp;= -(\langle A^{\dagger}\rangle+\delta
+A^{\dagger})(\langle A\rangle+\delta A)\nonumber\\
+&amp;= -\langle A^{\dagger}\rangle\langle A\rangle-\langle
+A^{\dagger}\rangle\delta A-\delta A^{\dagger}\langle
+A\rangle-\cancel{\delta A^{\dagger}\delta A}\nonumber\\
+&amp;= -\langle A^{\dagger}\rangle\langle A\rangle-\langle
+A^{\dagger}\rangle(A-\langle A\rangle)-(A^{\dagger}-\langle
+A^{\dagger}\rangle)\langle A\rangle\nonumber\\
+&amp;= -\langle A^{\dagger}\rangle A-\langle A\rangle
+A^{\dagger}+\langle A^{\dagger}\rangle\langle A\rangle
+\end{align}
+\]</span></p>
+<p>最后可以得到BCS的平均场哈密顿量 <span class="math display">\[\begin{equation}
+H_{MF}=\sum_\mathbf{k}\left(
+\sum_{\sigma}\xi_{\mathbf{k}}c_{\mathbf{k}\sigma}^{\dagger}c_{\mathbf{k}\sigma}+\Delta
+c_{\mathbf{k}\uparrow}^{\dagger}c_{-\mathbf{k}\downarrow}^{\dagger}+\Delta^{*}c_{-\mathbf{k}\downarrow}c_{\mathbf{k}\uparrow}\right)+\frac{V}{g}|\Delta|^{2}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\langle A\rangle\)</span>代表算符<span class="math inline">\(A\)</span>的期望，<span class="math inline">\(\Delta\)</span>是超导序参量，由下式决定 <span class="math display">\[\begin{equation}\label{eq:Gap}
+\Delta=-\frac{g}{V}\langle A\rangle=-\frac{g}{V}\sum_{\mathbf{k}}\langle
+c_{-\mathbf{k}\downarrow}c_{\mathbf{k}\uparrow}\rangle
+\end{equation}\]</span></p>
+<p>其中<span class="math inline">\(\langle
+c_{-\mathbf{k}\downarrow}c_{\mathbf{k}\uparrow}\rangle\)</span>取决于<span class="math inline">\(\Delta\)</span>的值。需要注意的是，上式便是BCS能隙方程。它完全决定了超导态的低能准粒子激发谱，通过自洽求解这个方程，可以得到所有的热力学量。</p>
+<p>需要注意的是，<span class="math inline">\(H_{MF}\)</span>并不遵循粒子数守恒，而是总自旋守恒，<span class="math inline">\(\sum_{\mathbf{k}}\sigma
+c_{\mathbf{k}\sigma}^{\dagger}c_{\mathbf{k}\sigma}\)</span>以及库伯对总动量守恒。<span class="math inline">\(H_{MF}\)</span>可以通过Bogoliubov变换的幺正矩阵来对角化</p>
+<p><span class="math display">\[\begin{equation}
+\begin{pmatrix}
+c_{\mathbf{k}\uparrow}\\c_{-\mathbf{k}\downarrow}^{\dagger}
+\end{pmatrix}=
+\begin{pmatrix}
+u_{\mathbf{k}}&amp;v_{\mathbf{k}}\\-v_{\mathbf{k}}^{*}&amp;u_{\mathbf{k}}^{*}
+\end{pmatrix}
+\begin{pmatrix}
+\alpha_{\mathbf{k}}\\\beta_{\mathbf{k}}^{\dagger}
+\end{pmatrix}
+\end{equation}\]</span></p>
+<p>经过对角化后哈密顿量变为 <span class="math display">\[\begin{equation}
+\sum_\mathbf{k}E_{\mathbf{k}}\left(\alpha_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+\beta_{\mathbf{k}}^{\dagger}\beta_{\mathbf{k}}\right)+\sum_{\mathbf{k}}\left(\xi_{\mathbf{k}}-E_{\mathbf{k}}\right)+\frac{V}{g}|\Delta|^{2}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\alpha_{\mathbf{k}}\)</span>和<span class="math inline">\(\beta_{\mathbf{k}}\)</span>是Bogoliubov准粒子的湮灭算符，它们描述了超导能隙上的单粒子激发，对应为二流体模型的正常电子。准粒子激发能为</p>
+<p><span class="math display">\[\begin{equation}
+E_{\mathbf{k}}=\sqrt{\xi_{\mathbf{k}}^{2}+\Delta^{2}}
+\end{equation}\]</span></p>
+<p>在费米面上时<span class="math inline">\(\xi_{\mathbf{k}}=0\)</span>,从而<span class="math inline">\(E_{\mathbf{k}}=|\Delta|\)</span>，从而<span class="math inline">\(\Delta_{\mathbf{k}}\)</span>为动量空间的准粒子能隙方程。Bogoliubov变换的矩阵元满足归一化条件<span class="math inline">\(u_{\mathbf{k}}^{2}+v_{\mathbf{k}}^{2}=1\)</span>，由下式决定</p>
+<p><span class="math display">\[\begin{equation}
+u_{\mathbf{k}} =
+\sqrt{\frac{1}{2}+\frac{\xi_{\mathbf{k}}}{2E_{\mathbf{k}}}}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+v_{\mathbf{k}} =
+-\text{sgn}(\Delta)\sqrt{\frac{1}{2}-\frac{\xi_{\mathbf{k}}}{2E_{\mathbf{k}}}}
+\end{equation}\]</span></p>
+<p>通过计算配对关联函数，可以将能隙方程表示为 <span class="math display">\[\begin{equation}\label{eq:gap-1}
+1=\frac{g}{V}\sum_{\mathbf{k}}\frac{1}{E_{\mathbf{k}}}\tanh\frac{\beta
+E_{\mathbf{k}}}{2}
+\end{equation}\]</span></p>
+<p>能隙的温度依赖性可以通过自洽求解该方程得到，更多的，超导转变温度<span class="math inline">\(T_{c}\)</span>可以通过设置<span class="math inline">\(\Delta=0\)</span>求解上式得到。</p>
+<p>在零温下不存在准粒子激发，从而<span class="math inline">\(\langle\alpha_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}\rangle\)</span>和<span class="math inline">\(\langle\beta_{\mathbf{k}}^{\dagger}\beta_{\mathbf{k}}\rangle\)</span>都为零，从而基态波函数可以通过将<span class="math inline">\(\alpha\)</span>和<span class="math inline">\(\beta\)</span>类型的准粒子从任意不与基态正交的初始态<span class="math inline">\(|\Psi_{0}\rangle\)</span>中投影得到</p>
+<p><span class="math display">\[\begin{equation}
+|\Psi\rangle=\prod_{\mathbf{k}}\left(1-\alpha_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}\right)\left(1-\beta_{\mathbf{k}}^{\dagger}\beta_{\mathbf{k}}\right)|\Psi_{0}\rangle
+\end{equation}\]</span></p>
+<p>为了能将<span class="math inline">\(|\Psi_0\rangle\)</span>变为真空态<span class="math inline">\(|0\rangle\)</span>，需要对上式进行归一化得到</p>
+<p><span class="math display">\[\begin{equation}\label{eq:BCSvariation}
+|\Psi\rangle=\prod_{\mathbf{k}}\left(u_{\mathbf{k}}+v_{\mathbf{k}}c_{\mathbf{k}\uparrow}^{\dagger}c_{-\mathbf{k}\downarrow}^{\dagger}\right)|0\rangle=\prod_{\mathbf{k}}u_{\mathbf{k}}\exp\left(\frac{v_{\mathbf{k}}}{u_{\mathbf{k}}}c_{\mathbf{k}\uparrow}^{\dagger}c_{-\mathbf{k}\downarrow}^{\dagger}\right)|0\rangle
+\end{equation}\]</span></p>
+<p>此式即为BCS变分波函数，而<span class="math inline">\(v_{\mathbf{k}}^{2}\)</span>是配对概率。在上式中，费米海内外的态可以被划分为</p>
+<p><span class="math display">\[\begin{equation}
+|\Psi\rangle=\prod_{|\mathbf{k}|&gt;k_{F}}\left(u_{\mathbf{k}}+v_{\mathbf{k}}c_{\mathbf{k}\uparrow}^{\dagger}c_{-\mathbf{k}\downarrow}^{\dagger}\right)\prod_{|\mathbf{k}|&lt;k_{F}}\left(u_{\mathbf{k}}c_{-\mathbf{k}\downarrow}c_{\mathbf{k}\uparrow}+v_{\mathbf{k}}\right)|\text{Fermi
+Sea}\rangle
+\end{equation}\]</span></p>
+<p>从上式也可以看到，位于费米面内外的动量的准粒子激发对应为电子/空穴激发，注意这里对电子/空穴的定义与正常导体中一致。</p>
+<p>由于准粒子算符<span class="math inline">\(\alpha_{\mathbf{k}}\)</span>和<span class="math inline">\(\beta_{\mathbf{k}}\)</span>同时包含电子的产生湮灭算符，因此它们并不是粒子数的本征算符。尽管如此，可以验证这样的粒子数算符可以保证电荷守恒，且准粒子激发与通过其描述的相关的物理量都是物理可观测量。</p>
+<p>利用超导准粒子的平均场解，可以将上式写为积分方程 <span class="math display">\[\begin{equation}
+\Delta=gN_{F}\int_{-\hbar\omega_{D}}^{\hbar\omega_{D}}d\xi  \frac{\Delta}{2\sqrt{\xi^{2}+\Delta^{2}}}\tanh\frac{\beta\sqrt{\xi^{2}+\Delta^{2}}}{2}
+\end{equation}\]</span></p>
+<p>在零温<span class="math inline">\(T\to0^{+}\)</span>下，<span class="math inline">\(\tanh \beta\to1\)</span>,上式变为 <span class="math display">\[\begin{equation}
+\frac{1}{gN_{F}}=\int_{0}^{\hbar\omega_{D}}d\xi\frac{1}{\sqrt{\xi^{2}+\Delta^{2}}}=\sinh^{-1}\frac{\hbar\omega_{D}}{\Delta}
+\end{equation}\]</span></p>
+<p>当取<span class="math inline">\(\omega_{D}\gg \Delta\)</span>与<span class="math inline">\(gN_{F}\ll1\)</span>时，上式进一步约化为 <span class="math display">\[\begin{equation}\label{eq:gap-2}
+\Delta\approx 2\hbar\omega_{D}e^{-1/gN_{F}}
+\end{equation}\]</span></p>
+<p>可以看到这个结果与<span class="math inline">\(\eqref{eq:binding}\)</span>在指数上相差了一个2，这是由于二体Cooper问题中，只有费米面以上的激发被考虑了，然而在BCS平均场中，在费米面上下的激发都应被考虑。</p>
+<p>另一方面，在临界温度<span class="math inline">\(T_{c}\)</span>处，能隙<span class="math inline">\(\Delta\)</span>趋近于0，此时能隙方程变为 <span class="math display">\[\begin{equation}
+\frac{1}{gN_{F}}=\int_{0}^{\hbar\omega_{D}}d\xi\frac{1}{\xi}\tanh\frac{\beta_{c}\xi}{2}=\int_{0}^{\frac{1}{2}\beta_{c}\hbar\omega_{D}}dx\frac{\tanh
+x}{x}
+\end{equation}\]</span></p>
+<p>当<span class="math inline">\(a\)</span>足够大时，右侧的积分可以被估计为 <span class="math display">\[\begin{equation}
+\int_{0}^{a}d x\frac{\tanh x}{x}\approx\ln 2.28 a
+\end{equation}\]</span></p>
+<p>从而在极限<span class="math inline">\(k_{B}T_{c}\ll\hbar\omega_{D}\)</span>时，有 <span class="math display">\[\begin{equation}\label{eq:SCTc-1}
+k_{B}T_{c}=1.14\hbar\omega_{D}e^{-1/gN_{F}}
+\end{equation}\]</span></p>
+<p>若超导配对由电声相互作用驱动，<span class="math inline">\(\omega_{D}\)</span>为德拜频率，该频率反比于原子质量<span class="math inline">\(M\)</span>的平方根，这意味着 <span class="math display">\[\begin{equation}
+T_{c}\propto M^{-\frac{1}{2}}
+\end{equation}\]</span></p>
+<p>这个超导相变温度的同位素效应已经在许多超导体中观测到。</p>
+<p>由于零温能隙<span class="math inline">\(\Delta\)</span>与相变温度<span class="math inline">\(T_{c}\)</span>都极度敏感地依赖于<span class="math inline">\(gN_{F}\)</span>，这意味着上述两式都不具备很强的预言能力。然而，其比例在弱耦合极限下<span class="math inline">\(gN_{F}\ll1\)</span>却是一个普适常数 <span class="math display">\[\begin{equation}
+\frac{2\Delta}{k_{B}T_{c}}\approx 3.53
+\end{equation}\]</span></p>
+<p>而与微观细节无关。这是BCS理论的显著结果，这个结果被广泛地用于区分强弱耦合超导体。对于强耦合的超导体这个值要比<span class="math inline">\(3.53\)</span>略高，例如对于汞和铅而言分别为<span class="math inline">\(4.6\)</span>与<span class="math inline">\(5.2\)</span>。</p>
+<h1 id="bogoliubov-de-gennes-formalism">Bogoliubov-de Gennes
+Formalism</h1>
+<p>上面的BCS能隙方程与其他公式都是基于平移不变性得到的，当处理杂质或磁性涡旋这样的平移对称性破缺的系统时需要修正。为了描述超导序参量在空间上的变化以及其他相关的物理量，通常直接在坐标空间上工作要比动量空间更加方便。</p>
+<p>在一个空间不均匀的体系中，如果没有磁性杂质或其他破坏时间反演对称性的源时，BCS平均场方程可以被表述为</p>
+<p><span class="math display">\[\begin{equation}\label{eq:BdG-Hamil}
+H_{MF}=\int d\mathbf{r}d\mathbf{r}&#39;\begin{pmatrix}
+c_{\mathbf{r}\uparrow}^{\dagger}&amp;c_{\mathbf{r}\downarrow}
+\end{pmatrix}\begin{pmatrix}
+H_{0}(\mathbf{r})\delta(\mathbf{r}-\mathbf{r}&#39;)&amp;\Delta(\mathbf{r},\mathbf{r}&#39;)\\
+\Delta^{*}(\mathbf{r},\mathbf{r}&#39;)&amp;-H_{0}(\mathbf{r})\delta(\mathbf{r}-\mathbf{r}&#39;)
+\end{pmatrix}\begin{pmatrix}
+c_{\mathbf{r}&#39;\uparrow}\\c_{\mathbf{r}&#39;\downarrow}^{\dagger}
+\end{pmatrix}
+\end{equation}\]</span></p>
+<p>其中 <span class="math display">\[\begin{equation}
+H_{0}=-\frac{\hbar^{2}}{2m}\nabla^{2}+U(\mathbf{r})-\mu,
+\end{equation}\]</span></p>
+<p>以及<span class="math inline">\(U(\mathbf{r})\)</span>是标量散射势。在实空间下，能隙函数<span class="math inline">\(\Delta(\mathbf{r},\mathbf{r}&#39;)\)</span>被定义为两个位于<span class="math inline">\(\mathbf{r}\)</span>和<span class="math inline">\(\mathbf{r}&#39;\)</span>处电子的配对序参量 <span class="math display">\[\begin{equation}
+\Delta(\mathbf{r},\mathbf{r}&#39;)=-g\langle
+c_{\mathbf{r}\uparrow}c_{\mathbf{r}&#39;\downarrow}\rangle
+\end{equation}\]</span></p>
+<p>该方程应当被自洽地决定。</p>
+<p>从BdG哈密顿量形式可以看到其为二次型，且迹为零。由粒子空穴对称性，可以说明，若<span class="math inline">\(E_{n}\)</span>是<span class="math inline">\(H_{MF}\)</span>的本征值，那么<span class="math inline">\(-E_{n}\)</span>也是。利用Bogoliubov变换可以对角化<span class="math inline">\(H_{MF}\)</span></p>
+<p><span class="math display">\[\begin{equation}
+\begin{pmatrix}
+c_{\mathbf{r}\uparrow}\\c_{\mathbf{r}\downarrow}^{\dagger}
+\end{pmatrix}=\sum_{n}\begin{pmatrix}
+u_{n}(\mathbf{r})&amp;-v_{n}^{*}(\mathbf{r})\\v_{n}(\mathbf{r})&amp;u_{n}^{*}(\mathbf{r})
+\end{pmatrix}
+\begin{pmatrix}
+\alpha_{\mathbf{n}}\\\beta_{\mathbf{n}}^{\dagger}
+\end{pmatrix}
+\end{equation}\]</span></p>
+<p>对于没有时间反演对称性的超导体系而言，例如在外磁场存在的情况下，自旋上下电子通过Zeeman相互作用耦合时，一个类似的Bogoliubov变换可以被定义用于求解BdG哈密顿量。然而此时<span class="math inline">\(2\times2\)</span>变换矩阵需要被推广为<span class="math inline">\(4\times4\)</span>矩阵。</p>
+<p><span class="math inline">\(u_{n}(\mathbf{r})\)</span>和<span class="math inline">\(v_{n}(\mathbf{r})\)</span>定义了Bogoliubov准粒子的波函数，他们通过<span class="math inline">\(H_{MF}\)</span>的本征方程决定</p>
+<p><span class="math display">\[\begin{equation}\label{eq:bdg-1}
+\int d\mathbf{r}&#39;\begin{pmatrix}
+H_{0}(\mathbf{r})\delta(\mathbf{r}-\mathbf{r}&#39;)&amp;\Delta(\mathbf{r},\mathbf{r}&#39;)\\
+\Delta^{*}(\mathbf{r},\mathbf{r}&#39;)&amp;-H_{0}(\mathbf{r})\delta(\mathbf{r}-\mathbf{r}&#39;)
+\end{pmatrix}
+\begin{pmatrix}
+u_{n}(\mathbf{r}&#39;)\\v_{n}(\mathbf{r}&#39;)
+\end{pmatrix}=E_{n}\begin{pmatrix}
+u_{n}(\mathbf{r})\\v_{n}(\mathbf{r})
+\end{pmatrix}
+\end{equation}\]</span></p>
+<p>在准粒子表示下，能隙函数可以用<span class="math inline">\(u_{n}(\mathbf{r})\)</span>和<span class="math inline">\(v_{n}(\mathbf{r})\)</span>表示为</p>
+<p><span class="math display">\[\begin{equation}\label{eq:bdg-2}
+\Delta(\mathbf{r},\mathbf{r}&#39;)=-\frac{g}{2}\sum_{n}\left[u_{n}(\mathbf{r})v_{n}^{*}(\mathbf{r}&#39;)+u_{n}(\mathbf{r}&#39;)v_{n}^*(\mathbf{r})\right]\tanh\frac{\beta
+E_{n}}{2}
+\end{equation}\]</span></p>
+<p>上式是Bogoliubov-de
+Gennes(BdG)自洽方程。他们被广泛地用于求解杂质散射，涡旋线周围的元激发，表面态以及Andreev反射等问题中。</p>
+<p>BdG自洽方程等价于超导在平均场下的格林函数理论。在空间不均匀的体系中，格林函数<span class="math inline">\(G(\mathbf{r},\mathbf{r}&#39;)\)</span>依赖于<span class="math inline">\(\mathbf{r}\)</span>与<span class="math inline">\(\mathbf{r}&#39;\)</span>而非两者之差<span class="math inline">\(\mathbf{r}-\mathbf{r}&#39;\)</span>。此时，通常求解BdG方程要比格林函数简单，因为BdG波函数<span class="math inline">\((u_{n}(\mathbf{r}),v_{n}(\mathbf{r}))\)</span>只依赖于单个坐标<span class="math inline">\(\mathbf{r}\)</span>。</p>
+<blockquote>
+<p><strong>区分自旋的BdG形式</strong></p>
+<p>BdG形式一般的BCS二次量子化形式为 <span class="math display">\[\begin{equation}
+\hat{\mathcal{H}} = \sum_{\sigma\sigma&#39;}\int
+d\mathbf{r}\psi_{\sigma}^{\dagger}\mathcal{H}_{\sigma\sigma&#39;}\psi_{\sigma&#39;}
++ \int d\mathbf{r}\int
+d\mathbf{r}&#39;\Delta(\mathbf{r},\mathbf{r}&#39;)\psi^{\dagger}_{\uparrow}(\mathbf{r})\psi^{\dagger}_{\downarrow}(\mathbf{r})+\Delta^{*}(\mathbf{r},\mathbf{r}&#39;)\psi_{\downarrow}(\mathbf{r})\psi_{\uparrow}(\mathbf{r}&#39;)
+\end{equation}\]</span></p>
+<p>其中<span class="math inline">\(\psi\)</span>为单体算符，<span class="math inline">\(\Delta\)</span>为自旋单态的超导配对势，若只考虑局域相互作用<span class="math inline">\(\Delta(\mathbf{r},\mathbf{r}&#39;)=\Delta\delta(\mathbf{r}-\mathbf{r}&#39;)\)</span>,可以引入Nambu旋量
+<span class="math display">\[\begin{equation}
+\hat{\Psi}(\mathbf{r})=\left(\hat{\psi}_{\uparrow}(\mathbf{r}),\hat{\psi}_{\downarrow}(\mathbf{r}),\hat{\psi}^{\dagger}_{\downarrow}(\mathbf{r}),-\hat{\psi}^{\dagger}_{\uparrow}(\mathbf{r})\right)
+\end{equation}\]</span></p>
+<p>从而哈密顿量可以写为BdG形式 <span class="math display">\[\begin{equation}
+\hat{\mathcal{H}}=\frac{1}{2}\int
+d\mathbf{r}\hat{\Psi}^{\dagger}(\mathbf{r})\hat{H}_{BdG}\hat{\Psi}(\mathbf{r})+\text{constant}
+\end{equation}\]</span></p>
+<p>其中有 <span class="math display">\[\begin{equation}
+\hat{H}_{BdG}=\begin{pmatrix}
+\mathcal{H}_{\uparrow\uparrow}(\mathbf{r})&amp;\mathcal{H}_{\uparrow\downarrow}(\mathbf{r})&amp;\Delta&amp;0\\
+\mathcal{H}_{\downarrow\uparrow}(\mathbf{r})&amp;\mathcal{H}_{\downarrow\downarrow}(\mathbf{r})&amp;0&amp;\Delta\\
+\Delta^{*}&amp;0&amp;-\mathcal{H}^{*}_{\downarrow\downarrow}(\mathbf{r})&amp;\mathcal{H}^{*}_{\downarrow\uparrow}(\mathbf{r})\\
+0&amp;\Delta^{*}&amp;\mathcal{H}^{*}_{\uparrow\downarrow}(\mathbf{r})&amp;-\mathcal{H}^{*}_{\uparrow\uparrow}(\mathbf{r})
+\end{pmatrix}
+\end{equation}\]</span></p>
+<p>注意到由于BdG形式考虑了电子和空穴的激发，新的旋量场扩张了一倍的自由度，从而在哈密顿量前有<span class="math inline">\(\frac{1}{2}\)</span>的系数。在此基础上，时间反演算符可以表示为
+<span class="math display">\[\begin{equation}
+\mathcal{T}=i\tau_{0}\sigma_{y}\mathcal{K}
+\end{equation}\]</span></p>
+<p>其中<span class="math inline">\(\mathcal{K}\)</span>是共轭算符，同样的，荷共轭算符可以表示为
+<span class="math display">\[\begin{equation}
+\mathcal{C}=-i\tau_{y}\sigma_{0}
+\end{equation}\]</span></p>
+<p>两个对称操作的组合即为粒子-空穴对称 <span class="math display">\[\begin{equation}
+\mathcal{P}=\mathcal{CT}=\tau_{y}\sigma_{y}K=\begin{pmatrix}
+0&amp;0&amp;0&amp;-1\\
+0&amp;0&amp;1&amp;0\\
+0&amp;1&amp;0&amp;0\\
+-1&amp;0&amp;0&amp;0
+\end{pmatrix}\mathcal{K}
+\end{equation}\]</span></p>
+<p>容易证明 <span class="math display">\[\begin{equation}
+\mathcal{P}\hat{\Psi}=\hat{\Psi}\quad\text{and}\quad\{\mathcal{P},\mathcal{H}_{BdG}\}=0
+\end{equation}\]</span></p>
+</blockquote>
+<h2 id="荷与概率的流密度算符">荷与概率的流密度算符</h2>
+<p>由于Bogoliubov准粒子不是电子数算符的本征态，总电子数不守恒，而这意味着准粒子的概率<span class="math inline">\(\rho_{P}(\mathbf{r})\)</span>将不正比于电子密度<span class="math inline">\(\rho_{Q}(\mathbf{r})\)</span>。相对应的，准粒子的流密度<span class="math inline">\(J_{P}(\mathbf{r})\)</span>也不正比于电流密度<span class="math inline">\(J_{Q}(\mathbf{r})\)</span>。这个差别是Cooper对凝聚带来的。这个概念的理解对规范不变性以及超导体内的电子散射非常重要。</p>
+<p>Bogoliubov准粒子的流密度荷电流密度依赖于能隙函数<span class="math inline">\(\Delta(\mathbf{r},\mathbf{r}&#39;)\)</span>的对称性。在一个各向同性的<span class="math inline">\(s\)</span>波超导中，配对相互作用是局域的，这些量可以相对简单地定义，从而Bogoliubov波函数<span class="math inline">\(u\)</span>和<span class="math inline">\(v\)</span>由下面的方程决定</p>
+<p><span class="math display">\[\begin{equation}
+i\hbar\frac{\partial}{\partial t}\begin{pmatrix}
+u(\mathbf{r})\\v(\mathbf{r})
+\end{pmatrix}=
+\begin{pmatrix}
+H_{0}(\mathbf{r})&amp;\Delta(\mathbf{r})\\\Delta^{*}(\mathbf{r})&amp;-H_{0}(\mathbf{r})
+\end{pmatrix}\begin{pmatrix}
+u(\mathbf{r})\\v(\mathbf{r})
+\end{pmatrix}
+\end{equation}\]</span></p>
+<p>其中<span class="math inline">\(\Delta(\mathbf{r})=\Delta(\mathbf{r},\mathbf{r}&#39;)\delta(\mathbf{r}-\mathbf{r}&#39;)\)</span>是超导序参量，而在<span class="math inline">\(d\)</span>波或者其他非常规超导中，能隙函数变得非局域，且有一些非对角非局域项需要加入这些定义中。</p>
+<p>在各向同性<span class="math inline">\(s\)</span>波超导体中，能隙函数与动量无关，即<span class="math inline">\(\Delta_{\mathbf{k}}=\Delta\)</span>，从而准粒子密度包含了粒子<span class="math inline">\(u\)</span>和空穴<span class="math inline">\(v\)</span>的贡献 <span class="math display">\[\begin{equation}
+\rho_{P}(\mathbf{r})=|u(\mathbf{r})|^{2}+|v(\mathbf{r})|^{2}
+\end{equation}\]</span></p>
+<p>可以验证其时间倒数满足 <span class="math display">\[\begin{equation}
+\frac{\partial}{\partial t}\rho_{P}+\nabla\cdot\mathbf{J}_{P}=0
+\end{equation}\]</span></p>
+<p>基于此方程，可以找到准粒子流定义为 <span class="math display">\[\begin{equation}
+\mathbf{J}_{P}=\frac{\hbar}{m}\Im \left(u^{*}\nabla u-v^{*}\nabla
+v\right)
+\end{equation}\]</span></p>
+<p>正如预期，对概率流密度而言，粒子和空穴有相反的贡献。</p>
+<p>由于粒子和空穴携带相反的电荷，超导准粒子的荷密度定义为 <span class="math display">\[\begin{equation}
+\rho_{Q}(\mathbf{r})=e\left
+(|u(\mathbf{r})|^{2}-|v(\mathbf{r})|^{2}\right )
+\end{equation}\]</span></p>
+<p>由<span class="math inline">\(u\)</span>和<span class="math inline">\(v\)</span>的时间演化来看，可以找到荷密度满足方程
+<span class="math display">\[\begin{equation}
+\frac{\partial}{\partial
+t}\rho_{Q}(\mathbf{r})+\nabla\cdot\mathbf{J}_{Q}(\mathbf{r})=\frac{4e}{\hbar}\Im(\Delta
+u^{*}(\mathbf{r})v(\mathbf{r}))
+\end{equation}\]</span></p>
+<p>其中 <span class="math display">\[\begin{equation}
+\mathbf{J}_{Q}(\mathbf{r})=\frac{e\hbar}{m}\Im(u^{*}\nabla u+v^{*}\nabla
+v)
+\end{equation}\]</span></p>
+<p>是准粒子的电荷流密度。与概率守恒方程相比，电荷守恒方程包含了一个额外项，由超导配对电子贡献，这一项正比于Bogoliubov本征态的粒子空穴波函数的积，如果我们定义超电流密度算符为
+<span class="math display">\[\begin{equation}
+\nabla\cdot\mathbf{J}_{S}(\mathbf{r})=-\frac{4e}{\hbar}\Im\left [\Delta
+u^{*}(\mathbf{r})v(\mathbf{r})\right ]
+\end{equation}\]</span></p>
+<p>则荷守恒变为 <span class="math display">\[\begin{equation}
+\frac{\partial}{\partial
+t}\rho_{Q}(\mathbf{r})+\nabla\cdot\left[\mathbf{J}_{Q}(\mathbf{r})+\mathbf{J}_{S}(\mathbf{r})
+\right]=0
+\end{equation}\]</span></p>
+<p>在平移不变的系统中，动量<span class="math inline">\(\mathbf{k}\)</span>是好量子数，此时Bogoliubov准粒子波函数由BCS平均场方程决定。而在实空间中有</p>
+<p><span class="math display">\[\begin{equation}
+u(\mathbf{r}) =
+\frac{1}{\sqrt{V}}e^{i\mathbf{k}\cdot\mathbf{r}}\sqrt{\frac{1}{2}+\frac{\xi_{\mathbf{k}}}{2E_{\mathbf{k}}}}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+v(\mathbf{r}) =
+-\frac{1}{\sqrt{V}}e^{i\mathbf{k}\cdot\mathbf{r}}\sqrt{\frac{1}{2}-\frac{\xi_{\mathbf{k}}}{2E_{\mathbf{k}}}}
+\end{equation}\]</span></p>
+<p>当<span class="math inline">\(\mathbf{k}\)</span>为实数时，概率流密度等于 <span class="math display">\[\begin{equation}
+\mathbf{J}_{P}=\frac{\hbar\xi_{\mathbf{k}}\mathbf{k}}{mVE_{\mathbf{k}}}
+\end{equation}\]</span></p>
+<p>作为比较，正常荷流<span class="math inline">\(\mathbf{J}_{Q}\)</span>与超电流<span class="math inline">\(\mathbf{J}_{S}\)</span>为 <span class="math display">\[\begin{equation}
+\mathbf{J}_{Q}=\frac{e\hbar\mathbf{k}}{mV}
+\end{equation}\]</span> <span class="math display">\[\begin{equation}
+\mathbf{J}_{S}=0
+\end{equation}\]</span></p>
+<p>这说明具有实动量<span class="math inline">\(\mathbf{k}\)</span>的Bogoliubov准粒子不会通过与另一个准粒子形成库伯对从而衰变产生超电流，从而<span class="math inline">\(\mathbf{J}_{S}=0\)</span>。尽管<span class="math inline">\(\mathbf{J}_{P}\)</span>与<span class="math inline">\(\mathbf{J}_{Q}\)</span>都正比于动量<span class="math inline">\(\hbar\mathbf{k}\)</span>，但<span class="math inline">\(\mathbf{J}_{P}\)</span>多包含了因子<span class="math inline">\(\xi_{\mathbf{k}}/E_{\mathbf{k}}\)</span>。荷电流密度的方向与<span class="math inline">\(\mathbf{k}\)</span>一样。对于粒子型准粒子，有<span class="math inline">\(\xi_{\mathbf{k}}&gt;0\)</span>，其概率流密度也平行于<span class="math inline">\(\mathbf{k}\)</span>。然而对于空穴型准粒子，由于<span class="math inline">\(\xi_{\mathbf{k}}&lt;0\)</span>，其概率流密度反平行于<span class="math inline">\(\mathbf{k}\)</span>。</p>
+<p>另一方面，若动量包含一个小虚部，例<span class="math inline">\(\mathbf{k}=\mathbf{k}_{0}+i\eta\hat{x}\)</span>，其中<span class="math inline">\(\eta&gt;0\)</span>，准粒子的波函数将会在<span class="math inline">\(\hat{x}\)</span>方向上指数衰减，此时准粒子的荷流变为
+<span class="math display">\[\begin{equation}
+\mathbf{J}_{Q}=\frac{e\hbar\mathbf{k}_{0}}{mV}e^{-2\eta x}
+\end{equation}\]</span></p>
+<p>即也在<span class="math inline">\(x\)</span>方向上衰减。超电流在<span class="math inline">\(y\)</span>和<span class="math inline">\(z\)</span>方向上依然为0，然而在<span class="math inline">\(x\)</span>方向上是有限的 <span class="math display">\[\begin{equation}
+J_{S}^{x}=-\frac{e\Delta^{2}}{\eta\hbar V}(1-e^{-2\eta
+x})\Im\frac{1}{E_{\mathbf{k}}}
+\end{equation}\]</span></p>
+<p>当<span class="math inline">\(\eta\ll|\mathbf{k}_{0}|\)</span>时，<span class="math inline">\(J_{S}^{x}\)</span>近似为 <span class="math display">\[\begin{equation}
+J_{S}^{x}=\frac{e\Delta^{2}\hbar\xi_{k_{0}}k_{0,x}}{mVE_{k_{0}}^{3}}\left
+(1-e^{-2\eta x}\right )
+\end{equation}\]</span></p>
+<p>这说明准粒子的荷流被转变为库伯对的超电流。准粒子动量的虚部的逆<span class="math inline">\(\eta^{-1}\)</span>是一个描述准粒子形成凝聚的超导库伯对的特征长度。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">D-Wave
+Superconductivity. Cambridge University Press;
+2022.<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这里符号加粗表明该量是一个向量<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂谈-什么是物理图像？</title>
+    <url>/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="引论">引论</h2>
+<p>通常在学物理/做物理的人之间会有一个专有名词叫<strong>物理图像(Physical
+Picture)</strong>，有时也简称为<strong>物理</strong>。例如交流的时候会说"你这篇文章的物理(图像)是什么"。然而维基百科上并没有关于这个词的明确定义，且在不同的语境下<strong>物理图像</strong>指代对象会有极大的不同。为了能够理清这一词至目前的各种含义，于是便写下了这篇杂谈。</p>
+<h2 id="物理模型">物理模型</h2>
+<p>作为自然学科的基础之一，物理的核心在于研究自然。而要研究自然，目前最有效的方式是根据现实提取出对应的<b><font color="red">物理模型</font></b>进行分析。</p>
+<p>为了得到响应的物理模型，在考虑现实中的各种物理对象时，首先要对该对象进行<strong>抽象</strong>，以此得到最简单而又最能反应所关注的内容的一个物理模型.例如<strong>质点</strong>这一对象是对任意不关注其大小以及形状的物体的抽象，这一抽象对象在研究一个物体的运动，尤其是空间上的平移时时最为有效，因为我们只需要关注质点在空间中的位置即可。然而由于抽象过程中我们抛弃了太多信息，导致其缺点在于质点是一个没有大小的点，我们没有办法研究它的旋转。</p>
+<p>若是要研究旋转，我们需要加入一些关于形状和大小的细节，这个时候将<strong>刚体</strong>的抽象要更加有利于研究。借此我们可以研究对象的旋转。若是要研究刚体在各种受力下的变化，我们就需要加入更多的细节，例如物体可以发生形变，扭曲，断裂，拼接，融合等各种现实中存在的过程。无论如何，在研究自然时，我们总是需要根据研究对象去提取出当前对象最关键的信息，通过抽象来建立一个物理对象的模型，这便是物理模型。</p>
+<h2 id="数学模型">数学模型</h2>
+<p>在建立了物理模型后，我们需要描述其各种关心的性质以及各种性质之间的联系。而目前最好的描述工具是数学，在基于对应的物理模型的基础上，进一步用数学建立的模型可以称为<strong>数学模型</strong>。或许最广为人知的数学模型应当是牛顿的运动学第二定律
+<span class="math display">\[\begin{equation}
+    \mathbf{F}=m\mathbf{a}
+\end{equation}\]</span> 这个公式描述了一个真空中质量为<span class="math inline">\(m\)</span>的物理对象受到的力<span class="math inline">\(\mathbf{F}\)</span>与其因力而产生的加速度<span class="math inline">\(\mathbf{a}\)</span>的关系，这是一个数学函数关系，因此可以认为其是一个描述任一满足特定假设<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。
+">[1]</span></a></sup>下用于描述<strong>物理模型</strong>的<strong>数学模型</strong>。
+这个<strong>数学模型</strong>的特殊性在于，与其他任意<span class="math inline">\(y=f(x)\)</span>相比，当我们将这三个变量(两个是矢量)中任意两个变量换为任意物理对象的对应的已知参数的<em>数据</em><sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="之所以是*数据*而非*数字*，在于单位。
+">[2]</span></a></sup>时，求解得到的第三个未知的变量的数据将必然与在现实中的物理对象通过实验测得的数据<strong>在一定的误差范围内相同</strong>。这一重要区别使得一个<strong>物理模型</strong>所对应的<strong>数学模型</strong>具有了一定程度的<b><font color="red">预测现实</font></b>的功能。</p>
+<h2 id="物理理论">物理理论</h2>
+<p>在阐明了物理模型以及的对应的数学模型后，便可以开始讨论<strong>物理理论</strong>。一个物理理论<strong>是一类物理事件的模型</strong>。由于对现实的一对一建模是不可能的事情，因此人们更希望通过一系列有限的物理模型来提取出一个(或一类)更加本质的模型，当遇到全新的对象时，直接利用这个本质的模型去套用即可分析新的对象，这就是物理理论。它的评判标准是其预测与实证观察的一致性程度。物理理论的质量还取决于它做出新预测的能力，这些预测可以通过新的观察来验证。这一套采用数学模型和物理对象和系统的抽象来合理化、解释和预测自然现象<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 理论物理学](https://en.wikipedia.org/wiki/Theoretical_physics)
+">[3]</span></a></sup>对应为理论物理学。亦即，理论物理学是研究物理理论的学科。</p>
+<p>对于物理理论的描述，通常是利用数学模型来描述一类物理模型的性质以及其之间的关系。一个物理理论通常会包含多个物理模型以及其对应的数学模型。例如牛顿力学便是一个物理理论，其包含了质点、刚体等多个物理模型，以及对应的牛顿定律等数学模型。</p>
+<p>然而，以纯粹物理理论的严格性和信息量而言，要想直接对其进行讨论是非常困难的。因此，通常人们会在讨论物理理论时，使用<b><font color="red">物理图像</font></b>来进行描述。在这之前，需要对图像这个词进行一些意义的拓展</p>
+<h2 id="图像">图像</h2>
+<p>图，或者图像，是一般人每时每刻都需要的一种信息。借用维基百科的介绍<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 图片](https://en.wikipedia.org/wiki/Image)
+">[4]</span></a></sup>， &gt;
+图像或图片是一种视觉表示形式。图像可以是二维的，例如绘图、绘画或照片，也可以是三维的，例如雕刻或雕塑。</p>
+<p>作为含有信息量最丰富的对象，其直观与简洁对于理解事物具有极大的帮助性。例如描述圆的时候，数学上通常用解析几何的方法，来定义满足方程
+<span class="math display">\[\begin{equation}
+    x^2+y^2=r^2
+\end{equation}\]</span> 的点集(x,y)构成的集合，而图像上可以很简单的给出
+<img src="/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/image.png" alt="alt text">
+从这个角度来说，图像作为信息的载体，其特征在于<strong>简洁</strong>与<strong>直观</strong>。
+## 物理图像
+在介绍完了物理模型和图像后，<strong>物理图像</strong>简单来说便是指一类<b><font color="red">简洁直观</font></b>的<strong>物理模型</strong>。需要注意的是，物理图像并不指代物理实在，而是指一个方便理解的抽象对象。因为只有在有了对象之后，才可以谈及对象之间的关系，也即物理关系。而所谓常说的"新物理"，也是指一类新的物理图像以及其对应的之前所未探明的物理关系。</p>
+<h2 id="总结">总结</h2>
+<p>物理图像作为一种简洁直观的物理模型，其主要是在简单的讨论中，避免涉及过多的计算但是却能理清复杂的物理关系的工具。利用物理(图像)，即便是不甚了解一个理论内部的数学关系，也可以理清楚不同物理对象之间的关系，这极大的降低了交流成本。除此之外，物理图像的重要意义在于，通过考察物理图像对应的自然现实，有时甚至可以跳过严格的数学构造和推导，直接抽取出可能的物理关系。例如已知牛顿第二定律是一个二阶微分方程，对于匀速运动而言其解需要首先求解该微分方程，得到解
+<span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\frac{1}{2}a t^2+bt+c
+\end{equation}\]</span> 然后带入初始条件，计算后才能得到 <span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
+\end{equation}\]</span>
+但是，如果直接考虑一个匀速运动的物体，我们应当可以很轻易地直接写下 <span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
+\end{equation}\]</span>
+这种方法甚至在分数量子霍尔效应中诞生过诺贝尔奖，其得主Robert
+Laughlin在没有任何数学推导的情况下，直接写出了分数量子霍尔效应的物理图像，并且成功地解释了实验结果。</p>
+<h2 id="题外话">题外话</h2>
+<p>作为一个个人的观点，实际物理学中的<strong>解释</strong>并非对现实行为的解释，而是基于<b><font color="red">物理图像的对物理模型的解释</font></b>。因为现实世界是极其复杂的，如果一个理论能够解释现实，那么现实就不应该存在无法解释的对象，然而客观上现实中存在无法利用理论解释的现象，这实际上正是物理理论作为物理模型的集合的局限性所在。而所谓的解释，实际上是基于物理模型对该框架下的可能的物理图像的解释<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="本文中部分论述使用copilot润色。">[5]</span></a></sup>。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">之所以是<em>数据</em>而非<em>数字</em>，在于单位。<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Theoretical_physics">WikiPedia
+理论物理学</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:4">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Image">WikiPedia
+图片</a><a href="#fnref:4" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:5">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">本文中部分论述使用copilot润色。<a href="#fnref:5" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>物理</tag>
+        <tag>杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>精确对角化-以Bose Hubbard模型为例</title>
+    <url>/2025/07/20/BoseHubbard/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文主要参照J M Zhang以及R X
+Dong一文精确对角化方法，以Bose-Hubbard模型为例，给出了对应的哈密顿量的构建方法。代码以matlab给出。</p>
+<h1 id="bose-hubbard模型">Bose-Hubbard模型</h1>
+<p>Bose-Hubbard模型指的是满足如下哈密顿量的模型：</p>
+<p><span class="math display">\[\begin{equation}
+\hat{H}=-t\sum_{\langle
+ij\rangle}(a_{i}^{\dagger}a_{j}+a_{j}^{\dagger}a_{i})+\frac{U}{2}\sum_{i=1}^{M}\hat{n}_{i}(\hat{n}_{i}-1)
+\end{equation}\]</span></p>
+<p>其中<span class="math inline">\(a_{i}(a_{i}^{\dagger})\)</span>是湮灭(生成)一个在格点<span class="math inline">\(i\)</span>上粒子的<strong>玻色算符</strong>，而数算符<span class="math inline">\(\hat{n}_{i}=a_{i}^{\dagger}a_{i}\)</span>则计数在格点<span class="math inline">\(i\)</span>上的粒子。由于该模型是玻色模型，每个格点上可以有多于两个粒子的共存。我们考虑有限个<strong>一维</strong>格点，假设总共有<span class="math inline">\(M\)</span>个格点，若总原子数为<span class="math inline">\(N\)</span>个，则总的Hilbert空间可以通过隔板法可以求得：</p>
+<p><span class="math display">\[\begin{equation}
+D=\frac{(N+M-1)!}{N!(M-1)!}
+\end{equation}\]</span></p>
+<p>可以发现该空间维数以指数增长。尽管可以通过对称性削减基的数量，在这里我们只考虑一个基础的数值方法，故在这里不作对称性分析。</p>
+<p>本文的主要内容参考自相关文献<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="J M Zhang and R X Dong. Exact diagonalization: The Bose–Hubbard model as an example.
+European Journal of Physics, 31(3):591–602, May 2010.">[1]</span></a></sup>，给出了如何构建用于精确对角化的Bose-Hubbard模型的算法。为简便起见，这里采取<strong>周期性边界条件</strong>。</p>
+<h2 id="基的构建">基的构建</h2>
+<p>由于我们需要考虑<span class="math inline">\(N\)</span>个粒子分布在<span class="math inline">\(M\)</span>个格点上的所有可能，尽管用循环的方式可以生成基，但其速度是相对慢的。事实上，对于Fock态，我们可以定义一个<a href="https://zh.wikipedia.org/wiki/%E5%AD%97%E5%85%B8%E5%BA%8F">字典序</a>(Lexicographic
+order)去排列所有的基。</p>
+<p>给定两个Fock基向量<span class="math inline">\(|n_{1},n_{2},\cdots,n_{M}\rangle\)</span>与<span class="math inline">\(|\bar{n}_{1},\bar{n}_{2},\cdots,\bar{n}_{M}\rangle\)</span>，那么一定存在一个给定的编号<span class="math inline">\(1\le k\le M-1\)</span>使得对于<span class="math inline">\(1\le i\le M-1\)</span>有 <span class="math inline">\(n_{i}=\bar{n}_{i}\)</span>，而<span class="math inline">\(n_{k}\neq \bar{n}_{k}\)</span>。我们定义，若<span class="math inline">\(n_{k}\ge\bar{n}_{k}\)</span>(<span class="math inline">\(n_{k}\le\bar{n}_{k}\)</span>)，则称向量<span class="math inline">\(|n_{1},n_{2},\cdots,n_{M}\rangle\)</span>优于(superior)(劣于inferior)向量<span class="math inline">\(|\bar{n}_{1},\bar{n}_{2},\cdots,\bar{n}_{M}\rangle\)</span>。可以证明，这样的序关系可以在基向量之间定义一个全序关系。此时明显有<span class="math inline">\(|N,0,\cdots,0\rangle\)</span>优于其他所有基向量，而<span class="math inline">\(|0,0,\cdots,N\rangle\)</span>劣于其他所有基向量。</p>
+<p>借由这样构造的全序关系，我们可以从<span class="math inline">\(|N,0,\cdots,0\rangle\)</span>以降序的方式生成其他所有占据数的基。给定一基向量<span class="math inline">\(|n_{1},n_{2},\cdots,n_{M}\rangle\)</span>满足<span class="math inline">\(n_{m}&lt;N\)</span>，则我们生成劣于该向量的规则如下：</p>
+<p>设<span class="math inline">\(n_{k}\neq0\)</span>，且对所有的<span class="math inline">\(k+1\le i\le M-1\)</span>都有<span class="math inline">\(n_{i}=0\)</span>时，下一个基向量<span class="math inline">\(|\bar{n}_{1},\bar{n}_{2},\cdots,\bar{n}_{M}\rangle\)</span>应当满足：</p>
+<ul>
+<li>当<span class="math inline">\(1\le i\le k-1\)</span>时，有<span class="math inline">\(\bar{n}_{i}=n_{i}\)</span></li>
+<li><span class="math inline">\(\bar{n}_{k}=n_{k}-1\)</span></li>
+<li><span class="math inline">\(\bar{n}_{k+1}=N-\sum_{i=1}^{k}\bar{n}_{i}\)</span>，且对于<span class="math inline">\(i\ge k+2\)</span>有<span class="math inline">\(\bar{n}_{i}=0\)</span></li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">% Initialize the basis through cell</span></span><br><span class="line">Basis = <span class="built_in">repmat</span>(&#123;<span class="built_in">zeros</span>(<span class="number">1</span>, N_Sites)&#125;, Dimension, <span class="number">1</span>);</span><br><span class="line"><span class="comment">% Set the first basis as (N, 0, 0...)</span></span><br><span class="line">Basis&#123;<span class="number">1</span>&#125;(<span class="number">1</span>) = N_atoms;</span><br><span class="line"><span class="comment">% Basis Generation</span></span><br><span class="line"><span class="keyword">for</span> ii = <span class="number">2</span>: Dimension</span><br><span class="line">    <span class="comment">% find the index of k</span></span><br><span class="line">    Count = <span class="built_in">find</span>(Basis&#123;ii<span class="number">-1</span>&#125;(<span class="number">1</span>:<span class="keyword">end</span><span class="number">-1</span>)~=<span class="number">0</span>, <span class="number">1</span>, <span class="string">&#x27;last&#x27;</span>);</span><br><span class="line">    temp = Basis&#123;ii<span class="number">-1</span>&#125;;</span><br><span class="line">    <span class="keyword">if</span> Count &lt;= N_Sites - <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> temp(Count) ~= <span class="number">0</span> &amp;&amp; ~any(temp(Count+<span class="number">1</span>:<span class="keyword">end</span><span class="number">-1</span>))</span><br><span class="line">            Basis&#123;ii&#125;(<span class="number">1</span>:Count<span class="number">-1</span>) = Basis&#123;ii<span class="number">-1</span>&#125;(<span class="number">1</span>:Count<span class="number">-1</span>);</span><br><span class="line">            Basis&#123;ii&#125;(Count) = Basis&#123;ii<span class="number">-1</span>&#125;(Count) - <span class="number">1</span>;</span><br><span class="line">        Basis&#123;ii&#125;(Count + <span class="number">1</span>) = N_atoms - sum(Basis&#123;ii&#125;(<span class="number">1</span>:Count));</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">Basis = cell2mat(Basis);</span><br></pre></td></tr></table></figure>
+<p>通过这样的计算，我们可以得到所有的基，得到的<code>Basis</code>将是一个<span class="math inline">\(D\times
+M\)</span>的矩阵，每一行代表一个基，而一个基的每个分量则代表这个格点上的占据数。</p>
+<h2 id="哈密顿量的构建">哈密顿量的构建</h2>
+<p>建立好基之后，便可以开始构建哈密顿量的分量：</p>
+<p><span class="math display">\[\begin{equation}
+H_{uv}=\langle u|H|v\rangle
+\end{equation}\]</span></p>
+<p>一般情况下我们需要的哈密顿量是稀疏矩阵，我们只需要找到对应的非零元。Bose-Hubbard哈密顿量分为两个部分，一个部分为动能跃迁项<span class="math inline">\(H_{\text{kin}}\)</span>，另一个部分相互作用项<span class="math inline">\(H_{\text{int}}\)</span>。因为在占据数表象下相互作用项是对角的，所以主要问题在于如何构建跃迁项。</p>
+<p>一个直接的想法是将所有基向量都循环一遍——这个方法当然是可行的，但是当希尔伯特空间维数达到百万时，要遍历整个哈密顿量的矩阵所需要的时间是极久的。考虑到我们要写的动能项的哈密顿量形如<span class="math inline">\(a_{i}^{\dagger}a_{j}\)</span>，由于这样的跃迁总是近邻跃迁(例如一维情况下，考虑<span class="math inline">\(M&gt;3\)</span>个格点，则格点2上有从<span class="math inline">\(2\to 3\)</span>和<span class="math inline">\(2\to1\)</span>两种跃迁)，对于<span class="math inline">\(M\)</span>个格点而言，最多只有<span class="math inline">\(2M\)</span>个跃迁项，于是一个更简单的方法是，首先将基排好序，然后给定一个对应于哈密顿量第<span class="math inline">\(v\)</span>列的基向量<span class="math inline">\(|v\rangle\)</span>，找到动能项哈密顿量作用在基上后的两个跃迁后的基，再乘上跃迁系数，就得到了对应的非零项，而这两个基对应的序列则给出了哈密顿量非零元的行指标。例如考虑一个5格点3个粒子的情形，给定基<span class="math inline">\(|0,3,0,0,0\rangle\)</span>，该向量的两种跃迁为<span class="math inline">\(|1,2,0,0,0\rangle\)</span>或<span class="math inline">\(|0,2,1,0,0\rangle\)</span>，则对应的哈密顿量第<span class="math inline">\(v\)</span>列的非零行就是这两个基的位置。然后再遍历所有列，就可以写出动能部分哈密顿量。通过上面的方法，问题被转化成了如何找到经过哈密顿量作用后的非零向量所处的序列，这对应到哈密顿量的行列指标。</p>
+<p>在对应非零基向量时，相比于挨个挨个地对应值，我们可以利用一种哈希技术(Hashing
+technique)来更快地找到对应地向量。简单来说，哈希算法给每个基向量都定义一个标签(Tag)，从而要比较两个向量是否相同时，只需要比较他们的标签是否一致即可。</p>
+<p>由于我们在生成基向量的时候已经定义了字典序，我们在这里可以进一步的利用字典序来定义一个标签函数。一个可选方案是：</p>
+<p><span class="math display">\[\begin{equation}
+T(|v\rangle)=\sum_{i=1}^{M}\sqrt{p_{i}}v_{i}
+\end{equation}\]</span></p>
+<p>其中<span class="math inline">\(p_{i}\)</span>可以是第<span class="math inline">\(i\)</span>个质数。由于matlab的<code>prime</code>函数生成质数的速度不快，可以参考文章<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="J M Zhang and R X Dong. Exact diagonalization: The Bose–Hubbard model as an example.
+European Journal of Physics, 31(3):591–602, May 2010.">[1]</span></a></sup>中直接可以使用<span class="math inline">\(p_{i}=100i+3\)</span>。</p>
+<p>在给基编好号之后，为了更快地查找，还可以通过tag值对基向量进行排序，这样可以利用二分法进行查找，从而对于<span class="math inline">\(D\)</span>个基向量，要找到对应的向量只需要<span class="math inline">\(\log_{2}D\)</span>次寻找。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">Tags = Basis * <span class="built_in">sqrt</span>(<span class="number">100</span> * (<span class="number">1</span>: N_Sites) + <span class="number">3</span>)&#x27;;</span><br><span class="line"><span class="comment">% Sort the Tag function</span></span><br><span class="line">[Tags, ind] = <span class="built_in">sort</span>(Tags);</span><br></pre></td></tr></table></figure>
+<p>这样一来，最后就只需要找到对应的非零元的行列以及对应的值，就可以利用<code>sparse</code>命令建立动能部分哈密顿量。对应的matlab代码为：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> ii = <span class="number">1</span>: Dimension</span><br><span class="line">    ind_nonzero = <span class="built_in">find</span>(Basis(ii,:));</span><br><span class="line">    <span class="keyword">for</span> jj = <span class="number">1</span>: <span class="built_in">length</span>(ind_nonzero)</span><br><span class="line">        <span class="comment">% Nearest hopping</span></span><br><span class="line">        <span class="comment">% Left hopping matrix element</span></span><br><span class="line">        temp = Basis(ii,:);</span><br><span class="line">        temp(ind_nonzero(jj)) = temp(ind_nonzero(jj)) - <span class="number">1</span>;</span><br><span class="line">        temp_site = ind_nonzero(jj) - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> temp_site == <span class="number">0</span></span><br><span class="line">            temp_site = N_Sites;</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        temp(temp_site) = temp(temp_site) + <span class="number">1</span>;</span><br><span class="line">        temp_Tag = temp * Tag_function(N_Sites)&#x27;;</span><br><span class="line">        col(Count) = ii;</span><br><span class="line">        row(Count) = ind(<span class="built_in">abs</span>(Tags - temp_Tag) &lt; Accuracy);</span><br><span class="line">        val(Count) = <span class="built_in">sqrt</span>(Basis(ii,ind_nonzero(jj)) * (Basis(ii, temp_site)+<span class="number">1</span>));</span><br><span class="line">        Count = Count + <span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">% Right hopping matrix element</span></span><br><span class="line">        temp = Basis(ii,:);</span><br><span class="line">        temp(ind_nonzero(jj)) = temp(ind_nonzero(jj)) - <span class="number">1</span>;</span><br><span class="line">        temp_site = ind_nonzero(jj) + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> temp_site == N_Sites + <span class="number">1</span></span><br><span class="line">            temp_site = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        temp(temp_site) = temp(temp_site) + <span class="number">1</span>;</span><br><span class="line">        temp_Tag = temp * Tag_function(N_Sites)&#x27;;</span><br><span class="line">        col(Count) = ii;</span><br><span class="line">        row(Count) = ind(<span class="built_in">abs</span>(Tags - temp_Tag) &lt; Accuracy);</span><br><span class="line">        val(Count) = <span class="built_in">sqrt</span>(Basis(ii,ind_nonzero(jj)) * (Basis(ii, temp_site)+<span class="number">1</span>));</span><br><span class="line">        Count = Count + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">H_kinetic = sparse(row, col, val);</span><br></pre></td></tr></table></figure>
+<p>这里采取的方法是，给定一个基向量<span class="math inline">\(|v\rangle\)</span>记为列指标，仅对于其占据数非零的格子进行遍历，然后分别考虑向右跃迁和向左跃迁的情况，并找到对应的向量指标记为行指标，同时将其跃迁带来的值进行记录，最后利用<code>sparse</code>命令生成即可。</p>
+<p>注意在多粒子体系中有：</p>
+<p><span class="math display">\[\begin{equation}
+a_{i}^{\dagger}a_{j}|v\rangle=\sqrt{(v_{i}+1)v_{j}}|\cdots,v_{i}+1,\cdots
+v_{j}-1,\cdots\rangle
+\end{equation}\]</span></p>
+<p>会带来额外的粒子系数。</p>
+<p>最后则是对角的相互作用部分，可以轻易地用一行指令写下：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">H_interaction = spdiags(sum(Basis .* (Basis - (Basis&gt;<span class="number">0</span>)),<span class="number">2</span>), <span class="number">0</span>, Dimension, Dimension);</span><br></pre></td></tr></table></figure>
+<p>合在一起，便得到了Bose-Hubbard模型的哈密顿量：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">H = -t * H_kinetic + U/<span class="number">2</span> * H_interaction;</span><br><span class="line">spy(H)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="/2025/07/20/BoseHubbard/BoseHubbard.png" alt="alt text"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>左图为M=10且N=10的格点图，右图为对应的哈密顿量的稀疏矩阵</em></td>
+</tr>
+</tbody>
+</table>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">J
+M Zhang and R X Dong. Exact diagonalization: The Bose–Hubbard model as
+an example. European Journal of Physics, 31(3):591–602, May
+2010.<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World-建站纪念</title>
+    <url>/2025/03/21/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一些建站的纪念">一些建站的纪念</h1>
+<p>在此记录一下建立博客最初的一些思绪和看法。由于是渐进式的文章，因此本文会不定期更新。</p>
+<p>这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
+<p>建立这个博客的最重要的目的是提升自己的<strong>写作能力</strong>。最近在一次又一次改文章的过程，再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。之所以有个"再"字，是考虑到之前也被L老师痛批过语文能力很差劲。所以借此机会，慢慢的写一些文章，分享一些技术杂谈。
+实际上，在写这篇纪念的时候，脑子里也总是想一些有的没的。一直在考虑写一些什么东西，却没有很好的梳理起来，成为有条理性和故事性的文章。可是，如果不从第一个字，第一篇文章下手，任何的改进都是空谈。所以，即便这篇，或者开始的一些，甚至以后的文章都写的非常糟糕，也不能就此放弃。(当然，迫于现实生活的紧张节奏导致的没有时间写是另一回事。)</p>
+<p>第二个目的算是排解一下情绪。人生毫无疑问是一场持久战，无论是身心还是现实都是。而在最近的生活中，既要保证四五年里个体的身心的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。当然我也想过学习画画，但是看上去并没有作画的天分，也没有相应的毅力，所以只能就此作罢。</p>
+<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作网站。</p>
+<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。(当然，如果有人能看到并感觉有点意思，那就再好不过了)。</p>
+<hr>
+<h1 id="一些常用markdown命令">一些常用Markdown命令</h1>
+<p>这里主要参考了<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>，记录在这里是为了避免每次使用都要查询。</p>
+<h2 id="内容目录">内容目录</h2>
+<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
+<h2 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h2>
+<p><code>*斜体* 与 **粗体**</code></p>
+<h2 id="分割线">分割线</h2>
+<p>在单独的一行使用 <code>***</code> 或者 <code>---</code>
+表示分割线</p>
+<p><code>***</code></p>
+<hr>
+<p><code>---</code></p>
+<hr>
+<h2 id="排序">排序</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一件事</span><br><span class="line">    * 第一个方面</span><br><span class="line">    * 第二个方面</span><br><span class="line">2. 第二件事</span><br><span class="line">    - 第一个方面</span><br><span class="line">    - 第二个方面</span><br></pre></td></tr></table></figure>
+<ol type="1">
+<li>第一件事
+<ul>
+<li>第一个方面</li>
+<li>第二个方面</li>
+</ul></li>
+<li>第二件事
+<ul>
+<li>第一个方面</li>
+<li>第二个方面</li>
+</ul></li>
+</ol>
+<h2 id="超链接">超链接</h2>
+<p>插入文字超链接的格式如下 ：</p>
+<p><code>[链接文字](链接地址 "链接标题")</code></p>
+<p>插入图片超链接的格式如下：</p>
+<p><code>![图片说明](图片链接 "图片标题")</code></p>
+<h2 id="注释">注释</h2>
+<p>用 <code>\</code>表示注释</p>
+<h2 id="引用">引用</h2>
+<p>使用<code>&gt;</code>表示文字引用</p>
+<p><code>&gt; 这是一段文字引用</code></p>
+<blockquote>
+<p>这是一段文字引用</p>
+</blockquote>
+<h2 id="latex">Latex</h2>
+<p>数学公式的默认环境是<code>$ $</code>或<code>$$ $$</code>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span class="math inline">\(\begin{equation}
+f(x) = x^2
+\end{equation}\)</span></p>
+<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明</p>
+<hr>
+<!-- ## Quick Start
+
+### Create a new post
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
+--&gt;</p>
+-->]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>恒星的流体静力学平衡</title>
     <url>/2025/03/26/Stars/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="前言">前言</h1>
@@ -797,93 +1284,6 @@ planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过
       <tags>
         <tag>技术</tag>
         <tag>物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World-建站纪念</title>
-    <url>/2025/03/21/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一些建站的纪念">一些建站的纪念</h1>
-<p>在此记录一下建立博客最初的一些思绪和看法。由于是渐进式的文章，因此本文会不定期更新。</p>
-<p>这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
-<p>建立这个博客的最重要的目的是提升自己的<strong>写作能力</strong>。最近在一次又一次改文章的过程，再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。之所以有个"再"字，是考虑到之前也被L老师痛批过语文能力很差劲。所以借此机会，慢慢的写一些文章，分享一些技术杂谈。
-实际上，在写这篇纪念的时候，脑子里也总是想一些有的没的。一直在考虑写一些什么东西，却没有很好的梳理起来，成为有条理性和故事性的文章。可是，如果不从第一个字，第一篇文章下手，任何的改进都是空谈。所以，即便这篇，或者开始的一些，甚至以后的文章都写的非常糟糕，也不能就此放弃。(当然，迫于现实生活的紧张节奏导致的没有时间写是另一回事。)</p>
-<p>第二个目的算是排解一下情绪。人生毫无疑问是一场持久战，无论是身心还是现实都是。而在最近的生活中，既要保证四五年里个体的身心的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。当然我也想过学习画画，但是看上去并没有作画的天分，也没有相应的毅力，所以只能就此作罢。</p>
-<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作网站。</p>
-<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。(当然，如果有人能看到并感觉有点意思，那就再好不过了)。</p>
-<hr>
-<h1 id="一些常用markdown命令">一些常用Markdown命令</h1>
-<p>这里主要参考了<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>，记录在这里是为了避免每次使用都要查询。</p>
-<h2 id="内容目录">内容目录</h2>
-<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
-<h2 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h2>
-<p><code>*斜体* 与 **粗体**</code></p>
-<h2 id="分割线">分割线</h2>
-<p>在单独的一行使用 <code>***</code> 或者 <code>---</code>
-表示分割线</p>
-<p><code>***</code></p>
-<hr>
-<p><code>---</code></p>
-<hr>
-<h2 id="排序">排序</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一件事</span><br><span class="line">    * 第一个方面</span><br><span class="line">    * 第二个方面</span><br><span class="line">2. 第二件事</span><br><span class="line">    - 第一个方面</span><br><span class="line">    - 第二个方面</span><br></pre></td></tr></table></figure>
-<ol type="1">
-<li>第一件事
-<ul>
-<li>第一个方面</li>
-<li>第二个方面</li>
-</ul></li>
-<li>第二件事
-<ul>
-<li>第一个方面</li>
-<li>第二个方面</li>
-</ul></li>
-</ol>
-<h2 id="超链接">超链接</h2>
-<p>插入文字超链接的格式如下 ：</p>
-<p><code>[链接文字](链接地址 "链接标题")</code></p>
-<p>插入图片超链接的格式如下：</p>
-<p><code>![图片说明](图片链接 "图片标题")</code></p>
-<h2 id="注释">注释</h2>
-<p>用 <code>\</code>表示注释</p>
-<h2 id="引用">引用</h2>
-<p>使用<code>&gt;</code>表示文字引用</p>
-<p><code>&gt; 这是一段文字引用</code></p>
-<blockquote>
-<p>这是一段文字引用</p>
-</blockquote>
-<h2 id="latex">Latex</h2>
-<p>数学公式的默认环境是<code>$ $</code>或<code>$$ $$</code>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span class="math inline">\(\begin{equation}
-f(x) = x^2
-\end{equation}\)</span></p>
-<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明</p>
-<hr>
-<!-- ## Quick Start
-
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
---&gt;</p>
--->]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
