@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>有用的资料(长期更新)</title>
+    <url>/2025/04/30/%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%96%99/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>有一些看过的有意思的资料，因为没办法塞进笔记里，放文件夹又容易忘掉，于是在这里做个记录</p>
+<p><strong><a href="https://courses.physics.illinois.edu/phys598PTD/fa2013/">Physics
+in Two Dimensions.(二维物理)</a></strong></p>
+<p>由A.J. Leggett给出的二维体系物理的lecture
+note，包含局域化，Ginzburg-Landau，BKT相变，QHE，拓扑绝缘体，Kitaev模型等</p>
+<p><strong><a href="https://zhuanlan.zhihu.com/p/110249075">DMRG笔记-iDMRG</a></strong></p>
+<p>由知乎用户<a href="https://www.zhihu.com/people/ling-lin-68-93">零零</a>撰写的DMRG参考代码</p>
+<p><strong><a href="https://www.guanjihuan.com/">关济寰的个人网站</a></strong></p>
+<p><strong><a href="https://bohr.physics.berkeley.edu/classes/221/2021/221.html">Robert
+Littlejohn的量子力学lecture</a></strong></p>
+]]></content>
+      <categories>
+        <category>资料</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>量子场论笔记</title>
+    <url>/2025/05/18/%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为2020至2021年LX老师上课的量子场论笔记整理，主要内容是Spin-0部分。仅供一些细节上的参考，内容并未做太多整理，所以稍显混乱</p>
+<div class="pdf-container" data-target="/PDF-Files/QFTsummary.pdf" data-height="500px"></div>
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>物理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>做事</title>
     <url>/2025/04/27/%E5%81%9A%E4%BA%8B/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近做事情总觉得不很顺畅，一方面是科研上本就是从事前人未知的路，一方面也算是自己不擅长于沟通，进而往往自己缺少什么事情都没办法表达出来，所以只能说是有些彷徨。只是人生要做些事情总是有这些情况的。主要还是因为今天发现之前有趣的数值模拟的结果之一可以用很简单的讨论去解释，一个曾经看上去可以发文的idea就没了，还是有些想叹气的。</p>
@@ -466,108 +501,8 @@ Superconductivity. Cambridge University Press;
         <category>写作</category>
       </categories>
       <tags>
-        <tag>物理</tag>
         <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>量子场论笔记</title>
-    <url>/2025/05/18/%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为2020至2021年LX老师上课的量子场论笔记整理，主要内容是Spin-0部分。仅供一些细节上的参考，内容并未做太多整理，所以稍显混乱</p>
-<div class="pdf-container" data-target="/PDF-Files/QFTsummary.pdf" data-height="500px"></div>
-]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
         <tag>物理</tag>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂谈-什么是物理图像？</title>
-    <url>/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="引论">引论</h2>
-<p>通常在学物理/做物理的人之间会有一个专有名词叫<strong>物理图像(Physical
-Picture)</strong>，有时也简称为<strong>物理</strong>。例如交流的时候会说"你这篇文章的物理(图像)是什么"。然而维基百科上并没有关于这个词的明确定义，且在不同的语境下<strong>物理图像</strong>指代对象会有极大的不同。为了能够理清这一词至目前的各种含义，于是便写下了这篇杂谈。</p>
-<h2 id="物理模型">物理模型</h2>
-<p>作为自然学科的基础之一，物理的核心在于研究自然。而要研究自然，目前最有效的方式是根据现实提取出对应的<b><font color="red">物理模型</font></b>进行分析。</p>
-<p>为了得到响应的物理模型，在考虑现实中的各种物理对象时，首先要对该对象进行<strong>抽象</strong>，以此得到最简单而又最能反应所关注的内容的一个物理模型.例如<strong>质点</strong>这一对象是对任意不关注其大小以及形状的物体的抽象，这一抽象对象在研究一个物体的运动，尤其是空间上的平移时时最为有效，因为我们只需要关注质点在空间中的位置即可。然而由于抽象过程中我们抛弃了太多信息，导致其缺点在于质点是一个没有大小的点，我们没有办法研究它的旋转。</p>
-<p>若是要研究旋转，我们需要加入一些关于形状和大小的细节，这个时候将<strong>刚体</strong>的抽象要更加有利于研究。借此我们可以研究对象的旋转。若是要研究刚体在各种受力下的变化，我们就需要加入更多的细节，例如物体可以发生形变，扭曲，断裂，拼接，融合等各种现实中存在的过程。无论如何，在研究自然时，我们总是需要根据研究对象去提取出当前对象最关键的信息，通过抽象来建立一个物理对象的模型，这便是物理模型。</p>
-<h2 id="数学模型">数学模型</h2>
-<p>在建立了物理模型后，我们需要描述其各种关心的性质以及各种性质之间的联系。而目前最好的描述工具是数学，在基于对应的物理模型的基础上，进一步用数学建立的模型可以称为<strong>数学模型</strong>。或许最广为人知的数学模型应当是牛顿的运动学第二定律
-<span class="math display">\[\begin{equation}
-    \mathbf{F}=m\mathbf{a}
-\end{equation}\]</span> 这个公式描述了一个真空中质量为<span class="math inline">\(m\)</span>的物理对象受到的力<span class="math inline">\(\mathbf{F}\)</span>与其因力而产生的加速度<span class="math inline">\(\mathbf{a}\)</span>的关系，这是一个数学函数关系，因此可以认为其是一个描述任一满足特定假设<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。
-">[1]</span></a></sup>下用于描述<strong>物理模型</strong>的<strong>数学模型</strong>。
-这个<strong>数学模型</strong>的特殊性在于，与其他任意<span class="math inline">\(y=f(x)\)</span>相比，当我们将这三个变量(两个是矢量)中任意两个变量换为任意物理对象的对应的已知参数的<em>数据</em><sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="之所以是*数据*而非*数字*，在于单位。
-">[2]</span></a></sup>时，求解得到的第三个未知的变量的数据将必然与在现实中的物理对象通过实验测得的数据<strong>在一定的误差范围内相同</strong>。这一重要区别使得一个<strong>物理模型</strong>所对应的<strong>数学模型</strong>具有了一定程度的<b><font color="red">预测现实</font></b>的功能。</p>
-<h2 id="物理理论">物理理论</h2>
-<p>在阐明了物理模型以及的对应的数学模型后，便可以开始讨论<strong>物理理论</strong>。一个物理理论<strong>是一类物理事件的模型</strong>。由于对现实的一对一建模是不可能的事情，因此人们更希望通过一系列有限的物理模型来提取出一个(或一类)更加本质的模型，当遇到全新的对象时，直接利用这个本质的模型去套用即可分析新的对象，这就是物理理论。它的评判标准是其预测与实证观察的一致性程度。物理理论的质量还取决于它做出新预测的能力，这些预测可以通过新的观察来验证。这一套采用数学模型和物理对象和系统的抽象来合理化、解释和预测自然现象<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 理论物理学](https://en.wikipedia.org/wiki/Theoretical_physics)
-">[3]</span></a></sup>对应为理论物理学。亦即，理论物理学是研究物理理论的学科。</p>
-<p>对于物理理论的描述，通常是利用数学模型来描述一类物理模型的性质以及其之间的关系。一个物理理论通常会包含多个物理模型以及其对应的数学模型。例如牛顿力学便是一个物理理论，其包含了质点、刚体等多个物理模型，以及对应的牛顿定律等数学模型。</p>
-<p>然而，以纯粹物理理论的严格性和信息量而言，要想直接对其进行讨论是非常困难的。因此，通常人们会在讨论物理理论时，使用<b><font color="red">物理图像</font></b>来进行描述。在这之前，需要对图像这个词进行一些意义的拓展</p>
-<h2 id="图像">图像</h2>
-<p>图，或者图像，是一般人每时每刻都需要的一种信息。借用维基百科的介绍<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 图片](https://en.wikipedia.org/wiki/Image)
-">[4]</span></a></sup>， &gt;
-图像或图片是一种视觉表示形式。图像可以是二维的，例如绘图、绘画或照片，也可以是三维的，例如雕刻或雕塑。</p>
-<p>作为含有信息量最丰富的对象，其直观与简洁对于理解事物具有极大的帮助性。例如描述圆的时候，数学上通常用解析几何的方法，来定义满足方程
-<span class="math display">\[\begin{equation}
-    x^2+y^2=r^2
-\end{equation}\]</span> 的点集(x,y)构成的集合，而图像上可以很简单的给出
-<img src="/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/image.png" alt="alt text">
-从这个角度来说，图像作为信息的载体，其特征在于<strong>简洁</strong>与<strong>直观</strong>。
-## 物理图像
-在介绍完了物理模型和图像后，<strong>物理图像</strong>简单来说便是指一类<b><font color="red">简洁直观</font></b>的<strong>物理模型</strong>。需要注意的是，物理图像并不指代物理实在，而是指一个方便理解的抽象对象。因为只有在有了对象之后，才可以谈及对象之间的关系，也即物理关系。而所谓常说的"新物理"，也是指一类新的物理图像以及其对应的之前所未探明的物理关系。</p>
-<h2 id="总结">总结</h2>
-<p>物理图像作为一种简洁直观的物理模型，其主要是在简单的讨论中，避免涉及过多的计算但是却能理清复杂的物理关系的工具。利用物理(图像)，即便是不甚了解一个理论内部的数学关系，也可以理清楚不同物理对象之间的关系，这极大的降低了交流成本。除此之外，物理图像的重要意义在于，通过考察物理图像对应的自然现实，有时甚至可以跳过严格的数学构造和推导，直接抽取出可能的物理关系。例如已知牛顿第二定律是一个二阶微分方程，对于匀速运动而言其解需要首先求解该微分方程，得到解
-<span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\frac{1}{2}a t^2+bt+c
-\end{equation}\]</span> 然后带入初始条件，计算后才能得到 <span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
-\end{equation}\]</span>
-但是，如果直接考虑一个匀速运动的物体，我们应当可以很轻易地直接写下 <span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
-\end{equation}\]</span>
-这种方法甚至在分数量子霍尔效应中诞生过诺贝尔奖，其得主Robert
-Laughlin在没有任何数学推导的情况下，直接写出了分数量子霍尔效应的物理图像，并且成功地解释了实验结果。</p>
-<h2 id="题外话">题外话</h2>
-<p>作为一个个人的观点，实际物理学中的<strong>解释</strong>并非对现实行为的解释，而是基于<b><font color="red">物理图像的对物理模型的解释</font></b>。因为现实世界是极其复杂的，如果一个理论能够解释现实，那么现实就不应该存在无法解释的对象，然而客观上现实中存在无法利用理论解释的现象，这实际上正是物理理论作为物理模型的集合的局限性所在。而所谓的解释，实际上是基于物理模型对该框架下的可能的物理图像的解释<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="本文中部分论述使用copilot润色。">[5]</span></a></sup>。</p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">之所以是<em>数据</em>而非<em>数字</em>，在于单位。<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Theoretical_physics">WikiPedia
-理论物理学</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:4">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Image">WikiPedia
-图片</a><a href="#fnref:4" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:5">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">本文中部分论述使用copilot润色。<a href="#fnref:5" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-
-]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>物理</tag>
-        <tag>杂谈</tag>
       </tags>
   </entry>
   <entry>
@@ -586,6 +521,7 @@ Hooft利用路径积分方法推导了自发对称性破缺的规范理论（第
 <p>第二个原因更实际：有些重要理论中，最简单版本的费曼路径积分方法（即直接从拉格朗日量取传播子和顶点）其实是错误的。一个例子是非线性<span class="math inline">\(\sigma\)</span>模型，其拉格朗日密度为<span class="math inline">\(\mathcal{L} =
 -\frac{1}{2}g_{kl}(\phi)\partial_\mu\phi^k\partial^\mu\phi^l\)</span>。在这类理论中，直接用拉格朗日密度推导的“天真”费曼规则会得到错误甚至非幺正的S矩阵，且结果还依赖于我们如何定义标量场。在本章中，我们将从正则形式主义推导路径积分形式主义，从而看到需要在最简单的路径积分费曼规则基础上补充哪些额外的顶点。</p>
 <h1 id="路径积分的一般公式">9.1 路径积分的一般公式</h1>
+<h2 id="无穷小区间的跃迁振幅">无穷小区间的跃迁振幅</h2>
 <p>我们从一个一般的量子力学系统出发，设有厄米算符“坐标”<span class="math inline">\(Q_a\)</span>和共轭“动量”<span class="math inline">\(P_b\)</span>，它们满足正则对易关系： <span class="math display">\[
 \begin{equation}
 [Q_a, P_b] = i\delta_{ab}
@@ -714,7 +650,9 @@ q&#39;;\tau|e^{-iH\left(Q\left(\tau\right),P\left(\tau\right)\right)d\tau}|p;\ta
 \exp\left[-iH\left(q&#39;,p\right)d\tau + i\sum_a \left(q&#39;_a -
 q_a\right)p_a\right]\label{eq:9.1.26}\\
 \end{align}
-\]</span> 对于有限时间区间<span class="math inline">\(t\)</span>到<span class="math inline">\(t&#39;\)</span>，将区间分为<span class="math inline">\(N+1\)</span>段，每段 <span class="math display">\[
+\]</span></p>
+<h2 id="有限区间的跃迁振幅">有限区间的跃迁振幅</h2>
+<p>对于有限时间区间<span class="math inline">\(t\)</span>到<span class="math inline">\(t&#39;\)</span>，将区间分为<span class="math inline">\(N+1\)</span>段，每段 <span class="math display">\[
 \begin{equation}
     \tau_{k+1}-\tau_k=d\tau = \left(t&#39; -
 t\right)/\left(N+1\right)    
@@ -745,7 +683,9 @@ p_{k-1}\right)d\tau\right]\right\}
 q_0 \equiv q, \quad q_{N+1} \equiv q&#39;
 \label{eq:9.1.30}
 \end{equation}
-\]</span> 结果<span class="math inline">\(\eqref{eq:9.1.29}\)</span>能够写为更加优雅的形式。定义平滑插值函数<span class="math inline">\(q(\tau)\)</span>与<span class="math inline">\(p(\tau)\)</span>，使得 <span class="math display">\[
+\]</span></p>
+<h2 id="内插函数">内插函数</h2>
+<p>结果<span class="math inline">\(\eqref{eq:9.1.29}\)</span>能够写为更加优雅的形式。定义平滑插值函数<span class="math inline">\(q(\tau)\)</span>与<span class="math inline">\(p(\tau)\)</span>，使得 <span class="math display">\[
 \begin{equation}\label {eq:9.1.31}
     q_a\left(\tau_k\right) = q_{k,a}, \quad p_a\left(\tau_k\right) =
 p_{k,a}
@@ -785,13 +725,15 @@ H\left(q\left(\tau\right), p\left(\tau\right)\right)\right]\right\}
 \]</span> 这就是<em>路径积分（path
 integral）</em>表达式，因为我们对所有从<span class="math inline">\(q\)</span>到<span class="math inline">\(q&#39;\)</span>的路径<span class="math inline">\(q(\tau)\)</span>以及所有<span class="math inline">\(p(\tau)\)</span>进行积分。</p>
 <p>以这种方式写出矩阵元的一大优势是，当在<span class="math inline">\(H\)</span>中展开为耦合常数的幂次时，路径积分很容易计算。</p>
+<h2 id="时序乘积下的矩阵元">时序乘积下的矩阵元</h2>
 <p>路径积分形式主义允许我们不仅计算跃迁概率幅如<span class="math inline">\(\langle
 q&#39;;t&#39;|q;t\rangle\)</span>，还可以计算时间序乘积的任意算符<span class="math inline">\(\mathcal{O}\left(P\left(t\right),Q\left(t\right)\right)\)</span>在给定初态<span class="math inline">\(\langle q&#39;;t&#39;|\)</span>和末态<span class="math inline">\(|q;t\rangle\)</span>之间的矩阵元。定义这些算符（与<span class="math inline">\(H\)</span>不同）使所有<span class="math inline">\(P\)</span>移到<em>左边</em>，所有<span class="math inline">\(Q\)</span>移到<em>右边</em>，会很方便。然后通过在式<span class="math inline">\(\eqref{eq:9.1.26}\)</span>中插入任何这样的算符<span class="math inline">\(\mathcal{O}\left[P\left(t\right),Q\left(t\right)\right]\)</span>，我们有</p>
 <p><span class="math display">\[
 \begin{align}
-\langle
-q&#39;;t&#39;+dt|\mathcal{O}\left(P\left(t\right),Q\left(t\right)\right)|q;t\rangle&amp;
-= \int \prod dp_a\times \langle
+&amp;\langle
+q&#39;;t&#39;+dt|\mathcal{O}\left(P\left(t\right),Q\left(t\right)\right)|q;t\rangle
+\nonumber\\
+&amp;= \int \prod dp_a\times \langle
 q&#39;;t|\exp\left(-iH\left(Q\left(t\right),P\left(t\right)\right)dt\right)|p;t\rangle\langle
 p;t|\mathcal{O}\left(P\left(t\right),Q\left(t\right)\right)|q;t\rangle\nonumber\\
 &amp;= \int \prod_a\frac{dp_a}{2\pi}
@@ -837,6 +779,7 @@ t&#39;\)</span>），那么这个路径积分将等于像式<span class="math in
 \label{eq:9.1.38}
 \end{align}
 \]</span> 其中<span class="math inline">\(T\)</span>表示时间序乘积算符。</p>
+<h2 id="运动方程">运动方程</h2>
 <p>应该强调的是，式<span class="math inline">\(\eqref{eq:9.1.38}\)</span>中的复数函数<span class="math inline">\(q_a(\tau),
 p_a(\tau)\)</span>仅仅是积分变量，特别是<strong>不</strong>受经典哈密顿动力学运动方程的约束</p>
 <p><span class="math display">\[
@@ -887,8 +830,8 @@ dp_b\left(\tau\right)\)</span>有很多种方式。我们的规定，即将所�
         <category>GPT翻译</category>
       </categories>
       <tags>
-        <tag>物理</tag>
         <tag>技术</tag>
+        <tag>物理</tag>
       </tags>
   </entry>
   <entry>
@@ -984,297 +927,8 @@ an example. European Journal of Physics, 31(3):591–602, May
         <category>写作</category>
       </categories>
       <tags>
+        <tag>技术</tag>
         <tag>物理</tag>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>有用的资料(长期更新)</title>
-    <url>/2025/04/30/%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%96%99/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>有一些看过的有意思的资料，因为没办法塞进笔记里，放文件夹又容易忘掉，于是在这里做个记录</p>
-<p><strong><a href="https://courses.physics.illinois.edu/phys598PTD/fa2013/">Physics
-in Two Dimensions.(二维物理)</a></strong></p>
-<p>由A.J. Leggett给出的二维体系物理的lecture
-note，包含局域化，Ginzburg-Landau，BKT相变，QHE，拓扑绝缘体，Kitaev模型等</p>
-<p><strong><a href="https://zhuanlan.zhihu.com/p/110249075">DMRG笔记-iDMRG</a></strong></p>
-<p>由知乎用户<a href="https://www.zhihu.com/people/ling-lin-68-93">零零</a>撰写的DMRG参考代码</p>
-<p><strong><a href="https://www.guanjihuan.com/">关济寰的个人网站</a></strong></p>
-<p><strong><a href="https://bohr.physics.berkeley.edu/classes/221/2021/221.html">Robert
-Littlejohn的量子力学lecture</a></strong></p>
-]]></content>
-      <categories>
-        <category>资料</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>恒星的流体静力学平衡</title>
-    <url>/2025/03/26/Stars/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="前言">前言</h1>
-<p>作为第一篇非叙事的文章，总是要有一些精彩的内容的。思来想去，还是认为只有<a href="https://zh.wikipedia.org/wiki/%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%B8%A9%E4%BC%AF%E6%A0%BC">Steven
-Weinberg</a> (物理学家，诺贝尔奖获得者)的著作Lectures on
-Astrophysics(天体物理学讲座)的第一节足够精彩。</p>
-<p>这本书全册共226页，当然是塞不下天体物理的主要内容的。相反，作者意在给出一些在无需计算机帮助下，依然能展现出一些与真实世界相关的天体物理相关的简单计算。</p>
-<blockquote>
-<p>...Instead, I here offer a short course, a collection of
-astrophysical calculations that can be done simply and analytically,
-without recourse to computers, and yet are relevant to the real
-world....</p>
-</blockquote>
-<p>本书的第一节-<em>Hydrostatic
-Equilibrium</em>(流体静力学平衡)仅只需要基础的微积分知识和万有引力定律，再加上一些热力学概念，便给出了许多精彩的结论。
-# 恒星的引力平衡
-宇宙中的恒星<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常所说的星体([Stars](https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F))都代指恒星，而非像地球这样的岩石行星([Rocky planet](https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F))，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。
-">[1]</span></a></sup>通常都是稳定的发光体，所以可以假定星体是一团由引力凝聚在一起的<strong>稳定</strong>的物质。由于万有引力只依赖于物质之间的距离，可以近似认为恒星是球形的，也即具有球对称结构。因此，采取球坐标系分析是较为方便的。
-回想万有引力定律 <span class="math display">\[
-\begin{equation}
-F=-G\frac{Mm}{r^2}
-\end{equation}
-\]</span>
-既然引力是<strong>万有</strong>的，那么自然在恒星内部之间也是存在引力的。星体内部的物质为了平衡这样的引力维持稳定的结构，必然产生一定的压力。我们的出发点便是基于这样的一个平衡-一个稳定存在的恒星，其内部之间的引力应当与物质因过于紧密而产生的压力相等。</p>
-<p><img alt="PlotofStar" src="/2025/03/26/Stars/StarPlot.jpg" width="50%" height="50%">
-如上图所示，我们假设星体的密度是半径的函数<span class="math inline">\(\rho(r)\)</span>，那么半径为<span class="math inline">\(r\)</span>的恒星内部球体的质量就是</p>
-<p><span class="math display">\[
-\begin{equation}
-\mathcal{M}(r)=\int_0^r 4\pi r&#39;^2\rho(r&#39;)dr&#39;.
-\end{equation}
-\]</span></p>
-<p>对应的，这个球体对其外部厚为<span class="math inline">\(dr\)</span>的球壳(可以验证，这个球壳的质量是<span class="math inline">\(4\pi r^2
-\rho(r)dr\)</span>)所产生的引力对应为<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="注意，这里我们利用了引力的一个性质，即**一个球体对位于其外部的物体所施加的引力，等效于位于该球体球心的具有相同质量的质点对该物体所施加的引力**。这个性质使得我们考虑内部球体对球壳所施加的引力时，不需要考虑内部球体的任一点对球壳施加的压力，直接将距离替换为球心到球壳的距离即可。">[2]</span></a></sup>
-<span class="math display">\[
-\begin{equation}
-F_{\text{引力}}=-G\frac{\mathcal{M}(r)\times 4\pi r^2
-\rho(r)dr}{r^2}=-4\pi G\rho(r)\mathcal{r}dr
-\end{equation}
-\]</span>
-这里的负号代表引力总是指向球心的方向。接下来考虑压力导致的浮力(正如物体在水中所受到的浮力是由于物体底部接收到的压强要大于物体顶部收到的压强，这对于恒星也是成立的!)。假设在半径<span class="math inline">\(r\)</span>处的压强为<span class="math inline">\(p(r)\)</span>，由于球壳内侧的压强要大于球壳外侧的压强，我们可以计算出它的压强差导致的浮力为
-<span class="math display">\[
-\begin{equation}
-F_{\text{浮力}}=4\pi r^2\left[p(r)-p(r+dr) \right]=-4\pi r^2 p&#39;(r)dr
-\end{equation}
-\]</span>
-由于恒星是稳定的，故对恒星内任意这样的球壳，其受到的引力都应当与受到的浮力相当，所以我们可以联立这两个方程，经过简单的化简，可以得到
-<span class="math display">\[
-\begin{equation}
-\label{eq:hydrostatic}
-\boxed{\frac{dp(r)}{dr}=-\frac{G\mathcal{M}(r)\rho(r)}{r^2}}
-\end{equation}
-\]</span>
-该公式给出了星体内部任一半径处的压力与质量的关系，这就是<strong>恒星的流体静力学平衡下的基本方程(Fundamental
-equation of hydrostatic equilibrium for stars)</strong>。</p>
-<h1 id="恒星的引力势能">恒星的引力势能</h1>
-<p>在讨论恒星的能量前，我们需要回想一下如何定义能量。回想高中的物理知识，一个静止的物体的物体的动能可以通过对其施加外力造成位移来增加，也即通过做功来增加物体的能量
-<span class="math display">\[
-\begin{equation}
-W=\int \vec{F}\cdot d\vec{x}
-\end{equation}
-\]</span></p>
-<p>现在对于恒星而言，我们要考虑的从动能变成了引力势能，也即需要考察来自无穷远处的物质因引力而聚集在一起时，引力所做的功。由于恒星可以认为是个球，我们采取与上面相同的讨论，即通过讨论包裹在球体外的薄球壳，从无穷远到球体表面所累积的引力势能，来求得整个恒星所具有的引力势能，如下图所示(仅展示了一个球壳上的一个微元，即图中的红点)
-<img alt="PlotofStarFallen" src="/2025/03/26/Stars/Star_fallonto.gif" width="50%" height="50%"></p>
-<p>可以验证，半径为<span class="math inline">\(r\)</span>的质量为<span class="math inline">\(\mathcal{M}(r)\)</span>的星体产生会产生的引力为<span class="math inline">\({\color{blue}G\mathcal{M}(r)/r^2}\)</span>，而其将无穷远处的物质吸引到球表面，形成一层质量为<span class="math inline">\({\color{brown}4\pi
-r^2\rho(r)dr}\)</span>的球壳所做的功为 <span class="math display">\[
-\begin{equation}
-\int_{r}^{\infty}{\color{blue}G\mathcal{M}(r)/r^2}\times{\color{brown}4\pi
-r^2\rho(r)dr} \times{\color{red}\frac{1}{r&#39;^2}dr&#39;}=4\pi G
-r\mathcal{M}(r)\rho(r)dr
-\end{equation}
-\]</span> 注意区分开标红的被积分半径<span class="math inline">\(r&#39;\)</span>与表示球壳所在的半径<span class="math inline">\(r\)</span>!前者是因为，在将球壳从无穷远移动到球面上时，球壳所受到的引力也会随距离变化(万有引力告诉我们，这个力平方反比于二者的距离)，我们需要对其作积分；而后者代表我们所关注的球壳的半径。</p>
-<p>现在已经求得了半径为<span class="math inline">\(r\)</span>的球体吸引球壳所需要的功，我们再对整个半径作积分直至整个恒星的半径即可得到恒星的引力势能
-<span class="math display">\[
-\begin{equation}
--\Omega=4\pi G\int_0^{\color{red}{R}} r\mathcal{M}(r)\rho(r)dr
-\end{equation}
-\]</span> 这里<span class="math inline">\({\color{red}{R}}\)</span>为恒星的半径，一般而言这个半径定义为恒星的压强为0的地方，即<span class="math inline">\(p(R)=0\)</span>(类比地球的大气层内的一个大气压，而在大气层之外则接近为0).公式左侧即为恒星的引力势能<span class="math inline">\(\Omega\)</span>，注意前面的负号，因为引力总是相互吸引的，而在引力做功的时候，被吸引的球壳本应该将获得的引力势能转化为动能，而我们在计算球壳从无穷远到星体表面时默认了这个球壳会<strong>不带有动能</strong>地直接落在球面上形成了稳定的恒星<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="实际上这关系到恒星的形成过程。恒星整体上而言是星际间物质由于引力而相互吸引，这个时候引力势能转化为的动能非常大，从而导致星际物质之间会发生碰撞与摩擦，在这个过程中动能会转化为热与辐射离开这个体系，从而减少了动能。并且即便有这样的一个过程，在形成恒星后这些动能也并未完全被消耗掉。">[3]</span></a></sup>，而作为代价，我们得到的引力势能应当为负。</p>
-<p>现在是时候回顾公式<span class="math inline">\(\eqref{eq:hydrostatic}\)</span>了。利用该公式，我们可以将上式重新写为
-<span class="math display">\[
-\begin{equation}
-\Omega=4\pi \int_0^R\frac{dp(r)}{dr}r^3dr=-3\int_0^R p(r)4\pi r^2 dr
-\end{equation}
-\]</span> 注意为得到这个等式，需要利用分部积分以及<span class="math inline">\(p(R)=0\)</span>来消掉分部积分带来的<span class="math inline">\(r^3p(r)|^R_0\)</span>因子。</p>
-<h1 id="恒星的能量">恒星的能量</h1>
-<p>现在已知了恒星的引力势能，实际上恒星内部还有热能<span class="math inline">\(\Upsilon\)</span><sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这个符号是希腊字母Upsilon，与原文保持一致">[4]</span></a></sup>（又经常叫做内能）.其形式可以写为单位体积能量密度的积分</p>
-<p><span class="math display">\[
-\begin{equation}\label{innerenergy}
-\Upsilon=\int_0^R\mathcal{E}(r)4\pi r^2dr
-\end{equation}
-\]</span> 其中<span class="math inline">\(\mathcal{E}\)</span>是不包括恒星的质能<span class="math inline">\((E=mc^2)\)</span>或引力能的内能密度。接下来我们可以将恒星的非相对论的能量写下</p>
-<p><span class="math display">\[
-\begin{equation}\label{energy}
-E=\Upsilon+\Omega=\int_0^R\left[\mathcal{E}(r)-3p(r)\right]4\pi r^2 dr
-\end{equation}
-\]</span> 从被积部分可以看到，若<span class="math inline">\(\mathcal{E}(r)-3p(r)&lt;0\)</span>，此时恒星的引力势能大于内能，从而可以使整体能量为负，也即恒星吸引在一起。</p>
-<h2 id="多方球假设">多方球假设</h2>
-<p>为了更进一步地讨论恒星的能量，在这里稍微离题一下，我们需要给出一些热力学知识来建立恒星的压强与能量的关系。</p>
-<p>通常而言我们可以假设内能与压强的关系为 <span class="math display">\[
-\begin{equation}\label{polytrope}
-\mathcal{E}(r)=\frac{p}{\Gamma-1}
-\end{equation}
-\]</span> 这个关系叫做<a href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%96%B9%E7%90%83">多方球假设</a>，其中额外的参数<span class="math inline">\(\Gamma\)</span>叫做绝热指数。为了更进一步地说明这个关系，我们可以拿高中的理想气体举例子。高中接触过的理想气体状态方程
-<span class="math display">\[
-\begin{equation}
-    pV=Nk_{B}T
-\end{equation}
-\]</span> 其中<span class="math inline">\(p\)</span>为压强，<span class="math inline">\(V\)</span>为气体体积,<span class="math inline">\(k_B\)</span>是玻尔兹曼常数，<span class="math inline">\(N\)</span>为气体的原子数，<span class="math inline">\(T\)</span>为温度。如果我们用单位体积数密度<span class="math inline">\(n=N/V\)</span>，则上式可以写为 <span class="math display">\[
-\begin{equation}\label{eq:idealgas}
-    p=nk_{B}T
-\end{equation}
-\]</span> 在热力学上可以证明，此时我们可以计算出理想气体的能量密度为
-<span class="math display">\[
-\begin{equation}
-    \mathcal{E}={\color{red}\frac{3}{2}}nk_{B}T
-\end{equation}
-\]</span> 注意前面的系数!实际上利用<span class="math inline">\(\eqref{eq:idealgas}\)</span>可以得到<span class="math display">\[
-\begin{equation}
-    \mathcal{E}=\frac{3}{2}p=\frac{p}{5/3-1}
-\end{equation}
-\]</span> 所以对于理想气体而言，我们有 <span class="math inline">\(\Gamma=5/3\)</span>
-.除了理想气体之外，对于辐射而言(不再是由普通的有质量原子构成的气体，而是由无质量的光子构成的气体)有
-<span class="math inline">\(\mathcal{E}=3p\)</span> 从而 <span class="math inline">\(\Gamma=4/3\)</span>.</p>
-<h2 id="恒星的爆炸">恒星的爆炸</h2>
-<p>在建立了内能函数与压强的关系后，我们终于可以来讨论恒星的爆炸了！利用<span class="math inline">\(\eqref{polytrope}\)</span>,<span class="math inline">\(\eqref{innerenergy}\)</span>和<span class="math inline">\(\eqref{energy}\)</span>，我们可以建立一个简单的代数关系
-<span class="math display">\[
-\begin{equation}
-    \begin{split}
-        E&amp;=\Upsilon+\Omega=\int_0^R\left[\mathcal{E}(r)-3(\Gamma-1)\mathcal{E}(r)\right]4\pi
-r^2 dr\\
-        &amp;=(4-3\Gamma){\color{brown}\int_0^R\mathcal{E}(r)4\pi r^2
-dr}=(4-3\Gamma)\times{\color{brown}C}\\
-        \Upsilon&amp;={\color{brown}\int_0^R\mathcal{E}(r)4\pi r^2
-dr}={\color{brown}C}\\
-        \Omega&amp;=E-\Upsilon=3(1-\Gamma){\color{brown}C}
-    \end{split}
-\end{equation}
-\]</span>
-这意味着，恒星的总能量，引力势能以及内能满足如下的简单的代数关系 <span class="math display">\[
-\begin{equation}\label{eq:Explode}
-    \boxed{\Upsilon=-\frac{E}{3\Gamma-4},\quad\Omega=\frac{(\Gamma-1)E}{\Gamma-4/3}}
-\end{equation}
-\]</span> 当总能量<span class="math inline">\(E\)</span>为正值时恒星将发生爆炸，因此要维持稳定需满足<span class="math inline">\(E &lt;
-0\)</span>。可是由于引力势能总是小于零，即<span class="math inline">\(\Omega&lt;0\)</span>，从上式的第二个方程可以看出，我们必须要有<span class="math inline">\(\frac{\Gamma-1}{\Gamma-4/3}&gt;0\)</span>,这给出
-<span class="math inline">\(\Gamma&lt;1\)</span> 或 <span class="math inline">\(\Gamma&gt;4/3\)</span>
-.根据上面的热力学讨论，<span class="math inline">\(\Gamma\)</span>通常都是大于1的，从而我们必然有<span class="math inline">\(\Gamma&gt;4/3\)</span>.实际上，对于压强主要由高度相对论性粒子主导的天体（例如质量接近理论上限的大质量普通恒星、白矮星和中子星），其<span class="math inline">\(\Gamma\)</span>值仅略高于4/3，说明这类天体的稳定性实际上已经很差了。</p>
-<p>方程<span class="math inline">\(\eqref{eq:Explode}\)</span>在恒星早期演化过程中起着决定性作用。一团低温弥散气体云内部的引力能和内能极低，其总能量<span class="math inline">\(E\)</span>值很小。只要该气体云未处于绝对零度，就会持续辐射出以红外波段为主的光线。若其总能量转为负值，气体云便无法继续扩散。根据方程<span class="math inline">\(\eqref{eq:Explode}\)</span>，只要绝热指数<span class="math inline">\(\Gamma&gt;4/3\)</span>，气体云在损失能量的过程中，尽管总能量<span class="math inline">\(E\)</span>持续减小（负值越来越大），但其内能<span class="math inline">\(\Upsilon\)</span>却会不断增大，也即恒星此时表现出负比热特性：<strong>恒星能量损失越多，温度反而越高</strong>。随着温度上升，恒星能量辐射的速度又进一步加快，这一过程形成正反馈循环。最终当恒星核心温度高到足以克服原子核间的库仑斥力时，核聚变反应启动并持续增强，直至核能产出与辐射损失达到平衡，恒星便进入稳定阶段（至少在其核心核燃料耗尽前会保持稳定）。看似矛盾的是，核反应的发生反而中止了恒星的持续升温过程。</p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">通常所说的星体(<a href="https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F">Stars</a>)都代指恒星，而非像地球这样的岩石行星(<a href="https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F">Rocky
-planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">注意，这里我们利用了引力的一个性质，即<strong>一个球体对位于其外部的物体所施加的引力，等效于位于该球体球心的具有相同质量的质点对该物体所施加的引力</strong>。这个性质使得我们考虑内部球体对球壳所施加的引力时，不需要考虑内部球体的任一点对球壳施加的压力，直接将距离替换为球心到球壳的距离即可。<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">实际上这关系到恒星的形成过程。恒星整体上而言是星际间物质由于引力而相互吸引，这个时候引力势能转化为的动能非常大，从而导致星际物质之间会发生碰撞与摩擦，在这个过程中动能会转化为热与辐射离开这个体系，从而减少了动能。并且即便有这样的一个过程，在形成恒星后这些动能也并未完全被消耗掉。<a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:4">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这个符号是希腊字母Upsilon，与原文保持一致<a href="#fnref:4" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-
-]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>物理</tag>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World-建站纪念</title>
-    <url>/2025/03/21/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一些建站的纪念">一些建站的纪念</h1>
-<p>在此记录一下建立博客最初的一些思绪和看法。由于是渐进式的文章，因此本文会不定期更新。</p>
-<p>这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
-<p>建立这个博客的最重要的目的是提升自己的<strong>写作能力</strong>。最近在一次又一次改文章的过程，再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。之所以有个"再"字，是考虑到之前也被L老师痛批过语文能力很差劲。所以借此机会，慢慢的写一些文章，分享一些技术杂谈。
-实际上，在写这篇纪念的时候，脑子里也总是想一些有的没的。一直在考虑写一些什么东西，却没有很好的梳理起来，成为有条理性和故事性的文章。可是，如果不从第一个字，第一篇文章下手，任何的改进都是空谈。所以，即便这篇，或者开始的一些，甚至以后的文章都写的非常糟糕，也不能就此放弃。(当然，迫于现实生活的紧张节奏导致的没有时间写是另一回事。)</p>
-<p>第二个目的算是排解一下情绪。人生毫无疑问是一场持久战，无论是身心还是现实都是。而在最近的生活中，既要保证四五年里个体的身心的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。当然我也想过学习画画，但是看上去并没有作画的天分，也没有相应的毅力，所以只能就此作罢。</p>
-<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作网站。</p>
-<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。(当然，如果有人能看到并感觉有点意思，那就再好不过了)。</p>
-<hr>
-<h1 id="一些常用markdown命令">一些常用Markdown命令</h1>
-<p>这里主要参考了<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>，记录在这里是为了避免每次使用都要查询。</p>
-<h2 id="内容目录">内容目录</h2>
-<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
-<h2 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h2>
-<p><code>*斜体* 与 **粗体**</code></p>
-<h2 id="分割线">分割线</h2>
-<p>在单独的一行使用 <code>***</code> 或者 <code>---</code>
-表示分割线</p>
-<p><code>***</code></p>
-<hr>
-<p><code>---</code></p>
-<hr>
-<h2 id="排序">排序</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一件事</span><br><span class="line">    * 第一个方面</span><br><span class="line">    * 第二个方面</span><br><span class="line">2. 第二件事</span><br><span class="line">    - 第一个方面</span><br><span class="line">    - 第二个方面</span><br></pre></td></tr></table></figure>
-<ol type="1">
-<li>第一件事
-<ul>
-<li>第一个方面</li>
-<li>第二个方面</li>
-</ul></li>
-<li>第二件事
-<ul>
-<li>第一个方面</li>
-<li>第二个方面</li>
-</ul></li>
-</ol>
-<h2 id="超链接">超链接</h2>
-<p>插入文字超链接的格式如下 ：</p>
-<p><code>[链接文字](链接地址 "链接标题")</code></p>
-<p>插入图片超链接的格式如下：</p>
-<p><code>![图片说明](图片链接 "图片标题")</code></p>
-<h2 id="注释">注释</h2>
-<p>用 <code>\</code>表示注释</p>
-<h2 id="引用">引用</h2>
-<p>使用<code>&gt;</code>表示文字引用</p>
-<p><code>&gt; 这是一段文字引用</code></p>
-<blockquote>
-<p>这是一段文字引用</p>
-</blockquote>
-<h2 id="latex">Latex</h2>
-<p>数学公式的默认环境是<code>$ $</code>或<code>$$ $$</code>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span class="math inline">\(\begin{equation}
-f(x) = x^2
-\end{equation}\)</span></p>
-<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明</p>
-<hr>
-<!-- ## Quick Start
-
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
---&gt;</p>
--->]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -1605,6 +1259,636 @@ doi:10.1103/RevModPhys.78.275<a href="#fnref:1" rev="footnote">
       <tags>
         <tag>物理</tag>
         <tag>杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>路径积分中的小虚部(下)</title>
+    <url>/2025/10/05/%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E5%B0%8F%E8%99%9A%E9%83%A82/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="过渡到s矩阵">9.2 过渡到S矩阵</h1>
+<h2 id="真空波函数">真空波函数</h2>
+<p>如前文所述，我们可以轻松地将第9.1节的一般量子力学结果转换为适合量子场论的记号，即让指标<span class="math inline">\(a\)</span>遍历空间中的点<span class="math inline">\(\mathbf{x}\)</span>和自旋及种类指标<span class="math inline">\(m\)</span>，并用<span class="math inline">\(Q_m\left(\mathbf{x},t\right)\)</span>和<span class="math inline">\(P_m\left(\mathbf{x},t\right)\)</span>分别替换<span class="math inline">\(Q_a\left(t\right)\)</span>和<span class="math inline">\(P_a\left(t\right)\)</span>。式(9.1.38)则变为<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="我们现在用方括号写$H$和$\mathcal{O}$，以提醒我们$H\left[q\left(t\right),p\left(t\right)\right]$和$\mathcal{O}\left[p\left(t\right),q\left(t\right)\right]$是在固定时刻$t$的$q_m\left(\mathbf{x},t\right)$和$p_m\left(\mathbf{x},t\right)$的泛函。">[1]</span></a></sup></p>
+<p><span class="math display">\[
+\begin{align}
+&amp;\langle
+q&#39;;t&#39;|T\left\{\mathcal{O}_A\left[P\left(t_A\right),Q\left(t_A\right)\right],
+\mathcal{O}_B\left[P\left(t_B\right),Q\left(t_B\right)\right], \cdots
+\right\}|q;t\rangle \nonumber\\
+&amp;= \int_{q_m\left(\mathbf{x},t\right) = q_m\left(\mathbf{x}\right)}
+^{q_m\left(\mathbf{x},t&#39;\right) = q&#39;_m\left(\mathbf{x}\right)}
+\prod_{\tau,\mathbf{x},m}
+dq_m\left(\mathbf{x},\tau\right)\prod_{\tau,\mathbf{x},m}
+\frac{dp_m\left(\mathbf{x},\tau\right)}{2\pi} \nonumber\\
+&amp;\times
+\mathcal{O}_A\left[p\left(t_A\right),q\left(t_A\right)\right]
+\mathcal{O}_B\left[p\left(t_B\right),q\left(t_B\right)\right] \cdots
+\nonumber\\
+&amp;\times \exp\left[i\int_t^{t&#39;} d\tau \left\{\int d^3\mathbf{x}
+\sum_m
+\dot{q}_m\left(\mathbf{x},\tau\right)p_m\left(\mathbf{x},\tau\right) -
+H\left[q\left(\tau\right),p\left(\tau\right)\right]\right\}\right].
+\label{eq:9.2.1}
+\end{align}
+\]</span></p>
+<p>然而，在场论中式<span class="math inline">\(\eqref{eq:9.2.1}\)</span>并不完全是我们想要的。实验家不测量量子场<span class="math inline">\(Q\)</span>的本征态<span class="math inline">\(\langle q&#39;;t&#39;|\)</span>和<span class="math inline">\(|q;t\rangle\)</span>之间跃迁的概率幅，而是测量S矩阵元，即在远过去时刻<span class="math inline">\(t =
+-\infty\)</span>包含各种粒子的确定数目状态与在远将来时刻<span class="math inline">\(t&#39; =
++\infty\)</span>包含各种粒子的确定数目状态之间跃迁的概率幅。这些被称为'入'和'出'态，<span class="math inline">\(|\alpha,\text{in}\rangle\)</span>和<span class="math inline">\(|\beta,\text{out}\rangle\)</span>，其中<span class="math inline">\(\alpha\)</span>和<span class="math inline">\(\beta\)</span>表示以各种粒子的动量、自旋<span class="math inline">\(z\)</span>分量（或螺旋度）和种类为特征的粒子集合。为了计算这种态之间的时间序乘积（可能是空的）矩阵元，我们需要将式<span class="math inline">\(\eqref{eq:9.2.1}\)</span>乘以在任意固定时刻<span class="math inline">\(t\)</span>和<span class="math inline">\(t&#39;\)</span>的'波函数'<span class="math inline">\(\langle\beta,\text{out}|q&#39;;t&#39;\rangle\)</span>和<span class="math inline">\(\langle
+q;t|\alpha,\text{in}\rangle\)</span>（为方便起见在此取为<span class="math inline">\(-\infty\)</span>和<span class="math inline">\(+\infty\)</span>），然后对这些波函数的宗量<span class="math inline">\(q&#39;_m\left(\mathbf{x}\right)\)</span>和<span class="math inline">\(q_m\left(\mathbf{x}\right)\)</span>进行积分。但与其通过条件</p>
+<p><span class="math display">\[
+\begin{align}
+q_m\left(\mathbf{x},+\infty\right) &amp;=
+q&#39;_m\left(\mathbf{x}\right), \label{eq:9.2.2a}\\
+q_m\left(\mathbf{x},-\infty\right) &amp;= q_m\left(\mathbf{x}\right)
+\label{eq:9.2.2b}
+\end{align}
+\]</span></p>
+<p>来约束路径积分中的<span class="math inline">\(q_m\left(\mathbf{x},\tau\right)\)</span>，然后对<span class="math inline">\(q&#39;_m\left(\mathbf{x}\right)\)</span>和<span class="math inline">\(q_m\left(\mathbf{x}\right)\)</span>进行积分，我们可以同样进行对<span class="math inline">\(q_m\left(\mathbf{x},\tau\right)\)</span>（以及<span class="math inline">\(p_m\left(\mathbf{x},\tau\right)\)</span>）的无约束积分，并将式<span class="math inline">\(\eqref{eq:9.2.2a}\)</span>给出的值：</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;\langle\beta,\text{out}|T\left\{\mathcal{O}_A\left[P\left(t_A\right),Q\left(t_A\right)\right],
+\mathcal{O}_B\left[P\left(t_B\right),Q\left(t_B\right)\right], \cdots
+\right\}|\alpha,\text{in}\rangle \nonumber\\
+&amp;= \int \prod_{\tau,\mathbf{x},m}
+dq_m\left(\mathbf{x},\tau\right)\prod_{\tau,\mathbf{x},m}
+\left(dp_m\left(\mathbf{x},\tau\right)/2\pi\right) \nonumber\\
+&amp;\times
+\mathcal{O}_A\left[p\left(t_A\right),q\left(t_A\right)\right]
+\mathcal{O}_B\left[p\left(t_B\right),q\left(t_B\right)\right] \cdots
+\nonumber\\
+&amp;\times \exp\left[i\int_{-\infty}^{+\infty} d\tau \left\{\int
+d^3\mathbf{x} \sum_m
+\dot{q}_m\left(\mathbf{x},\tau\right)p_m\left(\mathbf{x},\tau\right) -
+H\left[q\left(\tau\right),p\left(\tau\right)\right]\right\}\right]
+\nonumber\\
+&amp;\times \langle\beta,\text{out}|q\left(+\infty\right);+\infty\rangle
+\langle q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
+\label{eq:9.2.3}
+\end{align}
+\]</span></p>
+<p>顺便说一下，这个结果立即<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="只需要注意的是，对于哈密顿量$H\left[P\left(t\right),Q\left(t\right)\right] + \sum_A \int d^3\mathbf{x} \epsilon_A\left(\mathbf{x},t\right)O_A\left(\mathbf{x},t\right)$，S矩阵由式(9.2.3)给出为
+$$
+\begin{equation}
+\begin{split}
+\langle\beta,\text{out}|\alpha,\text{in}\rangle_\epsilon&amp; = \int \prod_{\tau,\mathbf{x},m} dq_m\left(\mathbf{x},\tau\right)\prod_{\tau,\mathbf{x},m} \left(dp_m\left(\mathbf{x},\tau\right)/2\pi\right)\\
+&amp;\times \exp\left[i\int_{-\infty}^{+\infty} d\tau \left\{\int d^3\mathbf{x} \sum_m \dot{q}_m\left(\mathbf{x},\tau\right)p_m\left(\mathbf{x},\tau\right) - H\left[q\left(\tau\right),p\left(\tau\right)\right]\right\}\right]\\
+&amp;- \sum_A \int d^3\mathbf{x} \epsilon_A\left(\mathbf{x},t\right)O_A\left(\mathbf{x},t\right)\\
+&amp;\times \langle\beta,\text{out}|q\left(+\infty\right);+\infty\rangle \langle q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
+\end{split}
+\end{equation}
+$$
+式(6.4.3)的左端通过关于$\epsilon_A$在$\epsilon = 0$处对这个表达式的导数获得，然后使用式(9.2.3)立即给出式(6.4.3)的右端。">[2]</span></a></sup>导致式(6.4.3)，这是我们反复用来将不在壳(off-shell)费曼图的和与海森堡绘景算符之间的确切能量本征态的矩阵元联系起来的定理。</p>
+<p>现在有必要考虑如何计算式<span class="math inline">\(\eqref{eq:9.2.3}\)</span>中作为最后一对因子出现的波函数。让我们首先考虑最简单也是最重要的情况，即真空。（我们在第6.4节中看到，从真空期望值可以很容易地计算S矩阵元的时间序乘积。）我们照常假设对于<span class="math inline">\(t \to
+\pm\infty\)</span>，矩阵元可以按没有相互作用的方式计算。'入'和'出'真空因此可以由条件定义</p>
+<p><span class="math display">\[
+\begin{align}
+a_{\text{in}}\left(\mathbf{p},\sigma,n\right)|\text{VAC},\text{in}\rangle
+&amp;= 0, \label{eq:9.2.4a}\\
+a_{\text{out}}\left(\mathbf{p},\sigma,n\right)|\text{VAC},\text{out}\rangle
+&amp;= 0, \label{eq:9.2.4b}
+\end{align}
+\]</span></p>
+<p>其中<span class="math inline">\(a_{\text{in}}\)</span>和<span class="math inline">\(a_{\text{out}}\)</span>是分别出现在算符<span class="math inline">\(Q_m\left(\mathbf{x},t\right)\)</span>在<span class="math inline">\(t \to -\infty\)</span>和<span class="math inline">\(t \to +\infty\)</span>的<span class="math inline">\(\exp\left(i\mathbf{p} \cdot \mathbf{x} -
+iEt\right)\)</span>平面波展开系数中的算符。例如，对于中性无自旋粒子的实标量场，我们实际上有</p>
+<p><span class="math display">\[
+\Phi\left(\mathbf{x},t\right) \stackrel{t \to
+\mp\infty}{\longrightarrow} \left(2\pi\right)^{-3/2} \int d^3\mathbf{p}
+\left(2E\right)^{-1/2}\left[a_{\text{in/out}}\left(\mathbf{p}\right)e^{ip\cdot
+x} + \text{H.c.}\right], \label{eq:9.2.5}
+\]</span></p>
+<p><span class="math display">\[
+\Pi\left(\mathbf{x},t\right) \stackrel{t \to
+\mp\infty}{\longrightarrow}\dot{\Phi}(\mathbf{x},t) \stackrel{t \to
+\mp\infty}{\longrightarrow}-i\left(2\pi\right)^{-3/2} \int d^3\mathbf{p}
+\left(E/2\right)^{1/2}\left[a_{\text{in/out}}\left(\mathbf{p}\right)e^{ip\cdot
+x} - \text{H.c.}\right], \label{eq:9.2.6}
+\]</span></p>
+<p>其中<span class="math inline">\(p^0 \equiv E \equiv
+\sqrt{\mathbf{p}^2 + m^2}\)</span>，我们在这里使用传统的<span class="math inline">\(\Phi\)</span>和<span class="math inline">\(\Pi\)</span>而不是<span class="math inline">\(Q\)</span>和<span class="math inline">\(P\)</span>表示标量场，并省略不必要的标签<span class="math inline">\(m,\sigma,n\)</span>。反演傅里叶变换并取结果表达式的线性组合，我们有</p>
+<p><span class="math display">\[
+a_{\text{in/out}}\left(\mathbf{p}\right) = \lim_{t \to \mp\infty}
+\frac{e^{iEt}}{\left(2\pi\right)^{3/2}} \int d^3\mathbf{x}
+e^{-i\mathbf{p} \cdot \mathbf{x}}
+\left[\sqrt{\frac{E}{2}}\Phi\left(\mathbf{x},t\right) +
+i\sqrt{\frac{1}{2E}}\Pi\left(\mathbf{x},t\right)\right].
+\label{eq:9.2.7}
+\]</span></p>
+<p>如第9.1节所述，'动量'<span class="math inline">\(\Pi\left(\mathbf{x},t\right)\)</span>在<span class="math inline">\(\phi\)</span>基中作为变分导数<span class="math inline">\(-i\delta/\delta\phi\left(\mathbf{x},t\right)\)</span>作用于波函数，所以在这个基中条件(9.2.4)变为</p>
+<p><span class="math display">\[
+0 = \int d^3\mathbf{x} e^{-i\mathbf{p} \cdot \mathbf{x}}
+\left[\frac{\delta}{\delta\phi\left(\mathbf{x}\right)} +
+E\left(\mathbf{p}\right)\phi\left(\mathbf{x}\right)\right]
+\langle\phi\left(\mathbf{x}\right);\mp\infty|\text{VAC},\text{in/out}\rangle.
+\label{eq:9.2.8}
+\]</span></p>
+<p>对应的常微分方程有众所周知的高斯解，所以让我们在这里尝试高斯ansatz：</p>
+<p><span class="math display">\[
+\langle\phi\left(\mathbf{x}\right),\mp\infty|\text{VAC},\text{in/out}\rangle
+= \mathcal{N} \exp\left(-\frac{i}{2}\int d^3\mathbf{x} d^3\mathbf{y}
+\mathcal{E}\left(\mathbf{x},\mathbf{y}\right)\phi\left(\mathbf{x}\right)\phi\left(\mathbf{y}\right)\right),
+\label{eq:9.2.9}
+\]</span></p>
+<p>其中核<span class="math inline">\(\mathcal{E}\)</span>和常数<span class="math inline">\(\mathcal{N}\)</span>待定。将此代入式<span class="math inline">\(\eqref{eq:9.2.8}\)</span>，我们看到真空波泛函的泛函微分方程对所有<span class="math inline">\(\phi\)</span>都满足，如果</p>
+<p><span class="math display">\[
+0 = \int d^3\mathbf{x} e^{-i\mathbf{p} \cdot \mathbf{x}} \left[\int
+d^3\mathbf{y}
+\mathcal{E}\left(\mathbf{x},\mathbf{y}\right)\phi\left(\mathbf{y}\right)
+- E\left(\mathbf{p}\right)\phi\left(\mathbf{x}\right)\right],
+\label{eq:9.2.10}
+\]</span></p>
+<p>或者，换句话说，如果</p>
+<p><span class="math display">\[
+\int d^3\mathbf{x} e^{-i\mathbf{p} \cdot
+\mathbf{x}}\mathcal{E}\left(\mathbf{x},\mathbf{y}\right) =
+E\left(\mathbf{p}\right) e^{-i\mathbf{p} \cdot \mathbf{y}}.
+\label{eq:9.2.11}
+\]</span></p>
+<p>通过反演傅里叶变换很容易找到解</p>
+<p><span class="math display">\[
+\mathcal{E}\left(\mathbf{x},\mathbf{y}\right) = \left(2\pi\right)^{-3}
+\int d^3\mathbf{p} e^{i\mathbf{p} \cdot
+\left(\mathbf{x}-\mathbf{y}\right)}E\left(\mathbf{p}\right).
+\label{eq:9.2.12}
+\]</span></p>
+<p>（回忆<span class="math inline">\(E\left(\mathbf{p}\right) \equiv
+\sqrt{\mathbf{p}^2 + m^2}\)</span>。）这实际上是核<span class="math inline">\(\mathcal{E}\)</span>最有用的表示，但我们可以顺便注意到对于<span class="math inline">\(\mathbf{x} \neq \mathbf{y}\)</span>，<span class="math inline">\(\mathcal{E}\)</span>也可以写成负阶Hankel函数的形式</p>
+<p><span class="math display">\[
+\mathcal{E}\left(\mathbf{x},\mathbf{y}\right) = \frac{m}{2\pi^2 r}
+\frac{d}{dr}\left(\frac{1}{r}K_{-1}\left(mr\right)\right),
+\label{eq:9.2.13}
+\]</span></p>
+<p>其中<span class="math inline">\(r \equiv |\mathbf{x} -
+\mathbf{y}|\)</span>。式<span class="math inline">\(\eqref{eq:9.2.9}\)</span>中的常数<span class="math inline">\(\mathcal{N}\)</span>可以形式上从真空态的归一化条件获得，但我们不需要这个结果。</p>
+<h2 id="小虚部iepsilon">小虚部<span class="math inline">\(i\epsilon\)</span></h2>
+<p>根据式<span class="math inline">\(\eqref{eq:9.2.9}\)</span>，在标量场理论中计算真空期望值时，式<span class="math inline">\(\eqref{eq:9.2.3}\)</span>中最后两个因子的乘积是</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;\langle\text{VAC},\text{out}|\phi\left(\infty\right);+\infty\rangle
+\langle\phi\left(-\infty\right);-\infty|\text{VAC},\text{in}\rangle
+\nonumber\\
+&amp;= |\mathcal{N}|^2 \exp\left(-\frac{1}{2}\int d^3\mathbf{x}
+d^3\mathbf{y}
+\mathcal{E}\left(\mathbf{x},\mathbf{y}\right)\left[\phi\left(\mathbf{x},+\infty\right)\phi\left(\mathbf{y},+\infty\right)+\phi\left(\mathbf{x},-\infty\right)\phi\left(\mathbf{y},-\infty\right)\right]\right)
+\label{eq:9.2.14a}\\
+&amp;= |\mathcal{N}|^2 \exp\left(-\frac{1}{2}\epsilon \int d^3\mathbf{x}
+d^3\mathbf{y} \int_{-\infty}^{+\infty} d\tau
+\mathcal{E}\left(\mathbf{x},\mathbf{y}\right)\phi\left(\mathbf{x},\tau\right)\phi\left(\mathbf{y},\tau\right)e^{-\epsilon|\tau|}\right),
+\label{eq:9.2.14b}
+\end{align}
+\]</span></p>
+<p>其中<span class="math inline">\(\epsilon\)</span>是正无穷小量。为了得到最终表达式，我们使用了对任何合理光滑函数<span class="math inline">\(f\left(\tau\right)\)</span>的事实，</p>
+<p><span class="math display">\[
+f\left(+\infty\right) + f\left(-\infty\right) = \lim_{\epsilon \to 0^+}
+\epsilon \int_{-\infty}^{+\infty} d\tau f\left(\tau\right)
+e^{-\epsilon|\tau|}. \label{eq:9.2.15}
+\]</span></p>
+<p>将式(9.2.14)插入式<span class="math inline">\(\eqref{9.2.3}\)</span>后给出</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;\left\langle\text{VAC},\text{out}\left|T\left\{\mathcal{O}_A\left[\Pi\left(t_A\right),\Phi\left(t_A\right)\right],
+\mathcal{O}_B\left[\Pi\left(t_B\right),\Phi\left(t_B\right)\right],
+\cdots \right\}\right|\text{VAC},\text{in}\right\rangle \nonumber\\
+&amp;= |\mathcal{N}|^2 \int \prod_{\tau,\mathbf{x}}
+d\phi\left(\mathbf{x},\tau\right)\prod_{\tau,\mathbf{x}}
+\left(d\pi\left(\mathbf{x},\tau\right)/2\pi\right)
+\mathcal{O}_A\left[\pi\left(t_A\right),\phi\left(t_A\right)\right]
+\nonumber\\
+&amp;\times
+\mathcal{O}_B\left[\pi\left(t_B\right),\phi\left(t_B\right)\right]
+\cdots \exp\left[i\int_{-\infty}^{+\infty} d\tau \left\{\int
+d^3\mathbf{x}
+\dot{\phi}\left(\mathbf{x},\tau\right)\pi\left(\mathbf{x},\tau\right)\right.\right.
+\nonumber\\
+&amp;\left.\left.-H\left[\phi\left(\tau\right),\pi\left(\tau\right)\right]
++ \frac{i}{2}\epsilon \int d^3\mathbf{x} d^3\mathbf{y}
+\mathcal{E}\left(\mathbf{x},\mathbf{y}\right)e^{-\epsilon|\tau|}\phi\left(\mathbf{x},\tau\right)\phi\left(\mathbf{y},\tau\right)\right\}\right].
+\label{eq:9.2.16}
+\end{align}
+\]</span></p>
+<p>我们将在第9.4节中看到，式<span class="math inline">\(\eqref{eq:9.2.16}\)</span>中指数宗量的最后一项的整个效果是在动量空间的标量场传播子分母中提供<span class="math inline">\(-i\epsilon\)</span>，<span class="math inline">\(\mathbf{p}^2 + m^2 \to \mathbf{p}^2 + m^2 -
+i\epsilon\)</span>。我们不会在这里详述一般自旋场的相应细节，而是简单地说明，一般情况下</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;\left\langle\text{VAC},\text{out}\left|T\left\{\mathcal{O}_A\left[P_A\left(t_A\right),Q\left(t_A\right)\right],
+\mathcal{O}_B\left[P_B\left(t_B\right),Q\left(t_B\right)\right], \cdots
+\right\}\right|\text{VAC},\text{in}\right\rangle \nonumber\\
+&amp;= |\mathcal{N}|^2 \int \left[\prod_{\tau,\mathbf{x},m}
+dq_m\left(\mathbf{x},\tau\right)\right]\left[\prod_{\tau,\mathbf{x},m}
+\frac{dp_m\left(\mathbf{x},\tau\right)}{2\pi}\right]
+\mathcal{O}_A\left[p\left(t_A\right),q\left(t_A\right)\right]
+\nonumber\\
+&amp;\times
+\mathcal{O}_B\left[p\left(t_B\right),q\left(t_B\right)\right] \cdots
+\exp\left[i\int_{-\infty}^{+\infty} d\tau \left\{\int d^3\mathbf{x}
+\sum_m
+\dot{q}_m\left(\mathbf{x},\tau\right)p_m\left(\mathbf{x},\tau\right)\right.\right.
+\nonumber\\
+&amp;\left.\left.-H\left[q\left(\tau\right),p\left(\tau\right)\right] +
+i\epsilon \text{ terms}\right\}\right], \label{eq:9.2.17}
+\end{align}
+\]</span></p>
+<p>其中'<span class="math inline">\(i\epsilon\)</span>
+terms'正好具有在所有传播子分母中放入正确<span class="math inline">\(-i\epsilon\)</span>的效果。</p>
+<p>这里是提及式(9.2.17)中诸如常数<span class="math inline">\(|\mathcal{N}|^2\)</span>等与场无关因子并不重要的好地方。这是因为这种因子也对矩阵元<span class="math inline">\(\langle\text{VAC},\text{out}|\text{VAC},\text{in}\rangle\)</span>有贡献。在计算时间序产品的真空期望值的<em>连通</em>部分（或S矩阵）时，我们通过除以<span class="math inline">\(\langle\text{VAC},\text{out}|\text{VAC},\text{in}\rangle\)</span>来消除不连通真空涨落子图的贡献，任何真空期望值中的常数因子在这个比值中抵消。</p>
+<p>我们可以继续计算多粒子态之间的矩阵元，方法是在式(9.2.3)中插入适当的'波泛函'。这些可以通过应用第9.2.7节所述的湮灭算符来计算，就像刚才对谐振子态那样，这些波泛函最终会变成场乘真空高斯的厄米多项式。我们不需要在这里全部计算出来，因为如第6.4节所示，真空期望值(9.2.17)是我们为了能够计算S矩阵元所需要的全部。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">我们现在用方括号写<span class="math inline">\(H\)</span>和<span class="math inline">\(\mathcal{O}\)</span>，以提醒我们<span class="math inline">\(H\left[q\left(t\right),p\left(t\right)\right]\)</span>和<span class="math inline">\(\mathcal{O}\left[p\left(t\right),q\left(t\right)\right]\)</span>是在固定时刻<span class="math inline">\(t\)</span>的<span class="math inline">\(q_m\left(\mathbf{x},t\right)\)</span>和<span class="math inline">\(p_m\left(\mathbf{x},t\right)\)</span>的泛函。<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">只需要注意的是，对于哈密顿量<span class="math inline">\(H\left[P\left(t\right),Q\left(t\right)\right] +
+\sum_A \int d^3\mathbf{x}
+\epsilon_A\left(\mathbf{x},t\right)O_A\left(\mathbf{x},t\right)\)</span>，S矩阵由式(9.2.3)给出为
+<span class="math display">\[
+\begin{equation}
+\begin{split}
+\langle\beta,\text{out}|\alpha,\text{in}\rangle_\epsilon&amp;amp; = \int
+\prod_{\tau,\mathbf{x},m}
+dq_m\left(\mathbf{x},\tau\right)\prod_{\tau,\mathbf{x},m}
+\left(dp_m\left(\mathbf{x},\tau\right)/2\pi\right)\
+&amp;amp;\times \exp\left[i\int_{-\infty}^{+\infty} d\tau \left{\int
+d^3\mathbf{x} \sum_m
+\dot{q}_m\left(\mathbf{x},\tau\right)p_m\left(\mathbf{x},\tau\right) -
+H\left[q\left(\tau\right),p\left(\tau\right)\right]\right}\right]\
+&amp;amp;- \sum_A \int d^3\mathbf{x}
+\epsilon_A\left(\mathbf{x},t\right)O_A\left(\mathbf{x},t\right)\
+&amp;amp;\times
+\langle\beta,\text{out}|q\left(+\infty\right);+\infty\rangle \langle
+q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
+\end{split}
+\end{equation}
+\]</span> 式(6.4.3)的左端通过关于<span class="math inline">\(\epsilon_A\)</span>在<span class="math inline">\(\epsilon =
+0\)</span>处对这个表达式的导数获得，然后使用式(9.2.3)立即给出式(6.4.3)的右端。<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>抄书</category>
+        <category>GPT翻译</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂谈-什么是物理图像？</title>
+    <url>/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="引论">引论</h2>
+<p>通常在学物理/做物理的人之间会有一个专有名词叫<strong>物理图像(Physical
+Picture)</strong>，有时也简称为<strong>物理</strong>。例如交流的时候会说"你这篇文章的物理(图像)是什么"。然而维基百科上并没有关于这个词的明确定义，且在不同的语境下<strong>物理图像</strong>指代对象会有极大的不同。为了能够理清这一词至目前的各种含义，于是便写下了这篇杂谈。</p>
+<h2 id="物理模型">物理模型</h2>
+<p>作为自然学科的基础之一，物理的核心在于研究自然。而要研究自然，目前最有效的方式是根据现实提取出对应的<b><font color="red">物理模型</font></b>进行分析。</p>
+<p>为了得到响应的物理模型，在考虑现实中的各种物理对象时，首先要对该对象进行<strong>抽象</strong>，以此得到最简单而又最能反应所关注的内容的一个物理模型.例如<strong>质点</strong>这一对象是对任意不关注其大小以及形状的物体的抽象，这一抽象对象在研究一个物体的运动，尤其是空间上的平移时时最为有效，因为我们只需要关注质点在空间中的位置即可。然而由于抽象过程中我们抛弃了太多信息，导致其缺点在于质点是一个没有大小的点，我们没有办法研究它的旋转。</p>
+<p>若是要研究旋转，我们需要加入一些关于形状和大小的细节，这个时候将<strong>刚体</strong>的抽象要更加有利于研究。借此我们可以研究对象的旋转。若是要研究刚体在各种受力下的变化，我们就需要加入更多的细节，例如物体可以发生形变，扭曲，断裂，拼接，融合等各种现实中存在的过程。无论如何，在研究自然时，我们总是需要根据研究对象去提取出当前对象最关键的信息，通过抽象来建立一个物理对象的模型，这便是物理模型。</p>
+<h2 id="数学模型">数学模型</h2>
+<p>在建立了物理模型后，我们需要描述其各种关心的性质以及各种性质之间的联系。而目前最好的描述工具是数学，在基于对应的物理模型的基础上，进一步用数学建立的模型可以称为<strong>数学模型</strong>。或许最广为人知的数学模型应当是牛顿的运动学第二定律
+<span class="math display">\[\begin{equation}
+    \mathbf{F}=m\mathbf{a}
+\end{equation}\]</span> 这个公式描述了一个真空中质量为<span class="math inline">\(m\)</span>的物理对象受到的力<span class="math inline">\(\mathbf{F}\)</span>与其因力而产生的加速度<span class="math inline">\(\mathbf{a}\)</span>的关系，这是一个数学函数关系，因此可以认为其是一个描述任一满足特定假设<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。
+">[1]</span></a></sup>下用于描述<strong>物理模型</strong>的<strong>数学模型</strong>。
+这个<strong>数学模型</strong>的特殊性在于，与其他任意<span class="math inline">\(y=f(x)\)</span>相比，当我们将这三个变量(两个是矢量)中任意两个变量换为任意物理对象的对应的已知参数的<em>数据</em><sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="之所以是*数据*而非*数字*，在于单位。
+">[2]</span></a></sup>时，求解得到的第三个未知的变量的数据将必然与在现实中的物理对象通过实验测得的数据<strong>在一定的误差范围内相同</strong>。这一重要区别使得一个<strong>物理模型</strong>所对应的<strong>数学模型</strong>具有了一定程度的<b><font color="red">预测现实</font></b>的功能。</p>
+<h2 id="物理理论">物理理论</h2>
+<p>在阐明了物理模型以及的对应的数学模型后，便可以开始讨论<strong>物理理论</strong>。一个物理理论<strong>是一类物理事件的模型</strong>。由于对现实的一对一建模是不可能的事情，因此人们更希望通过一系列有限的物理模型来提取出一个(或一类)更加本质的模型，当遇到全新的对象时，直接利用这个本质的模型去套用即可分析新的对象，这就是物理理论。它的评判标准是其预测与实证观察的一致性程度。物理理论的质量还取决于它做出新预测的能力，这些预测可以通过新的观察来验证。这一套采用数学模型和物理对象和系统的抽象来合理化、解释和预测自然现象<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 理论物理学](https://en.wikipedia.org/wiki/Theoretical_physics)
+">[3]</span></a></sup>对应为理论物理学。亦即，理论物理学是研究物理理论的学科。</p>
+<p>对于物理理论的描述，通常是利用数学模型来描述一类物理模型的性质以及其之间的关系。一个物理理论通常会包含多个物理模型以及其对应的数学模型。例如牛顿力学便是一个物理理论，其包含了质点、刚体等多个物理模型，以及对应的牛顿定律等数学模型。</p>
+<p>然而，以纯粹物理理论的严格性和信息量而言，要想直接对其进行讨论是非常困难的。因此，通常人们会在讨论物理理论时，使用<b><font color="red">物理图像</font></b>来进行描述。在这之前，需要对图像这个词进行一些意义的拓展</p>
+<h2 id="图像">图像</h2>
+<p>图，或者图像，是一般人每时每刻都需要的一种信息。借用维基百科的介绍<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 图片](https://en.wikipedia.org/wiki/Image)
+">[4]</span></a></sup>， &gt;
+图像或图片是一种视觉表示形式。图像可以是二维的，例如绘图、绘画或照片，也可以是三维的，例如雕刻或雕塑。</p>
+<p>作为含有信息量最丰富的对象，其直观与简洁对于理解事物具有极大的帮助性。例如描述圆的时候，数学上通常用解析几何的方法，来定义满足方程
+<span class="math display">\[\begin{equation}
+    x^2+y^2=r^2
+\end{equation}\]</span> 的点集(x,y)构成的集合，而图像上可以很简单的给出
+<img src="/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/image.png" alt="alt text">
+从这个角度来说，图像作为信息的载体，其特征在于<strong>简洁</strong>与<strong>直观</strong>。
+## 物理图像
+在介绍完了物理模型和图像后，<strong>物理图像</strong>简单来说便是指一类<b><font color="red">简洁直观</font></b>的<strong>物理模型</strong>。需要注意的是，物理图像并不指代物理实在，而是指一个方便理解的抽象对象。因为只有在有了对象之后，才可以谈及对象之间的关系，也即物理关系。而所谓常说的"新物理"，也是指一类新的物理图像以及其对应的之前所未探明的物理关系。</p>
+<h2 id="总结">总结</h2>
+<p>物理图像作为一种简洁直观的物理模型，其主要是在简单的讨论中，避免涉及过多的计算但是却能理清复杂的物理关系的工具。利用物理(图像)，即便是不甚了解一个理论内部的数学关系，也可以理清楚不同物理对象之间的关系，这极大的降低了交流成本。除此之外，物理图像的重要意义在于，通过考察物理图像对应的自然现实，有时甚至可以跳过严格的数学构造和推导，直接抽取出可能的物理关系。例如已知牛顿第二定律是一个二阶微分方程，对于匀速运动而言其解需要首先求解该微分方程，得到解
+<span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\frac{1}{2}a t^2+bt+c
+\end{equation}\]</span> 然后带入初始条件，计算后才能得到 <span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
+\end{equation}\]</span>
+但是，如果直接考虑一个匀速运动的物体，我们应当可以很轻易地直接写下 <span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
+\end{equation}\]</span>
+这种方法甚至在分数量子霍尔效应中诞生过诺贝尔奖，其得主Robert
+Laughlin在没有任何数学推导的情况下，直接写出了分数量子霍尔效应的物理图像，并且成功地解释了实验结果。</p>
+<h2 id="题外话">题外话</h2>
+<p>作为一个个人的观点，实际物理学中的<strong>解释</strong>并非对现实行为的解释，而是基于<b><font color="red">物理图像的对物理模型的解释</font></b>。因为现实世界是极其复杂的，如果一个理论能够解释现实，那么现实就不应该存在无法解释的对象，然而客观上现实中存在无法利用理论解释的现象，这实际上正是物理理论作为物理模型的集合的局限性所在。而所谓的解释，实际上是基于物理模型对该框架下的可能的物理图像的解释<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="本文中部分论述使用copilot润色。">[5]</span></a></sup>。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">之所以是<em>数据</em>而非<em>数字</em>，在于单位。<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Theoretical_physics">WikiPedia
+理论物理学</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:4">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Image">WikiPedia
+图片</a><a href="#fnref:4" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:5">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">本文中部分论述使用copilot润色。<a href="#fnref:5" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>物理</tag>
+        <tag>杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World-建站纪念</title>
+    <url>/2025/03/21/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一些建站的纪念">一些建站的纪念</h1>
+<p>在此记录一下建立博客最初的一些思绪和看法。由于是渐进式的文章，因此本文会不定期更新。</p>
+<p>这个博客主要是利用<a href="https://hexo.io/">Hexo</a>以及<a href="https://theme-next.js.org/">Next</a>建立起来的。途中还有不少网络上的搜索资料，从开始有想法到第一次部署完成到网页耗时大概三个小时，非常地轻便。</p>
+<p>建立这个博客的最重要的目的是提升自己的<strong>写作能力</strong>。最近在一次又一次改文章的过程，再一次深刻地认识到了自己写作能力的欠缺以及语文素养的低下。之所以有个"再"字，是考虑到之前也被L老师痛批过语文能力很差劲。所以借此机会，慢慢的写一些文章，分享一些技术杂谈。
+实际上，在写这篇纪念的时候，脑子里也总是想一些有的没的。一直在考虑写一些什么东西，却没有很好的梳理起来，成为有条理性和故事性的文章。可是，如果不从第一个字，第一篇文章下手，任何的改进都是空谈。所以，即便这篇，或者开始的一些，甚至以后的文章都写的非常糟糕，也不能就此放弃。(当然，迫于现实生活的紧张节奏导致的没有时间写是另一回事。)</p>
+<p>第二个目的算是排解一下情绪。人生毫无疑问是一场持久战，无论是身心还是现实都是。而在最近的生活中，既要保证四五年里个体的身心的健全，以求毕业后仍有一番动力，也要祈求现实生活中不会突生变故，打乱本就脆弱而没有章法的计划。在这看似没有终点的过程中，通过写作或其他活动进行排解自然是一种选择。当然我也想过学习画画，但是看上去并没有作画的天分，也没有相应的毅力，所以只能就此作罢。</p>
+<p>为什么要选择博客而不是在微信或qq空间或是知乎上，则是考虑到有些数学公式的编辑在这些设备上并不方便。况且微信或qq空间太过于私密化。我个人希望这个博客能够不太私密化又不至于太过于公开化(似乎是比较矛盾的)，况且个人站外博客的自由度要相对更高，并且能学习一下如何制作网站。</p>
+<p>无论如何，这个博客的主要目的都是以提升写作能力以及排解情绪为首要目的的。(当然，如果有人能看到并感觉有点意思，那就再好不过了)。</p>
+<hr>
+<h1 id="一些常用markdown命令">一些常用Markdown命令</h1>
+<p>这里主要参考了<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>，记录在这里是为了避免每次使用都要查询。</p>
+<h2 id="内容目录">内容目录</h2>
+<p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构</p>
+<h2 id="使用斜体与粗体">使用<em>斜体</em>与<strong>粗体</strong></h2>
+<p><code>*斜体* 与 **粗体**</code></p>
+<h2 id="分割线">分割线</h2>
+<p>在单独的一行使用 <code>***</code> 或者 <code>---</code>
+表示分割线</p>
+<p><code>***</code></p>
+<hr>
+<p><code>---</code></p>
+<hr>
+<h2 id="排序">排序</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一件事</span><br><span class="line">    * 第一个方面</span><br><span class="line">    * 第二个方面</span><br><span class="line">2. 第二件事</span><br><span class="line">    - 第一个方面</span><br><span class="line">    - 第二个方面</span><br></pre></td></tr></table></figure>
+<ol type="1">
+<li>第一件事
+<ul>
+<li>第一个方面</li>
+<li>第二个方面</li>
+</ul></li>
+<li>第二件事
+<ul>
+<li>第一个方面</li>
+<li>第二个方面</li>
+</ul></li>
+</ol>
+<h2 id="超链接">超链接</h2>
+<p>插入文字超链接的格式如下 ：</p>
+<p><code>[链接文字](链接地址 "链接标题")</code></p>
+<p>插入图片超链接的格式如下：</p>
+<p><code>![图片说明](图片链接 "图片标题")</code></p>
+<h2 id="注释">注释</h2>
+<p>用 <code>\</code>表示注释</p>
+<h2 id="引用">引用</h2>
+<p>使用<code>&gt;</code>表示文字引用</p>
+<p><code>&gt; 这是一段文字引用</code></p>
+<blockquote>
+<p>这是一段文字引用</p>
+</blockquote>
+<h2 id="latex">Latex</h2>
+<p>数学公式的默认环境是<code>$ $</code>或<code>$$ $$</code>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\begin&#123;equation&#125;</span><br><span class="line">f(x) = x^2</span><br><span class="line">\end&#123;equation&#125;$</span><br></pre></td></tr></table></figure> <span class="math inline">\(\begin{equation}
+f(x) = x^2
+\end{equation}\)</span></p>
+<p>注意这里即便是使用<code>equation</code>环境，也需要用<code>$</code>符号注明</p>
+<hr>
+<!-- ## Quick Start
+
+### Create a new post
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>
+--&gt;</p>
+-->]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>恒星的流体静力学平衡</title>
+    <url>/2025/03/26/Stars/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="前言">前言</h1>
+<p>作为第一篇非叙事的文章，总是要有一些精彩的内容的。思来想去，还是认为只有<a href="https://zh.wikipedia.org/wiki/%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%B8%A9%E4%BC%AF%E6%A0%BC">Steven
+Weinberg</a> (物理学家，诺贝尔奖获得者)的著作Lectures on
+Astrophysics(天体物理学讲座)的第一节足够精彩。</p>
+<p>这本书全册共226页，当然是塞不下天体物理的主要内容的。相反，作者意在给出一些在无需计算机帮助下，依然能展现出一些与真实世界相关的天体物理相关的简单计算。</p>
+<blockquote>
+<p>...Instead, I here offer a short course, a collection of
+astrophysical calculations that can be done simply and analytically,
+without recourse to computers, and yet are relevant to the real
+world....</p>
+</blockquote>
+<p>本书的第一节-<em>Hydrostatic
+Equilibrium</em>(流体静力学平衡)仅只需要基础的微积分知识和万有引力定律，再加上一些热力学概念，便给出了许多精彩的结论。
+# 恒星的引力平衡
+宇宙中的恒星<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常所说的星体([Stars](https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F))都代指恒星，而非像地球这样的岩石行星([Rocky planet](https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F))，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。
+">[1]</span></a></sup>通常都是稳定的发光体，所以可以假定星体是一团由引力凝聚在一起的<strong>稳定</strong>的物质。由于万有引力只依赖于物质之间的距离，可以近似认为恒星是球形的，也即具有球对称结构。因此，采取球坐标系分析是较为方便的。
+回想万有引力定律 <span class="math display">\[
+\begin{equation}
+F=-G\frac{Mm}{r^2}
+\end{equation}
+\]</span>
+既然引力是<strong>万有</strong>的，那么自然在恒星内部之间也是存在引力的。星体内部的物质为了平衡这样的引力维持稳定的结构，必然产生一定的压力。我们的出发点便是基于这样的一个平衡-一个稳定存在的恒星，其内部之间的引力应当与物质因过于紧密而产生的压力相等。</p>
+<p><img alt="PlotofStar" src="/2025/03/26/Stars/StarPlot.jpg" width="50%" height="50%">
+如上图所示，我们假设星体的密度是半径的函数<span class="math inline">\(\rho(r)\)</span>，那么半径为<span class="math inline">\(r\)</span>的恒星内部球体的质量就是</p>
+<p><span class="math display">\[
+\begin{equation}
+\mathcal{M}(r)=\int_0^r 4\pi r&#39;^2\rho(r&#39;)dr&#39;.
+\end{equation}
+\]</span></p>
+<p>对应的，这个球体对其外部厚为<span class="math inline">\(dr\)</span>的球壳(可以验证，这个球壳的质量是<span class="math inline">\(4\pi r^2
+\rho(r)dr\)</span>)所产生的引力对应为<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="注意，这里我们利用了引力的一个性质，即**一个球体对位于其外部的物体所施加的引力，等效于位于该球体球心的具有相同质量的质点对该物体所施加的引力**。这个性质使得我们考虑内部球体对球壳所施加的引力时，不需要考虑内部球体的任一点对球壳施加的压力，直接将距离替换为球心到球壳的距离即可。">[2]</span></a></sup>
+<span class="math display">\[
+\begin{equation}
+F_{\text{引力}}=-G\frac{\mathcal{M}(r)\times 4\pi r^2
+\rho(r)dr}{r^2}=-4\pi G\rho(r)\mathcal{r}dr
+\end{equation}
+\]</span>
+这里的负号代表引力总是指向球心的方向。接下来考虑压力导致的浮力(正如物体在水中所受到的浮力是由于物体底部接收到的压强要大于物体顶部收到的压强，这对于恒星也是成立的!)。假设在半径<span class="math inline">\(r\)</span>处的压强为<span class="math inline">\(p(r)\)</span>，由于球壳内侧的压强要大于球壳外侧的压强，我们可以计算出它的压强差导致的浮力为
+<span class="math display">\[
+\begin{equation}
+F_{\text{浮力}}=4\pi r^2\left[p(r)-p(r+dr) \right]=-4\pi r^2 p&#39;(r)dr
+\end{equation}
+\]</span>
+由于恒星是稳定的，故对恒星内任意这样的球壳，其受到的引力都应当与受到的浮力相当，所以我们可以联立这两个方程，经过简单的化简，可以得到
+<span class="math display">\[
+\begin{equation}
+\label{eq:hydrostatic}
+\boxed{\frac{dp(r)}{dr}=-\frac{G\mathcal{M}(r)\rho(r)}{r^2}}
+\end{equation}
+\]</span>
+该公式给出了星体内部任一半径处的压力与质量的关系，这就是<strong>恒星的流体静力学平衡下的基本方程(Fundamental
+equation of hydrostatic equilibrium for stars)</strong>。</p>
+<h1 id="恒星的引力势能">恒星的引力势能</h1>
+<p>在讨论恒星的能量前，我们需要回想一下如何定义能量。回想高中的物理知识，一个静止的物体的物体的动能可以通过对其施加外力造成位移来增加，也即通过做功来增加物体的能量
+<span class="math display">\[
+\begin{equation}
+W=\int \vec{F}\cdot d\vec{x}
+\end{equation}
+\]</span></p>
+<p>现在对于恒星而言，我们要考虑的从动能变成了引力势能，也即需要考察来自无穷远处的物质因引力而聚集在一起时，引力所做的功。由于恒星可以认为是个球，我们采取与上面相同的讨论，即通过讨论包裹在球体外的薄球壳，从无穷远到球体表面所累积的引力势能，来求得整个恒星所具有的引力势能，如下图所示(仅展示了一个球壳上的一个微元，即图中的红点)
+<img alt="PlotofStarFallen" src="/2025/03/26/Stars/Star_fallonto.gif" width="50%" height="50%"></p>
+<p>可以验证，半径为<span class="math inline">\(r\)</span>的质量为<span class="math inline">\(\mathcal{M}(r)\)</span>的星体产生会产生的引力为<span class="math inline">\({\color{blue}G\mathcal{M}(r)/r^2}\)</span>，而其将无穷远处的物质吸引到球表面，形成一层质量为<span class="math inline">\({\color{brown}4\pi
+r^2\rho(r)dr}\)</span>的球壳所做的功为 <span class="math display">\[
+\begin{equation}
+\int_{r}^{\infty}{\color{blue}G\mathcal{M}(r)/r^2}\times{\color{brown}4\pi
+r^2\rho(r)dr} \times{\color{red}\frac{1}{r&#39;^2}dr&#39;}=4\pi G
+r\mathcal{M}(r)\rho(r)dr
+\end{equation}
+\]</span> 注意区分开标红的被积分半径<span class="math inline">\(r&#39;\)</span>与表示球壳所在的半径<span class="math inline">\(r\)</span>!前者是因为，在将球壳从无穷远移动到球面上时，球壳所受到的引力也会随距离变化(万有引力告诉我们，这个力平方反比于二者的距离)，我们需要对其作积分；而后者代表我们所关注的球壳的半径。</p>
+<p>现在已经求得了半径为<span class="math inline">\(r\)</span>的球体吸引球壳所需要的功，我们再对整个半径作积分直至整个恒星的半径即可得到恒星的引力势能
+<span class="math display">\[
+\begin{equation}
+-\Omega=4\pi G\int_0^{\color{red}{R}} r\mathcal{M}(r)\rho(r)dr
+\end{equation}
+\]</span> 这里<span class="math inline">\({\color{red}{R}}\)</span>为恒星的半径，一般而言这个半径定义为恒星的压强为0的地方，即<span class="math inline">\(p(R)=0\)</span>(类比地球的大气层内的一个大气压，而在大气层之外则接近为0).公式左侧即为恒星的引力势能<span class="math inline">\(\Omega\)</span>，注意前面的负号，因为引力总是相互吸引的，而在引力做功的时候，被吸引的球壳本应该将获得的引力势能转化为动能，而我们在计算球壳从无穷远到星体表面时默认了这个球壳会<strong>不带有动能</strong>地直接落在球面上形成了稳定的恒星<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="实际上这关系到恒星的形成过程。恒星整体上而言是星际间物质由于引力而相互吸引，这个时候引力势能转化为的动能非常大，从而导致星际物质之间会发生碰撞与摩擦，在这个过程中动能会转化为热与辐射离开这个体系，从而减少了动能。并且即便有这样的一个过程，在形成恒星后这些动能也并未完全被消耗掉。">[3]</span></a></sup>，而作为代价，我们得到的引力势能应当为负。</p>
+<p>现在是时候回顾公式<span class="math inline">\(\eqref{eq:hydrostatic}\)</span>了。利用该公式，我们可以将上式重新写为
+<span class="math display">\[
+\begin{equation}
+\Omega=4\pi \int_0^R\frac{dp(r)}{dr}r^3dr=-3\int_0^R p(r)4\pi r^2 dr
+\end{equation}
+\]</span> 注意为得到这个等式，需要利用分部积分以及<span class="math inline">\(p(R)=0\)</span>来消掉分部积分带来的<span class="math inline">\(r^3p(r)|^R_0\)</span>因子。</p>
+<h1 id="恒星的能量">恒星的能量</h1>
+<p>现在已知了恒星的引力势能，实际上恒星内部还有热能<span class="math inline">\(\Upsilon\)</span><sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这个符号是希腊字母Upsilon，与原文保持一致">[4]</span></a></sup>（又经常叫做内能）.其形式可以写为单位体积能量密度的积分</p>
+<p><span class="math display">\[
+\begin{equation}\label{innerenergy}
+\Upsilon=\int_0^R\mathcal{E}(r)4\pi r^2dr
+\end{equation}
+\]</span> 其中<span class="math inline">\(\mathcal{E}\)</span>是不包括恒星的质能<span class="math inline">\((E=mc^2)\)</span>或引力能的内能密度。接下来我们可以将恒星的非相对论的能量写下</p>
+<p><span class="math display">\[
+\begin{equation}\label{energy}
+E=\Upsilon+\Omega=\int_0^R\left[\mathcal{E}(r)-3p(r)\right]4\pi r^2 dr
+\end{equation}
+\]</span> 从被积部分可以看到，若<span class="math inline">\(\mathcal{E}(r)-3p(r)&lt;0\)</span>，此时恒星的引力势能大于内能，从而可以使整体能量为负，也即恒星吸引在一起。</p>
+<h2 id="多方球假设">多方球假设</h2>
+<p>为了更进一步地讨论恒星的能量，在这里稍微离题一下，我们需要给出一些热力学知识来建立恒星的压强与能量的关系。</p>
+<p>通常而言我们可以假设内能与压强的关系为 <span class="math display">\[
+\begin{equation}\label{polytrope}
+\mathcal{E}(r)=\frac{p}{\Gamma-1}
+\end{equation}
+\]</span> 这个关系叫做<a href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%96%B9%E7%90%83">多方球假设</a>，其中额外的参数<span class="math inline">\(\Gamma\)</span>叫做绝热指数。为了更进一步地说明这个关系，我们可以拿高中的理想气体举例子。高中接触过的理想气体状态方程
+<span class="math display">\[
+\begin{equation}
+    pV=Nk_{B}T
+\end{equation}
+\]</span> 其中<span class="math inline">\(p\)</span>为压强，<span class="math inline">\(V\)</span>为气体体积,<span class="math inline">\(k_B\)</span>是玻尔兹曼常数，<span class="math inline">\(N\)</span>为气体的原子数，<span class="math inline">\(T\)</span>为温度。如果我们用单位体积数密度<span class="math inline">\(n=N/V\)</span>，则上式可以写为 <span class="math display">\[
+\begin{equation}\label{eq:idealgas}
+    p=nk_{B}T
+\end{equation}
+\]</span> 在热力学上可以证明，此时我们可以计算出理想气体的能量密度为
+<span class="math display">\[
+\begin{equation}
+    \mathcal{E}={\color{red}\frac{3}{2}}nk_{B}T
+\end{equation}
+\]</span> 注意前面的系数!实际上利用<span class="math inline">\(\eqref{eq:idealgas}\)</span>可以得到<span class="math display">\[
+\begin{equation}
+    \mathcal{E}=\frac{3}{2}p=\frac{p}{5/3-1}
+\end{equation}
+\]</span> 所以对于理想气体而言，我们有 <span class="math inline">\(\Gamma=5/3\)</span>
+.除了理想气体之外，对于辐射而言(不再是由普通的有质量原子构成的气体，而是由无质量的光子构成的气体)有
+<span class="math inline">\(\mathcal{E}=3p\)</span> 从而 <span class="math inline">\(\Gamma=4/3\)</span>.</p>
+<h2 id="恒星的爆炸">恒星的爆炸</h2>
+<p>在建立了内能函数与压强的关系后，我们终于可以来讨论恒星的爆炸了！利用<span class="math inline">\(\eqref{polytrope}\)</span>,<span class="math inline">\(\eqref{innerenergy}\)</span>和<span class="math inline">\(\eqref{energy}\)</span>，我们可以建立一个简单的代数关系
+<span class="math display">\[
+\begin{equation}
+    \begin{split}
+        E&amp;=\Upsilon+\Omega=\int_0^R\left[\mathcal{E}(r)-3(\Gamma-1)\mathcal{E}(r)\right]4\pi
+r^2 dr\\
+        &amp;=(4-3\Gamma){\color{brown}\int_0^R\mathcal{E}(r)4\pi r^2
+dr}=(4-3\Gamma)\times{\color{brown}C}\\
+        \Upsilon&amp;={\color{brown}\int_0^R\mathcal{E}(r)4\pi r^2
+dr}={\color{brown}C}\\
+        \Omega&amp;=E-\Upsilon=3(1-\Gamma){\color{brown}C}
+    \end{split}
+\end{equation}
+\]</span>
+这意味着，恒星的总能量，引力势能以及内能满足如下的简单的代数关系 <span class="math display">\[
+\begin{equation}\label{eq:Explode}
+    \boxed{\Upsilon=-\frac{E}{3\Gamma-4},\quad\Omega=\frac{(\Gamma-1)E}{\Gamma-4/3}}
+\end{equation}
+\]</span> 当总能量<span class="math inline">\(E\)</span>为正值时恒星将发生爆炸，因此要维持稳定需满足<span class="math inline">\(E &lt;
+0\)</span>。可是由于引力势能总是小于零，即<span class="math inline">\(\Omega&lt;0\)</span>，从上式的第二个方程可以看出，我们必须要有<span class="math inline">\(\frac{\Gamma-1}{\Gamma-4/3}&gt;0\)</span>,这给出
+<span class="math inline">\(\Gamma&lt;1\)</span> 或 <span class="math inline">\(\Gamma&gt;4/3\)</span>
+.根据上面的热力学讨论，<span class="math inline">\(\Gamma\)</span>通常都是大于1的，从而我们必然有<span class="math inline">\(\Gamma&gt;4/3\)</span>.实际上，对于压强主要由高度相对论性粒子主导的天体（例如质量接近理论上限的大质量普通恒星、白矮星和中子星），其<span class="math inline">\(\Gamma\)</span>值仅略高于4/3，说明这类天体的稳定性实际上已经很差了。</p>
+<p>方程<span class="math inline">\(\eqref{eq:Explode}\)</span>在恒星早期演化过程中起着决定性作用。一团低温弥散气体云内部的引力能和内能极低，其总能量<span class="math inline">\(E\)</span>值很小。只要该气体云未处于绝对零度，就会持续辐射出以红外波段为主的光线。若其总能量转为负值，气体云便无法继续扩散。根据方程<span class="math inline">\(\eqref{eq:Explode}\)</span>，只要绝热指数<span class="math inline">\(\Gamma&gt;4/3\)</span>，气体云在损失能量的过程中，尽管总能量<span class="math inline">\(E\)</span>持续减小（负值越来越大），但其内能<span class="math inline">\(\Upsilon\)</span>却会不断增大，也即恒星此时表现出负比热特性：<strong>恒星能量损失越多，温度反而越高</strong>。随着温度上升，恒星能量辐射的速度又进一步加快，这一过程形成正反馈循环。最终当恒星核心温度高到足以克服原子核间的库仑斥力时，核聚变反应启动并持续增强，直至核能产出与辐射损失达到平衡，恒星便进入稳定阶段（至少在其核心核燃料耗尽前会保持稳定）。看似矛盾的是，核反应的发生反而中止了恒星的持续升温过程。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">通常所说的星体(<a href="https://zh.wikipedia.org/wiki/%E6%81%92%E6%98%9F">Stars</a>)都代指恒星，而非像地球这样的岩石行星(<a href="https://zh.wikipedia.org/wiki/%E5%B2%A9%E7%9F%B3%E8%A1%8C%E6%98%9F">Rocky
+planet</a>)，因为夜空中能够肉眼可见的星体几乎都是能够通过核反应自发光的恒星。<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">注意，这里我们利用了引力的一个性质，即<strong>一个球体对位于其外部的物体所施加的引力，等效于位于该球体球心的具有相同质量的质点对该物体所施加的引力</strong>。这个性质使得我们考虑内部球体对球壳所施加的引力时，不需要考虑内部球体的任一点对球壳施加的压力，直接将距离替换为球心到球壳的距离即可。<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">实际上这关系到恒星的形成过程。恒星整体上而言是星际间物质由于引力而相互吸引，这个时候引力势能转化为的动能非常大，从而导致星际物质之间会发生碰撞与摩擦，在这个过程中动能会转化为热与辐射离开这个体系，从而减少了动能。并且即便有这样的一个过程，在形成恒星后这些动能也并未完全被消耗掉。<a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:4">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这个符号是希腊字母Upsilon，与原文保持一致<a href="#fnref:4" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>物理</tag>
       </tags>
   </entry>
 </search>
