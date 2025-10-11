@@ -28,7 +28,7 @@
 <meta property="og:description" content="9.2 过渡到S矩阵 真空波函数 如前文所述，我们可以轻松地将第9.1节的一般量子力学结果转换为适合量子场论的记号，即让指标\(a\)遍历空间中的点\(\mathbf{x}\)和自旋及种类指标\(m\)，并用\(Q_m\left(\mathbf{x},t\right)\)和\(P_m\left(\mathbf{x},t\right)\)分别替换\(Q_a\left(t\right)\)和\(P">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-10-04T17:17:16.000Z">
-<meta property="article:modified_time" content="2025-10-04T18:00:42.833Z">
+<meta property="article:modified_time" content="2025-10-04T18:25:11.185Z">
 <meta property="article:author" content="obxygene">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="物理">
@@ -156,7 +156,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -235,7 +235,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2025-10-05 01:17:16 / 修改时间：02:00:42" itemprop="dateCreated datePublished" datetime="2025-10-05T01:17:16+08:00">2025-10-05</time>
+      <time title="创建时间：2025-10-05 01:17:16 / 修改时间：02:25:11" itemprop="dateCreated datePublished" datetime="2025-10-05T01:17:16+08:00">2025-10-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -279,7 +279,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>11k</span>
+      <span>12k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -333,7 +333,7 @@ q_m\left(\mathbf{x},-\infty\right) &amp;= q_m\left(\mathbf{x}\right)
 \label{eq:9.2.2b}
 \end{align}
 \]</span></p>
-<p>来约束路径积分中的<span class="math inline">\(q_m\left(\mathbf{x},\tau\right)\)</span>，然后对<span class="math inline">\(q&#39;_m\left(\mathbf{x}\right)\)</span>和<span class="math inline">\(q_m\left(\mathbf{x}\right)\)</span>进行积分，我们可以同样进行对<span class="math inline">\(q_m\left(\mathbf{x},\tau\right)\)</span>（以及<span class="math inline">\(p_m\left(\mathbf{x},\tau\right)\)</span>）的无约束积分，并将式<span class="math inline">\(\eqref{eq:9.2.2a}\)</span>给出的值：</p>
+<p>来约束路径积分中的<span class="math inline">\(q_m\left(\mathbf{x},\tau\right)\)</span>，然后对<span class="math inline">\(q&#39;_m\left(\mathbf{x}\right)\)</span>和<span class="math inline">\(q_m\left(\mathbf{x}\right)\)</span>进行积分，我们可以同样进行对<span class="math inline">\(q_m\left(\mathbf{x},\tau\right)\)</span>（以及<span class="math inline">\(p_m\left(\mathbf{x},\tau\right)\)</span>）的无约束积分，并将波函数的宗量设置为式(9.2.2)给出的值：</p>
 <p><span class="math display">\[
 \begin{align}
 &amp;\langle\beta,\text{out}|T\left\{\mathcal{O}_A\left[P\left(t_A\right),Q\left(t_A\right)\right],
@@ -358,14 +358,13 @@ H\left[q\left(\tau\right),p\left(\tau\right)\right]\right\}\right]
 \]</span></p>
 <p>顺便说一下，这个结果立即<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="只需要注意的是，对于哈密顿量$H\left[P\left(t\right),Q\left(t\right)\right] + \sum_A \int d^3\mathbf{x} \epsilon_A\left(\mathbf{x},t\right)O_A\left(\mathbf{x},t\right)$，S矩阵由式(9.2.3)给出为
 $$
-\begin{equation}
-\begin{split}
-\langle\beta,\text{out}|\alpha,\text{in}\rangle_\epsilon&amp; = \int \prod_{\tau,\mathbf{x},m} dq_m\left(\mathbf{x},\tau\right)\prod_{\tau,\mathbf{x},m} \left(dp_m\left(\mathbf{x},\tau\right)/2\pi\right)\\
-&amp;\times \exp\left[i\int_{-\infty}^{+\infty} d\tau \left\{\int d^3\mathbf{x} \sum_m \dot{q}_m\left(\mathbf{x},\tau\right)p_m\left(\mathbf{x},\tau\right) - H\left[q\left(\tau\right),p\left(\tau\right)\right]\right\}\right]\\
-&amp;- \sum_A \int d^3\mathbf{x} \epsilon_A\left(\mathbf{x},t\right)O_A\left(\mathbf{x},t\right)\\
-&amp;\times \langle\beta,\text{out}|q\left(+\infty\right);+\infty\rangle \langle q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
-\end{split}
-\end{equation}
+\langle\beta,\text{out}|\alpha,\text{in} \rangle_\epsilon = \int \prod_{\tau,\mathbf{x},m} dq_m\left(\mathbf{x},\tau\right)\prod_{\tau,\mathbf{x},m} \left(\frac{dp_m\left(\mathbf{x},\tau\right)}{2\pi}\right)
+$$
+$$
+\times \exp\left[ i\int_{-\infty}^{+\infty} d\tau \left[\int d^3\mathbf{x} \sum_m \dot{q}_m\left(\mathbf{x},\tau\right)p_m\left(\mathbf{x},\tau\right) - H\left[q\left(\tau\right),p\left(\tau\right)\right] - \sum_A \int d^3\mathbf{x} \epsilon_A\left(\mathbf{x},\tau\right)O_A\left(\mathbf{x},\tau\right) \right] \right] 
+$$
+$$
+\times \langle\beta,\text{out}|q\left(+\infty\right);+\infty\rangle \langle q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
 $$
 式(6.4.3)的左端通过关于$\epsilon_A$在$\epsilon = 0$处对这个表达式的导数获得，然后使用式(9.2.3)立即给出式(6.4.3)的右端。">[2]</span></a></sup>导致式(6.4.3)，这是我们反复用来将不在壳(off-shell)费曼图的和与海森堡绘景算符之间的确切能量本征态的矩阵元联系起来的定理。</p>
 <p>现在有必要考虑如何计算式<span class="math inline">\(\eqref{eq:9.2.3}\)</span>中作为最后一对因子出现的波函数。让我们首先考虑最简单也是最重要的情况，即真空。（我们在第6.4节中看到，从真空期望值可以很容易地计算S矩阵元的时间序乘积。）我们照常假设对于<span class="math inline">\(t \to
@@ -381,71 +380,89 @@ a_{\text{out}}\left(\mathbf{p},\sigma,n\right)|\text{VAC},\text{out}\rangle
 <p>其中<span class="math inline">\(a_{\text{in}}\)</span>和<span class="math inline">\(a_{\text{out}}\)</span>是分别出现在算符<span class="math inline">\(Q_m\left(\mathbf{x},t\right)\)</span>在<span class="math inline">\(t \to -\infty\)</span>和<span class="math inline">\(t \to +\infty\)</span>的<span class="math inline">\(\exp\left(i\mathbf{p} \cdot \mathbf{x} -
 iEt\right)\)</span>平面波展开系数中的算符。例如，对于中性无自旋粒子的实标量场，我们实际上有</p>
 <p><span class="math display">\[
+\begin{equation}
 \Phi\left(\mathbf{x},t\right) \stackrel{t \to
 \mp\infty}{\longrightarrow} \left(2\pi\right)^{-3/2} \int d^3\mathbf{p}
 \left(2E\right)^{-1/2}\left[a_{\text{in/out}}\left(\mathbf{p}\right)e^{ip\cdot
 x} + \text{H.c.}\right], \label{eq:9.2.5}
+\end{equation}
 \]</span></p>
 <p><span class="math display">\[
+\begin{equation}
 \Pi\left(\mathbf{x},t\right) \stackrel{t \to
 \mp\infty}{\longrightarrow}\dot{\Phi}(\mathbf{x},t) \stackrel{t \to
 \mp\infty}{\longrightarrow}-i\left(2\pi\right)^{-3/2} \int d^3\mathbf{p}
 \left(E/2\right)^{1/2}\left[a_{\text{in/out}}\left(\mathbf{p}\right)e^{ip\cdot
 x} - \text{H.c.}\right], \label{eq:9.2.6}
+\end{equation}
 \]</span></p>
 <p>其中<span class="math inline">\(p^0 \equiv E \equiv
 \sqrt{\mathbf{p}^2 + m^2}\)</span>，我们在这里使用传统的<span class="math inline">\(\Phi\)</span>和<span class="math inline">\(\Pi\)</span>而不是<span class="math inline">\(Q\)</span>和<span class="math inline">\(P\)</span>表示标量场，并省略不必要的标签<span class="math inline">\(m,\sigma,n\)</span>。反演傅里叶变换并取结果表达式的线性组合，我们有</p>
 <p><span class="math display">\[
+\begin{equation}
 a_{\text{in/out}}\left(\mathbf{p}\right) = \lim_{t \to \mp\infty}
 \frac{e^{iEt}}{\left(2\pi\right)^{3/2}} \int d^3\mathbf{x}
 e^{-i\mathbf{p} \cdot \mathbf{x}}
 \left[\sqrt{\frac{E}{2}}\Phi\left(\mathbf{x},t\right) +
 i\sqrt{\frac{1}{2E}}\Pi\left(\mathbf{x},t\right)\right].
 \label{eq:9.2.7}
+\end{equation}
 \]</span></p>
 <p>如第9.1节所述，'动量'<span class="math inline">\(\Pi\left(\mathbf{x},t\right)\)</span>在<span class="math inline">\(\phi\)</span>基中作为变分导数<span class="math inline">\(-i\delta/\delta\phi\left(\mathbf{x},t\right)\)</span>作用于波函数，所以在这个基中条件(9.2.4)变为</p>
 <p><span class="math display">\[
+\begin{equation}
 0 = \int d^3\mathbf{x} e^{-i\mathbf{p} \cdot \mathbf{x}}
 \left[\frac{\delta}{\delta\phi\left(\mathbf{x}\right)} +
 E\left(\mathbf{p}\right)\phi\left(\mathbf{x}\right)\right]
 \langle\phi\left(\mathbf{x}\right);\mp\infty|\text{VAC},\text{in/out}\rangle.
 \label{eq:9.2.8}
+\end{equation}
 \]</span></p>
 <p>对应的常微分方程有众所周知的高斯解，所以让我们在这里尝试高斯ansatz：</p>
 <p><span class="math display">\[
+\begin{equation}
 \langle\phi\left(\mathbf{x}\right),\mp\infty|\text{VAC},\text{in/out}\rangle
 = \mathcal{N} \exp\left(-\frac{i}{2}\int d^3\mathbf{x} d^3\mathbf{y}
 \mathcal{E}\left(\mathbf{x},\mathbf{y}\right)\phi\left(\mathbf{x}\right)\phi\left(\mathbf{y}\right)\right),
 \label{eq:9.2.9}
+\end{equation}
 \]</span></p>
 <p>其中核<span class="math inline">\(\mathcal{E}\)</span>和常数<span class="math inline">\(\mathcal{N}\)</span>待定。将此代入式<span class="math inline">\(\eqref{eq:9.2.8}\)</span>，我们看到真空波泛函的泛函微分方程对所有<span class="math inline">\(\phi\)</span>都满足，如果</p>
 <p><span class="math display">\[
-0 = \int d^3\mathbf{x} e^{-i\mathbf{p} \cdot \mathbf{x}} \left[\int
-d^3\mathbf{y}
+\begin{equation}
+        0 = \int d^3\mathbf{x} e^{-i\mathbf{p} \cdot \mathbf{x}}
+\left[\int d^3\mathbf{y}
 \mathcal{E}\left(\mathbf{x},\mathbf{y}\right)\phi\left(\mathbf{y}\right)
 - E\left(\mathbf{p}\right)\phi\left(\mathbf{x}\right)\right],
 \label{eq:9.2.10}
+\end{equation}
 \]</span></p>
 <p>或者，换句话说，如果</p>
 <p><span class="math display">\[
-\int d^3\mathbf{x} e^{-i\mathbf{p} \cdot
+\begin{equation}
+        \int d^3\mathbf{x} e^{-i\mathbf{p} \cdot
 \mathbf{x}}\mathcal{E}\left(\mathbf{x},\mathbf{y}\right) =
 E\left(\mathbf{p}\right) e^{-i\mathbf{p} \cdot \mathbf{y}}.
 \label{eq:9.2.11}
+\end{equation}
 \]</span></p>
 <p>通过反演傅里叶变换很容易找到解</p>
 <p><span class="math display">\[
+\begin{equation}
 \mathcal{E}\left(\mathbf{x},\mathbf{y}\right) = \left(2\pi\right)^{-3}
 \int d^3\mathbf{p} e^{i\mathbf{p} \cdot
 \left(\mathbf{x}-\mathbf{y}\right)}E\left(\mathbf{p}\right).
 \label{eq:9.2.12}
+\end{equation}
 \]</span></p>
 <p>（回忆<span class="math inline">\(E\left(\mathbf{p}\right) \equiv
 \sqrt{\mathbf{p}^2 + m^2}\)</span>。）这实际上是核<span class="math inline">\(\mathcal{E}\)</span>最有用的表示，但我们可以顺便注意到对于<span class="math inline">\(\mathbf{x} \neq \mathbf{y}\)</span>，<span class="math inline">\(\mathcal{E}\)</span>也可以写成负阶Hankel函数的形式</p>
 <p><span class="math display">\[
+\begin{equation}
 \mathcal{E}\left(\mathbf{x},\mathbf{y}\right) = \frac{m}{2\pi^2 r}
 \frac{d}{dr}\left(\frac{1}{r}K_{-1}\left(mr\right)\right),
 \label{eq:9.2.13}
+\end{equation}
 \]</span></p>
 <p>其中<span class="math inline">\(r \equiv |\mathbf{x} -
 \mathbf{y}|\)</span>。式<span class="math inline">\(\eqref{eq:9.2.9}\)</span>中的常数<span class="math inline">\(\mathcal{N}\)</span>可以形式上从真空态的归一化条件获得，但我们不需要这个结果。</p>
@@ -468,11 +485,13 @@ d^3\mathbf{y} \int_{-\infty}^{+\infty} d\tau
 \]</span></p>
 <p>其中<span class="math inline">\(\epsilon\)</span>是正无穷小量。为了得到最终表达式，我们使用了对任何合理光滑函数<span class="math inline">\(f\left(\tau\right)\)</span>的事实，</p>
 <p><span class="math display">\[
+\begin{equation}
 f\left(+\infty\right) + f\left(-\infty\right) = \lim_{\epsilon \to 0^+}
 \epsilon \int_{-\infty}^{+\infty} d\tau f\left(\tau\right)
 e^{-\epsilon|\tau|}. \label{eq:9.2.15}
+\end{equation}
 \]</span></p>
-<p>将式(9.2.14)插入式<span class="math inline">\(\eqref{9.2.3}\)</span>后给出</p>
+<p>将式(9.2.14)插入式(9.2.3)后给出</p>
 <p><span class="math display">\[
 \begin{align}
 &amp;\left\langle\text{VAC},\text{out}\left|T\left\{\mathcal{O}_A\left[\Pi\left(t_A\right),\Phi\left(t_A\right)\right],
@@ -534,23 +553,21 @@ terms'正好具有在所有传播子分母中放入正确<span class="math inlin
 \sum_A \int d^3\mathbf{x}
 \epsilon_A\left(\mathbf{x},t\right)O_A\left(\mathbf{x},t\right)\)</span>，S矩阵由式(9.2.3)给出为
 <span class="math display">\[
-\begin{equation}
-\begin{split}
-\langle\beta,\text{out}|\alpha,\text{in}\rangle_\epsilon&amp;amp; = \int
+\langle\beta,\text{out}|\alpha,\text{in} \rangle_\epsilon = \int
 \prod_{\tau,\mathbf{x},m}
 dq_m\left(\mathbf{x},\tau\right)\prod_{\tau,\mathbf{x},m}
-\left(dp_m\left(\mathbf{x},\tau\right)/2\pi\right)\
-&amp;amp;\times \exp\left[i\int_{-\infty}^{+\infty} d\tau \left{\int
+\left(\frac{dp_m\left(\mathbf{x},\tau\right)}{2\pi}\right)
+\]</span> <span class="math display">\[
+\times \exp\left[ i\int_{-\infty}^{+\infty} d\tau \left[\int
 d^3\mathbf{x} \sum_m
 \dot{q}_m\left(\mathbf{x},\tau\right)p_m\left(\mathbf{x},\tau\right) -
-H\left[q\left(\tau\right),p\left(\tau\right)\right]\right}\right]\
-&amp;amp;- \sum_A \int d^3\mathbf{x}
-\epsilon_A\left(\mathbf{x},t\right)O_A\left(\mathbf{x},t\right)\
-&amp;amp;\times
-\langle\beta,\text{out}|q\left(+\infty\right);+\infty\rangle \langle
-q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
-\end{split}
-\end{equation}
+H\left[q\left(\tau\right),p\left(\tau\right)\right] - \sum_A \int
+d^3\mathbf{x}
+\epsilon_A\left(\mathbf{x},\tau\right)O_A\left(\mathbf{x},\tau\right)
+\right] \right]
+\]</span> <span class="math display">\[
+\times \langle\beta,\text{out}|q\left(+\infty\right);+\infty\rangle
+\langle q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
 \]</span> 式(6.4.3)的左端通过关于<span class="math inline">\(\epsilon_A\)</span>在<span class="math inline">\(\epsilon =
 0\)</span>处对这个表达式的导数获得，然后使用式(9.2.3)立即给出式(6.4.3)的右端。<a href="#fnref:2" rev="footnote">
 ↩︎</a></span>
@@ -598,6 +615,9 @@ q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/" rel="next" title="首尔夏天-食贫道">
+                  首尔夏天-食贫道 <i class="fa fa-angle-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -630,14 +650,14 @@ q\left(-\infty\right);-\infty|\alpha,\text{in}\rangle.
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">70k</span>
+    <span title="站点总字数">73k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:57</span>
+    <span title="站点阅读时长">2:01</span>
   </span>
 </div>
 <div class="busuanzi-count">
