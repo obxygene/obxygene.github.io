@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>有用的资料(长期更新)</title>
+    <url>/2025/04/30/%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%96%99/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>有一些看过的有意思的资料，因为没办法塞进笔记里，放文件夹又容易忘掉，于是在这里做个记录</p>
+<p><strong><a href="https://courses.physics.illinois.edu/phys598PTD/fa2013/">Physics
+in Two Dimensions.(二维物理)</a></strong></p>
+<p>由A.J. Leggett给出的二维体系物理的lecture
+note，包含局域化，Ginzburg-Landau，BKT相变，QHE，拓扑绝缘体，Kitaev模型等</p>
+<p><strong><a href="https://zhuanlan.zhihu.com/p/110249075">DMRG笔记-iDMRG</a></strong></p>
+<p>由知乎用户<a href="https://www.zhihu.com/people/ling-lin-68-93">零零</a>撰写的DMRG参考代码</p>
+<p><strong><a href="https://www.guanjihuan.com/">关济寰的个人网站</a></strong></p>
+<p><strong><a href="https://bohr.physics.berkeley.edu/classes/221/2021/221.html">Robert
+Littlejohn的量子力学lecture</a></strong></p>
+<p><strong><a href="https://alps.comp-phys.org/">Algorithms and
+Libraries for Physics Simulations - ALPS</a></strong></p>
+<p>由欧洲多个大学和研究机构的物理学家共同开发和维护的大型开源项目，提供一个统一、高性能的C++框架，包含精确对角化（ED）、量子蒙卡（包括SSE、DQMC等）和密度矩阵重整化群（DMRG）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="作者：Wen Chen 来源：[知乎](https://www.zhihu.com/question/1945931339950973586/answer/1966690634338383681)">[1]</span></a></sup></p>
+<p><strong><a href="https://quspin.github.io/QuSpin/">QuSpin: a Python
+Package for Dynamics and Exact Diagonalisation of Quantum Many Body
+Systems</a></strong></p>
+<p>由Phillip Weinberg 和 Marin Bukov
+（之前Boston大学的PhD，现在已经是马克斯·普朗克复杂系统物理研究所的教授）开发的基于Python的开源包，专门用于构建和求解任意的自旋、玻色子和费米子系统的哈密顿量。它支持使用Lanczos/Arnoldi算法进行精确对角化（寻找基态和低能激发）和系统的时间演化。对用户极其友好，Python又是一个对新手友好的语言，整体来说非常容易上手。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="作者：Wen Chen 来源：[知乎](https://www.zhihu.com/question/1945931339950973586/answer/1966690634338383681)">[1]</span></a></sup></p>
+<p>DMRG与张量网络 ITensor：最初由Steven
+White（DMRG发明者之一）的团队开发，现在主要由 Miles Stoudenmire
+(Flatiron研究院)
+维护和领导。是一个C++库（也有现代的Julia版本），用于执行张量网络计算。标准中的标准。TeNPy：主要由
+Johannes Hauschild (慕尼黑大学)
+开发。这是一个功能完备的、纯Python的张量网络库。适合喜欢Python的童鞋们。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="作者：Wen Chen 来源：[知乎](https://www.zhihu.com/question/1945931339950973586/answer/1966690634338383681)">[1]</span></a></sup></p>
+<p>量子蒙卡: Quest (Quantum Electron Simulation
+Toolbox)：由加州大学圣塔芭芭拉分校(UCSB)和加州大学戴维斯分校(UC
+Davis)的科研人员开发的基于Fortran的求解格点费米子模型（特别是Hubbard模型及其变种）的行列是蒙特卡洛软件包（DQMC）。ALF（Algorithms
+for Lattice Fermions）：由维尔茨堡大学的Fakher F.
+Assaad教授的团队开发的基于Fortran的DQMC软件包，包含有限温度和零温投影的算法。SymoQyDQMC：来自斯坦福/SLAC的DQMC社区开发的基于Julia的高性能、可拓展的行列式量子蒙特卡罗（DQMC）软件包，现代而对用户友好。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="作者：Wen Chen 来源：[知乎](https://www.zhihu.com/question/1945931339950973586/answer/1966690634338383681)">[1]</span></a></sup></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">作者：Wen
+Chen
+来源：<a href="https://www.zhihu.com/question/1945931339950973586/answer/1966690634338383681">知乎</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>资料</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>做事</title>
     <url>/2025/04/27/%E5%81%9A%E4%BA%8B/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近做事情总觉得不很顺畅，一方面是科研上本就是从事前人未知的路，一方面也算是自己不擅长于沟通，进而往往自己缺少什么事情都没办法表达出来，所以只能说是有些彷徨。只是人生要做些事情总是有这些情况的。主要还是因为今天发现之前有趣的数值模拟的结果之一可以用很简单的讨论去解释，一个曾经看上去可以发文的idea就没了，还是有些想叹气的。</p>
@@ -28,27 +82,6 @@ Knowledge in Society）》，是他最重要的短文之一。这篇文章在知
       </categories>
       <tags>
         <tag>琐碎</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>有用的资料(长期更新)</title>
-    <url>/2025/04/30/%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%96%99/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>有一些看过的有意思的资料，因为没办法塞进笔记里，放文件夹又容易忘掉，于是在这里做个记录</p>
-<p><strong><a href="https://courses.physics.illinois.edu/phys598PTD/fa2013/">Physics
-in Two Dimensions.(二维物理)</a></strong></p>
-<p>由A.J. Leggett给出的二维体系物理的lecture
-note，包含局域化，Ginzburg-Landau，BKT相变，QHE，拓扑绝缘体，Kitaev模型等</p>
-<p><strong><a href="https://zhuanlan.zhihu.com/p/110249075">DMRG笔记-iDMRG</a></strong></p>
-<p>由知乎用户<a href="https://www.zhihu.com/people/ling-lin-68-93">零零</a>撰写的DMRG参考代码</p>
-<p><strong><a href="https://www.guanjihuan.com/">关济寰的个人网站</a></strong></p>
-<p><strong><a href="https://bohr.physics.berkeley.edu/classes/221/2021/221.html">Robert
-Littlejohn的量子力学lecture</a></strong></p>
-]]></content>
-      <categories>
-        <category>资料</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -506,6 +539,92 @@ Superconductivity. Cambridge University Press;
       </tags>
   </entry>
   <entry>
+    <title>杂谈-什么是物理图像？</title>
+    <url>/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="引论">引论</h2>
+<p>通常在学物理/做物理的人之间会有一个专有名词叫<strong>物理图像(Physical
+Picture)</strong>，有时也简称为<strong>物理</strong>。例如交流的时候会说"你这篇文章的物理(图像)是什么"。然而维基百科上并没有关于这个词的明确定义，且在不同的语境下<strong>物理图像</strong>指代对象会有极大的不同。为了能够理清这一词至目前的各种含义，于是便写下了这篇杂谈。</p>
+<h2 id="物理模型">物理模型</h2>
+<p>作为自然学科的基础之一，物理的核心在于研究自然。而要研究自然，目前最有效的方式是根据现实提取出对应的<b><font color="red">物理模型</font></b>进行分析。</p>
+<p>为了得到响应的物理模型，在考虑现实中的各种物理对象时，首先要对该对象进行<strong>抽象</strong>，以此得到最简单而又最能反应所关注的内容的一个物理模型.例如<strong>质点</strong>这一对象是对任意不关注其大小以及形状的物体的抽象，这一抽象对象在研究一个物体的运动，尤其是空间上的平移时时最为有效，因为我们只需要关注质点在空间中的位置即可。然而由于抽象过程中我们抛弃了太多信息，导致其缺点在于质点是一个没有大小的点，我们没有办法研究它的旋转。</p>
+<p>若是要研究旋转，我们需要加入一些关于形状和大小的细节，这个时候将<strong>刚体</strong>的抽象要更加有利于研究。借此我们可以研究对象的旋转。若是要研究刚体在各种受力下的变化，我们就需要加入更多的细节，例如物体可以发生形变，扭曲，断裂，拼接，融合等各种现实中存在的过程。无论如何，在研究自然时，我们总是需要根据研究对象去提取出当前对象最关键的信息，通过抽象来建立一个物理对象的模型，这便是物理模型。</p>
+<h2 id="数学模型">数学模型</h2>
+<p>在建立了物理模型后，我们需要描述其各种关心的性质以及各种性质之间的联系。而目前最好的描述工具是数学，在基于对应的物理模型的基础上，进一步用数学建立的模型可以称为<strong>数学模型</strong>。或许最广为人知的数学模型应当是牛顿的运动学第二定律
+<span class="math display">\[\begin{equation}
+    \mathbf{F}=m\mathbf{a}
+\end{equation}\]</span> 这个公式描述了一个真空中质量为<span class="math inline">\(m\)</span>的物理对象受到的力<span class="math inline">\(\mathbf{F}\)</span>与其因力而产生的加速度<span class="math inline">\(\mathbf{a}\)</span>的关系，这是一个数学函数关系，因此可以认为其是一个描述任一满足特定假设<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。
+">[1]</span></a></sup>下用于描述<strong>物理模型</strong>的<strong>数学模型</strong>。
+这个<strong>数学模型</strong>的特殊性在于，与其他任意<span class="math inline">\(y=f(x)\)</span>相比，当我们将这三个变量(两个是矢量)中任意两个变量换为任意物理对象的对应的已知参数的<em>数据</em><sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="之所以是*数据*而非*数字*，在于单位。
+">[2]</span></a></sup>时，求解得到的第三个未知的变量的数据将必然与在现实中的物理对象通过实验测得的数据<strong>在一定的误差范围内相同</strong>。这一重要区别使得一个<strong>物理模型</strong>所对应的<strong>数学模型</strong>具有了一定程度的<b><font color="red">预测现实</font></b>的功能。</p>
+<h2 id="物理理论">物理理论</h2>
+<p>在阐明了物理模型以及的对应的数学模型后，便可以开始讨论<strong>物理理论</strong>。一个物理理论<strong>是一类物理事件的模型</strong>。由于对现实的一对一建模是不可能的事情，因此人们更希望通过一系列有限的物理模型来提取出一个(或一类)更加本质的模型，当遇到全新的对象时，直接利用这个本质的模型去套用即可分析新的对象，这就是物理理论。它的评判标准是其预测与实证观察的一致性程度。物理理论的质量还取决于它做出新预测的能力，这些预测可以通过新的观察来验证。这一套采用数学模型和物理对象和系统的抽象来合理化、解释和预测自然现象<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 理论物理学](https://en.wikipedia.org/wiki/Theoretical_physics)
+">[3]</span></a></sup>对应为理论物理学。亦即，理论物理学是研究物理理论的学科。</p>
+<p>对于物理理论的描述，通常是利用数学模型来描述一类物理模型的性质以及其之间的关系。一个物理理论通常会包含多个物理模型以及其对应的数学模型。例如牛顿力学便是一个物理理论，其包含了质点、刚体等多个物理模型，以及对应的牛顿定律等数学模型。</p>
+<p>然而，以纯粹物理理论的严格性和信息量而言，要想直接对其进行讨论是非常困难的。因此，通常人们会在讨论物理理论时，使用<b><font color="red">物理图像</font></b>来进行描述。在这之前，需要对图像这个词进行一些意义的拓展</p>
+<h2 id="图像">图像</h2>
+<p>图，或者图像，是一般人每时每刻都需要的一种信息。借用维基百科的介绍<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 图片](https://en.wikipedia.org/wiki/Image)
+">[4]</span></a></sup>， &gt;
+图像或图片是一种视觉表示形式。图像可以是二维的，例如绘图、绘画或照片，也可以是三维的，例如雕刻或雕塑。</p>
+<p>作为含有信息量最丰富的对象，其直观与简洁对于理解事物具有极大的帮助性。例如描述圆的时候，数学上通常用解析几何的方法，来定义满足方程
+<span class="math display">\[\begin{equation}
+    x^2+y^2=r^2
+\end{equation}\]</span> 的点集(x,y)构成的集合，而图像上可以很简单的给出
+<img src="/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/image.png" alt="alt text">
+从这个角度来说，图像作为信息的载体，其特征在于<strong>简洁</strong>与<strong>直观</strong>。
+## 物理图像
+在介绍完了物理模型和图像后，<strong>物理图像</strong>简单来说便是指一类<b><font color="red">简洁直观</font></b>的<strong>物理模型</strong>。需要注意的是，物理图像并不指代物理实在，而是指一个方便理解的抽象对象。因为只有在有了对象之后，才可以谈及对象之间的关系，也即物理关系。而所谓常说的"新物理"，也是指一类新的物理图像以及其对应的之前所未探明的物理关系。</p>
+<h2 id="总结">总结</h2>
+<p>物理图像作为一种简洁直观的物理模型，其主要是在简单的讨论中，避免涉及过多的计算但是却能理清复杂的物理关系的工具。利用物理(图像)，即便是不甚了解一个理论内部的数学关系，也可以理清楚不同物理对象之间的关系，这极大的降低了交流成本。除此之外，物理图像的重要意义在于，通过考察物理图像对应的自然现实，有时甚至可以跳过严格的数学构造和推导，直接抽取出可能的物理关系。例如已知牛顿第二定律是一个二阶微分方程，对于匀速运动而言其解需要首先求解该微分方程，得到解
+<span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\frac{1}{2}a t^2+bt+c
+\end{equation}\]</span> 然后带入初始条件，计算后才能得到 <span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
+\end{equation}\]</span>
+但是，如果直接考虑一个匀速运动的物体，我们应当可以很轻易地直接写下 <span class="math display">\[\begin{equation}
+    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
+\end{equation}\]</span>
+这种方法甚至在分数量子霍尔效应中诞生过诺贝尔奖，其得主Robert
+Laughlin在没有任何数学推导的情况下，直接写出了分数量子霍尔效应的物理图像，并且成功地解释了实验结果。</p>
+<h2 id="题外话">题外话</h2>
+<p>作为一个个人的观点，实际物理学中的<strong>解释</strong>并非对现实行为的解释，而是基于<b><font color="red">物理图像的对物理模型的解释</font></b>。因为现实世界是极其复杂的，如果一个理论能够解释现实，那么现实就不应该存在无法解释的对象，然而客观上现实中存在无法利用理论解释的现象，这实际上正是物理理论作为物理模型的集合的局限性所在。而所谓的解释，实际上是基于物理模型对该框架下的可能的物理图像的解释<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="本文中部分论述使用copilot润色。">[5]</span></a></sup>。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">之所以是<em>数据</em>而非<em>数字</em>，在于单位。<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Theoretical_physics">WikiPedia
+理论物理学</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:4">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Image">WikiPedia
+图片</a><a href="#fnref:4" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:5">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">本文中部分论述使用copilot润色。<a href="#fnref:5" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>物理</tag>
+        <tag>杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Kernel Polynomial Method简介</title>
     <url>/2025/07/14/KPM/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="kernel-polynomial-method-kpm">Kernel Polynomial Method
@@ -933,92 +1052,6 @@ an example. European Journal of Physics, 31(3):591–602, May
       </tags>
   </entry>
   <entry>
-    <title>杂谈-什么是物理图像？</title>
-    <url>/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="引论">引论</h2>
-<p>通常在学物理/做物理的人之间会有一个专有名词叫<strong>物理图像(Physical
-Picture)</strong>，有时也简称为<strong>物理</strong>。例如交流的时候会说"你这篇文章的物理(图像)是什么"。然而维基百科上并没有关于这个词的明确定义，且在不同的语境下<strong>物理图像</strong>指代对象会有极大的不同。为了能够理清这一词至目前的各种含义，于是便写下了这篇杂谈。</p>
-<h2 id="物理模型">物理模型</h2>
-<p>作为自然学科的基础之一，物理的核心在于研究自然。而要研究自然，目前最有效的方式是根据现实提取出对应的<b><font color="red">物理模型</font></b>进行分析。</p>
-<p>为了得到响应的物理模型，在考虑现实中的各种物理对象时，首先要对该对象进行<strong>抽象</strong>，以此得到最简单而又最能反应所关注的内容的一个物理模型.例如<strong>质点</strong>这一对象是对任意不关注其大小以及形状的物体的抽象，这一抽象对象在研究一个物体的运动，尤其是空间上的平移时时最为有效，因为我们只需要关注质点在空间中的位置即可。然而由于抽象过程中我们抛弃了太多信息，导致其缺点在于质点是一个没有大小的点，我们没有办法研究它的旋转。</p>
-<p>若是要研究旋转，我们需要加入一些关于形状和大小的细节，这个时候将<strong>刚体</strong>的抽象要更加有利于研究。借此我们可以研究对象的旋转。若是要研究刚体在各种受力下的变化，我们就需要加入更多的细节，例如物体可以发生形变，扭曲，断裂，拼接，融合等各种现实中存在的过程。无论如何，在研究自然时，我们总是需要根据研究对象去提取出当前对象最关键的信息，通过抽象来建立一个物理对象的模型，这便是物理模型。</p>
-<h2 id="数学模型">数学模型</h2>
-<p>在建立了物理模型后，我们需要描述其各种关心的性质以及各种性质之间的联系。而目前最好的描述工具是数学，在基于对应的物理模型的基础上，进一步用数学建立的模型可以称为<strong>数学模型</strong>。或许最广为人知的数学模型应当是牛顿的运动学第二定律
-<span class="math display">\[\begin{equation}
-    \mathbf{F}=m\mathbf{a}
-\end{equation}\]</span> 这个公式描述了一个真空中质量为<span class="math inline">\(m\)</span>的物理对象受到的力<span class="math inline">\(\mathbf{F}\)</span>与其因力而产生的加速度<span class="math inline">\(\mathbf{a}\)</span>的关系，这是一个数学函数关系，因此可以认为其是一个描述任一满足特定假设<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。
-">[1]</span></a></sup>下用于描述<strong>物理模型</strong>的<strong>数学模型</strong>。
-这个<strong>数学模型</strong>的特殊性在于，与其他任意<span class="math inline">\(y=f(x)\)</span>相比，当我们将这三个变量(两个是矢量)中任意两个变量换为任意物理对象的对应的已知参数的<em>数据</em><sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="之所以是*数据*而非*数字*，在于单位。
-">[2]</span></a></sup>时，求解得到的第三个未知的变量的数据将必然与在现实中的物理对象通过实验测得的数据<strong>在一定的误差范围内相同</strong>。这一重要区别使得一个<strong>物理模型</strong>所对应的<strong>数学模型</strong>具有了一定程度的<b><font color="red">预测现实</font></b>的功能。</p>
-<h2 id="物理理论">物理理论</h2>
-<p>在阐明了物理模型以及的对应的数学模型后，便可以开始讨论<strong>物理理论</strong>。一个物理理论<strong>是一类物理事件的模型</strong>。由于对现实的一对一建模是不可能的事情，因此人们更希望通过一系列有限的物理模型来提取出一个(或一类)更加本质的模型，当遇到全新的对象时，直接利用这个本质的模型去套用即可分析新的对象，这就是物理理论。它的评判标准是其预测与实证观察的一致性程度。物理理论的质量还取决于它做出新预测的能力，这些预测可以通过新的观察来验证。这一套采用数学模型和物理对象和系统的抽象来合理化、解释和预测自然现象<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 理论物理学](https://en.wikipedia.org/wiki/Theoretical_physics)
-">[3]</span></a></sup>对应为理论物理学。亦即，理论物理学是研究物理理论的学科。</p>
-<p>对于物理理论的描述，通常是利用数学模型来描述一类物理模型的性质以及其之间的关系。一个物理理论通常会包含多个物理模型以及其对应的数学模型。例如牛顿力学便是一个物理理论，其包含了质点、刚体等多个物理模型，以及对应的牛顿定律等数学模型。</p>
-<p>然而，以纯粹物理理论的严格性和信息量而言，要想直接对其进行讨论是非常困难的。因此，通常人们会在讨论物理理论时，使用<b><font color="red">物理图像</font></b>来进行描述。在这之前，需要对图像这个词进行一些意义的拓展</p>
-<h2 id="图像">图像</h2>
-<p>图，或者图像，是一般人每时每刻都需要的一种信息。借用维基百科的介绍<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="见[WikiPedia 图片](https://en.wikipedia.org/wiki/Image)
-">[4]</span></a></sup>， &gt;
-图像或图片是一种视觉表示形式。图像可以是二维的，例如绘图、绘画或照片，也可以是三维的，例如雕刻或雕塑。</p>
-<p>作为含有信息量最丰富的对象，其直观与简洁对于理解事物具有极大的帮助性。例如描述圆的时候，数学上通常用解析几何的方法，来定义满足方程
-<span class="math display">\[\begin{equation}
-    x^2+y^2=r^2
-\end{equation}\]</span> 的点集(x,y)构成的集合，而图像上可以很简单的给出
-<img src="/2025/06/04/%E6%9D%82%E8%B0%88-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%9B%BE%E5%83%8F%EF%BC%9F/image.png" alt="alt text">
-从这个角度来说，图像作为信息的载体，其特征在于<strong>简洁</strong>与<strong>直观</strong>。
-## 物理图像
-在介绍完了物理模型和图像后，<strong>物理图像</strong>简单来说便是指一类<b><font color="red">简洁直观</font></b>的<strong>物理模型</strong>。需要注意的是，物理图像并不指代物理实在，而是指一个方便理解的抽象对象。因为只有在有了对象之后，才可以谈及对象之间的关系，也即物理关系。而所谓常说的"新物理"，也是指一类新的物理图像以及其对应的之前所未探明的物理关系。</p>
-<h2 id="总结">总结</h2>
-<p>物理图像作为一种简洁直观的物理模型，其主要是在简单的讨论中，避免涉及过多的计算但是却能理清复杂的物理关系的工具。利用物理(图像)，即便是不甚了解一个理论内部的数学关系，也可以理清楚不同物理对象之间的关系，这极大的降低了交流成本。除此之外，物理图像的重要意义在于，通过考察物理图像对应的自然现实，有时甚至可以跳过严格的数学构造和推导，直接抽取出可能的物理关系。例如已知牛顿第二定律是一个二阶微分方程，对于匀速运动而言其解需要首先求解该微分方程，得到解
-<span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\frac{1}{2}a t^2+bt+c
-\end{equation}\]</span> 然后带入初始条件，计算后才能得到 <span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
-\end{equation}\]</span>
-但是，如果直接考虑一个匀速运动的物体，我们应当可以很轻易地直接写下 <span class="math display">\[\begin{equation}
-    \boldsymbol{s}=\boldsymbol{v}t+\boldsymbol{s}_0
-\end{equation}\]</span>
-这种方法甚至在分数量子霍尔效应中诞生过诺贝尔奖，其得主Robert
-Laughlin在没有任何数学推导的情况下，直接写出了分数量子霍尔效应的物理图像，并且成功地解释了实验结果。</p>
-<h2 id="题外话">题外话</h2>
-<p>作为一个个人的观点，实际物理学中的<strong>解释</strong>并非对现实行为的解释，而是基于<b><font color="red">物理图像的对物理模型的解释</font></b>。因为现实世界是极其复杂的，如果一个理论能够解释现实，那么现实就不应该存在无法解释的对象，然而客观上现实中存在无法利用理论解释的现象，这实际上正是物理理论作为物理模型的集合的局限性所在。而所谓的解释，实际上是基于物理模型对该框架下的可能的物理图像的解释<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="本文中部分论述使用copilot润色。">[5]</span></a></sup>。</p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">牛顿定律仅在低速宏观领域下成立，当关注的对象处于高速宏观领域时，我们需要用到相对论力学，而处于低速微观领域时需要量子力学，处于高速微观领域下则需要量子场论。<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">之所以是<em>数据</em>而非<em>数字</em>，在于单位。<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Theoretical_physics">WikiPedia
-理论物理学</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:4">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">见<a href="https://en.wikipedia.org/wiki/Image">WikiPedia
-图片</a><a href="#fnref:4" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:5">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">本文中部分论述使用copilot润色。<a href="#fnref:5" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-
-]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>物理</tag>
-        <tag>杂谈</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>路径积分中的小虚部(上)</title>
     <url>/2025/09/30/%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E5%B0%8F%E8%99%9A%E9%83%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为路径积分中的小虚部的介绍。通常从正则量子化的方法中会从物理上因为因果律的需要给出小<span class="math inline">\(\epsilon\)</span>，但是对于路径积分中的讨论偏少，这个内容在Steven
@@ -1348,75 +1381,6 @@ dp_b\left(\tau\right)\)</span>有很多种方式。我们的规定，即将所�
       </tags>
   </entry>
   <entry>
-    <title>首尔夏天-食贫道</title>
-    <url>/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近利用LLM写东西以及润色东西的频率太高，以至于写东西的是LLM而不是我自己，这样可能对未来独立写作的能力不好。借着这次食贫道更新了<首尔夏天>讨论了韩国社会的一些现象的机会，简单地写一些东西。</首尔夏天></p>
-<p><首尔夏天><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[B站链接](https://www.bilibili.com/video/BV1NGHGzJEfx?spm_id_from=333.788.videopod.sections&amp;vd_source=08fd7c21a0da30ec4230b58c1f6d8077)
-">[1]</span></a></sup>，主要以采访纪实的形式，分别采访了(主要)五个对象，包括女作家郑智我(朝鲜)，海女，教育群体(修能考试)，追星产业链以及梦想成为明星的练习生。
-这些对象也和国内对韩国的一些印象相吻合。像是朝韩关系，韩国人不睡觉，韩国K-pop产业等。至少从我个人的角度而言，可以看到这些背后和国内文化有许多相似之处。</首尔夏天></p>
-<p>这篇短文主要想从教育的方面来谈。拿视频中的其中一个片段举例<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="图中内容为 概率与统计以医学相关职业为目标的学生，调查了统计学在医学发展中的作用。通过阅读《掌握统计学与大数据》一书，理解以证据为基础的医学是医生治疗病人的依据，并将其写入报告中。通过临床试验进行数据分析、利用文献进行元分析时会使用到技术统计和推理统计，并进行了说明。还说明了最基本的事实是：专家意见或背景知识也通过条件概率来使用。在深入探究活动中，探究了教材中所学内容与医学诊断之间的关联。通过掌握正态分布中，平均值附近的数值比两侧的数值频率更高这一事实，说明了照片编辑时，通过平均值改变周围像素值的高斯滤波处理过程。对与统计相关的各种技术中，“期望值出现的概率较高”这一点产生了深刻印象。通过高斯滤波处理的照片为例，发现该技术也正在用于诊断中。为了确认阿尔茨海默症的重要原因——β-淀粉样蛋白的积聚，提到了通过脑PET拍摄时使用高斯滤波来清晰显示图像的内容。">[2]</span></a></sup></p>
-<figure>
-<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image.png" alt="0:57:02">
-<figcaption aria-hidden="true">0:57:02</figcaption>
-</figure>
-<p>若是非理工的人来看，可能会认为中学生能灵活应用如此多的知识而感到惊讶，但若是稍微了解一些便会发现这一段话基本上是名词的堆砌。仅仅是将一本书名进行了推广，然后用一些看似高深的专有名词在语言上进行了加工。</p>
-<p>用高大上的词汇描述简单的事情的行为并不少见。但是在韩国选拔人才作为全国性的事件中，作为一个评价标准就有些奇怪了(至少在我看来)。国内的高考相对而言考察的都是知识本身(至少明面上)，因而较少出现这样的名词堆砌的情况，这样相对而言要更加考察知识的细节，毕竟细节才是最重要的，这样才能够有能力上的区分度。但若是过于强调包装和论述，反而失去了选拔人才本身的意义，且另一层面来说，也更有利于部分具有包装能力的人取得更好的成绩。</p>
-<figure>
-<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image2.png" alt="0:48:26">
-<figcaption aria-hidden="true">0:48:26</figcaption>
-</figure>
-<p>若是以当下的文化来形容，应当是“卷”<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="内耗、内卷化（英语：involution），又译过密化、包裹化，简称内卷，原是一个社会学概念，指一种文化模式发展到一定水准后，无法突破自身，只能在内部继续发展、复杂化的过程。内卷化是人类社会独有的现象，和生物学中的“退化”和“进化”都截然不同。内卷不会帮助人类从一个低效的阶段进步到高效的阶段，但也不会让人们退化掉某种能力。大约从2018年开始，“内卷”一词在中国大陆变得广为人知，并引申表示付出大量努力却因递减定律而得不到等价的回报，必须在竞争中超过他人的社会文化，包含了恶性竞争、逐底竞争等更为负面的含义。[内卷化 Wikipedia](https://zh.wikipedia.org/wiki/%E5%86%85%E5%8D%B7%E5%8C%96)">[3]</span></a></sup>文化。卷文化的底层逻辑是社会生产的蛋糕大小增量变少，个体(甚至群体)要在增量中获取和之前相同的份额，就必须付出更大的努力，进一步发展则会导致恶性竞争。韩国教育作为卷文化的代表可谓是极致，视频中的也提到，韩国高度内卷的修能考试实质上的促使一部分学业欠佳的学生走上练习生的道路。然而过多的人力涌入也带来了追星企业的内卷，大部分娱乐公司自身难保，也自然没有足够的资源去推动公司的练习生出道以及之后的发展。由此或许可以一定程度上地推广到韩国社会其他的产业。</p>
-<figure>
-<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image3.png" alt="1:3:51">
-<figcaption aria-hidden="true">1:3:51</figcaption>
-</figure>
-<p>极致的内卷化导致人生活成本的大幅度提升，诸多社会现象也因此出现，而其中相对尖锐的矛盾当是出生率。韩国的出生率自60年代后急速地下落，面临严重的人口老龄化及少子化问题，并于2020年首次出现死亡人口大于出生人口的人口自然减少情况。其总和生育率仅为0.84，在世界上属于最低水平。由此也可看出，在现代化社会中，人的生活成本过高时对生育本能的抑制性是非常大的。资源的有限性和人的追求的矛盾是如此的尖锐，以至于每个人都不愿意卷，但每个人都在卷。</p>
-<figure>
-<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image4.png" alt="Wikipedia">
-<figcaption aria-hidden="true"><a href="https://en.wikipedia.org/wiki/Demographics_of_South_Korea">Wikipedia</a></figcaption>
-</figure>
-<p>当然，视频中除了教育的视角，还有许多其他的视角。尤其是作家郑智我对韩国历史以及社会的分析，在韩国这个(我看来)相对割裂且受美国影响严重的国家中，提供了一个相对完整的介绍韩国历史的视角(当然与朝鲜关系极大)。整个3小时的视频我分了两次看完，还是非常建议去看一下的(充电视频大概10块钱)。</p>
-<figure>
-<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image5.png" alt="3:13:39">
-<figcaption aria-hidden="true">3:13:39</figcaption>
-</figure>
-<p>后记：本文或是距离十年前高考后第一次写一篇作文，所以简单记录一下。没有用GPT润色写作，基本上是看完食贫道的节目后萌生出锻炼写作的想法。实际上除了<首尔夏天>以外，食贫道的<你好美国>，<时尚圣经>等都通过采访的方式记录了许多我在现实中不曾接触的一面。尽管多数看完之后有“原来还有这种事”的感觉，但是却没有能力用一种方法来将“这种感觉”来刻画出来。颇有一种“梦中有一个幻想中的角色，但是等实际落笔时却完全不行”的意思。</时尚圣经></你好美国></首尔夏天></p>
-<p>在写的时候也大为苦恼如何开头，谈什么内容，本来想把视频中的几个人都写一写，但是发现如果想说的太多，以目前的表达能力来看反而哪个都说不好，并且有许多内容是只参照了食贫道的视频，未免有失偏颇，所以选择了教育这个角度。写的时候也试着看了一下<a href="https://www.changhai.org/index.php">卢昌海</a>的文章来借鉴，来尽量保证自己开始从一个写作者而非阅读者的角度，来学习一些写作上的技术。就结果来看，尽管字数才一千多字，写出来的结果也十分不满意，难以想象没有gpt辅助的情况下在写学术论文时读者该有多吃力。不过迈出去的一步也是一步，以后如果还有这般热情，应该还是多锻炼。</p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">副标题为South
-of the 38th parallel, 38线以南<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:1">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1NGHGzJEfx?spm_id_from=333.788.videopod.sections&amp;vd_source=08fd7c21a0da30ec4230b58c1f6d8077">B站链接</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">图中内容为
-概率与统计以医学相关职业为目标的学生，调查了统计学在医学发展中的作用。通过阅读《掌握统计学与大数据》一书，理解以证据为基础的医学是医生治疗病人的依据，并将其写入报告中。通过临床试验进行数据分析、利用文献进行元分析时会使用到技术统计和推理统计，并进行了说明。还说明了最基本的事实是：专家意见或背景知识也通过条件概率来使用。在深入探究活动中，探究了教材中所学内容与医学诊断之间的关联。通过掌握正态分布中，平均值附近的数值比两侧的数值频率更高这一事实，说明了照片编辑时，通过平均值改变周围像素值的高斯滤波处理过程。对与统计相关的各种技术中，“期望值出现的概率较高”这一点产生了深刻印象。通过高斯滤波处理的照片为例，发现该技术也正在用于诊断中。为了确认阿尔茨海默症的重要原因——β-淀粉样蛋白的积聚，提到了通过脑PET拍摄时使用高斯滤波来清晰显示图像的内容。<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">内耗、内卷化（英语：involution），又译过密化、包裹化，简称内卷，原是一个社会学概念，指一种文化模式发展到一定水准后，无法突破自身，只能在内部继续发展、复杂化的过程。内卷化是人类社会独有的现象，和生物学中的“退化”和“进化”都截然不同。内卷不会帮助人类从一个低效的阶段进步到高效的阶段，但也不会让人们退化掉某种能力。大约从2018年开始，“内卷”一词在中国大陆变得广为人知，并引申表示付出大量努力却因递减定律而得不到等价的回报，必须在竞争中超过他人的社会文化，包含了恶性竞争、逐底竞争等更为负面的含义。<a href="https://zh.wikipedia.org/wiki/%E5%86%85%E5%8D%B7%E5%8C%96">内卷化
-Wikipedia</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-
-]]></content>
-      <categories>
-        <category>写作</category>
-      </categories>
-      <tags>
-        <tag>杂谈</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>路径积分中的小虚部(下)</title>
     <url>/2025/10/05/%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E5%B0%8F%E8%99%9A%E9%83%A82/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="过渡到s矩阵">9.2 过渡到S矩阵</h1>
@@ -1708,6 +1672,296 @@ d^3\mathbf{x}
         <tag>技术</tag>
         <tag>物理</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>首尔夏天-食贫道</title>
+    <url>/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近利用LLM写东西以及润色东西的频率太高，以至于写东西的是LLM而不是我自己，这样可能对未来独立写作的能力不好。借着这次食贫道更新了<首尔夏天>讨论了韩国社会的一些现象的机会，简单地写一些东西。</首尔夏天></p>
+<p><首尔夏天><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[B站链接](https://www.bilibili.com/video/BV1NGHGzJEfx?spm_id_from=333.788.videopod.sections&amp;vd_source=08fd7c21a0da30ec4230b58c1f6d8077)
+">[1]</span></a></sup>，主要以采访纪实的形式，分别采访了(主要)五个对象，包括女作家郑智我(朝鲜)，海女，教育群体(修能考试)，追星产业链以及梦想成为明星的练习生。
+这些对象也和国内对韩国的一些印象相吻合。像是朝韩关系，韩国人不睡觉，韩国K-pop产业等。至少从我个人的角度而言，可以看到这些背后和国内文化有许多相似之处。</首尔夏天></p>
+<p>这篇短文主要想从教育的方面来谈。拿视频中的其中一个片段举例<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="图中内容为 概率与统计以医学相关职业为目标的学生，调查了统计学在医学发展中的作用。通过阅读《掌握统计学与大数据》一书，理解以证据为基础的医学是医生治疗病人的依据，并将其写入报告中。通过临床试验进行数据分析、利用文献进行元分析时会使用到技术统计和推理统计，并进行了说明。还说明了最基本的事实是：专家意见或背景知识也通过条件概率来使用。在深入探究活动中，探究了教材中所学内容与医学诊断之间的关联。通过掌握正态分布中，平均值附近的数值比两侧的数值频率更高这一事实，说明了照片编辑时，通过平均值改变周围像素值的高斯滤波处理过程。对与统计相关的各种技术中，“期望值出现的概率较高”这一点产生了深刻印象。通过高斯滤波处理的照片为例，发现该技术也正在用于诊断中。为了确认阿尔茨海默症的重要原因——β-淀粉样蛋白的积聚，提到了通过脑PET拍摄时使用高斯滤波来清晰显示图像的内容。">[2]</span></a></sup></p>
+<figure>
+<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image.png" alt="0:57:02">
+<figcaption aria-hidden="true">0:57:02</figcaption>
+</figure>
+<p>若是非理工的人来看，可能会认为中学生能灵活应用如此多的知识而感到惊讶，但若是稍微了解一些便会发现这一段话基本上是名词的堆砌。仅仅是将一本书名进行了推广，然后用一些看似高深的专有名词在语言上进行了加工。</p>
+<p>用高大上的词汇描述简单的事情的行为并不少见。但是在韩国选拔人才作为全国性的事件中，作为一个评价标准就有些奇怪了(至少在我看来)。国内的高考相对而言考察的都是知识本身(至少明面上)，因而较少出现这样的名词堆砌的情况，这样相对而言要更加考察知识的细节，毕竟细节才是最重要的，这样才能够有能力上的区分度。但若是过于强调包装和论述，反而失去了选拔人才本身的意义，且另一层面来说，也更有利于部分具有包装能力的人取得更好的成绩。</p>
+<figure>
+<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image2.png" alt="0:48:26">
+<figcaption aria-hidden="true">0:48:26</figcaption>
+</figure>
+<p>若是以当下的文化来形容，应当是“卷”<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="内耗、内卷化（英语：involution），又译过密化、包裹化，简称内卷，原是一个社会学概念，指一种文化模式发展到一定水准后，无法突破自身，只能在内部继续发展、复杂化的过程。内卷化是人类社会独有的现象，和生物学中的“退化”和“进化”都截然不同。内卷不会帮助人类从一个低效的阶段进步到高效的阶段，但也不会让人们退化掉某种能力。大约从2018年开始，“内卷”一词在中国大陆变得广为人知，并引申表示付出大量努力却因递减定律而得不到等价的回报，必须在竞争中超过他人的社会文化，包含了恶性竞争、逐底竞争等更为负面的含义。[内卷化 Wikipedia](https://zh.wikipedia.org/wiki/%E5%86%85%E5%8D%B7%E5%8C%96)">[3]</span></a></sup>文化。卷文化的底层逻辑是社会生产的蛋糕大小增量变少，个体(甚至群体)要在增量中获取和之前相同的份额，就必须付出更大的努力，进一步发展则会导致恶性竞争。韩国教育作为卷文化的代表可谓是极致，视频中的也提到，韩国高度内卷的修能考试实质上的促使一部分学业欠佳的学生走上练习生的道路。然而过多的人力涌入也带来了追星企业的内卷，大部分娱乐公司自身难保，也自然没有足够的资源去推动公司的练习生出道以及之后的发展。由此或许可以一定程度上地推广到韩国社会其他的产业。</p>
+<figure>
+<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image3.png" alt="1:3:51">
+<figcaption aria-hidden="true">1:3:51</figcaption>
+</figure>
+<p>极致的内卷化导致人生活成本的大幅度提升，诸多社会现象也因此出现，而其中相对尖锐的矛盾当是出生率。韩国的出生率自60年代后急速地下落，面临严重的人口老龄化及少子化问题，并于2020年首次出现死亡人口大于出生人口的人口自然减少情况。其总和生育率仅为0.84，在世界上属于最低水平。由此也可看出，在现代化社会中，人的生活成本过高时对生育本能的抑制性是非常大的。资源的有限性和人的追求的矛盾是如此的尖锐，以至于每个人都不愿意卷，但每个人都在卷。</p>
+<figure>
+<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image4.png" alt="Wikipedia">
+<figcaption aria-hidden="true"><a href="https://en.wikipedia.org/wiki/Demographics_of_South_Korea">Wikipedia</a></figcaption>
+</figure>
+<p>当然，视频中除了教育的视角，还有许多其他的视角。尤其是作家郑智我对韩国历史以及社会的分析，在韩国这个(我看来)相对割裂且受美国影响严重的国家中，提供了一个相对完整的介绍韩国历史的视角(当然与朝鲜关系极大)。整个3小时的视频我分了两次看完，还是非常建议去看一下的(充电视频大概10块钱)。</p>
+<figure>
+<img src="/2025/10/06/%E9%A6%96%E5%B0%94%E5%A4%8F%E5%A4%A9-%E9%A3%9F%E8%B4%AB%E9%81%93/image5.png" alt="3:13:39">
+<figcaption aria-hidden="true">3:13:39</figcaption>
+</figure>
+<p>后记：本文或是距离十年前高考后第一次写一篇作文，所以简单记录一下。没有用GPT润色写作，基本上是看完食贫道的节目后萌生出锻炼写作的想法。实际上除了<首尔夏天>以外，食贫道的<你好美国>，<时尚圣经>等都通过采访的方式记录了许多我在现实中不曾接触的一面。尽管多数看完之后有“原来还有这种事”的感觉，但是却没有能力用一种方法来将“这种感觉”来刻画出来。颇有一种“梦中有一个幻想中的角色，但是等实际落笔时却完全不行”的意思。</时尚圣经></你好美国></首尔夏天></p>
+<p>在写的时候也大为苦恼如何开头，谈什么内容，本来想把视频中的几个人都写一写，但是发现如果想说的太多，以目前的表达能力来看反而哪个都说不好，并且有许多内容是只参照了食贫道的视频，未免有失偏颇，所以选择了教育这个角度。写的时候也试着看了一下<a href="https://www.changhai.org/index.php">卢昌海</a>的文章来借鉴，来尽量保证自己开始从一个写作者而非阅读者的角度，来学习一些写作上的技术。就结果来看，尽管字数才一千多字，写出来的结果也十分不满意，难以想象没有gpt辅助的情况下在写学术论文时读者该有多吃力。不过迈出去的一步也是一步，以后如果还有这般热情，应该还是多锻炼。</p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">副标题为South
+of the 38th parallel, 38线以南<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1NGHGzJEfx?spm_id_from=333.788.videopod.sections&amp;vd_source=08fd7c21a0da30ec4230b58c1f6d8077">B站链接</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">图中内容为
+概率与统计以医学相关职业为目标的学生，调查了统计学在医学发展中的作用。通过阅读《掌握统计学与大数据》一书，理解以证据为基础的医学是医生治疗病人的依据，并将其写入报告中。通过临床试验进行数据分析、利用文献进行元分析时会使用到技术统计和推理统计，并进行了说明。还说明了最基本的事实是：专家意见或背景知识也通过条件概率来使用。在深入探究活动中，探究了教材中所学内容与医学诊断之间的关联。通过掌握正态分布中，平均值附近的数值比两侧的数值频率更高这一事实，说明了照片编辑时，通过平均值改变周围像素值的高斯滤波处理过程。对与统计相关的各种技术中，“期望值出现的概率较高”这一点产生了深刻印象。通过高斯滤波处理的照片为例，发现该技术也正在用于诊断中。为了确认阿尔茨海默症的重要原因——β-淀粉样蛋白的积聚，提到了通过脑PET拍摄时使用高斯滤波来清晰显示图像的内容。<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">内耗、内卷化（英语：involution），又译过密化、包裹化，简称内卷，原是一个社会学概念，指一种文化模式发展到一定水准后，无法突破自身，只能在内部继续发展、复杂化的过程。内卷化是人类社会独有的现象，和生物学中的“退化”和“进化”都截然不同。内卷不会帮助人类从一个低效的阶段进步到高效的阶段，但也不会让人们退化掉某种能力。大约从2018年开始，“内卷”一词在中国大陆变得广为人知，并引申表示付出大量努力却因递减定律而得不到等价的回报，必须在竞争中超过他人的社会文化，包含了恶性竞争、逐底竞争等更为负面的含义。<a href="https://zh.wikipedia.org/wiki/%E5%86%85%E5%8D%B7%E5%8C%96">内卷化
+Wikipedia</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TexStudio-提示与技巧(AI译)</title>
+    <url>/2026/02/08/TexStudio-%E6%8F%90%E7%A4%BA%E4%B8%8E%E6%8A%80%E5%B7%A7-AI%E8%AF%91/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文利用AI翻译自Github上TexStudio中的<a href="https://github.com/texstudio-org/texstudio/wiki/Tips-And-Tricks">Tips
+And
+Tricks</a>，原文由sunderme撰写，最后更新于2023年六月一日。供参考使用</p>
+<h2 id="深色模式">深色模式</h2>
+<p><del>深色模式支持正在开发中。开发版提供了一套语法高亮配色方案。其他方案可在这里、这里和这里找到。导入的配置文件需要将
+[formats] 改为 [formatsDark]</del> 注：现在texstudio已经支持Dark
+Mode。</p>
+<h2 id="特殊注释">特殊注释</h2>
+<p>编辑器 TeXWorks 引入了<a href="https://www.texdev.net/2011/03/24/texworks-magic-comments/">特殊的
+LaTeX 注释</a>，格式为 % !TeX [command]，用于向编辑器传递信息(Magic
+comment )。</p>
+<p>TeXstudio 支持其中一部分命令，目前包括：</p>
+<ul>
+<li>% !TeX encoding = UTF-8 告诉 TeXstudio
+加载文件时应使用的编码。（注意：TeXstudio
+具有自动编码检测，在很多情况下都有效，但并不完美。只有当自动检测失败时才需要这条命令。）</li>
+<li>% !TeX spellcheck = en_GB TeXstudio
+会自动加载指定字典进行拼写检查。这样可以在不同语言的文件间工作，而无需为每个文档手动切换拼写检查器。</li>
+<li>% !TeX root = ../xx.tex 告诉 TeXstudio
+当前文件是主文档的一部分，主文档位于相对路径
+../xx.tex。这样在编辑子文件时，TeXstudio
+仍会使用主文档的设置进行编译、预览和语法检查。 ## 插入图片</li>
+</ul>
+<p>“插入图片”向导可以自动生成所需代码，方便在文档中插入图片。你也可以通过<span style="color:red">拖放图片到 TeXstudio
+来启动向导</span>支持多文件。该向导还可以编辑已有的插图代码：将光标放在代码上并启动向导即可。</p>
+<h2 id="全屏模式">全屏模式</h2>
+<p>双击菜单栏的空白区域也可以进入全屏模式。这与多数窗口管理器中双击标题栏来最大化窗口的行为一致。当前该特性仅适用于主窗口。（在
+Ubuntu Unity 中，使用 <code>Alt-f</code>（字母
+f，不是功能键）恢复菜单栏，以便退出全屏。）</p>
+<h2 id="列编辑-多光标">列编辑 / 多光标</h2>
+<p>按住 <code>Ctrl+Shift</code>
+并拖动鼠标可创建用于同时编辑多行的光标。按住 <code>Ctrl+Alt</code>
+并单击（不拖动）可在任意位置创建多个光标。</p>
+<p>不使用鼠标时，可用 <code>Ctrl+Alt</code>
+加上下方向键来放置多光标。</p>
+<p>特殊场景下，可使用 Edit/Searching/Select All
+Matches，在搜索栏中查找文本后生成多光标。</p>
+<p>Edit/Selection/Select All Occurrences
+与上面类似，但针对当前单词（光标所在词）而非搜索结果。另有
+Edit/Selection/Also Select Next Occurrence 与 Edit/Selection/Also Select
+Previous
+Occurrence，用于为当前词的下一处或上一处出现位置创建多光标。</p>
+<h2 id="工具提示与上下文菜单">工具提示与上下文菜单</h2>
+<p>我们持续提升 TeXstudio
+的上下文感知能力。留意各处出现的工具提示与上下文菜单，它们提供额外信息和实用功能。</p>
+<h2 id="向工具栏添加子菜单">向工具栏添加子菜单</h2>
+<p>在 Options -&gt; Configure -&gt; Toolbars
+中配置工具栏时，可以把完整的子菜单添加到工具栏（例如 Tools -&gt;
+Commands 菜单）。该菜单会以工具栏下拉列表的形式显示。</p>
+<h2 id="在-multibib-包下使用-txs">在 multibib 包下使用 TXS</h2>
+<p>TXS 不原生支持 multibib，但可以通过以下设置使其工作。</p>
+<h3 id="编辑器中正确识别命令">编辑器中正确识别命令</h3>
+<p>在配置目录中创建一个 .cwl 文件（见 Frequently Asked Questions）。</p>
+<p>对于通过 创建的每个参考文献组 pub，在 .cwl 文件中添加如下四行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\citepub&#123;%&lt;bibid%&gt;&#125;#c</span><br><span class="line">\nocitepub&#123;%&lt;bibid%&gt;&#125;#c</span><br><span class="line">\bibliographypub&#123;%&lt;file%&gt;&#125;#b</span><br><span class="line">\bibliographystylepub&#123;%&lt;style%&gt;&#125;</span><br></pre></td></tr></table></figure>
+<p>将 pub 替换为实际使用的名称。随后前往 TeXstudio Config -&gt;
+Completion，勾选你创建的 cwl 文件。</p>
+<h3 id="正确编译跨平台">正确编译（跨平台）</h3>
+<p>将 bibliography 命令设置为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bibtex ?*.aux</span><br></pre></td></tr></table></figure>
+<h3 id="正确编译windows">正确编译（Windows）</h3>
+<p>（如果上述方式无效）创建文件 multibib.bat，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@ECHO off</span><br><span class="line">IF (%1)==() GOTO end</span><br><span class="line"></span><br><span class="line">FOR %%f in (%1\*.aux) DO bibtex %%f</span><br><span class="line"></span><br><span class="line">@ECHO on</span><br><span class="line">:end</span><br></pre></td></tr></table></figure>
+<p>将 multibib.bat 保存到合适位置（例如你的 TeX 安装的 bin
+目录）。可能是 C:Files或 C:\2012，其他位置也可以。</p>
+<p>前往 TeXstudio Config -&gt; Command -&gt; BibTeX，选择
+multibib.bat。</p>
+<p>现在 <code>F11</code> 可以正确编译 multibib
+的参考文献，编译前的自动文献更新也能工作。</p>
+<h2 id="让-txs-识别自定义引用与引用命令">让 TXS
+识别自定义引用与引用命令</h2>
+TXS 会自动识别参考引用。但如果你自定义命令，如
+或
+<p>，它不会自动识别。</p>
+<p>以下步骤可以将自定义命令告知 TXS：</p>
+<ol type="1">
+<li>在配置目录中创建一个 .cwl 文件，例如
+usercommands.cwl，并加入类似如下内容：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\mycite&#123;%&lt;bibid%&gt;&#125;#c</span><br><span class="line">\myref&#123;%&lt;label%&gt;&#125;#r</span><br></pre></td></tr></table></figure>
+<p>其中 # 后的 c 表示引用命令，r 表示引用标签。</p>
+<ol start="2" type="1">
+<li>前往 TeXstudio Config -&gt; Commpletion，勾选你创建的 cwl
+文件。</li>
+</ol>
+<p>关于 .cwl 文件的更多信息，请参阅用户手册相应章节。</p>
+<h2 id="为辅助文件使用单独目录">为辅助文件使用单独目录</h2>
+<p>LaTeX 生成的辅助文件会把工作目录弄得很乱。除了使用 Tools -&gt; Clean
+Auxiliary Files 清理，你也可以将这些文件放在单独目录中，做法如下：</p>
+<h3 id="让-latex-引擎把辅助文件存到其他位置">让 LaTeX
+引擎把辅助文件存到其他位置</h3>
+<ul>
+<li>在 MiKTeX 中，可在 Options -&gt; Configure -&gt; Commands 修改
+pdflatex 命令，例如添加 -aux-directory=DIR。该选项仅适用于 MiKTeX。</li>
+<li>在 TeX Live 中需使用 -output-directory=DIR（MiKTeX
+也支持该选项），这样 pdflatex 会把辅助文件与 pdf
+一并输出到指定位置。</li>
+</ul>
+<h3 id="让-texstudio-在指定位置查找日志及-pdf文件">让 TeXstudio
+在指定位置查找日志（及 pdf）文件</h3>
+<ul>
+<li>使用 -aux-directory=aux-files 时，在 Options -&gt; Configure -&gt;
+Build -&gt; Build Options -&gt; Additional Search Paths -&gt; Log File
+添加 aux-files 即可（需开启高级选项）。</li>
+<li>使用 -output-directory=aux-files 时，日志和 pdf 都位于
+aux-files，因此还需要把 aux-files 添加到 Additional Search Paths -&gt;
+PDF File。</li>
+<li>多路径在 Windows 中使用 ; 分隔，例如 aux_dir;aux_dir2，Linux 或
+macOS 使用 :。</li>
+</ul>
+<h3 id="让-latex-工具从指定目录读写">让 LaTeX 工具从指定目录读写</h3>
+<ul>
+<li>使用 bibtex 时，将调用修改为：bibtex.exe
+-include-directory=aux-files aux-files。</li>
+<li>biber 类似，可改为：biber.exe --output_directory=aux-files %。</li>
+</ul>
+<p>注意：必须手动创建 aux-files 目录，否则 pdflatex
+会因目录不存在而报错退出。</p>
+<p>如果你使用外部 PDF 阅读器，请到 Commands 设置界面设置 External PDF
+viewer，使其能找到 PDF 文件，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xdg-open ?p&#123;pdf&#125;:ame &gt; /dev/null</span><br></pre></td></tr></table></figure>
+<p>（具体命令取决于你的外部阅读器）</p>
+<p>如果你的构建脚本会在输出目录生成文章图片，且文档从输出目录引用图片，那么你可能需要较新的
+TeX Live 版本（2019-05-07 之后），因为更早版本存在一个
+bug，导致无法在输出目录中搜索图像。详见 TeX Live 的相关 bug。</p>
+<p>如果你使用较旧的 TeX Live，可在 .tex 文件导言区或自定义 .cls
+文件中使用以下变通方案（仅在旧版 TeX Live
+且从输出目录包含图片时需要）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">% Workaround a bug in the \includegraphics macro which fails to include images from the output directory</span><br><span class="line">% For more details see</span><br><span class="line">% https://github.com/latex3/latex2e/issues/145</span><br><span class="line">\def\Gin@getbase#1&#123;%</span><br><span class="line">	\edef\Gin@tempa&#123;%</span><br><span class="line">		\def\noexpand\@tempa####1#1\space&#123;%</span><br><span class="line">			\def\noexpand\Gin@base&#123;####1&#125;&#125;&#125;%</span><br><span class="line">	\@iffileonpath&#123;\filename@area\filename@base#1&#125;%</span><br><span class="line">		&#123;\Gin@tempa</span><br><span class="line">		 \expandafter\@tempa\@filef@und</span><br><span class="line">		 \edef\Gin@ext&#123;#1&#125;&#125;&#123;&#125;&#125;%</span><br></pre></td></tr></table></figure>
+<h2 id="从-jabref-插入引用">从 JabRef 插入引用</h2>
+<p>与 JabRef 合作，我们实现了从 JabRef 直接向 TeXstudio 插入引用（JabRef
+2.9 起可用）。</p>
+<p>插入引用的步骤：</p>
+<ol type="1">
+<li>在 JabRef 主界面，点击工具栏中的下拉列表（倒数第二个图标）。</li>
+<li>选择 “TeXstudio”。</li>
+</ol>
+<h3 id="设置">设置</h3>
+<p>可在 JabRef 的插件设置中配置行为。右键点击 JabRef 下拉列表中的
+TeXstudio 图标即可打开设置。可配置项包括：</p>
+<ul>
+<li>Cite command：引用的 TeX 命令（如果计划使用 biblatex，可将默认 \cite
+替换为 \autocite）。在 OSX 上需填写完整路径，标准安装为
+/Applications/texstudio.app/Contents/MacOS/texstudio。</li>
+<li>Path to TeXstudio：TeXstudio
+可执行文件位置。通常无需修改，若插入失败请确认路径正确。</li>
+</ul>
+<p>如果使用 biblatex：回到 JabRef 主界面，进入 Options →
+Preferences：</p>
+<ul>
+<li>若 .bib 文件为 UTF-8 编码，点击 General 并在 Default Encoding 中选择
+UTF-8；</li>
+<li>点击 Advanced 并勾选 Biblatex mode。</li>
+</ul>
+<h3 id="使用方法">使用方法</h3>
+<ol type="1">
+<li>在 TeXstudio 中打开 .tex 文件，同时在 JabRef 中打开 .bib 文件。</li>
+<li>在 TeXstudio 中将光标放到需要引用的位置。</li>
+<li>切换到 JabRef，选中要引用的条目并点击 TeXstudio 插件图标。</li>
+</ol>
+<p>TeXstudio 将插入 \cite（或
+\autocite）命令，其必选参数为所选条目的键值列表。</p>
+<p>若光标位于已有引用命令内，TeXstudio
+会追加所选引用，而不是插入新命令。</p>
+<h2 id="多语言拼写检查">多语言拼写检查</h2>
+<p>TeXstudio
+每个文件仅支持一个字典进行拼写检查。对多语言文档来说，这意味着除所选语言之外的内容都会被标为错误。可用的变通方案是通过
+HunspellMerge 创建一个多语言混合字典并用于拼写检查。</p>
+<p>另一种做法是通过状态栏的字典切换按钮，在多个字典之间手动切换。</p>
+<h2 id="使用自定义包">使用自定义包</h2>
+<p>先让你的 .sty 文件被所使用的 LaTeX 发行版识别。这一步保证（pdf）latex
+能在编译时使用它。它并非 TeXstudio 特定操作，网上有详尽说明（例如 MikTeX
+或 TeXlive 的文档）。对于 TeXlive，需执行 texhash，因为 TXS 使用 ls-R
+缓存（见第 2 点）。此后编译正常，但 TXS
+可能仍会将包名或命令标记为未知。</p>
+<h3 id="包名">包名</h3>
+<p>TXS 会从发行版中获取已安装包的信息。TeXlive 下只要 texhash
+过就能检测到。MikTeX 目前无法检测本地 texmf
+目录中的包，因此这里仍会显示缺失包下划线。详见 Why does TXS mark a
+package as missing?。</p>
+<h3 id="命令">命令</h3>
+请参考 How does TXS know about valid commands。虽然 TXS 具备从 sty
+文件自动生成 cwl 的有限能力，但我们建议显式编写 cwl
+文件并放在相应目录中。当 TXS 发现
+<p>命令时，会加载对应的 mypkg.cwl，使其中的命令被识别。</p>
+<h2 id="便携版路径设置">便携版路径设置</h2>
+<p>使用 U 盘上的便携版时，路径（例如同盘的便携版
+MikTeX）可能因为盘符变化而变动。</p>
+<p>为保持配置始终可用，可使用相对于 texstudio 可执行文件 [txs-app-dir]
+与设置目录 [txs-settings-dir] 的相对路径。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[txs-app-dir]\..\MikTeX Portable\miktex\bin\x64\latex.exe</span><br></pre></td></tr></table></figure>
+<h2 id="使用-texstudio-进行-pdf-演示">使用 TeXstudio 进行 PDF 演示</h2>
+<p>TeXstudio
+具备高级演示功能，可在一块屏幕上显示演示文稿，在另一块隐藏屏幕上显示附加信息（如剩余时间或下一张幻灯片）。</p>
+<ol type="1">
+<li>切换到窗口化的内置阅读器，使用 Window / New Window 创建两个 PDF
+阅读器窗口。</li>
+<li>在两个窗口中启用 Configure / Synchronize multiple views。</li>
+<li>在两个窗口中禁用 View / Continuous，避免显示部分页面。</li>
+<li>在演示者窗口中选择 View / Grid /
+1x1，仅显示单页，将其移到演示屏并选择 View / Presentation。</li>
+<li>在自己屏幕的窗口中选择要显示的附加信息：
+<ul>
+<li>显示当前与下一张幻灯片：选择 View / Grid / 2x1 以及 View / Grid /
+Single Page Step。</li>
+<li>显示剩余时间：选择 Window / Show /
+Clock，并右键点击底部彩色栏设置时间。</li>
+</ul></li>
+</ol>
+<h2 id="预览生成的日志文件">预览生成的日志文件</h2>
+<p>预览会创建临时文件。你可以通过进入临时文件夹浏览它们。TeXstudio
+支持加载 .log 文件，因此更建议按上述方式使用 .log 文件。</p>
+<p>做法是：在消息面板中复制不带扩展名的文件名，选择
+File/Open...，进入临时文件夹并使用剪贴板输入日志文件名（记得添加 .log
+扩展名）。确认打开后切换到消息面板中的日志标签页。</p>
+<p>%tmp% 可作为临时文件夹的快捷方式（取决于所使用的操作系统）。</p>
+]]></content>
   </entry>
   <entry>
     <title>恒星的流体静力学平衡</title>
