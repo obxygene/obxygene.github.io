@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"obxygene.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Kernel Polynomial Method (KPM) Kernel polynomial method (KPM) 是一种利用数值 Chebyshev 多项式展开来降低计算复杂度的方法。传统计算谱时常需 \(O(N^3)\) 的对角化方法，而 KPM 则将问题转化为矩阵与一组较小向量的乘法，大幅降低复杂度。同期发展的还有 Lanczos 算法，Lanczos 适合求本征态，KPM">
+    <meta name="description" content="Kernel Polynomial Method (KPM) Kernel polynomial method (KPM) 是一种利用数值 Chebyshev 多项式展开来降低计算复杂度的方法。传统计算谱时常需 \(O(N^3)\) 的对角化方法，而 KPM 则将问题转化为矩阵与一组较小向量的乘法，大幅降低复杂度。同期发展的还有 Lanczos 算法，Lanczos 适合求本征态，KPM 更适合谱">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kernel Polynomial Method简介">
 <meta property="og:url" content="https://obxygene.github.io/2025/07/14/KPM/index.html">
 <meta property="og:site_name" content="obxygene">
-<meta property="og:description" content="Kernel Polynomial Method (KPM) Kernel polynomial method (KPM) 是一种利用数值 Chebyshev 多项式展开来降低计算复杂度的方法。传统计算谱时常需 \(O(N^3)\) 的对角化方法，而 KPM 则将问题转化为矩阵与一组较小向量的乘法，大幅降低复杂度。同期发展的还有 Lanczos 算法，Lanczos 适合求本征态，KPM">
+<meta property="og:description" content="Kernel Polynomial Method (KPM) Kernel polynomial method (KPM) 是一种利用数值 Chebyshev 多项式展开来降低计算复杂度的方法。传统计算谱时常需 \(O(N^3)\) 的对角化方法，而 KPM 则将问题转化为矩阵与一组较小向量的乘法，大幅降低复杂度。同期发展的还有 Lanczos 算法，Lanczos 适合求本征态，KPM 更适合谱">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-07-13T16:15:48.000Z">
-<meta property="article:modified_time" content="2025-07-19T15:13:26.934Z">
+<meta property="article:modified_time" content="2025-07-19T15:13:26.000Z">
 <meta property="article:author" content="obxygene">
 <meta property="article:tag" content="物理">
 <meta property="article:tag" content="杂谈">
@@ -94,7 +94,7 @@
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger">搜索
         </a>
-      </li>
+      </li><li class="menu-item menu-item-lang"><a href="/en/2025/07/14/KPM/" lang="en" rel="section">EN</a></li>
   </ul>
 </nav>
 
@@ -149,7 +149,7 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="obxygene"
-      src="/images/avatar.gif">
+      src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">obxygene</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -209,7 +209,7 @@
     <link itemprop="mainEntityOfPage" href="https://obxygene.github.io/2025/07/14/KPM/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.png">
       <meta itemprop="name" content="obxygene">
     </span>
 
@@ -307,65 +307,51 @@
 Lanczos 算法，Lanczos 适合求本征态，KPM 更适合谱性质和关联函数的计算
 <sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Weiße A., Wellein G., Alvermann A., Fehske H., 2006, RvMP, 78, 275. doi:10.1103/RevModPhys.78.275">[1]</span></a></sup>。</p>
 <p>KPM 源自函数的正交多项式展开。定义权重函数 <span class="math inline">\(w(x)\)</span> 及区间 <span class="math inline">\([a,b]\)</span> 后，两个可积函数 <span class="math inline">\(f,g:[a,b]\to\mathbb{R}\)</span> 的内积为：</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \langle f|g \rangle = \int_a^b w(x) f(x) g(x) dx
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>通过 Schmidt 正交化可得正交多项式 <span class="math inline">\(p_n(x)\)</span>，满足：</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \langle p_n|p_m \rangle = \delta_{nm}/h_n
-\end{equation}
-\]</span> 其中 <span class="math inline">\(h_n =
-⟨p_n|p_n⟩\)</span>。任意函数可展开为： <span class="math display">\[
-\begin{equation}
+\end{equation}\]</span> 其中 <span class="math inline">\(h_n =
+⟨p_n|p_n⟩\)</span>。任意函数可展开为： <span class="math display">\[\begin{equation}
 f(x) = \sum_{n=0}^\infty \alpha_n p_n(x), \quad \alpha_n =
 \frac{1}{h_n}\langle p_n|f \rangle
-\end{equation}
-\]</span>
+\end{equation}\]</span>
 通常意义上任何正交多项式都可以用来展开函数从而使用KPM，但经过历史和经验的检验，第一类和第二类Chebyshev多项式由于其优秀的收敛性以及与傅里叶变换的相似性而被认为是最佳选择。
 ### Chebyshev 多项式 Chebyshev 多项式定义在区间 <span class="math inline">\([a,b]=[-1,1]\)</span> 上。第一类 Chebyshev 多项式
 <span class="math inline">\(T_n(x)\)</span> 的权重函数为 <span class="math inline">\(w(x)=\frac{1}{\pi\sqrt{1-x^2}}\)</span>，第二类
 <span class="math inline">\(U_n(x)\)</span> 的权重函数为 <span class="math inline">\(w(x)=\pi\sqrt{1-x^2}\)</span>。可以验证：</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \begin{split}
 T_n(x) &amp;= \cos\left[n \cos^{-1}x\right] \\
 U_n(x) &amp;=
 \frac{\sin\left[(n+1)\cos^{-1}x\right]}{\sin\left[\cos^{-1}x\right]}
 \end{split}
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>两类 Chebyshev 多项式都存在递推关系。对于第一类：</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \begin{split}
 T_0(x) &amp;= 1, \\
 T_{-1}(x) &amp;= T_1(x) = x, \\
 T_{n+1}(x) &amp;= 2xT_n(x)-T_{n-1}(x)
 \end{split}
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>对于第二类：</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \begin{split}
 U_0(x) &amp;= 1, \\
 U_{-1}(x) &amp;= 0, \\
 U_{n+1}(x) &amp;= 2xU_n(x)-U_{n-1}(x)
 \end{split}
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>此外还有乘积关系：</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \begin{split}
 2T_m(x)T_n(x) &amp;= T_{m+n}(x)+T_{m-n}(x), \\
 2(x^2-1)U_{m-1}(x)U_{n-1}(x) &amp;= T_{m+n}(x)-T_{m-n}(x)
 \end{split}
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>两种权重函数分别给出两种内积定义：</p>
 <p><span class="math display">\[\begin{equation}
 \begin{split}
@@ -449,48 +435,36 @@ b = \frac{E_{\text{max}}+E_{\text{min}}}{2}
 <h4 id="离散余弦傅里叶变换">离散余弦傅里叶变换</h4>
 <p>在对函数 <span class="math inline">\(f(x)\)</span>
 展开作截断并利用核多项式修正后，对于给定点 <span class="math inline">\(x\)</span>，有如下展开式：</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 f(x) = \frac{1}{\pi\sqrt{1-x^2}}\left(\mu_0 g_0 + 2\sum_{n=1}^{N-1}
 \mu_n g_n T_n(x)\right)
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>利用 Chebyshev
 多项式的性质，还可以进一步减少计算时间。定义核多项式修正后的矩系数为</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \tilde{\mu}_n = \mu_n g_n
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>此时展开式可以写为</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 f(x) = \frac{1}{\pi\sqrt{1-x^2}}\left(\tilde{\mu}_0 + 2\sum_{n=1}^{N-1}
 \tilde{\mu}_n T_n(x)\right)
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>如果采样点 <span class="math inline">\(x\)</span> 取为特殊的 <span class="math inline">\(x_k\)</span>，满足</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 x_k = \cos\frac{\pi(k+1/2)}{\tilde{N}},\quad k=0,\ldots,(\tilde{N}-1)
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>则有</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 T_n(x_k) = \cos\left[n\cos^{-1}x_k\right] =
 \cos\left[\frac{n\pi(k+1/2)}{\tilde{N}}\right]
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>这些点被称为 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Chebyshev_nodes">Chebyshev 节点</a>
 <sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="尽管matlab中内置有Chebyshev多项式`chebyshevT`,但实际上直接利用cos去定义Chebyshev多项式时，其速度远快于调用`chebyshevT`">[2]</span></a></sup>。<span class="math inline">\(\tilde{N}\)</span> 通常取 <span class="math inline">\(2N\)</span>。在这些点上，<span class="math inline">\(f(x_k)\)</span> 可以通过对 <span class="math inline">\(\tilde{\mu}_n\)</span>
 作第三类离散余弦变换（DCT-III）得到：</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 y[k] = \frac{1}{2}x_0 + \sum_{n=1}^{N-1} x_n
 \cos\left[\frac{n\pi(k+1/2)}{N}\right]
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>由于第三类余弦变换可以利用快速傅里叶变换（FFT）加速，因此比直接乘积更快。Matlab
 示例代码：</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">omega_dct = <span class="built_in">cos</span>(<span class="built_in">pi</span> * ((<span class="number">0</span>:N_points<span class="number">-1</span>)+<span class="number">0.5</span>)/N_points);</span><br><span class="line">Moments_Kernel(<span class="number">1</span>) = Moments_Kernel(<span class="number">1</span>)/<span class="built_in">sqrt</span>(<span class="number">2</span>);</span><br><span class="line">DOS = dct(Moments_Kernel,N_points,<span class="string">&#x27;Type&#x27;</span>, <span class="number">3</span>) .*(<span class="built_in">pi</span> * <span class="built_in">sqrt</span>(<span class="number">1</span> - omega_dct.^<span class="number">2</span>));</span><br></pre></td></tr></table></figure>
@@ -501,31 +475,28 @@ y[k] = \frac{1}{2}x_0 + \sum_{n=1}^{N-1} x_n
 <h4 id="矩的计算">矩的计算</h4>
 <p>KPM 展开可以被应用到算符上，例如哈密顿量 <span class="math inline">\(\hat{H}\)</span>。在利用 KPM
 计算时需要关注两种形式的矩：</p>
-<p>其一是两个态的期望： <span class="math display">\[ \begin{equation}
-\mu_n = \langle \beta | T_n(\tilde{H}) | \alpha \rangle \end{equation}
-\]</span></p>
+<p>其一是两个态的期望： <span class="math display">\[\begin{equation}
+\mu_n = \langle \beta | T_n(\tilde{H}) | \alpha \rangle
+\end{equation}\]</span></p>
 <p>其二为算符 <span class="math inline">\(\hat{A}\)</span>
-与多项式的迹： <span class="math display">\[ \begin{equation} \mu_n =
-\mathrm{Tr}[A T_n(\tilde{H})] \end{equation} \]</span></p>
+与多项式的迹： <span class="math display">\[\begin{equation} \mu_n =
+\mathrm{Tr}[A T_n(\tilde{H})] \end{equation}\]</span></p>
 <p>对于第一种情况，可以利用迭代关系直接计算。令 <span class="math inline">\(|\alpha_n\rangle =
 T_n(H)|\alpha\rangle\)</span>，有</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \begin{split}
 |\alpha_0\rangle &amp;= |\alpha\rangle \\
 |\alpha_1\rangle &amp;= \tilde{H}|\alpha_0\rangle \\
 |\alpha_{n+1}\rangle &amp;= 2\tilde{H}|\alpha_n\rangle -
 |\alpha_{n-1}\rangle
 \end{split}
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>随即可算出矩 <span class="math inline">\(\mu_n = \langle \beta |
 \alpha_n
 \rangle\)</span>。整个过程只涉及到矩阵乘法，且可以利用稀疏矩阵方法提升大尺寸运算效率。如果
 <span class="math inline">\(|\beta\rangle =
 |\alpha\rangle\)</span>，还可以进一步简化。利用乘积关系可验证，对于偶数次矩有</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \begin{split}
 2\langle \alpha_n | \alpha_n \rangle - \mu_0 &amp;= 2\langle \alpha |
 T_n(\tilde{H})^\dagger T_n(\tilde{H}) | \alpha \rangle - \mu_0 \\
@@ -537,11 +508,9 @@ T_n(\tilde{H})^\dagger T_n(\tilde{H}) | \alpha \rangle - \mu_0 \\
 \rangle - \mu_0 \\
 &amp;= \mu_{2n}
 \end{split}
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <p>奇数次矩有</p>
-<p><span class="math display">\[
-\begin{equation}
+<p><span class="math display">\[\begin{equation}
 \begin{split}
 2\langle \alpha_{n+1} | \alpha_n \rangle - \mu_1 &amp;= 2\langle \alpha
 | T_{n+1}(\tilde{H})^\dagger T_n(\tilde{H}) | \alpha \rangle - \mu_1 \\
@@ -553,50 +522,49 @@ T_{2n+1}(\tilde{H})\right) | \alpha \rangle - \mu_1 \\
 \alpha_{2n+1} \rangle - \mu_1 \\
 &amp;= \mu_{2n+1}
 \end{split}
-\end{equation} \]</span></p>
+\end{equation}\]</span></p>
 <p>因此当 <span class="math inline">\(|\alpha\rangle =
 |\beta\rangle\)</span> 时，可将矩的计算减半：</p>
-<p><span class="math display">\[ \begin{equation} \begin{split} \mu_{2n}
+<p><span class="math display">\[\begin{equation} \begin{split} \mu_{2n}
 &amp;= 2\langle \alpha_n | \alpha_n \rangle - \mu_0 \\
 \mu_{2n+1} &amp;= 2\langle \alpha_{n+1} | \alpha_n \rangle - \mu_1
-\end{split} \end{equation} \]</span></p>
+\end{split} \end{equation}\]</span></p>
 <p>对于第二种情况，以态密度为例。假设本征态 <span class="math inline">\(\tilde{H}|k\rangle =
 E_k|k\rangle\)</span>，态密度定义为</p>
-<p><span class="math display">\[ \begin{equation} \rho(E) = \sum_k
+<p><span class="math display">\[\begin{equation} \rho(E) = \sum_k
 \delta(E-E_k) = \mathrm{Tr}\left[\delta(E-\tilde{H})\right]
-\end{equation} \]</span></p>
+\end{equation}\]</span></p>
 <p><span class="math inline">\(\delta\)</span> 函数可用 Chebyshev
 多项式展开为矩：</p>
-<p><span class="math display">\[ \begin{equation} \begin{split} \mu_n
+<p><span class="math display">\[\begin{equation} \begin{split} \mu_n
 &amp;= \int_{-1}^{1} \rho(E) T_n(E) dE \\ &amp;= \int_{-1}^{1} \sum_k
 \delta(E-E_k) T_n(E) dE \\ &amp;= \sum_k T_n(E_k) \end{split}
-\end{equation} \]</span></p>
+\end{equation}\]</span></p>
 <p>利用 <span class="math inline">\(T_n(H)|k\rangle =
 T_n(E_k)|k\rangle\)</span>，可得</p>
-<p><span class="math display">\[ \begin{equation} \mu_n = \sum_k \langle
-k | T_n(H) | k \rangle = \mathrm{Tr}[T_n(H)] \end{equation}
-\]</span></p>
+<p><span class="math display">\[\begin{equation} \mu_n = \sum_k \langle
+k | T_n(H) | k \rangle = \mathrm{Tr}[T_n(H)] \end{equation}\]</span></p>
 <p>由于 Chebyshev 多项式存在递推关系，有</p>
-<p><span class="math display">\[
-\begin{equation} \begin{split} |\alpha_n(k)\rangle &amp;=
-T_n(H)|k\rangle \\ |\alpha_{n+1}(k)\rangle &amp;= 2H|\alpha_n(k)\rangle
-- |\alpha_{n-1}(k)\rangle \end{split} \end{equation} \]</span></p>
+<p><span class="math display">\[\begin{equation} \begin{split}
+|\alpha_n(k)\rangle &amp;= T_n(H)|k\rangle \\ |\alpha_{n+1}(k)\rangle
+&amp;= 2H|\alpha_n(k)\rangle - |\alpha_{n-1}(k)\rangle \end{split}
+\end{equation}\]</span></p>
 <p>此时矩变为</p>
-<p><span class="math display">\[ \begin{equation} \mu_n = \sum_k \langle
+<p><span class="math display">\[\begin{equation} \mu_n = \sum_k \langle
 \alpha_0(k) | \alpha_n(k) \rangle = \sum_k \langle k | T_n(H) | k
-\rangle \end{equation} \]</span></p>
+\rangle \end{equation}\]</span></p>
 <p>注意到之前公式中我们可以将态密度转换为了展开系数的计算，而上式表明，展开系数的计算只需要计算两个向量的内积，又因为<span class="math inline">\(|\alpha_n(k)\rangle\)</span>各阶项实际上是一个矩阵乘法运算，通过上述的步骤，我们可以跳过高复杂度的对角化方法，仅通过矩阵乘法就可以得到态密度的展开系数。</p>
 <p>实际上，计算迹时并不需要对所有本征态求和，只需对少量随机归一化向量
 <span class="math inline">\(|r\rangle\)</span> 取平均即可获得对 <span class="math inline">\(\mu_n\)</span> 的良好估计：</p>
-<p><span class="math display">\[ \begin{equation} \mu_n = \mathrm{Tr}[A
+<p><span class="math display">\[\begin{equation} \mu_n = \mathrm{Tr}[A
 T_n(H)] \approx \frac{1}{R} \sum_{r=1}^R \langle r | A T_n(H) | r
-\rangle \end{equation} \]</span></p>
+\rangle \end{equation}\]</span></p>
 <p>其中 <span class="math inline">\(|r\rangle = \frac{1}{\sqrt{D}}
 \sum_{i=1}^D \xi_{rk} |k\rangle\)</span>，<span class="math inline">\(\xi_{rk}\)</span> 为复随机的归一化向量，满足</p>
-<p><span class="math display">\[ \begin{equation} \begin{split}
+<p><span class="math display">\[\begin{equation} \begin{split}
 \mathbb{E}[\xi_{rk}] &amp;= 0 \\ \mathbb{E}[\xi_{rk}\xi_{r&#39;l}]
 &amp;= 0 \\ \mathbb{E}[\xi^*_{rk}\xi_{r&#39;l}] &amp;=
-\delta_{rr&#39;}\delta_{kl} \end{split} \end{equation} \]</span></p>
+\delta_{rr&#39;}\delta_{kl} \end{split} \end{equation}\]</span></p>
 <p>若 <span class="math inline">\(\xi_{rk}=e^{i\phi}\)</span>，<span class="math inline">\(\phi\in[0,2\pi]\)</span>
 满足均匀或高斯分布，可以获得相当精确的结果。</p>
 <div id="footnotes">
@@ -616,7 +584,6 @@ doi:10.1103/RevModPhys.78.275<a href="#fnref:1" rev="footnote">
 </ol>
 </div>
 </div>
-
 
     </div>
 
@@ -718,17 +685,7 @@ doi:10.1103/RevModPhys.78.275<a href="#fnref:1" rev="footnote">
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
-</div>
-
-
-<!--
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
--->
-
-
-
-<!-- 网站运行时间的设置 -->
+</div><!-- 网站运行时间的设置 (原先直接改在 node_modules/hexo-theme-next 的 footer.njk 里) -->
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span>
 <script>
@@ -747,6 +704,8 @@ doi:10.1103/RevModPhys.78.275<a href="#fnref:1" rev="footnote">
     }
 setInterval("createtime()",250);
 </script>
+
+
     </div>
   </footer>
 

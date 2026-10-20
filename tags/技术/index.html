@@ -88,7 +88,7 @@
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger">搜索
         </a>
-      </li>
+      </li><li class="menu-item menu-item-lang"><a href="/en/" lang="en" rel="section">EN</a></li>
   </ul>
 </nav>
 
@@ -141,7 +141,7 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="obxygene"
-      src="/images/avatar.gif">
+      src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">obxygene</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -202,6 +202,29 @@
       </div>
 
       
+    <div class="collection-year">
+      <span class="collection-header">2026</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2026-02-08T21:27:39+08:00"
+              content="2026-02-08">
+          02-08
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2026/02/08/TexStudio-%E6%8F%90%E7%A4%BA%E4%B8%8E%E6%8A%80%E5%B7%A7-AI%E8%AF%91/" itemprop="url">
+            <span itemprop="name">TexStudio-提示与技巧(AI译)</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
     <div class="collection-year">
       <span class="collection-header">2025</span>
     </div>
@@ -419,17 +442,7 @@
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
-</div>
-
-
-<!--
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
--->
-
-
-
-<!-- 网站运行时间的设置 -->
+</div><!-- 网站运行时间的设置 (原先直接改在 node_modules/hexo-theme-next 的 footer.njk 里) -->
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span>
 <script>
@@ -448,6 +461,8 @@
     }
 setInterval("createtime()",250);
 </script>
+
+
     </div>
   </footer>
 
